@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>TeuB · Ranking de ligandos por dos métodos</title>
+<style>
+  @page { size: letter; margin: 1.25cm 1.35cm 1.3cm; }
+  :root { --azul:#1f4e79; --azul2:#e8eef5; --gris:#5b6770; --linea:#cfd6dd; --rojo:#b23a48; --oro:#a87c00; }
+  * { box-sizing: border-box; }
+  body { font-family: "DejaVu Sans", "Helvetica Neue", Arial, sans-serif; font-size: 8.3pt; line-height: 1.32; color: #1b1f23; margin: 0; }
+  header { border-bottom: 2.5px solid var(--azul); padding-bottom: 5px; margin-bottom: 7px; display: flex; justify-content: space-between; align-items: flex-end; }
+  header h1 { font-size: 14.5pt; margin: 0; color: var(--azul); letter-spacing: -0.2px; }
+  header .sub { font-size: 8.5pt; color: var(--gris); margin-top: 2px; }
+  header .meta { white-space: nowrap; padding-left: 12px; text-align: right; font-size: 7.6pt; color: var(--gris); line-height: 1.35; }
+  h2 { font-size: 9.6pt; color: var(--azul); margin: 9px 0 3px; padding-bottom: 1.5px; border-bottom: 1px solid var(--linea); text-transform: uppercase; letter-spacing: 0.4px; }
+  h2 .n { display: inline-block; background: var(--azul); color: #fff; border-radius: 2px; padding: 0 4px; margin-right: 5px; font-size: 8.4pt; }
+  p { margin: 3px 0; }
+  ul { margin: 2px 0 2px; padding-left: 14px; } li { margin: 1.5px 0; }
+  .resumen { background: var(--azul2); border-left: 4px solid var(--azul); padding: 5px 9px; margin: 4px 0 6px; }
+  .resumen b.t { color: var(--azul); }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
+  table { border-collapse: collapse; width: 100%; font-size: 7.6pt; margin: 3px 0; }
+  th { background: var(--azul); color: #fff; font-weight: 600; text-align: left; padding: 2px 4px; }
+  td { padding: 1.6px 4px; border-bottom: 1px solid #e3e7eb; vertical-align: top; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  tr.tie td { background: #f1f5fa; }
+  .sen { color: var(--rojo); font-weight: 600; }
+  .pred { color: var(--oro); font-weight: 700; }
+  .tag { display: inline-block; font-size: 6.4pt; padding: 0 3px; border-radius: 2px; border: 1px solid; margin-left: 2px; vertical-align: 1px; }
+  .tag.s { color: var(--rojo); border-color: var(--rojo); }
+  .tag.p { color: var(--oro); border-color: var(--oro); }
+  .caption { font-size: 7.1pt; color: var(--gris); margin: 1px 0 4px; }
+  .card { border: 1px solid var(--linea); border-radius: 3px; padding: 4px 7px; }
+  .card h3 { font-size: 8.3pt; margin: 0 0 2px; color: var(--azul); }
+  .big { font-size: 11pt; font-weight: 700; color: var(--azul); }
+  .aviso { border-left: 3px solid var(--rojo); background: #fbf0f1; padding: 3px 7px; margin: 4px 0; }
+  .veredicto { border: 1.5px solid var(--azul); background: var(--azul2); padding: 6px 10px; margin-top: 7px; }
+  .veredicto b.t { color: var(--azul); font-size: 9pt; }
+  figure { margin: 3px 0 0; } figure img { width: 100%; }
+  code { font-family: "DejaVu Sans Mono", monospace; font-size: 7.3pt; }
+  .pie { font-size: 6.8pt; color: var(--gris); margin-top: 6px; border-top: 1px solid var(--linea); padding-top: 3px; }
+  .avoid { break-inside: avoid; }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>TeuB: ¿qué azúcar une? Un ranking por dos métodos independientes</h1>
+    <div class="sub">De una secuencia sin etiqueta a un ranking de ligandos · Evolución y Diseño de Proteínas 2027-1</div>
+  </div>
+  <div class="meta">jmanuel@ibt.unam.mx<br>28 de septiembre de 2026</div>
+</header>
+
+<div class="resumen">
+  <b class="t">Resumen.</b> TeuB (362 aa, <i>Rhizobium</i>) es una proteína periplásmica de unión a azúcar de la familia RbsB. Su cadena madura tiene 335 aa, porque el péptido señal (1-27) se corta. Ordenamos un panel de 16 ligandos, sacado de Foldseek (13 candidatos y 3 señuelos), con <b>AutoDock Vina</b> (3 semillas) y <b>Boltz-2</b> (15 modelos). Medimos el piso de ruido de cada método. <b>Los dos métodos colocan todos los ligandos en el mismo bolsillo, pero no coinciden en el orden</b> (Spearman ρ = 0.39, p = 0.13). Boltz-2 empata a 12 de los 16, y ninguno de los dos rechaza a los señuelos hipoxantina e inositol. <b>No podemos decir qué azúcar prefiere TeuB.</b> Nuestra predicción previa, la D-apiosa, no queda confirmada ni descartada.
+</div>
+
+<h2><span class="n">1</span>El ranking</h2>
+<div class="grid2">
+<table>
+  <tr><th>#</th><th>Docking · AutoDock Vina</th><th class="num">kcal/mol (media ± DE)</th></tr>
+  <tr><td>1</td><td>XYP β-D-xilopiranosa</td><td class="num">−6.408 ± 0.008</td></tr>
+  <tr><td>2</td><td>ARA α-L-arabinopiranosa</td><td class="num">−6.145 ± 0.012</td></tr>
+  <tr><td>3</td><td class="sen">HPA hipoxantina <span class="tag s">señuelo</span></td><td class="num">−6.102 ± 0.004</td></tr>
+  <tr><td>4</td><td class="sen">INS <i>mio</i>-inositol <span class="tag s">señuelo</span></td><td class="num">−6.091 ± 0.004</td></tr>
+  <tr><td>5</td><td>GAL β-D-galactopiranosa</td><td class="num">−6.049 ± 0.011</td></tr>
+  <tr><td>6</td><td>RIP β-D-ribopiranosa</td><td class="num">−6.003 ± 0.005</td></tr>
+  <tr><td>7</td><td>ALL β-D-alopiranosa</td><td class="num">−5.949 ± 0.004</td></tr>
+  <tr><td>8</td><td>GZL β-D-galactofuranosa</td><td class="num">−5.783 ± 0.008</td></tr>
+  <tr><td>9</td><td class="pred">PAV D-apiosa <span class="tag p">predicción</span></td><td class="num">−5.751 ± 0.011</td></tr>
+  <tr><td>10</td><td>FRU β-D-fructofuranosa</td><td class="num">−5.725 ± 0.002</td></tr>
+</table>
+<table>
+  <tr><th>#</th><th>Co-plegamiento · Boltz-2</th><th class="num">ipTM (media ± DE)</th></tr>
+  <tr class="tie"><td>1</td><td>AHR α-L-arabinofuranosa</td><td class="num">0.975 ± 0.008</td></tr>
+  <tr class="tie"><td>2</td><td>BDR β-D-ribofuranosa</td><td class="num">0.973 ± 0.012</td></tr>
+  <tr class="tie"><td>3</td><td>GZL β-D-galactofuranosa</td><td class="num">0.963 ± 0.007</td></tr>
+  <tr class="tie"><td>4</td><td>XYP β-D-xilopiranosa</td><td class="num">0.961 ± 0.003</td></tr>
+  <tr class="tie"><td>4</td><td>RIP β-D-ribopiranosa</td><td class="num">0.961 ± 0.003</td></tr>
+  <tr class="tie"><td>4</td><td>ARA α-L-arabinopiranosa</td><td class="num">0.961 ± 0.003</td></tr>
+  <tr class="tie"><td>7</td><td class="sen">HPA hipoxantina <span class="tag s">señuelo</span></td><td class="num">0.961 ± 0.007</td></tr>
+  <tr class="tie"><td>8</td><td>ALL β-D-alopiranosa</td><td class="num">0.957 ± 0.010</td></tr>
+  <tr class="tie"><td>9</td><td>BGC β-D-glucopiranosa</td><td class="num">0.957 ± 0.009</td></tr>
+  <tr class="tie"><td>10</td><td class="sen">INS <i>mio</i>-inositol <span class="tag s">señuelo</span></td><td class="num">0.957 ± 0.006</td></tr>
+</table>
+</div>
+<p class="caption">Vina: la mejor pose de cada semilla (101, 202, 303), promediada. Boltz-2: ipTM de 15 modelos (semillas 1-3 × 5 muestras), sin plantillas. <span style="background:#f1f5fa;padding:0 3px">Sombreado</span>: empatado con el 1.º según el criterio de la §2. Fuera del top-10 quedan, en Vina, BDR −5.71, BGC −5.65, AHR −5.50, WEB −5.46, <span class="sen">X9X −5.23</span> y 3VB −4.97; en Boltz-2, GAL 0.956 y <span class="pred">PAV 0.954</span> (los dos todavía empatados con el 1.º), WEB 0.949, 3VB 0.946, FRU 0.942 y <span class="sen">X9X 0.929</span>.</p>
+
+<figure class="avoid">
+  <img src="figura_entregable.svg" alt="Figura 1">
+  <p class="caption"><b>Figura 1.</b> (A) Puntaje de Vina ± DE entre semillas; las barras de error son más pequeñas que los puntos. (B) ipTM de Boltz-2 ± DE entre los 15 modelos; la banda marca a los 12 ligandos empatados con el primero. (C) Puesto en Vina contra puesto en Boltz-2; la diagonal indica acuerdo perfecto. <span class="sen">Rojo</span>: señuelos. <span class="pred">Ámbar</span>: predicción previa.</p>
+</figure>
+
+<h2><span class="n">2</span>Pisos de ruido y empates</h2>
+<p><b>Criterio:</b> dos ligandos empatan si |Δ media| &lt; 2·√(DE₁² + DE₂²), el doble del error estándar de la diferencia (~95 %).</p>
+<div class="grid2">
+  <div class="card">
+    <h3>Vina · 3 réplicas de semilla por ligando</h3>
+    <p>DE de <b>0.002 a 0.018 kcal/mol</b>; rango máximo entre semillas, 0.035 (BGC). Con este piso, <b>los 120 pares son distinguibles</b>. El más cercano es HPA/INS: Δ = 0.011 frente a un umbral de 0.011.</p>
+    <p><b>Salvedad:</b> este piso mide solo la estocasticidad de la <i>búsqueda</i>. El error de la <i>función de puntaje</i> frente a datos experimentales (~2 kcal/mol) es mayor que todo el rango del panel (<b>1.43 kcal/mol</b>). El ranking de Vina es <i>preciso</i>, pero no sabemos si es <i>exacto</i>.</p>
+  </div>
+  <div class="card">
+    <h3>Boltz-2 · 15 modelos por ligando</h3>
+    <p>DE del ipTM de <b>0.003 a 0.012</b>; rango del panel, <b>0.046</b>. <b>Los 12 primeros empatan con el líder (AHR)</b>, y solo WEB, 3VB, FRU y X9X se separan, hacia abajo. Solo <b>15 de los 120 pares</b> superan el piso. El ipTM se reporta con 2 decimales por modelo, lo que agrega ±0.005 de redondeo.</p>
+    <p><b>Ejemplo:</b> AHR (0.975 ± 0.008) frente a PAV (0.954 ± 0.008): Δ = 0.021 &lt; 0.023, <b>empate</b>.</p>
+  </div>
+</div>
+
+<h2><span class="n">3</span>Comparación de los dos métodos</h2>
+<div class="grid2">
+<table>
+  <tr><th>Ligando</th><th class="num">P. Vina</th><th class="num">P. Boltz</th><th class="num">Δ</th></tr>
+  <tr><td>XYP</td><td class="num">1</td><td class="num">4</td><td class="num">+3</td></tr>
+  <tr><td>ARA</td><td class="num">2</td><td class="num">4</td><td class="num">+2</td></tr>
+  <tr><td class="sen">HPA</td><td class="num">3</td><td class="num">7</td><td class="num">+4</td></tr>
+  <tr><td class="sen">INS</td><td class="num">4</td><td class="num">10</td><td class="num">+6</td></tr>
+  <tr><td>GAL</td><td class="num">5</td><td class="num">11</td><td class="num">+6</td></tr>
+  <tr><td>RIP</td><td class="num">6</td><td class="num">4</td><td class="num">−2</td></tr>
+  <tr><td>ALL</td><td class="num">7</td><td class="num">8</td><td class="num">+1</td></tr>
+  <tr><td>GZL</td><td class="num">8</td><td class="num">3</td><td class="num">−5</td></tr>
+</table>
+<table>
+  <tr><th>Ligando</th><th class="num">P. Vina</th><th class="num">P. Boltz</th><th class="num">Δ</th></tr>
+  <tr><td class="pred">PAV</td><td class="num">9</td><td class="num">12</td><td class="num">+3</td></tr>
+  <tr><td>FRU</td><td class="num">10</td><td class="num">15</td><td class="num">+5</td></tr>
+  <tr><td>BDR</td><td class="num">11</td><td class="num">2</td><td class="num"><b>−9</b></td></tr>
+  <tr><td>BGC</td><td class="num">12</td><td class="num">9</td><td class="num">−3</td></tr>
+  <tr><td>AHR</td><td class="num">13</td><td class="num">1</td><td class="num"><b>−12</b></td></tr>
+  <tr><td>WEB</td><td class="num">14</td><td class="num">13</td><td class="num">−1</td></tr>
+  <tr><td class="sen">X9X</td><td class="num">15</td><td class="num">16</td><td class="num">+1</td></tr>
+  <tr><td>3VB</td><td class="num">16</td><td class="num">14</td><td class="num">−2</td></tr>
+</table>
+</div>
+<ul>
+  <li><b>El acuerdo es débil y no significativo:</b> Spearman ρ = 0.39 (p = 0.13) con ipTM, y 0.43 (p = 0.10) con <code>ranking_score</code>.</li>
+  <li><b>El mayor desacuerdo está en las furanosas.</b> AHR (Δ −12), BDR (−9) y GZL (−5) quedan abajo en Vina y hasta arriba en Boltz-2. Una explicación plausible: cada furanosa tiene una torsión activa más que su piranosa (AHR 5 contra ARA 4, BDR 5 contra RIP 4, GZL 7 contra GAL 6), y Vina penaliza cada torsión; Boltz-2 no.</li>
+  <li><b>Los métodos coinciden en la geometría, no en el puntaje.</b> Todas las poses están en el bolsillo: en Vina, a ≤ 1.5 Å del centro del sitio y con 7-8 de los 8 residuos (Y38 S43 H45 R174 W197 D222 E248 C269) a &lt; 4 Å; en Boltz-2, a ≤ 2.2 Å y con ≥ 6/8, en los 15 modelos. Al superponer por Cα, la pose de Vina y el mejor modelo de Boltz-2 difieren en <b>1.1-2.0 Å de RMSD</b>.</li>
+  <li><b>Fórmulas idénticas.</b> Las 6 moléculas C₅H₁₀O₅ ocupan los puestos 1, 2, 6, 9, 11 y 13 en Vina, y 1, 2, 4, 4, 4 y 12 en Boltz-2. Los pares piranosa/furanosa <b>se invierten</b>: ARA/AHR queda 2.º/13.º en Vina y 4.º/1.º en Boltz-2.</li>
+  <li><b>Señuelos.</b> Ningún método rechaza a <span class="sen">HPA</span> ni a <span class="sen">INS</span>. Los dos coinciden solo en poner al poliol acíclico <span class="sen">X9X</span> al fondo.</li>
+</ul>
+<div class="aviso"><b>Artefacto de Boltz-2 (declarado).</b> En los 10 ligandos cuya ficha del CCD tiene un átomo llamado <b>O1</b>, Boltz-2 lo elimina: el OH anomérico de RIP, XYP, ARA, AHR, BDR, BGC, GAL, ALL y GZL, y el O del CH₂OH de FRU. INS, X9X, HPA, 3VB, WEB y PAV salen completos. Para las aldosas, Boltz-2 modela un residuo glicosilo y no el azúcar libre, y no distingue α de β. Parte de la comparación no se hace entre las mismas moléculas.</div>
+
+<h2><span class="n">4</span>Cadena de inferencias</h2>
+<table class="avoid">
+  <tr><th style="width:11%">Etapa</th><th style="width:17%">Herramienta</th><th style="width:11%">Entrada</th><th style="width:27%">Resultado</th><th>Qué concluimos · qué <u>no</u></th></tr>
+  <tr><td><b>BLAST</b></td><td>blastp: Swiss-Prot (local) y nr (remoto)</td><td>362 aa</td><td>17 aciertos RbsB, 22.6-31.5 % id, 6 ligandos distintos en el top-10; nr: 500 aciertos, 259 de Rhizobiaceae</td><td>Familia y pliegue tipo I. <u>No</u> el ligando: zona crepuscular, y #1 y #2 unen cosas distintas. Las anotaciones "ribose" de nr son automáticas y circulares</td></tr>
+  <tr><td><b>AlphaFold2</b></td><td>ColabFold 1.6, sin plantillas, 5 modelos</td><td>362 aa</td><td>pLDDT 92.2, pTM 0.877; MSA de 1841; dos lóbulos, PAE entre ellos 3.0 Å</td><td>Modelo confiable, hendidura cerrada. <u>No</u> la función ni la conformación con ligando</td></tr>
+  <tr><td><b>Péptido señal</b></td><td>n/h/c, pLDDT, BLAST</td><td>modelo + secuencia</td><td>corte 27/28</td><td>Cadena madura de 335 aa (ver §6)</td></tr>
+  <tr><td><b>Foldseek</b></td><td>foldseek, PDB completo (local)</td><td>madura 1-335</td><td>2811 aciertos; TM 0.76-0.92 con solo 17-25 % id; 150 entradas, 83 con ligando</td><td>Parientes que BLAST no ve. <u>No</u> el ligando: C₅H₁₀O₅ con 11 códigos, C₆H₁₂O₆ con 10</td></tr>
+  <tr><td><b>Ligandos</b></td><td>CCD <code>_ideal.sdf</code> + Open Babel</td><td>16 códigos</td><td>fórmula = ficha, con H, no planos (HPA es aromática)</td><td>Panel listo. <u>No</u> cubre todos los anómeros ni tautómeros</td></tr>
+  <tr><td><b>Docking</b></td><td>Vina 1.2, caja de 26 Å, exh. 32, 3 semillas</td><td>receptor + 16</td><td>−6.41 a −4.97 kcal/mol; poses en el sitio</td><td>Reproducible. <u>No</u> es afinidad: el error del puntaje es mayor que el rango</td></tr>
+  <tr><td><b>Co-plegamiento</b></td><td>Boltz-2, sin plantillas, 3 × 5</td><td>madura + CCD</td><td>ipTM medio 0.93-0.98; 12 de 16 empatados</td><td>Todos caben en el sitio. <u>No</u> discrimina entre azúcares. Artefacto O1</td></tr>
+</table>
+
+<h2><span class="n">5</span>Construcción del panel y predicción</h2>
+<p>De las <b>150 entradas únicas</b> de Foldseek, 67 no tienen ligando (45 %). Contamos los ligandos de las 83 restantes, después de descartar iones, crioprotectores y tampones. El panel siguió cuatro criterios explícitos:</p>
+<table>
+  <tr><th style="width:24%">Criterio</th><th style="width:34%">Ligandos (entradas PDB de origen)</th><th>Qué pone a prueba</th></tr>
+  <tr><td><b>(a) Frecuencia</b></td><td>BGC ×13 (2GBP, 3GBP, 2IPL…), RIP ×9 (1DBP, 2IOY…), GAL ×7 (2RJO, 8ABP…), XYP ×4 (3C6Q, 5XSS…)</td><td>lo más observado en la familia</td></tr>
+  <tr><td><b>(b) Convergencia BLAST + Foldseek</b></td><td class="pred">PAV ×4 (3EJW, 3T95, 4PZ0, 6DSP)</td><td>la única función presente en Swiss-Prot en el mismo género, <i>Rhizobium</i></td></tr>
+  <tr><td><b>(c) Misma fórmula, otra geometría</b></td><td>ARA (1BAP) / AHR (5OCP); RIP / BDR (3KSM); GAL / GZL (2VK2); ALL (5DTE) / WEB (8WLB); BGC / FRU (2X7X)</td><td>anillo de 6 frente a 5 · aldosa frente a cetosa</td></tr>
+  <tr><td><b>(d) Señuelos</b></td><td class="sen">INS (4IRX), X9X (4WT7), HPA (1JFT)</td><td>ciclitol · poliol acíclico · base púrica</td></tr>
+</table>
+<p>Además incluimos 3VB (4RSM, del panel del tutorial). El panel tiene 6 ligandos C₅H₁₀O₅ y 7 C₆H₁₂O₆.</p>
+<p><b class="pred">Predicción (con la evidencia de las etapas 1-4): D-apiosa (PAV)</b>; segunda opción, ribosa. El acierto #1 de BLAST (ribosa, 28.5 %) está en zona crepuscular, y el #2 (31.5 %) une treitol. La apiosa es el único ligando con evidencia en Swiss-Prot (#8-#11, dos de ellos de <i>R. rhizogenes</i> y <i>R. etli</i>) <i>y</i> en Foldseek, y encaja con la ecología: <i>Rhizobium</i> vive en las raíces y la apiosa es un azúcar de la pared celular vegetal. <i>Declaración:</i> vimos los scores de Vina antes de escribirla, pero no los usamos para formularla. <b>Resultado:</b> 9.º en Vina y 12.º en Boltz-2, dentro del empate. No se confirma ni se descarta.</p>
+
+<h2><span class="n">6</span>Péptido señal y numeración</h2>
+<div class="grid3">
+  <div class="card"><h3>(i) Secuencia</h3>n <code>MKRRT</code> (+3) · h <code>FLQTGSALIAAGAFGIP</code> (Kyte-Doolittle +1.27, máximo +2.24) · c <code>GILRA</code>, que termina en Ala. La hidropatía cae en el residuo 28.</div>
+  <div class="card"><h3>(ii) Confianza del modelo</h3>pLDDT <b>36.3</b> en 1-27 frente a <b>96.8</b> en 28-362. PAE señal-madura de <b>29.6 Å</b>: el modelo no sabe dónde colocar el péptido.</div>
+  <div class="card"><h3>(iii) Homología</h3>Ningún homólogo de Swiss-Prot alinea antes del residuo <b>49</b> (la mediana es 88).</div>
+</div>
+<p><b>Corte después de A27.</b> Recortamos el PDB (opción b) en lugar de volver a predecir. Costo que declaramos: el resto se plegó en presencia del péptido. <b>Numeración madura 1-335</b>, con D28 del precursor = 1. <i>Nota:</i> al modelo de respaldo que se reparte (<code>TeuB_modelo_apo.pdb</code>) le falta una Arg en la posición 256 (<code>WMRRW</code> → <code>WMRW</code>), así que tiene 334 residuos y su "Cys268" es C269. Por eso recalculamos el centro de la caja en el modelo propio: (3.38, −3.17, 0.79).</p>
+
+<div class="veredicto avoid">
+  <b class="t">Veredicto.</b> <b>No: con lo que medimos, no podemos decir qué ligando prefiere TeuB.</b> Los dos métodos colocan todos los ligandos en el mismo bolsillo, pero Boltz-2 empata a 12 de los 16 y Vina ordena con una precisión que su función de puntaje no respalda. Ninguno distingue un azúcar de la hipoxantina, y sus rankings no correlacionan (ρ = 0.39). Lo único que ambos sostienen es que el poliol acíclico X9X es mal ligando. La hipótesis mejor fundamentada, la D-apiosa, sigue apoyándose en la homología y el contexto biológico, no en el cálculo.
+</div>
+
+<div class="pie"><b>Métodos, declarados:</b> BLAST, Foldseek y Vina se corrieron localmente (los mismos motores que los servidores web); AlphaFold2 y Boltz-2 se corrieron en Google Colab (GPU T4). Los datos, los scripts y los registros completos están en github.com/jtuxman/tareaarcadioazucares.</div>
+
+</body>
+</html>
