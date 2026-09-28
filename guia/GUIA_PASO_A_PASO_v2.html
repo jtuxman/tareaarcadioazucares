@@ -1,0 +1,3405 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Guía paso a paso · v2</title>
+  <style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+{ counter-reset: source-line 0; }
+pre.numberSource code > span
+{ position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+{ content: counter(source-line);
+position: relative; left: -1em; text-align: right; vertical-align: baseline;
+border: none; display: inline-block;
+-webkit-touch-callout: none; -webkit-user-select: none;
+-khtml-user-select: none; -moz-user-select: none;
+-ms-user-select: none; user-select: none;
+padding: 0 4px; width: 4em;
+color: #aaaaaa;
+}
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa; padding-left: 4px; }
+div.sourceCode
+{ }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } 
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.at { color: #7d9029; } 
+code span.bn { color: #40a070; } 
+code span.bu { color: #008000; } 
+code span.cf { color: #007020; font-weight: bold; } 
+code span.ch { color: #4070a0; } 
+code span.cn { color: #880000; } 
+code span.co { color: #60a0b0; font-style: italic; } 
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.do { color: #ba2121; font-style: italic; } 
+code span.dt { color: #902000; } 
+code span.dv { color: #40a070; } 
+code span.er { color: #ff0000; font-weight: bold; } 
+code span.ex { } 
+code span.fl { color: #40a070; } 
+code span.fu { color: #06287e; } 
+code span.im { color: #008000; font-weight: bold; } 
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.kw { color: #007020; font-weight: bold; } 
+code span.op { color: #666666; } 
+code span.ot { color: #007020; } 
+code span.pp { color: #bc7a00; } 
+code span.sc { color: #4070a0; } 
+code span.ss { color: #bb6688; } 
+code span.st { color: #4070a0; } 
+code span.va { color: #19177c; } 
+code span.vs { color: #4070a0; } 
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } 
+</style>
+  <style type="text/css">@page { size: letter; margin: 1.8cm 1.8cm; }
+body { font-family: "DejaVu Sans", Arial, sans-serif; font-size: 10pt; line-height: 1.45; color: #111; max-width: none; margin: 0; }
+h1 { font-size: 17pt; } h2 { font-size: 14pt; border-bottom: 2px solid #888; margin-top: 22px; page-break-after: avoid; }
+h3 { font-size: 11.5pt; margin-top: 14px; page-break-after: avoid; }
+pre, code { font-family: "DejaVu Sans Mono", monospace; font-size: 8.5pt; } pre { background: #f4f4f4; padding: 6px 8px; border-radius: 4px; white-space: pre-wrap; page-break-inside: avoid; }
+table { border-collapse: collapse; font-size: 8.8pt; margin: 6px 0; } th, td { border: 1px solid #ccc; padding: 2px 6px; vertical-align: top; } th { background: #eee; }
+blockquote { border-left: 4px solid #d9a400; background: #fff8e1; margin: 8px 0; padding: 4px 10px; }
+</style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Guía paso a paso · v2</h1>
+</header>
+<h1 id="guía-paso-a-paso-versión-2">Guía paso a paso · versión 2</h1>
+<h2 id="de-una-secuencia-sin-etiqueta-a-un-ranking-de-ligandos">De una
+secuencia sin etiqueta a un ranking de ligandos</h2>
+<p><em>Evolución y Diseño de Proteínas 2027-1 · Proteína TeuB</em></p>
+<hr />
+<h2 id="cómo-usar-esta-guía">Cómo usar esta guía</h2>
+<p>Esta guía es <strong>autosuficiente</strong>: todo lo que necesitas
+(la secuencia, los parámetros, el código de los scripts, los resultados
+esperados y los pasos en cada página web) está aquí. No hace falta abrir
+ningún otro documento.</p>
+<p>Cada tipo de instrucción tiene su propio símbolo:</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Símbolo</th>
+<th>Significa</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>🧠 <strong>CONCEPTO</strong></td>
+<td>Teoría: lo que necesitas entender antes de hacer el paso</td>
+</tr>
+<tr class="even">
+<td>🌐 <strong>EN LA WEB</strong></td>
+<td>Vas a una página web. Los pasos van numerados, <strong>clic por
+clic</strong></td>
+</tr>
+<tr class="odd">
+<td>☁️ <strong>EN COLAB</strong></td>
+<td>Vas a Google Colab, que corre en una GPU de Google</td>
+</tr>
+<tr class="even">
+<td>💻 <strong>EN LA TERMINAL</strong></td>
+<td>Comandos para tu computadora (Linux). Es opcional: casi todo tiene
+una ruta web</td>
+</tr>
+<tr class="odd">
+<td>📝 <strong>ANOTA</strong></td>
+<td>Un número o una observación que va a tu cuaderno y al
+entregable</td>
+</tr>
+<tr class="even">
+<td>✅ <strong>VERIFICA</strong></td>
+<td>Un chequeo que atrapa errores antes de que se propaguen</td>
+</tr>
+<tr class="odd">
+<td>⚠️ <strong>CUIDADO</strong></td>
+<td>Un error real que se cometió en esta práctica y cómo evitarlo</td>
+</tr>
+<tr class="even">
+<td>🎯 <strong>LO QUE DEBES OBTENER</strong></td>
+<td>Los resultados reales de TeuB, para que compares con los tuyos</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Dos rutas posibles.</strong> Casi todas las etapas se pueden
+hacer:</p>
+<ul>
+<li><strong>por la web</strong> (🌐 / ☁️): solo necesitas un navegador y
+una cuenta de Google;</li>
+<li><strong>por la terminal</strong> (💻): instalando los programas en
+tu computadora, que es lo que se hizo en la versión resuelta de esta
+práctica.</li>
+</ul>
+<p>Los resultados son los mismos por las dos rutas. Si es tu primera
+vez, <strong>usa la ruta web</strong>.</p>
+<blockquote>
+<p><strong>Antes de empezar, abre un documento de notas</strong> (Word,
+Google Docs o un cuaderno de papel). Lo llamaremos <strong>tu
+cuaderno</strong>. Cada vez que veas 📝, escribe ahí el dato. Al final,
+el entregable se arma casi solo a partir de tu cuaderno.</p>
+</blockquote>
+<hr />
+<h2 id="índice">Índice</h2>
+<ul>
+<li><strong>Parte 0</strong> · El problema y la biología que
+necesitas</li>
+<li><strong>Parte 1</strong> · Preparación</li>
+<li><strong>Etapa 1</strong> · La secuencia</li>
+<li><strong>Etapa 2</strong> · BLAST: ¿a qué familia pertenece?</li>
+<li><strong>Etapa 3</strong> · AlphaFold2: predecir la estructura</li>
+<li><strong>Etapa 4</strong> · El péptido señal: dónde empieza la
+proteína madura</li>
+<li><strong>Etapa 5</strong> · Foldseek: parientes por forma, y el panel
+de ligandos</li>
+<li><strong>Etapa 6</strong> · Conseguir y verificar los ligandos</li>
+<li><strong>Etapa 7</strong> · Acoplamiento molecular (docking)</li>
+<li><strong>Etapa 8</strong> · Co-plegamiento con Boltz-2</li>
+<li><strong>Etapa 9</strong> · El ranking: ruido, empates y
+comparación</li>
+<li><strong>Etapa 10</strong> · La predicción y el entregable</li>
+<li><strong>Apéndices</strong> · Errores frecuentes, glosario, lista de
+verificación, código completo</li>
+</ul>
+<hr />
+<h1 id="parte-0-el-problema-y-la-biología-que-necesitas">PARTE 0 · El
+problema y la biología que necesitas</h1>
+<h2 id="la-pregunta">0.1 · La pregunta</h2>
+<p>Te dan <strong>una secuencia de 362 aminoácidos</strong>, sin nombre
+y sin función conocida. Se llama TeuB (número de acceso AGB73230.1) y
+viene de una bacteria del grupo de <em>Rhizobium</em>, bacterias del
+suelo que viven en las raíces de las plantas.</p>
+<blockquote>
+<h3 id="qué-molécula-pequeña-qué-azúcar-une-esta-proteína">¿Qué molécula
+pequeña, qué azúcar, une esta proteína?</h3>
+</blockquote>
+<p>Nadie conoce la respuesta experimental. La práctica <strong>no
+califica que aciertes</strong>: califica que <strong>razones con
+evidencia</strong> y que <strong>midas cuánto puedes confiar en tus
+propios números</strong>.</p>
+<h2 id="lo-que-vas-a-entregar-al-final">0.2 · Lo que vas a entregar al
+final</h2>
+<pre><code>   ┌─────────────────────────────────────────────────────────────────┐
+   │  1. Una LISTA de ligandos ordenada por &quot;afinidad aparente&quot;,      │
+   │     obtenida por DOS métodos independientes:                     │
+   │        • Docking (AutoDock Vina)   → número en kcal/mol          │
+   │        • Co-plegamiento (Boltz-2)  → número ipTM (0 a 1)         │
+   │                                                                  │
+   │  2. El PISO DE RUIDO de cada método: cuánto cambia el número     │
+   │     si repites el cálculo.                                       │
+   │                                                                  │
+   │  3. Una COMPARACIÓN: ¿los dos métodos están de acuerdo?          │
+   │                                                                  │
+   │  4. Un VEREDICTO honesto: ¿se puede saber qué azúcar prefiere?   │
+   └─────────────────────────────────────────────────────────────────┘</code></pre>
+<h2 id="concepto-las-proteínas-periplásmicas-de-unión-a-sustrato">0.3 ·
+🧠 CONCEPTO: las proteínas periplásmicas de unión a sustrato</h2>
+<p>Las bacterias como <em>Rhizobium</em> tienen <strong>dos
+membranas</strong> (son Gram-negativas). El espacio entre las dos se
+llama <strong>periplasma</strong>. Para comer azúcares del ambiente usan
+un sistema de tres piezas llamado <strong>transportador
+ABC</strong>:</p>
+<pre><code>        AMBIENTE (suelo, raíz)            azúcar ●
+   ═══════════════════════════════════  MEMBRANA EXTERNA (tiene poros)
+                                            ●
+        PERIPLASMA            ┌────────┐    ●  ← la proteína de unión (¡TeuB!)
+                              │ TeuB  ●│◄───●    atrapa el azúcar
+                              └───┬────┘
+                                  │ lo entrega
+   ═══════════════════╦═══════════▼══════════  MEMBRANA INTERNA
+                      ║  canal ABC  ║  ← transportador de membrana
+                      ╚══════╤══════╝
+        CITOPLASMA           ● → la célula lo usa        ATP → ADP (energía)</code></pre>
+<p>TeuB sería la <strong>proteína de unión</strong>. Su trabajo es
+atrapar <strong>un azúcar específico</strong> en el periplasma y
+entregárselo al canal.</p>
+<p><strong>¿Cómo lo atrapa?</strong> Estas proteínas tienen <strong>dos
+lóbulos</strong> unidos por una bisagra, como una almeja o una planta
+carnívora (en inglés se le dice el mecanismo <em>Venus
+flytrap</em>):</p>
+<pre><code>      SIN AZÚCAR (abierta)                 CON AZÚCAR (cerrada)
+
+        ╭───────╮                              ╭───────╮
+        │lóbulo │                              │lóbulo │
+        │   1   │╲                             │   1   │
+        ╰───────╯ ╲                            ╰───┬───╯
+                   ○ bisagra        ●  →           │ ● │   ← el azúcar queda
+        ╭───────╮ ╱                            ╭───┴───╮      ENTERRADO en la
+        │lóbulo │╱                             │lóbulo │      hendidura
+        │   2   │                              │   2   │
+        ╰───────╯                              ╰───────╯</code></pre>
+<p>El azúcar se une en la <strong>hendidura</strong> entre los dos
+lóbulos. Unos 8 residuos de la proteína lo sujetan con <strong>puentes
+de hidrógeno</strong> con sus grupos OH. En TeuB esos residuos son:</p>
+<blockquote>
+<p><strong>Y38 · S43 · H45 · R174 · W197 · D222 · E248 · C269</strong>
+(Y = tirosina, S = serina, H = histidina, R = arginina, W = triptófano,
+D = aspartato, E = glutamato, C = cisteína; el número es la posición en
+la cadena madura. Esto se explica en la Etapa 4.)</p>
+</blockquote>
+<h2 id="concepto-por-qué-es-tan-difícil-saber-qué-azúcar-une">0.4 · 🧠
+CONCEPTO: por qué es tan difícil saber qué azúcar une</h2>
+<p><strong>Problema 1: la familia es “promiscua”.</strong> Todas estas
+proteínas tienen <strong>el mismo pliegue</strong>, pero cada una une un
+azúcar distinto: ribosa, glucosa, galactosa, arabinosa, xilosa, apiosa,
+alosa… Basta cambiar 2 o 3 residuos del sitio para que cambie el azúcar.
+Por eso, saber que TeuB pertenece a la familia <strong>no</strong> te
+dice qué une.</p>
+<p><strong>Problema 2: los candidatos son casi la misma
+molécula.</strong> Mira estas cuatro:</p>
+<pre><code>   ribosa         xilosa         arabinosa       apiosa
+   C5H10O5        C5H10O5        C5H10O5         C5H10O5      ← ¡MISMA FÓRMULA!</code></pre>
+<p>Tienen los mismos átomos. Lo único que cambia es <strong>hacia dónde
+apunta cada grupo OH</strong> o <strong>cómo se cierra el
+anillo</strong>. Un método computacional tiene que distinguir
+diferencias de energía de fracciones de kcal/mol.</p>
+<h3 id="mini-curso-de-química-de-azúcares-lo-mínimo">Mini-curso de
+química de azúcares (lo mínimo)</h3>
+<p><strong>a) El anillo puede ser de 6 o de 5.</strong> Un azúcar en
+agua se cierra sobre sí mismo formando un anillo:</p>
+<pre><code>     PIRANOSA (anillo de 6: 5 C + 1 O)          FURANOSA (anillo de 5: 4 C + 1 O)
+
+            C5 ── O                                  C4 ── O
+           /        \                               /        \
+         C4          C1 ─ OH                      C3          C1 ─ OH
+           \        /                               \        /
+            C3 ── C2                                 C2 ────
+
+     ej. β-D-ribopiranosa (RIP)                ej. β-D-ribofuranosa (BDR)
+     → el MISMO azúcar puede existir en las dos formas</code></pre>
+<p><strong>b) El carbono anomérico (C1) tiene dos orientaciones
+posibles: α y β.</strong> Al cerrarse el anillo, el OH del C1 puede
+quedar “abajo” (α) o “arriba” (β). Son moléculas distintas, con códigos
+distintos en el PDB. Por ejemplo, <strong>XYP</strong> =
+β-D-xilopiranosa y <strong>XIP</strong> = α-D-xilopiranosa.</p>
+<pre><code>          OH ↑  β  (mismo lado que el CH2OH)
+           │
+    ── C1 ─┤
+           │
+          OH ↓  α  (lado contrario)</code></pre>
+<p><strong>c) Aldosa o cetosa.</strong> En una <strong>aldosa</strong>
+(glucosa, ribosa…) el anillo se cierra en el C1. En una
+<strong>cetosa</strong> (fructosa, psicosa) se cierra en el C2. Pueden
+tener la misma fórmula.</p>
+<p><strong>d) Los que no son azúcares.</strong> Un
+<strong>ciclitol</strong>, como el inositol, es un anillo de 6 carbonos
+sin oxígeno en el anillo. Un <strong>poliol</strong>, como el alitol o
+el treitol, es una cadena abierta con muchos OH. Una <strong>base
+púrica</strong>, como la hipoxantina, es plana y aromática. En esta
+práctica sirven como <strong>señuelos</strong>: un buen método debería
+decir que no se unen.</p>
+<h2 id="el-plan-completo-en-un-dibujo">0.5 · El plan completo, en un
+dibujo</h2>
+<p>Cada etapa produce el insumo de la siguiente:</p>
+<pre><code>    ┌──────────────┐
+    │ 1. SECUENCIA │  362 aa
+    └──────┬───────┘
+           │
+     ┌─────┴──────────────────────┐
+     ▼                            ▼
+┌──────────┐              ┌───────────────┐
+│ 2. BLAST │              │ 3. ALPHAFOLD2 │
+│ ¿familia?│              │  ¿estructura? │
+└────┬─────┘              └──────┬────────┘
+     │   &quot;no alinea el inicio&quot;   │  &quot;el inicio tiene baja confianza&quot;
+     └────────────┬──────────────┘
+                  ▼
+        ┌──────────────────┐
+        │ 4. PÉPTIDO SEÑAL │  se cortan 27 aa → proteína madura de 335 aa
+        └────────┬─────────┘
+                 ▼
+        ┌──────────────────┐
+        │ 5. FOLDSEEK      │  parientes por FORMA → ¿qué ligandos tienen?
+        └────────┬─────────┘
+                 ▼
+        ┌──────────────────┐
+        │ PANEL de 15 + 1  │  candidatos + señuelos
+        └────────┬─────────┘
+                 ▼
+        ┌──────────────────┐
+        │ 6. LIGANDOS      │  archivos 3D de cada molécula
+        └───┬──────────┬───┘
+            ▼          ▼
+   ┌─────────────┐  ┌──────────────┐
+   │ 7. DOCKING  │  │ 8. BOLTZ-2   │   dos métodos INDEPENDIENTES
+   │   (Vina)    │  │(co-plegado)  │   cada uno repetido varias veces
+   └──────┬──────┘  └──────┬───────┘
+          └───────┬────────┘
+                  ▼
+        ┌──────────────────┐
+        │ 9. RANKING       │  ruido, empates, comparación
+        └────────┬─────────┘
+                 ▼
+        ┌──────────────────┐
+        │ 10. VEREDICTO    │
+        └──────────────────┘</code></pre>
+<hr />
+<h1 id="parte-1-preparación">PARTE 1 · Preparación</h1>
+<h2 id="lo-que-necesitas">1.1 · Lo que necesitas</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Necesitas</th>
+<th>Para qué</th>
+<th>Cómo conseguirlo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Un navegador (Chrome o Firefox)</td>
+<td>todas las etapas web</td>
+<td>ya lo tienes</td>
+</tr>
+<tr class="even">
+<td><strong>Una cuenta de Google</strong></td>
+<td>usar Google Colab (etapas 3 y 8)</td>
+<td>gmail.com</td>
+</tr>
+<tr class="odd">
+<td>Un programa para ver estructuras 3D (opcional pero muy útil)</td>
+<td>ver la proteína y los ligandos</td>
+<td><strong>Mol*</strong> en la web (https://molstar.org/viewer/), o
+PyMOL / ChimeraX instalados</td>
+</tr>
+<tr class="even">
+<td>Una hoja de cálculo</td>
+<td>el análisis de la etapa 9</td>
+<td>Google Sheets o Excel</td>
+</tr>
+<tr class="odd">
+<td>Una carpeta en tu computadora</td>
+<td>guardar todo</td>
+<td>ver abajo</td>
+</tr>
+</tbody>
+</table>
+<h2 id="organiza-tus-carpetas">1.2 · Organiza tus carpetas</h2>
+<p>Crea <strong>una carpeta para la práctica</strong> y dentro
+<strong>una subcarpeta por etapa</strong>. Parece burocracia, pero así
+cada archivo tiene un lugar y siempre sabes en qué punto vas:</p>
+<pre><code>practica_teub/
+├── 01_blast/            resultados de BLAST
+├── 02_estructura/       el modelo de AlphaFold (ZIP descomprimido)
+├── 03_maduro/           el modelo recortado (sin péptido señal)
+├── 04_foldseek/         la tabla de aciertos y ligandos
+├── 05_ligandos/         los archivos de cada azúcar
+├── 06_docking/          resultados del docking
+├── 07_coplegamiento/    los ZIP de Boltz-2
+└── 08_analisis/         la hoja de cálculo y el entregable</code></pre>
+<p>💻 <strong>EN LA TERMINAL</strong> (opcional):</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> <span class="at">-p</span> practica_teub/<span class="dt">{01_blast</span><span class="op">,</span><span class="dt">02_estructura</span><span class="op">,</span><span class="dt">03_maduro</span><span class="op">,</span><span class="dt">04_foldseek</span><span class="op">,</span><span class="dt">05_ligandos</span><span class="op">,</span><span class="dt">06_docking</span><span class="op">,</span><span class="dt">07_coplegamiento</span><span class="op">,</span><span class="dt">08_analisis}</span></span></code></pre></div>
+<h2 id="ruta-terminal-instalar-los-programas-opcional">1.3 · 💻 Ruta
+terminal: instalar los programas (opcional)</h2>
+<p>Solo si quieres hacer las etapas en tu computadora en lugar de la
+web. Necesitas Linux o macOS con <strong>miniforge</strong>
+(https://github.com/conda-forge/miniforge):</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">mamba</span> install <span class="at">-y</span> <span class="at">-c</span> conda-forge <span class="at">-c</span> bioconda blast foldseek openbabel vina <span class="dt">\</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>      numpy pandas scipy biopython</span></code></pre></div>
+<blockquote>
+<p><strong>Nota sobre los comandos de esta guía:</strong> todos se
+escriben desde <strong>dentro de la carpeta
+<code>practica_teub/</code></strong>. Donde dice <code>python</code>, se
+refiere al Python de miniforge, que tiene numpy y Biopython.</p>
+</blockquote>
+<hr />
+<h1 id="etapa-1-la-secuencia">ETAPA 1 · La secuencia</h1>
+<h2 id="concepto-por-qué-tanto-cuidado-con-algo-tan-simple">🧠 CONCEPTO:
+por qué tanto cuidado con algo tan simple</h2>
+<p>Una secuencia es una cadena de letras, una por aminoácido. Si se
+pierde <strong>una sola letra</strong>, todo lo que viene después cambia
+de posición, y un error de copia se propaga a <strong>todas</strong> las
+etapas. En esta práctica pasó dos veces: una estructura se predijo con
+la secuencia equivocada y cuatro corridas de Boltz se hicieron con la
+secuencia <strong>cortada a la mitad</strong>. Por eso, desde el
+principio: <strong>longitud, primeras letras y últimas letras</strong>,
+siempre.</p>
+<h2 id="la-secuencia-de-teub-362-aminoácidos">La secuencia de TeuB (362
+aminoácidos)</h2>
+<p>Copia esto en un archivo de texto llamado <code>teuB.fasta</code>
+dentro de <code>01_blast/</code>:</p>
+<pre><code>&gt;TeuB_AGB73230.1
+MKRRTFLQTGSALIAAGAFGIPGILRADDTIALLPDTWPSEGENPVVEAGKFAKAGPWKIG
+HSHYGLAGSTHTYQTAFEAEYEISRNKARVADYQFRSADLNASKQVADIEDLIAQKVDAII
+IAPLTTGSAVEGIRKAKAAGIPTVVYLGRVDTEDFTVQVQGDDFYFGRVMAQFLVDKLGNK
+GKVWVLRGVAGHPIDADRYAGAMEVFSKSGLQITSTQHGSWSYEDSKKIAESLYLSDPDVA
+GVWTDGANMSLGVLDALQEAGASTIPPITGEALNGWMRRWNDEKLSSIGPICPPALSTAAL
+RASFALLEGKPIQRNWTNRPKPIVDENLAQFYRSDLTDAYWAPTEMPNEKLLEYFKA</code></pre>
+<p>El formato <strong>FASTA</strong> tiene una línea que empieza con
+<code>&gt;</code> (el nombre) y, debajo, la secuencia.</p>
+<p>Esta es la misma secuencia <strong>en una sola línea</strong>, para
+pegar en formularios web:</p>
+<pre><code>MKRRTFLQTGSALIAAGAFGIPGILRADDTIALLPDTWPSEGENPVVEAGKFAKAGPWKIGHSHYGLAGSTHTYQTAFEAEYEISRNKARVADYQFRSADLNASKQVADIEDLIAQKVDAIIIAPLTTGSAVEGIRKAKAAGIPTVVYLGRVDTEDFTVQVQGDDFYFGRVMAQFLVDKLGNKGKVWVLRGVAGHPIDADRYAGAMEVFSKSGLQITSTQHGSWSYEDSKKIAESLYLSDPDVAGVWTDGANMSLGVLDALQEAGASTIPPITGEALNGWMRRWNDEKLSSIGPICPPALSTAALRASFALLEGKPIQRNWTNRPKPIVDENLAQFYRSDLTDAYWAPTEMPNEKLLEYFKA</code></pre>
+<p>✅ <strong>VERIFICA</strong> (hazlo siempre que pegues una secuencia
+en cualquier sitio):</p>
+<table>
+<thead>
+<tr class="header">
+<th>Chequeo</th>
+<th>Valor correcto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Longitud</td>
+<td><strong>362</strong></td>
+</tr>
+<tr class="even">
+<td>Empieza con</td>
+<td><code>MKRRTFLQTG</code></td>
+</tr>
+<tr class="odd">
+<td>Termina con</td>
+<td><code>NEKLLEYFKA</code></td>
+</tr>
+</tbody>
+</table>
+<p>🌐 <strong>Cómo contar letras sin programar:</strong></p>
+<ol type="1">
+<li>Ve a https://www.bioinformatics.org/sms2/protein_stats.html.</li>
+<li>Pega la secuencia.</li>
+<li>Presiona <strong>Submit</strong>. Te dice la longitud.</li>
+</ol>
+<p>💻 <strong>En la terminal:</strong></p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">grep</span> <span class="at">-v</span> <span class="st">&#39;&gt;&#39;</span> 01_blast/teuB.fasta <span class="kw">|</span> <span class="fu">tr</span> <span class="at">-d</span> <span class="st">&#39;\n&#39;</span> <span class="kw">|</span> <span class="fu">wc</span> <span class="at">-c</span>        <span class="co"># debe dar 362</span></span></code></pre></div>
+<hr />
+<h1 id="etapa-2-blast-a-qué-familia-pertenece">ETAPA 2 · BLAST: ¿a qué
+familia pertenece?</h1>
+<h2 id="concepto-alinear-secuencias">🧠 CONCEPTO: alinear
+secuencias</h2>
+<p><strong>BLAST</strong> busca en una base de datos las secuencias que
+<strong>se parecen</strong> a la tuya y las <strong>alinea</strong>, es
+decir, las pone una sobre otra para que coincidan el mayor número
+posible de posiciones. Este es un fragmento <strong>real</strong> del
+alineamiento de TeuB con su mejor acierto, RbsB de <em>Bacillus
+subtilis</em>:</p>
+<pre><code>TeuB   102  NASKQVADIEDLIAQKVDAIIIAPLTTGSAVEGIRKAKAAGIPTVVYLGRVDTEDFTVQV  161
+            ++SKQ +D+EDLI Q VDA++I P  + +    +  A A G+P V      +       V
+RbsB    78  DSSKQTSDVEDLIQQGVDALLINPTDSSAISTAVESANAVGVPVVTIDRSAEQGKVETLV  137</code></pre>
+<p>La línea del medio se lee así:</p>
+<ul>
+<li><strong>Una letra</strong> (<code>D</code>, <code>L</code>,
+<code>I</code>…): el aminoácido es <strong>idéntico</strong> en las dos
+secuencias.</li>
+<li><strong><code>+</code></strong>: los aminoácidos son distintos, pero
+<strong>parecidos</strong> químicamente, por ejemplo I y L (los dos
+hidrofóbicos) o D y E (los dos ácidos).</li>
+<li><strong>Un espacio</strong>: son distintos y no se parecen.</li>
+</ul>
+<p>Los números a los lados son <strong>posiciones</strong>. Este
+fragmento empieza en el residuo 102 de TeuB y en el 78 de RbsB.</p>
+<h3 id="los-números-que-da-blast-explicados">Los números que da BLAST,
+explicados</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Número</th>
+<th>Qué es</th>
+<th>Ejemplo con el acierto #1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>% identidad</strong></td>
+<td>idénticos ÷ posiciones alineadas</td>
+<td>63 idénticos de 221 = <strong>28.5 %</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Cobertura (Query Cover)</strong></td>
+<td>qué porcentaje de TU secuencia quedó alineado</td>
+<td><strong>61 %</strong>: el 39 % restante no alinea</td>
+</tr>
+<tr class="odd">
+<td><strong>E-value</strong></td>
+<td>cuántos aciertos <strong>así de buenos</strong> esperarías
+<strong>por puro azar</strong> en una base de ese tamaño</td>
+<td>7.7 × 10⁻²⁰: prácticamente imposible que sea casual</td>
+</tr>
+<tr class="even">
+<td><strong>q.start / q.end</strong></td>
+<td>dónde empieza y termina el alineamiento en tu secuencia</td>
+<td>empieza en el residuo <strong>102</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>El E-value con una analogía.</strong> Imagina que buscas tu
+apellido en la guía telefónica de una ciudad. Si es “García”, vas a
+encontrar miles por azar. Si es “Xochipilli-Brandenburgo”, encontrar uno
+ya significa algo. El E-value dice cuántos “Garcías” esperarías por
+casualidad. <strong>E &lt; 0.001 se considera significativo; E = 10⁻²⁰
+es parentesco seguro.</strong></p>
+<h3 id="concepto-la-zona-crepuscular">🧠 CONCEPTO: la zona
+crepuscular</h3>
+<p>Que dos proteínas sean parientes (tienen un ancestro común)
+<strong>no garantiza</strong> que hagan lo mismo. Lo que puedes concluir
+depende de la identidad:</p>
+<pre><code> % identidad
+ 100 ┤████████████████████  misma proteína (otra especie)
+  60 ┤████████████          casi seguro MISMA FUNCIÓN
+  40 ┤████████              probablemente misma función
+  35 ┤──────────────────────────────────────────────────────
+  30 ┤██████   ◄── ZONA CREPUSCULAR: mismo PLIEGUE y FAMILIA,
+  25 ┤████         pero la función (el ligando) PUEDE SER OTRA
+  20 ┤──────────────────────────────────────────────────────
+  15 ┤██           BLAST ya ni detecta el parentesco con seguridad</code></pre>
+<p>TeuB cae <strong>justo en la zona crepuscular</strong> con todos sus
+parientes de función conocida. Esa es la raíz de toda la dificultad.</p>
+<h3 id="concepto-dos-bases-de-datos-dos-preguntas-distintas">🧠
+CONCEPTO: dos bases de datos, dos preguntas distintas</h3>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Base</th>
+<th>Tamaño</th>
+<th>Calidad</th>
+<th>Para qué se usa aquí</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Swiss-Prot</strong></td>
+<td>~570 mil proteínas</td>
+<td><strong>revisada a mano</strong> por expertos; la función tiene
+respaldo</td>
+<td>saber <strong>qué hacen</strong> los parientes</td>
+</tr>
+<tr class="even">
+<td><strong>nr</strong> (no redundante)</td>
+<td>cientos de millones</td>
+<td><strong>automática</strong>, casi sin revisar</td>
+<td><strong>contar</strong> cuántos parientes hay y de qué
+organismos</td>
+</tr>
+</tbody>
+</table>
+<p>⚠️ <strong>CUIDADO con la anotación circular.</strong> En nr vas a
+ver parientes al 97-100 % anotados como <em>“ribose transport
+protein”</em>. <strong>No es evidencia nueva.</strong> Un programa les
+puso ese nombre automáticamente porque se parecen a RbsB, que es lo
+mismo que ya viste en Swiss-Prot. Contarlas como evidencia sería contar
+el mismo dato dos veces.</p>
+<h2 id="en-la-web-2a.-blast-contra-swiss-prot">🌐 EN LA WEB · 2a. BLAST
+contra Swiss-Prot</h2>
+<ol type="1">
+<li>Ve a <strong>https://blast.ncbi.nlm.nih.gov/Blast.cgi</strong>.</li>
+<li>Haz clic en el recuadro <strong>“Protein BLAST”</strong> (protein →
+protein).</li>
+<li>En el recuadro <strong>“Enter accession number(s), gi(s), or FASTA
+sequence(s)”</strong>, pega la secuencia de 362 letras.</li>
+<li>En <strong>“Job Title”</strong> escribe
+<code>TeuB_swissprot</code>.</li>
+<li>Baja a <strong>“Choose Search Set”</strong> → en
+<strong>“Database”</strong> elige
+<strong><code>UniProtKB/Swiss-Prot (swissprot)</code></strong>.</li>
+<li>En <strong>“Program Selection”</strong> deja marcado
+<strong><code>blastp (protein-protein BLAST)</code></strong>.</li>
+<li>Presiona el botón azul <strong>“BLAST”</strong> (abajo a la
+izquierda). Espera de 30 segundos a 2 minutos; la página se actualiza
+sola.</li>
+<li>Cuando salga la tabla <strong>“Descriptions”</strong>, observa las
+columnas <strong>Description</strong>, <strong>Scientific Name</strong>,
+<strong>Query Cover</strong>, <strong>E value</strong> y <strong>Per.
+Ident</strong>.</li>
+<li>Para guardar los resultados: arriba de la tabla,
+<strong>“Download”</strong> → <strong>“Hit Table (csv)”</strong>. Guarda
+el archivo en <code>01_blast/</code>. Ese CSV tiene, en orden:
+<em>query, subject, % identity, alignment length, mismatches, gap opens,
+<strong>q. start</strong>, q. end, s. start, s. end, evalue, bit
+score</em>.</li>
+<li>Para ver dónde alinea cada acierto en tu secuencia, abre la pestaña
+<strong>“Graphic Summary”</strong>. Las barras de colores muestran qué
+parte de tu proteína cubre cada acierto. <strong>Fíjate si alguna barra
+cubre el inicio (residuos 1-40).</strong></li>
+</ol>
+<blockquote>
+<p>Los E-values pueden cambiar un poco respecto a los de esta guía
+porque la base de datos crece, pero el panorama debe ser el mismo.</p>
+</blockquote>
+<h2 id="en-la-web-2b.-blast-contra-nr-para-contar">🌐 EN LA WEB · 2b.
+BLAST contra nr (para contar)</h2>
+<ol type="1">
+<li>Repite los pasos 1 a 4 (en “Job Title” pon
+<code>TeuB_nr</code>).</li>
+<li>En <strong>“Database”</strong> elige
+<strong><code>Non-redundant protein sequences (nr)</code></strong>.</li>
+<li>Abre <strong>“Algorithm parameters”</strong>, abajo, en letra
+pequeña → <strong>“Max target sequences”</strong> → elige
+<strong>500</strong>.</li>
+<li>Presiona <strong>“BLAST”</strong>. Puede tardar entre 5 y 20
+minutos.</li>
+<li>En la tabla, ordena por <strong>Per. Ident</strong> y cuenta cuántos
+superan el 40 %.</li>
+<li>Abre la pestaña <strong>“Taxonomy”</strong>. Ahí ves de qué
+organismos son los aciertos: ¿cuántos son de <em>Rhizobium</em> y
+géneros cercanos (familia Rhizobiaceae)?</li>
+</ol>
+<h2 id="en-la-terminal-alternativa-a-2a-y-2b">💻 EN LA TERMINAL
+(alternativa a 2a y 2b)</h2>
+<div class="sourceCode" id="cb16"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 2a · descargar Swiss-Prot ya formateada (~300 MB) y buscar localmente</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> 01_blast</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="ex">curl</span> <span class="at">-sL</span> <span class="at">-O</span> https://ftp.ncbi.nlm.nih.gov/blast/db/swissprot.tar.gz <span class="kw">&amp;&amp;</span> <span class="fu">tar</span> xzf swissprot.tar.gz</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="bu">export</span> <span class="va">BLASTDB</span><span class="op">=</span><span class="va">$PWD</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="ex">blastp</span> <span class="at">-query</span> teuB.fasta <span class="at">-db</span> swissprot <span class="at">-evalue</span> 1e-3 <span class="at">-num_threads</span> 8 <span class="at">-max_target_seqs</span> 250 <span class="dt">\</span></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">-outfmt</span> <span class="st">&quot;6 sseqid stitle pident length qstart qend evalue bitscore qcovs&quot;</span> <span class="at">-out</span> swissprot_hits.tsv</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a><span class="co"># 2b · nr en los servidores del NCBI (-remote); tarda 10-30 min</span></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a><span class="fu">nohup</span> blastp <span class="at">-query</span> teuB.fasta <span class="at">-db</span> nr <span class="at">-remote</span> <span class="at">-evalue</span> 1e-5 <span class="at">-max_target_seqs</span> 500 <span class="dt">\</span></span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">-outfmt</span> <span class="st">&quot;6 sseqid stitle pident length qstart qend evalue bitscore qcovs&quot;</span> <span class="at">-out</span> nr_hits.tsv <span class="kw">&amp;</span></span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ..</span></code></pre></div>
+<p><code>-outfmt &quot;6 …&quot;</code> produce una tabla separada por tabuladores
+con las columnas que tú eliges.</p>
+<h2 id="qué-mirar-cinco-preguntas">Qué mirar: cinco preguntas</h2>
+<ol type="1">
+<li>¿Los aciertos son todos de <strong>una misma familia</strong>?</li>
+<li>¿Qué <strong>identidad</strong> tienen? ¿Estás en zona
+crepuscular?</li>
+<li>¿Los parientes con identidad parecida <strong>unen lo mismo</strong>
+o cosas distintas?</li>
+<li>¿Dónde <strong>empiezan</strong> los alineamientos en tu secuencia?
+¿Alguno cubre el inicio?</li>
+<li>¿Hay parientes del <strong>mismo género</strong> que TeuB
+(<em>Rhizobium</em>)?</li>
+</ol>
+<h2 id="lo-que-debes-obtener">🎯 LO QUE DEBES OBTENER</h2>
+<p><strong>Swiss-Prot: 17 aciertos con E &lt; 0.001, todos proteínas
+periplásmicas de unión a azúcar (familia RbsB).</strong></p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>#</th>
+<th>Proteína</th>
+<th>Organismo</th>
+<th>% id</th>
+<th>q.start</th>
+<th>E</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Ribose import binding protein RbsB</td>
+<td><em>Bacillus subtilis</em></td>
+<td>28.5</td>
+<td>102</td>
+<td>7.7e-20</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>D-threitol-binding protein</td>
+<td><em>Mycolicibacterium smegmatis</em></td>
+<td>31.5</td>
+<td>97</td>
+<td>1.3e-19</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Xylitol-binding protein</td>
+<td><em>M. smegmatis</em></td>
+<td>29.9</td>
+<td>88</td>
+<td>6.1e-17</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Ribose import binding protein RbsB</td>
+<td><em>Escherichia coli</em></td>
+<td>23.4</td>
+<td>102</td>
+<td>3.8e-14</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Ribose import binding protein RbsB</td>
+<td><em>Salmonella enterica</em></td>
+<td>22.6</td>
+<td>102</td>
+<td>1.7e-13</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>D-ribose/D-allose-binding protein</td>
+<td><em>Pseudomonas aeruginosa</em></td>
+<td>26.7</td>
+<td>100</td>
+<td>9.3e-13</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>Galactofuranose-binding protein YtfQ</td>
+<td><em>E. coli</em></td>
+<td>24.8</td>
+<td>57</td>
+<td>5.3e-11</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td><strong>D-apiose import binding protein</strong></td>
+<td><em>Paraburkholderia graminis</em></td>
+<td>24.9</td>
+<td>78</td>
+<td>3.3e-10</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td><strong>D-apiose import binding protein</strong></td>
+<td><strong><em>Rhizobium rhizogenes</em></strong></td>
+<td>28.1</td>
+<td>78</td>
+<td>8.8e-10</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td><strong>D-apiose import binding protein</strong></td>
+<td><em>Actinobacillus succinogenes</em></td>
+<td>26.0</td>
+<td>78</td>
+<td>6.1e-09</td>
+</tr>
+<tr class="odd">
+<td>11</td>
+<td><strong>D-apiose import binding protein</strong></td>
+<td><strong><em>Rhizobium etli</em></strong></td>
+<td>26.6</td>
+<td>78</td>
+<td>1.0e-08</td>
+</tr>
+<tr class="even">
+<td>12</td>
+<td>D-allose-binding protein</td>
+<td><em>E. coli</em></td>
+<td>26.3</td>
+<td>106</td>
+<td>2.4e-08</td>
+</tr>
+</tbody>
+</table>
+<p>📝 <strong>ANOTA</strong> estas conclusiones:</p>
+<ul>
+<li><strong>Familia: segura.</strong> Los 17 aciertos son de la misma
+familia.</li>
+<li><strong>Ligando: incierto.</strong> Entre los 10 primeros hay
+<strong>6 ligandos distintos</strong> (ribosa, treitol, xilitol,
+ribosa/alosa, galactofuranosa y apiosa). El #1 (28.5 %) y el #2 (31.5 %)
+tienen identidades casi iguales y unen cosas distintas.</li>
+<li><strong>Zona crepuscular:</strong> todas las identidades están entre
+22 y 31 %.</li>
+<li><strong>El inicio no alinea:</strong> el q.start más bajo es
+<strong>49</strong> y la mediana es 88. Ningún pariente cubre los
+primeros 48 residuos. Esto es una <strong>pista para la Etapa
+4</strong>.</li>
+<li><strong>Pista biológica:</strong> dos aciertos de
+<strong>apiosa</strong> son del género <em>Rhizobium</em>, el mismo que
+TeuB.</li>
+</ul>
+<p><strong>nr: 500 aciertos</strong>, de los cuales <strong>420 superan
+el 40 % de identidad</strong>. Unos 260-310, según cómo se cuenten, son
+de Rhizobiaceae (<em>Rhizobium</em>, <em>Mesorhizobium</em>,
+<em>Sinorhizobium</em>, <em>Agrobacterium</em>…). Los mejores (97-100 %)
+están anotados automáticamente como “ribose transport…”, lo que
+<strong>no es evidencia</strong> (anotación circular).</p>
+<hr />
+<h1 id="etapa-3-alphafold2-predecir-la-estructura">ETAPA 3 · AlphaFold2:
+predecir la estructura</h1>
+<h2 id="concepto-cómo-adivina-alphafold-la-forma-de-una-proteína">🧠
+CONCEPTO: cómo “adivina” AlphaFold la forma de una proteína</h2>
+<p>AlphaFold2 no simula física. <strong>Aprende de la
+evolución</strong>. Su idea central es la
+<strong>coevolución</strong>:</p>
+<blockquote>
+<p>Si dos aminoácidos están <strong>en contacto</strong> en la
+estructura 3D y uno muta, el otro tiende a mutar también para compensar.
+Comparando miles de secuencias parientes, se puede detectar qué
+posiciones “cambian juntas” y, de ahí, cuáles se tocan.</p>
+</blockquote>
+<pre><code>  Alineamiento múltiple (MSA) de parientes:     Posiciones 12 y 87 cambian JUNTAS:
+
+  pos:        ...12 ...  ...87 ...                  12   87
+  TeuB        ... K  ...  ... E ...                 K ── E   (+ con −: se atraen)
+  pariente A  ... K  ...  ... E ...                 K ── E
+  pariente B  ... E  ...  ... K ...                 E ── K   (se intercambiaron
+  pariente C  ... R  ...  ... D ...                 R ── D    las cargas, pero
+  pariente D  ... D  ...  ... R ...                 D ── R    siguen complementarias)
+
+                                         ⇒ 12 y 87 probablemente están EN CONTACTO</code></pre>
+<p>Por eso el primer paso de AlphaFold es construir un
+<strong>MSA</strong> (alineamiento múltiple) con muchos parientes. Más
+parientes significa más señal. <strong>ColabFold</strong> es una versión
+de AlphaFold2 que hace la búsqueda del MSA muy rápido con un servidor
+(MMseqs2) y corre en Google Colab.</p>
+<h2 id="concepto-las-dos-medidas-de-confianza">🧠 CONCEPTO: las dos
+medidas de confianza</h2>
+<p><strong>pLDDT (0-100): confianza local, residuo por
+residuo.</strong></p>
+<pre><code>   pLDDT   90 ─ 100  ██████  muy alta: la cadena principal y las laterales, bien colocadas
+           70 ─  90  ▓▓▓▓▓▓  buena: el esqueleto es correcto
+           50 ─  70  ▒▒▒▒▒▒  baja: tómalo con cuidado
+            0 ─  50  ░░░░░░  muy baja: probablemente DESORDENADO, o AlphaFold no sabe</code></pre>
+<p>En el archivo PDB que da ColabFold, <strong>el pLDDT está guardado en
+la columna del B-factor</strong>. Por eso, en un visor 3D, “colorear por
+B-factor” es colorear por confianza.</p>
+<p><strong>PAE (Predicted Aligned Error, en Å): confianza en la posición
+RELATIVA de dos partes.</strong></p>
+<p>La pregunta que responde es: <em>“Si alineo el modelo sobre el
+residuo i, ¿cuánto error espero en el residuo j?”</em>. Se dibuja como
+una matriz. <strong>Un bloque oscuro (PAE bajo) indica un dominio rígido
+y bien colocado.</strong> Esta es la matriz real de TeuB, promediada por
+tramos:</p>
+<pre><code>PAE medio (Å)   1-27  28-60  61-100 101-140 141-162 163-200 201-240 241-280 281-320 321-362
+      1-27      13.2   27.1   29.6   30.1   29.2   30.2   30.6   30.6   28.6   29.6   ← ¡ALTO!
+     28-60      23.3    3.6    4.8    5.1    4.0    5.9    6.7    6.7    4.4    5.5
+    61-100      24.1    3.8    2.2    2.8    3.1    4.2    4.5    4.2    3.3    3.4
+   101-140      23.8    2.5    1.9    1.3    1.6    2.9    3.2    3.3    2.5    3.0
+   141-162      23.5    2.2    2.2    1.7    1.3    2.7    3.1    3.2    2.2    2.8
+   163-200      24.5    3.1    2.8    2.8    2.4    1.4    1.7    1.8    2.3    2.4
+   201-240      24.2    3.7    3.1    3.2    3.0    1.7    1.5    1.7    2.7    2.7
+   241-280      24.4    4.3    3.5    4.0    3.7    2.2    2.1    1.6    3.0    2.7
+   281-320      23.8    2.5    2.2    2.5    2.1    2.3    2.7    2.4    1.9    2.1
+   321-362      24.4    3.8    3.0    4.0    3.6    3.3    3.7    3.0    2.8    2.1
+                 ▲
+                 └── la columna y la fila de los residuos 1-27 están en ~24-30 Å:
+                     AlphaFold NO sabe dónde poner ese tramo respecto al resto.
+                     Todo lo demás está por debajo de ~5 Å: la proteína madura es un bloque rígido.</code></pre>
+<blockquote>
+<p><strong>Lo que AlphaFold NO dice:</strong> qué función tiene la
+proteína, qué ligando une, ni si la modeló abierta o cerrada.</p>
+</blockquote>
+<h2 id="concepto-por-qué-desactivar-las-plantillas">🧠 CONCEPTO: ¿por
+qué desactivar las plantillas?</h2>
+<p>Las <strong>plantillas</strong> son estructuras del PDB que se
+parecen a tu proteína y que AlphaFold puede <strong>copiar</strong>. Si
+las activas, el modelo puede calcar un cristal, incluida su conformación
+con ligando, y ya no sabes qué es predicción propia y qué es copia.
+<strong>Siempre <code>template_mode = none</code>.</strong></p>
+<h2 id="en-colab-correr-colabfold-alphafold2">☁️ EN COLAB · Correr
+ColabFold (AlphaFold2)</h2>
+<ol type="1">
+<li>Abre
+<strong>https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb</strong>
+con tu cuenta de Google.</li>
+<li><strong>Pide una GPU:</strong> menú <strong>“Entorno de ejecución”
+(Runtime)</strong> → <strong>“Cambiar tipo de entorno de ejecución”
+(Change runtime type)</strong> → <strong>“GPU T4”</strong> →
+<strong>Guardar</strong>.</li>
+<li>En la primera celda, <strong>“Input protein sequence(s), then hit
+Runtime → Run all”</strong>, llena los campos:
+<ul>
+<li><strong><code>query_sequence</code></strong>: <strong>BORRA la
+secuencia de ejemplo</strong> que trae y pega las <strong>362
+letras</strong> de TeuB.</li>
+<li><strong><code>jobname</code></strong>: <code>TeuB_full</code>.</li>
+<li><strong><code>num_relax</code></strong>: <code>0</code>.</li>
+<li><strong><code>template_mode</code></strong>:
+<strong><code>none</code></strong> ← importante.</li>
+</ul></li>
+<li>Más abajo, en <strong>“MSA options”</strong>:
+<ul>
+<li><strong><code>msa_mode</code></strong>:
+<code>mmseqs2_uniref_env</code>.</li>
+<li><strong><code>pair_mode</code></strong>:
+<code>unpaired_paired</code> (el valor por omisión).</li>
+</ul></li>
+<li>En <strong>“Advanced settings”</strong>:
+<ul>
+<li><strong><code>model_type</code></strong>: <code>auto</code>.</li>
+<li><strong><code>num_recycles</code></strong>: <code>3</code>.</li>
+<li><strong><code>random_seed</code></strong>: <code>0</code>
+(anótalo).</li>
+</ul></li>
+<li>Menú <strong>“Entorno de ejecución”</strong> → <strong>“Ejecutar
+todo” (Run all)</strong>. Si aparece el aviso <em>“Este notebook no fue
+creado por Google”</em>, presiona <strong>“Ejecutar de todos
+modos”</strong>.</li>
+<li>Espera de 5 a 15 minutos. Al final, la última celda <strong>descarga
+sola</strong> un ZIP llamado <code>TeuB_full_xxxxx.result.zip</code>. Si
+tu navegador lo bloquea, búscalo en el panel de archivos de la izquierda
+(icono de carpeta 📁), clic derecho → <strong>Descargar</strong>.</li>
+<li>Descomprime el ZIP en <code>02_estructura/</code>.</li>
+</ol>
+<p>✅ <strong>VERIFICA antes de seguir.</strong> Dentro del ZIP abre
+<strong><code>log.txt</code></strong> y busca la línea que dice
+<code>Query 1/1: TeuB_full (length 362)</code>. <strong>Si dice otra
+longitud, corriste otra secuencia.</strong></p>
+<p>⚠️ <strong>CUIDADO: nos pasó.</strong> La primera vez no se borró la
+secuencia de ejemplo de la libreta y se predijo una proteína de
+<strong>59 aa</strong> que no era TeuB. Se detectó leyendo el
+<code>log.txt</code>.</p>
+<blockquote>
+<p><strong>Alternativa sin Colab: AlphaFold2-WebGPU.</strong> En
+https://martin-steinegger.github.io/alphafold2-webgpu corre en la
+tarjeta gráfica de tu propia laptop, dentro del navegador. Pega la
+secuencia y sigue las instrucciones de la página. Es más lenta y solo da
+un modelo, pero no necesitas cuenta.</p>
+</blockquote>
+<h2 id="qué-hay-en-el-zip">Qué hay en el ZIP</h2>
+<pre><code>TeuB_full_xxxxx/
+├── TeuB_full_..._unrelaxed_rank_001_alphafold2_ptm_model_3_seed_000.pdb   ← EL MEJOR MODELO
+├── ..._rank_002 ... _rank_005 ....pdb     otros 4 modelos, ordenados de mejor a peor
+├── ..._scores_rank_001_....json           pLDDT, PAE y pTM del mejor modelo
+├── TeuB_full.a3m                          el MSA (alineamiento múltiple)
+├── TeuB_full_plddt.png                    gráfica de pLDDT por residuo
+├── TeuB_full_pae.png                      la matriz PAE, en colores
+├── TeuB_full_coverage.png                 cuántas secuencias cubren cada posición
+├── config.json                            los parámetros usados (¡revisa use_templates: false!)
+└── log.txt                                el registro (¡revisa la longitud!)</code></pre>
+<h2 id="qué-mirar">Qué mirar</h2>
+<p><strong>1. Las gráficas PNG</strong> (ábrelas con doble clic):</p>
+<ul>
+<li><code>plddt.png</code>: ¿hay una región con la línea muy baja?
+¿Dónde está?</li>
+<li><code>pae.png</code>: ¿ves un cuadro grande oscuro, que es la
+proteína rígida, y una franja clara, que es algo mal colocado?</li>
+<li><code>coverage.png</code>: ¿cuántas secuencias hay en el MSA?</li>
+</ul>
+<p><strong>2. El modelo en 3D.</strong></p>
+<p>🌐 <strong>EN LA WEB · Ver el modelo en Mol*</strong></p>
+<ol type="1">
+<li>Ve a https://molstar.org/viewer/.</li>
+<li>Menú de la izquierda <strong>“Download / Open”</strong> →
+<strong>“Open Files”</strong> → elige el PDB <code>rank_001</code>.
+También puedes arrastrarlo a la ventana.</li>
+<li>Para colorear por confianza: en el panel de la derecha, sobre la
+representación <em>Polymer</em>, abre el menú <strong>(⋯)</strong> →
+<strong>“Set Coloring”</strong> → <strong>“Atom Property”</strong> →
+<strong>“B-factor”</strong> (o <strong>“Validation” → “pLDDT”</strong>,
+según la versión).</li>
+<li>Mira la forma: <strong>¿ves dos lóbulos con una hendidura en
+medio?</strong> Ese es el pliegue de la familia. <strong>¿Hay una “cola”
+suelta de otro color en un extremo?</strong></li>
+</ol>
+<p><strong>3. Los números exactos</strong>, opcional con Python. 💻 Este
+script lee el modelo y la matriz PAE:</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># guarda como p03_plddt_pae.py y corre:  python p03_plddt_pae.py 02_estructura/TeuB_full_xxxxx</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sys, glob, json, numpy <span class="im">as</span> np</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>D <span class="op">=</span> sys.argv[<span class="dv">1</span>]</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>CORTE <span class="op">=</span> <span class="dv">27</span>                               <span class="co"># hipotesis: el peptido senal son los residuos 1-27</span></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>a3m <span class="op">=</span> glob.glob(<span class="ss">f&#39;</span><span class="sc">{</span>D<span class="sc">}</span><span class="ss">/*.a3m&#39;</span>)[<span class="dv">0</span>]</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;MSA:&quot;</span>, <span class="bu">sum</span>(l.startswith(<span class="st">&#39;&gt;&#39;</span>) <span class="cf">for</span> l <span class="kw">in</span> <span class="bu">open</span>(a3m)), <span class="st">&quot;secuencias&quot;</span>)</span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>pdb <span class="op">=</span> <span class="bu">sorted</span>(glob.glob(<span class="ss">f&#39;</span><span class="sc">{</span>D<span class="sc">}</span><span class="ss">/*rank_001*.pdb&#39;</span>))[<span class="dv">0</span>]</span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>bf <span class="op">=</span> {}</span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> l <span class="kw">in</span> <span class="bu">open</span>(pdb):                      <span class="co"># el pLDDT esta en la columna B-factor (caracteres 61-66)</span></span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> l.startswith(<span class="st">&#39;ATOM&#39;</span>):</span>
+<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a>        bf.setdefault(<span class="bu">int</span>(l[<span class="dv">22</span>:<span class="dv">26</span>]), []).append(<span class="bu">float</span>(l[<span class="dv">60</span>:<span class="dv">66</span>]))</span>
+<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a>p <span class="op">=</span> {k: np.mean(v) <span class="cf">for</span> k, v <span class="kw">in</span> bf.items()}<span class="op">;</span> N <span class="op">=</span> <span class="bu">max</span>(p)</span>
+<span id="cb21-13"><a href="#cb21-13" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> np.mean([p[i] <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, CORTE <span class="op">+</span> <span class="dv">1</span>)])<span class="op">;</span> m <span class="op">=</span> np.mean([p[i] <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(CORTE <span class="op">+</span> <span class="dv">1</span>, N <span class="op">+</span> <span class="dv">1</span>)])</span>
+<span id="cb21-14"><a href="#cb21-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;pLDDT medio </span><span class="sc">{</span>np<span class="sc">.</span>mean(<span class="bu">list</span>(p.values()))<span class="sc">:.1f}</span><span class="ss">; minimo </span><span class="sc">{</span><span class="bu">min</span>(p.values())<span class="sc">:.1f}</span><span class="ss"> en el residuo </span><span class="sc">{</span><span class="bu">min</span>(p, key<span class="op">=</span>p.get)<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb21-15"><a href="#cb21-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;pLDDT 1-</span><span class="sc">{</span>CORTE<span class="sc">}</span><span class="ss"> = </span><span class="sc">{</span>s<span class="sc">:.1f}</span><span class="ss">   vs   </span><span class="sc">{</span>CORTE<span class="op">+</span><span class="dv">1</span><span class="sc">}</span><span class="ss">-</span><span class="sc">{</span>N<span class="sc">}</span><span class="ss"> = </span><span class="sc">{</span>m<span class="sc">:.1f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb21-16"><a href="#cb21-16" aria-hidden="true" tabindex="-1"></a>pae <span class="op">=</span> np.array(json.load(<span class="bu">open</span>(glob.glob(<span class="ss">f&#39;</span><span class="sc">{</span>D<span class="sc">}</span><span class="ss">/*scores_rank_001*.json&#39;</span>)[<span class="dv">0</span>]))[<span class="st">&#39;pae&#39;</span>])</span>
+<span id="cb21-17"><a href="#cb21-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;PAE senal-vs-madura = </span><span class="sc">{</span>pae[:CORTE, CORTE:]<span class="sc">.</span>mean()<span class="sc">:.1f}</span><span class="ss"> A ; dentro de la madura = </span><span class="sc">{</span>pae[CORTE:, CORTE:]<span class="sc">.</span>mean()<span class="sc">:.1f}</span><span class="ss"> A&quot;</span>)</span></code></pre></div>
+<h2 id="lo-que-debes-obtener-1">🎯 LO QUE DEBES OBTENER</h2>
+<ul>
+<li><strong>MSA: 1841 secuencias.</strong> Es un alineamiento muy
+profundo, suficiente para una buena predicción.</li>
+<li><strong>Mejor modelo: pLDDT 92.2, pTM 0.877.</strong> Los 5 modelos
+quedan entre 91.9 y 92.2: muy consistentes.</li>
+<li><strong>El inicio tiene muy baja confianza.</strong> Este es el
+perfil real de pLDDT por tramos de 10 residuos:</li>
+</ul>
+<pre><code>  1- 10  34.0 ████████
+ 11- 20  35.1 ████████
+ 21- 30  47.9 ███████████          ← aquí empieza a subir
+ 31- 40  95.8 ███████████████████████
+ 41- 50  96.5 ████████████████████████
+   ...   (todo el resto por encima de 89)
+351-360  94.7 ███████████████████████</code></pre>
+<ul>
+<li><strong>pLDDT residuos 1-27 = 36.3, frente a 96.8 en
+28-362.</strong> Son <strong>60 puntos</strong> de diferencia, con el
+mínimo (29.1) en el residuo 8.</li>
+<li><strong>PAE entre los residuos 1-27 y el resto = 29.6 Å</strong>:
+AlphaFold no sabe dónde va ese tramo. Dentro de la proteína madura,
+<strong>3.0 Å</strong>.</li>
+<li><strong>Dos lóbulos</strong>, con un corte natural cerca del residuo
+162 y un PAE entre ellos muy bajo: el modelo sabe cómo se orientan uno
+respecto al otro. Eso indica una <strong>hendidura
+cerrada</strong>.</li>
+</ul>
+<p>📝 <strong>ANOTA:</strong> “La estructura es muy confiable
+<strong>excepto los primeros 27 residuos</strong>, que AlphaFold ni
+pliega ni sabe dónde colocar. Esto coincide con BLAST, que no alinea el
+inicio.”</p>
+<hr />
+<h1 id="etapa-4-el-péptido-señal-dónde-empieza-la-proteína-madura">ETAPA
+4 · El péptido señal: dónde empieza la proteína madura</h1>
+<h2 id="concepto-una-etiqueta-de-envío-que-se-corta">🧠 CONCEPTO: una
+etiqueta de envío que se corta</h2>
+<p>TeuB se fabrica en el <strong>citoplasma</strong>, pero trabaja en el
+<strong>periplasma</strong>. Para cruzar la membrana interna lleva en su
+extremo inicial (el extremo N) un <strong>péptido señal</strong>: una
+“etiqueta de envío” que la maquinaria de secreción (el sistema
+<strong>Sec</strong>) reconoce. Al cruzar, una enzima (la
+<strong>peptidasa señal</strong>) <strong>corta la
+etiqueta</strong>:</p>
+<pre><code>   CITOPLASMA                                     PERIPLASMA
+   ──────────                                     ──────────
+   [péptido señal]──[ proteína madura ]    →→→    [ proteína madura ]   ← la que trabaja
+         │                                              (sin etiqueta)
+         └── la peptidasa señal corta aquí ✂</code></pre>
+<p><strong>La proteína que une el azúcar es la madura.</strong> El
+péptido señal no forma parte de la estructura funcional, y si lo dejas,
+estorba en las etapas siguientes.</p>
+<h3 id="cómo-se-reconoce-un-péptido-señal-tres-regiones">Cómo se
+reconoce un péptido señal: tres regiones</h3>
+<pre><code>  ┌─── n ───┬──────── h ─────────┬─── c ───┐✂┌──── proteína madura ────
+  │ + + +   │  hidrofóbica        │ polar   │ │
+  │ K, R    │  L, I, A, V, F, G   │ A-x-A   │ │
+  │ 1-5 aa  │  7-15 aa            │ 3-7 aa  │ │
+  └─────────┴─────────────────────┴─────────┘ │
+   carga       una hélice que se                el corte ocurre después
+   positiva    mete en la membrana              de un residuo pequeño (A, G, S)</code></pre>
+<h3 id="concepto-la-hidropatía-de-kyte-doolittle">🧠 CONCEPTO: la
+hidropatía de Kyte-Doolittle</h3>
+<p>A cada aminoácido se le asigna un número según cuánto “odia el agua”:
+<strong>positivo si es hidrofóbico</strong>, como I (+4.5), V (+4.2), L
+(+3.8) o A (+1.8), y <strong>negativo si es polar o tiene
+carga</strong>, como R (−4.5), K (−3.9), D (−3.5) o E (−3.5). Si
+promedias ese número en una <strong>ventana de 9 residuos</strong> que
+vas deslizando a lo largo de la secuencia, obtienes un
+<strong>perfil</strong>. Una región h aparece como una
+<strong>montaña</strong>.</p>
+<h2 id="las-tres-evidencias-que-vas-a-reunir">Las tres evidencias que
+vas a reunir</h2>
+<p>La práctica pide justificar el corte con <strong>evidencias
+independientes</strong>. Aquí hay tres:</p>
+<h3 id="evidencia-1-la-secuencia-regiones-nhc-e-hidropatía">Evidencia 1
+· La secuencia (regiones n/h/c e hidropatía)</h3>
+<p>🌐 <strong>EN LA WEB · Perfil de hidropatía con
+ProtScale</strong></p>
+<ol type="1">
+<li>Ve a <strong>https://web.expasy.org/protscale/</strong>.</li>
+<li>Pega la secuencia de 362 aa en el recuadro.</li>
+<li>En la lista de escalas elige <strong>“Hphob. / Kyte &amp;
+Doolittle”</strong>.</li>
+<li>En <strong>“Window size”</strong> elige <strong>9</strong>.</li>
+<li>Presiona <strong>“Submit”</strong>. Aparece una gráfica:
+<strong>busca la montaña al principio</strong>, entre los residuos 6 y
+22.</li>
+</ol>
+<p>🌐 <strong>EN LA WEB · Segunda opinión con SignalP 6.0</strong>
+(opcional, pero recomendable)</p>
+<ol type="1">
+<li>Ve a
+<strong>https://services.healthtech.dtu.dk/services/SignalP-6.0/</strong>.</li>
+<li>Pega la secuencia en formato FASTA.</li>
+<li>En <strong>“Organism”</strong> elige <strong>“Other”</strong>
+(bacterias y arqueas).</li>
+<li>En <strong>“Output format”</strong> elige <strong>“Short
+output”</strong>.</li>
+<li>Presiona <strong>“Submit”</strong>. Tarda unos minutos.</li>
+<li>Lee el <strong>tipo de péptido señal</strong> que predice (Sec/SPI
+es el clásico) y <strong>en qué posición pone el corte</strong>.
+<strong>Compáralo con tu propio análisis</strong>; si difiere, discútelo
+en el entregable.</li>
+</ol>
+<p>💻 <strong>EN LA TERMINAL · El mismo análisis en Python:</strong></p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># p04_hidropatia.py   -&gt;   python p04_hidropatia.py</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>seq <span class="op">=</span> <span class="bu">open</span>(<span class="st">&#39;01_blast/teuB_solo_letras.txt&#39;</span>).read().strip()</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>KD <span class="op">=</span> <span class="bu">dict</span>(A<span class="op">=</span><span class="fl">1.8</span>, R<span class="op">=-</span><span class="fl">4.5</span>, N<span class="op">=-</span><span class="fl">3.5</span>, D<span class="op">=-</span><span class="fl">3.5</span>, C<span class="op">=</span><span class="fl">2.5</span>, Q<span class="op">=-</span><span class="fl">3.5</span>, E<span class="op">=-</span><span class="fl">3.5</span>, G<span class="op">=-</span><span class="fl">0.4</span>, H<span class="op">=-</span><span class="fl">3.2</span>, I<span class="op">=</span><span class="fl">4.5</span>,</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>          L<span class="op">=</span><span class="fl">3.8</span>, K<span class="op">=-</span><span class="fl">3.9</span>, M<span class="op">=</span><span class="fl">1.9</span>, F<span class="op">=</span><span class="fl">2.8</span>, P<span class="op">=-</span><span class="fl">1.6</span>, S<span class="op">=-</span><span class="fl">0.8</span>, T<span class="op">=-</span><span class="fl">0.7</span>, W<span class="op">=-</span><span class="fl">0.9</span>, Y<span class="op">=-</span><span class="fl">1.3</span>, V<span class="op">=</span><span class="fl">4.2</span>)</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>carga <span class="op">=</span> <span class="kw">lambda</span> s: <span class="bu">sum</span>(c <span class="kw">in</span> <span class="st">&#39;KR&#39;</span> <span class="cf">for</span> c <span class="kw">in</span> s) <span class="op">-</span> <span class="bu">sum</span>(c <span class="kw">in</span> <span class="st">&#39;DE&#39;</span> <span class="cf">for</span> c <span class="kw">in</span> s)</span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>hid <span class="op">=</span> <span class="kw">lambda</span> s: <span class="bu">sum</span>(KD[c] <span class="cf">for</span> c <span class="kw">in</span> s) <span class="op">/</span> <span class="bu">len</span>(s)</span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;n (1-5)   </span><span class="sc">{</span>seq[<span class="dv">0</span>:<span class="dv">5</span>]<span class="sc">:&lt;18}</span><span class="ss"> carga neta </span><span class="sc">{</span>carga(seq[<span class="dv">0</span>:<span class="dv">5</span>])<span class="sc">:+d}</span><span class="ss">&quot;</span>)</span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;h (6-22)  </span><span class="sc">{</span>seq[<span class="dv">5</span>:<span class="dv">22</span>]<span class="sc">:&lt;18}</span><span class="ss"> hidropatia media </span><span class="sc">{</span>hid(seq[<span class="dv">5</span>:<span class="dv">22</span>])<span class="sc">:+.2f}</span><span class="ss">&quot;</span>)</span>
+<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;c (23-27) </span><span class="sc">{</span>seq[<span class="dv">22</span>:<span class="dv">27</span>]<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, <span class="dv">52</span>):                             <span class="co"># ventana deslizante de 9</span></span>
+<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a>    v <span class="op">=</span> hid(seq[i:i <span class="op">+</span> <span class="dv">9</span>])<span class="op">;</span> <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="sc">{</span>i<span class="op">+</span><span class="dv">1</span><span class="sc">:3d}</span><span class="ss">-</span><span class="sc">{</span>i<span class="op">+</span><span class="dv">9</span><span class="sc">:&lt;3d}</span><span class="ss"> </span><span class="sc">{</span>seq[i:i<span class="op">+</span><span class="dv">9</span>]<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>v<span class="sc">:+5.2f}</span><span class="ss"> </span><span class="sc">{</span><span class="st">&#39;#&#39;</span> <span class="op">*</span> <span class="bu">max</span>(<span class="bu">int</span>((v <span class="op">+</span> <span class="fl">4.5</span>) <span class="op">*</span> <span class="dv">4</span>), <span class="dv">0</span>)<span class="sc">}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+<p>🎯 <strong>El perfil real de TeuB</strong> (ventana de 9; cada
+<code>#</code> es altura en la escala):</p>
+<pre><code>  1-9   MKRRTFLQT -1.03 ##############            ← región n: cargas + (K, R, R)
+  5-13  TFLQTGSAL +0.68 #####################
+  9-17  TGSALIAAG +1.27 #######################
+ 13-21  LIAAGAFGI +2.24 ###########################  ← CIMA de la montaña (región h)
+ 17-25  GAFGIPGIL +1.62 ########################
+ 21-29  IPGILRADD +0.12 ##################          ← cae: entran R, D, D
+ 25-33  LRADDTIAL +0.39 ####################        ← ya estamos en la proteína madura
+ 29-37  DTIALLPDT +0.43 ####################</code></pre>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Región</th>
+<th>Residuos</th>
+<th>Secuencia</th>
+<th>Dato</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>n</strong></td>
+<td>1-5</td>
+<td><code>MKRRT</code></td>
+<td>carga neta <strong>+3</strong> (K, R, R)</td>
+</tr>
+<tr class="even">
+<td><strong>h</strong></td>
+<td>6-22</td>
+<td><code>FLQTGSALIAAGAFGIP</code></td>
+<td>hidropatía media <strong>+1.27</strong>, máximo
+<strong>+2.24</strong> en 13-21</td>
+</tr>
+<tr class="odd">
+<td><strong>c</strong></td>
+<td>23-27</td>
+<td><code>GILRA</code></td>
+<td>termina en <strong>A</strong> (alanina, un residuo pequeño) ✂</td>
+</tr>
+<tr class="even">
+<td><strong>madura</strong></td>
+<td>28-362</td>
+<td><code>DDTIALLPDT…</code></td>
+<td><strong>335 aa</strong>; empieza con dos aspartatos (D, con carga
+−)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="evidencia-2-el-plddt-ya-la-tienes-de-la-etapa-3">Evidencia 2 ·
+El pLDDT (ya la tienes de la Etapa 3)</h3>
+<p>Los residuos 1-27 tienen pLDDT <strong>36.3</strong> y del 28 en
+adelante <strong>96.8</strong>. La confianza <strong>salta</strong>
+justo donde termina el péptido.</p>
+<h3 id="evidencia-3-blast-ya-la-tienes-de-la-etapa-2">Evidencia 3 ·
+BLAST (ya la tienes de la Etapa 2)</h3>
+<p>Ningún pariente alinea antes del residuo <strong>49</strong>.</p>
+<blockquote>
+<p><strong>¿Por qué 49 y no 28?</strong> Porque los primeros ~20
+residuos de la cadena madura son un extremo variable que no se conserva
+entre parientes. Eso <strong>no</strong> los hace parte del péptido
+señal. El pLDDT sí distingue los dos casos: los residuos 28-48 tienen
+confianza alta, así que forman parte de la proteína plegada.</p>
+</blockquote>
+<p>📝 <strong>ANOTA:</strong> “Corte entre los residuos 27 y 28 (después
+de <code>GILRA</code>). Tres evidencias: regiones n/h/c con hidropatía,
+salto de pLDDT de 36 a 97 y ausencia de alineamiento de BLAST en el
+inicio. Cadena madura de 335 aa, que empieza en DDTIA.”</p>
+<h2 id="concepto-la-numeración-esto-evita-muchísimos-errores">🧠
+CONCEPTO: la numeración (esto evita muchísimos errores)</h2>
+<p>Al cortar 27 residuos, <strong>cada posición cambia de
+número</strong>. Hay que elegir <strong>una</strong> numeración y no
+cambiarla nunca:</p>
+<pre><code>  precursor (362):  M K R R T ... G I L R A │ D D T I A L L ... Y65 ... C296 ... F K A
+  posición:         1 2 3 4 5 ...23 24 25 26 27│28 29 30 31 32 33 34 ...          ... 362
+                                               ✂
+  madura (335):                                │ D D T I A L L ... Y38 ... C269 ... F K A
+  posición:                                    │ 1 2 3 4 5 6 7 ...              ... 335
+
+  REGLA:   posición madura = posición del precursor − 27</code></pre>
+<p>Aquí se usa <strong>siempre la numeración madura, del 1 al
+335</strong>. Así, los residuos del sitio son <strong>Y38 S43 H45 R174
+W197 D222 E248 C269</strong>.</p>
+<h2 id="cómo-quitar-el-péptido-del-modelo-3d">Cómo quitar el péptido del
+modelo 3D</h2>
+<p>Hay dos opciones:</p>
+<ul>
+<li><strong>(a) Volver a predecir</strong> la estructura en Colab, solo
+con la secuencia madura de 335 aa. Es lo más limpio.</li>
+<li><strong>(b) Recortar el PDB</strong> que ya tienes, borrando los
+residuos 1-27 y renumerando. Es más rápido. <strong>Costo a
+declarar:</strong> el resto de la proteína se plegó en presencia del
+péptido.</li>
+</ul>
+<p>Aquí se eligió <strong>(b)</strong>.</p>
+<p>🌐 <strong>EN LA WEB · Recortar y renumerar con PDB-Tools
+Web</strong></p>
+<ol type="1">
+<li>Ve a <strong>https://wenmr.science.uu.nl/pdbtools/</strong>.</li>
+<li>Sube el PDB <code>rank_001</code> de la Etapa 3.</li>
+<li>Agrega la herramienta <strong><code>pdb_delres</code></strong>, que
+borra residuos, con el rango <strong><code>1:27</code></strong>.</li>
+<li>Agrega después <strong><code>pdb_reres</code></strong>, que
+renumera, empezando en <strong><code>1</code></strong>.</li>
+<li>Ejecuta la cadena y <strong>descarga</strong> el PDB resultante.
+Guárdalo como <code>03_maduro/TeuB_maduro_1-335.pdb</code>.</li>
+</ol>
+<blockquote>
+<p>Si prefieres la opción (a), repite la Etapa 3 con la secuencia
+madura. La tienes abajo.</p>
+</blockquote>
+<p>💻 <strong>EN LA TERMINAL · Recortar con Python:</strong></p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># p04_recortar.py   -&gt;   python p04_recortar.py</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> glob</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>src <span class="op">=</span> glob.glob(<span class="st">&#39;02_estructura/*/*rank_001*.pdb&#39;</span>)[<span class="dv">0</span>]</span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>CORTE <span class="op">=</span> <span class="dv">27</span></span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">&#39;03_maduro/TeuB_maduro_1-335.pdb&#39;</span>, <span class="st">&#39;w&#39;</span>) <span class="im">as</span> o:</span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> l <span class="kw">in</span> <span class="bu">open</span>(src):</span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> l.startswith((<span class="st">&#39;ATOM&#39;</span>, <span class="st">&#39;TER&#39;</span>)) <span class="kw">and</span> <span class="bu">int</span>(l[<span class="dv">22</span>:<span class="dv">26</span>]) <span class="op">&gt;</span> CORTE:</span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a>            o.write(l[:<span class="dv">22</span>] <span class="op">+</span> <span class="ss">f&quot;</span><span class="sc">{</span><span class="bu">int</span>(l[<span class="dv">22</span>:<span class="dv">26</span>]) <span class="op">-</span> CORTE<span class="sc">:4d}</span><span class="ss">&quot;</span> <span class="op">+</span> l[<span class="dv">26</span>:])   <span class="co"># columnas 23-26 = numero de residuo</span></span>
+<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a>    o.write(<span class="st">&#39;END</span><span class="ch">\n</span><span class="st">&#39;</span>)</span></code></pre></div>
+<p><strong>La secuencia madura (335 aa)</strong>, que necesitarás en la
+Etapa 8. Guárdala como
+<code>03_maduro/teuB_maduro_solo_letras.txt</code>:</p>
+<pre><code>DDTIALLPDTWPSEGENPVVEAGKFAKAGPWKIGHSHYGLAGSTHTYQTAFEAEYEISRNKARVADYQFRSADLNASKQVADIEDLIAQKVDAIIIAPLTTGSAVEGIRKAKAAGIPTVVYLGRVDTEDFTVQVQGDDFYFGRVMAQFLVDKLGNKGKVWVLRGVAGHPIDADRYAGAMEVFSKSGLQITSTQHGSWSYEDSKKIAESLYLSDPDVAGVWTDGANMSLGVLDALQEAGASTIPPITGEALNGWMRRWNDEKLSSIGPICPPALSTAALRASFALLEGKPIQRNWTNRPKPIVDENLAQFYRSDLTDAYWAPTEMPNEKLLEYFKA</code></pre>
+<p>✅ <strong>VERIFICA:</strong> que tenga <strong>335</strong> letras,
+empiece en <code>DDTIALLPDT</code> y termine en
+<code>PNEKLLEYFKA</code>. Luego abre el PDB recortado en Mol* y
+comprueba que el residuo 38 sea una tirosina (TYR), el 174 una arginina
+(ARG) y el 269 una cisteína (CYS).</p>
+<p>⚠️ <strong>CUIDADO: el modelo de respaldo de la práctica tiene un
+error.</strong> La página reparte un modelo ya hecho
+(<code>TeuB_modelo_apo.pdb</code>) por si tu predicción falla. Tiene
+<strong>334 residuos en vez de 335</strong>. En la posición 256 la
+secuencia real dice
+<code>…LNGWM</code><strong><code>RR</code></strong><code>WNDEK…</code>,
+y el respaldo dice
+<code>…LNGWM</code><strong><code>R</code></strong><code>WNDEK…</code>:
+<strong>le falta una arginina</strong>. Por eso, todo lo que viene
+después del residuo 256 queda corrido en uno. El guion llama “Cys268” a
+la cisteína del sitio; en la numeración correcta es
+<strong>C269</strong>. <strong>Lección: compara siempre residuo por
+residuo los datos que te den.</strong></p>
+<hr />
+<h1 id="etapa-5-foldseek-parientes-por-forma-y-el-panel-de-ligandos">ETAPA 5
+· Foldseek: parientes por forma, y el panel de ligandos</h1>
+<h2 id="concepto-la-estructura-se-conserva-más-que-la-secuencia">🧠
+CONCEPTO: la estructura se conserva más que la secuencia</h2>
+<p>A lo largo de la evolución, la secuencia cambia rápido, pero
+<strong>la forma cambia muy lento</strong>, porque la forma es lo que
+hace funcionar a la proteína. Dos proteínas pueden tener solo 20 % de
+identidad y ser casi superponibles:</p>
+<pre><code>   identidad de SECUENCIA               similitud de ESTRUCTURA
+   entre TeuB y sus parientes:          entre TeuB y sus parientes:
+
+   ████░░░░░░░░░░░░░░░░  20 %          ████████████████░░░░  TM-score 0.8-0.9
+   &quot;casi irreconocibles&quot;                &quot;casi la misma forma&quot;</code></pre>
+<p><strong>Foldseek</strong> busca parientes <strong>por forma</strong>.
+Su truco es traducir cada estructura 3D a un “alfabeto estructural” de
+20 letras, llamado <strong>3Di</strong>, donde cada letra describe
+<strong>cómo está orientado un residuo respecto a sus vecinos</strong>.
+Así, comparar estructuras se vuelve tan rápido como comparar
+secuencias.</p>
+<h2 id="concepto-el-tm-score">🧠 CONCEPTO: el TM-score</h2>
+<p>El <strong>TM-score</strong> (0 a 1) mide qué tanto se parecen dos
+formas completas:</p>
+<pre><code>   TM-score   &lt; 0.3   ░░░  formas no relacionadas (al azar)
+              0.5     ▒▒▒  MISMO PLIEGUE (umbral clásico)
+              &gt; 0.8   ███  casi superponibles</code></pre>
+<h2 id="concepto-por-qué-foldseek-sirve-para-encontrar-ligandos">🧠
+CONCEPTO: por qué Foldseek sirve para encontrar LIGANDOS</h2>
+<p>Foldseek busca en el <strong>PDB</strong>, el banco mundial de
+estructuras <strong>experimentales</strong>. Muchas se cristalizaron
+<strong>con su ligando dentro</strong>. Cada pariente con ligando es
+<strong>un experimento de unión que alguien ya hizo</strong>:</p>
+<pre><code>   TeuB (sin ligando) ──Foldseek──►  2IOY  proteína de unión de Thermoanaerobacter  + RIBOSA
+                                     5OCP  proteína de unión de Shewanella          + ARABINOSA
+                                     2GBP  proteína de unión de E. coli             + GLUCOSA
+                                     3T95  proteína de unión de ...                 + APIOSA
+                                      ...
+                                      └──► de aquí sale la LISTA DE CANDIDATOS</code></pre>
+<h3 id="la-trampa-de-pdb100">⚠️ La trampa de PDB100</h3>
+<p>En la página de Foldseek, la base <strong>“PDB100”</strong> agrupa
+las cadenas con <strong>secuencia idéntica</strong> y muestra
+<strong>solo una por grupo</strong>. Si una proteína tiene 10 cristales
+(sin ligando, con glucosa, con galactosa…), ves <strong>uno</strong>, y
+puede ser el que no tiene nada. Por eso, <strong>cuando un acierto
+aparezca sin ligando, busca las otras entradas de la misma
+proteína</strong> (se explica abajo).</p>
+<h2 id="en-la-web-buscar-con-foldseek">🌐 EN LA WEB · Buscar con
+Foldseek</h2>
+<ol type="1">
+<li>Ve a <strong>https://search.foldseek.com/search</strong>.</li>
+<li><strong>Sube el PDB recortado</strong>
+(<code>TeuB_maduro_1-335.pdb</code>): arrástralo al recuadro o usa
+<strong>“Upload PDB/mmCIF”</strong>. <strong>Usa el modelo recortado, no
+el completo.</strong></li>
+<li>En <strong>“Databases”</strong> deja marcado
+<strong>PDB100</strong>. Opcionalmente marca también
+<strong>AFDB-SwissProt</strong>.</li>
+<li>En <strong>“Mode”</strong> deja <strong>“3Di/AA”</strong>.</li>
+<li>Presiona <strong>“Search”</strong>. Tarda menos de un minuto.</li>
+<li>En la pestaña <strong>PDB100</strong> verás una tabla con
+<strong>Target</strong> (código PDB y cadena),
+<strong>Description</strong>, <strong>Prob.</strong>, <strong>Seq.
+Id.</strong> (identidad de secuencia), <strong>E-value</strong> y
+<strong>TM-score</strong> (o <em>Score</em>, según la versión).</li>
+<li>Abre una hoja de cálculo y copia los <strong>40-50 primeros
+aciertos</strong>: código PDB, descripción, identidad y TM-score.</li>
+</ol>
+<h2 id="en-la-web-averiguar-qué-ligando-tiene-cada-acierto">🌐 EN LA WEB
+· Averiguar qué ligando tiene cada acierto</h2>
+<p>Por cada código PDB de tu lista (por ejemplo <code>2IOY</code>):</p>
+<ol type="1">
+<li>Ve a <strong>https://www.rcsb.org/structure/2IOY</strong> (cambia el
+código).</li>
+<li>Baja hasta la sección <strong>“Small Molecules”</strong>. Ahí
+aparece cada ligando con su <strong>ID</strong> (código de 3 letras),
+<strong>nombre</strong> y <strong>fórmula</strong>.</li>
+<li><strong>Ignora lo que no es un ligando biológico:</strong> agua
+(HOH), iones (NA, CL, MG, ZN, CA, K, SO4, PO4…), crioprotectores
+(<strong>GOL</strong> = glicerol, <strong>EDO</strong> = etilenglicol,
+<strong>PEG</strong>…), tampones (TRS, EPE, MES…) y detergentes. Se
+agregaron para cristalizar, no son lo que la proteína une en la
+naturaleza.</li>
+<li>Anota en tu hoja: <strong>código PDB → ligando(s) →
+fórmula</strong>.</li>
+<li><strong>Si la entrada no tiene ligando útil</strong> (la trampa de
+PDB100): en la misma página, en <strong>“Macromolecules”</strong>, haz
+clic en el enlace de <strong>UniProt</strong> de la proteína. En la
+página de UniProt, sección <strong>“Structure”</strong>, verás
+<strong>todas</strong> las entradas del PDB de esa proteína. Revisa las
+que no viste.</li>
+<li>Cuando termines, cuenta en tu hoja cuántas veces aparece cada
+ligando.</li>
+</ol>
+<p>💻 <strong>EN LA TERMINAL (lo que se hizo aquí): base PDB completa y
+consulta automática</strong></p>
+<p>Con la base completa (6.5 GB) no existe la trampa de PDB100, porque
+ves <strong>todas</strong> las cadenas.</p>
+<div class="sourceCode" id="cb33"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> 04_foldseek</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="ex">foldseek</span> databases PDB pdb_db tmp_dl          <span class="co"># descarga una sola vez (~10 min)</span></span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ..</span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a><span class="ex">foldseek</span> easy-search 03_maduro/TeuB_maduro_1-335.pdb 04_foldseek/pdb_db 04_foldseek/hits.tsv /tmp/fs <span class="dt">\</span></span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">--format-output</span> <span class="st">&quot;query,target,fident,alnlen,evalue,bits,prob,alntmscore,qcov,tcov,theader&quot;</span> <span class="dt">\</span></span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">--max-seqs</span> 4000 <span class="at">-e</span> 10 <span class="at">--threads</span> 8           <span class="co"># tarda ~8 segundos</span></span></code></pre></div>
+<p>Para no revisar 150 páginas a mano, se le preguntó al RCSB con su
+<strong>API GraphQL</strong>, que devuelve los datos en formato de
+máquina:</p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># p05_rcsb_ligandos.py  -&gt;  python p05_rcsb_ligandos.py</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json, urllib.request, collections</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>rows <span class="op">=</span> [l.rstrip(<span class="st">&#39;</span><span class="ch">\n</span><span class="st">&#39;</span>).split(<span class="st">&#39;</span><span class="ch">\t</span><span class="st">&#39;</span>) <span class="cf">for</span> l <span class="kw">in</span> <span class="bu">open</span>(<span class="st">&#39;04_foldseek/hits.tsv&#39;</span>)]</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>ids <span class="op">=</span> []</span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> r <span class="kw">in</span> rows:                                   <span class="co"># &#39;2ioy-assembly2_B&#39; -&gt; &#39;2IOY&#39;</span></span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>    pid <span class="op">=</span> r[<span class="dv">1</span>].split(<span class="st">&#39;-&#39;</span>)[<span class="dv">0</span>].split(<span class="st">&#39;_&#39;</span>)[<span class="dv">0</span>].upper()</span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> pid <span class="kw">not</span> <span class="kw">in</span> ids: ids.append(pid)</span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">len</span>(ids) <span class="op">==</span> <span class="dv">150</span>: <span class="cf">break</span></span>
+<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a>Q <span class="op">=</span> <span class="st">&#39;&#39;&#39;{ entries(entry_ids: </span><span class="sc">%s</span><span class="st">) { rcsb_id</span></span>
+<span id="cb34-10"><a href="#cb34-10" aria-hidden="true" tabindex="-1"></a><span class="st">  nonpolymer_entities { nonpolymer_comp { chem_comp { id name formula } } } } }&#39;&#39;&#39;</span></span>
+<span id="cb34-11"><a href="#cb34-11" aria-hidden="true" tabindex="-1"></a>E <span class="op">=</span> {}</span>
+<span id="cb34-12"><a href="#cb34-12" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, <span class="bu">len</span>(ids), <span class="dv">50</span>):</span>
+<span id="cb34-13"><a href="#cb34-13" aria-hidden="true" tabindex="-1"></a>    req <span class="op">=</span> urllib.request.Request(<span class="st">&#39;https://data.rcsb.org/graphql&#39;</span>, headers<span class="op">=</span>{<span class="st">&#39;Content-Type&#39;</span>: <span class="st">&#39;application/json&#39;</span>},</span>
+<span id="cb34-14"><a href="#cb34-14" aria-hidden="true" tabindex="-1"></a>                                 data<span class="op">=</span>json.dumps({<span class="st">&#39;query&#39;</span>: Q <span class="op">%</span> json.dumps(ids[i:i<span class="op">+</span><span class="dv">50</span>])}).encode())</span>
+<span id="cb34-15"><a href="#cb34-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> e <span class="kw">in</span> json.load(urllib.request.urlopen(req, timeout<span class="op">=</span><span class="dv">90</span>))[<span class="st">&#39;data&#39;</span>][<span class="st">&#39;entries&#39;</span>]:</span>
+<span id="cb34-16"><a href="#cb34-16" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> e: E[e[<span class="st">&#39;rcsb_id&#39;</span>]] <span class="op">=</span> [n[<span class="st">&#39;nonpolymer_comp&#39;</span>][<span class="st">&#39;chem_comp&#39;</span>] <span class="cf">for</span> n <span class="kw">in</span> (e[<span class="st">&#39;nonpolymer_entities&#39;</span>] <span class="kw">or</span> [])]</span>
+<span id="cb34-17"><a href="#cb34-17" aria-hidden="true" tabindex="-1"></a>BASURA <span class="op">=</span> <span class="bu">set</span>(<span class="st">&#39;&#39;&#39;HOH SO4 PO4 GOL EDO PEG PG4 PGE 1PE MPD ACT ACY FMT CL BR IOD NA K MG CA ZN MN FE NI CO CU CD</span></span>
+<span id="cb34-18"><a href="#cb34-18" aria-hidden="true" tabindex="-1"></a><span class="st">HG CS NO3 TRS EPE MES BTB CIT FLC TAR MLA SCN AZI NH4 IMD BME DTT DMS URE ACE NAG BOG LDA C8E P6G 12P 15P</span></span>
+<span id="cb34-19"><a href="#cb34-19" aria-hidden="true" tabindex="-1"></a><span class="st">SIN OXL MAE EOH IPA MRD TLA OCT PE4 B3P CAC NH2 UNX UNL&#39;&#39;&#39;</span>.split())</span>
+<span id="cb34-20"><a href="#cb34-20" aria-hidden="true" tabindex="-1"></a>cnt, info, donde, apo <span class="op">=</span> collections.Counter(), {}, collections.defaultdict(<span class="bu">list</span>), []</span>
+<span id="cb34-21"><a href="#cb34-21" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> pid, ligs <span class="kw">in</span> E.items():</span>
+<span id="cb34-22"><a href="#cb34-22" aria-hidden="true" tabindex="-1"></a>    buenos <span class="op">=</span> [l <span class="cf">for</span> l <span class="kw">in</span> ligs <span class="cf">if</span> l[<span class="st">&#39;id&#39;</span>] <span class="kw">not</span> <span class="kw">in</span> BASURA]</span>
+<span id="cb34-23"><a href="#cb34-23" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> buenos: apo.append(pid)</span>
+<span id="cb34-24"><a href="#cb34-24" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> l <span class="kw">in</span> buenos: cnt[l[<span class="st">&#39;id&#39;</span>]] <span class="op">+=</span> <span class="dv">1</span><span class="op">;</span> info[l[<span class="st">&#39;id&#39;</span>]] <span class="op">=</span> l<span class="op">;</span> donde[l[<span class="st">&#39;id&#39;</span>]].append(pid)</span>
+<span id="cb34-25"><a href="#cb34-25" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;entradas: </span><span class="sc">{</span><span class="bu">len</span>(E)<span class="sc">}</span><span class="ss">   sin ligando: </span><span class="sc">{</span><span class="bu">len</span>(apo)<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb34-26"><a href="#cb34-26" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> c, n <span class="kw">in</span> cnt.most_common(<span class="dv">25</span>):</span>
+<span id="cb34-27"><a href="#cb34-27" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="sc">{</span>c<span class="sc">:&lt;5}{</span>n<span class="sc">:&gt;3}</span><span class="ss">  </span><span class="sc">{</span>info[c][<span class="st">&#39;formula&#39;</span>]<span class="sc">:&lt;14}{</span>info[c][<span class="st">&#39;name&#39;</span>][:<span class="dv">40</span>]<span class="sc">:&lt;41}</span><span class="ss"> </span><span class="sc">{</span><span class="st">&#39;,&#39;</span><span class="sc">.</span>join(donde[c][:<span class="dv">5</span>])<span class="sc">}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+<h2 id="lo-que-debes-obtener-2">🎯 LO QUE DEBES OBTENER</h2>
+<ul>
+<li><strong>Muchos parientes por forma:</strong> 2811 aciertos con la
+base completa. Los mejores tienen <strong>TM-score de 0.76 a
+0.92</strong> y probabilidad 1.00, pero <strong>solo 17-25 % de
+identidad de secuencia</strong>. Foldseek encuentra parientes justo
+donde BLAST ya no resuelve: BLAST dio 17 aciertos.</li>
+<li>De las <strong>150 primeras entradas únicas</strong>, <strong>67 (45
+%) no tienen ligando</strong> (son estructuras “apo”) y 83 sí.</li>
+<li><strong>Ligandos más frecuentes:</strong></li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th>Código</th>
+<th>Veces</th>
+<th>Fórmula</th>
+<th>Nombre</th>
+<th>Algunas entradas</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>BGC</td>
+<td>13</td>
+<td>C6H12O6</td>
+<td>β-D-glucopiranosa</td>
+<td>2GBP, 3GBP, 2IPL, 4RXM…</td>
+</tr>
+<tr class="even">
+<td>RIP</td>
+<td>9</td>
+<td>C5H10O5</td>
+<td>β-D-ribopiranosa</td>
+<td>1DBP, 2IOY, 2GX6, 4ZJP…</td>
+</tr>
+<tr class="odd">
+<td>GAL</td>
+<td>7</td>
+<td>C6H12O6</td>
+<td>β-D-galactopiranosa</td>
+<td>2RJO, 8ABP, 4WWH…</td>
+</tr>
+<tr class="even">
+<td>HPA</td>
+<td>6</td>
+<td>C5H4N4O</td>
+<td>hipoxantina</td>
+<td>1JFT, 1VPW, 1QPZ…</td>
+</tr>
+<tr class="odd">
+<td>XYP</td>
+<td>4</td>
+<td>C5H10O5</td>
+<td>β-D-xilopiranosa</td>
+<td>3C6Q, 4YWH, 5XSS…</td>
+</tr>
+<tr class="even">
+<td>INS</td>
+<td>4</td>
+<td>C6H12O6</td>
+<td><em>mio</em>-inositol</td>
+<td>4IRX, 4YO7, 4RU1…</td>
+</tr>
+<tr class="odd">
+<td>PAV</td>
+<td>4</td>
+<td>C5H10O5</td>
+<td>D-apiosa</td>
+<td>3EJW, 3T95, 4PZ0, 6DSP</td>
+</tr>
+<tr class="even">
+<td>ARA</td>
+<td>2</td>
+<td>C5H10O5</td>
+<td>α-L-arabinopiranosa</td>
+<td>1BAP, 4RXT</td>
+</tr>
+<tr class="odd">
+<td>FRU</td>
+<td>2</td>
+<td>C6H12O6</td>
+<td>β-D-fructofuranosa</td>
+<td>2X7X, 3BRQ</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>La dificultad, cuantificada:</strong> en la lista aparecen
+<strong>11 ligandos distintos con fórmula C5H10O5</strong> y <strong>10
+con C6H12O6</strong>.</li>
+</ul>
+<p>📝 <strong>ANOTA</strong> la tabla de ligandos, las fórmulas
+repetidas y el porcentaje de entradas apo.</p>
+<h2 id="construir-el-panel-la-parte-que-requiere-criterio">Construir el
+panel: la parte que requiere criterio</h2>
+<p><strong>No basta con tomar los más frecuentes.</strong> Que la
+glucosa aparezca 13 veces dice qué proteínas se han cristalizado más, no
+qué une TeuB. El panel se armó con <strong>cuatro criterios
+explícitos</strong>, que tienes que poder defender:</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Criterio</th>
+<th>Ligandos elegidos</th>
+<th>Qué pregunta responde</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>(a) Frecuencia</strong> en Foldseek</td>
+<td><strong>BGC</strong> glucosa, <strong>RIP</strong> ribosa,
+<strong>GAL</strong> galactosa, <strong>XYP</strong> xilosa</td>
+<td>lo que más se ha visto en la familia</td>
+</tr>
+<tr class="even">
+<td><strong>(b) Convergencia</strong> BLAST + Foldseek</td>
+<td><strong>PAV</strong> D-apiosa</td>
+<td>la única que aparece en los dos, y con parientes de
+<em>Rhizobium</em></td>
+</tr>
+<tr class="odd">
+<td><strong>(c) Pares con la MISMA fórmula</strong></td>
+<td><strong>ARA</strong> / <strong>AHR</strong>: arabinosa, anillo de 6
+/ de 5</td>
+<td>¿el método distingue el tamaño del anillo?</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><strong>RIP</strong> / <strong>BDR</strong>: ribosa, anillo de 6 /
+de 5</td>
+<td>ídem</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><strong>GAL</strong> / <strong>GZL</strong>: galactosa, anillo de 6
+/ de 5</td>
+<td>ídem</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><strong>ALL</strong> / <strong>WEB</strong>: alosa (aldosa) /
+psicosa (cetosa)</td>
+<td>¿distingue una aldosa de una cetosa?</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><strong>BGC</strong> / <strong>FRU</strong>: glucosa (aldosa) /
+fructosa (cetosa)</td>
+<td>ídem</td>
+</tr>
+<tr class="even">
+<td><strong>(d) Señuelos</strong>, de fácil a difícil de rechazar</td>
+<td><strong>INS</strong> <em>mio</em>-inositol: ciclitol, misma fórmula
+que la glucosa</td>
+<td>¿lo confunde con un azúcar?</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><strong>X9X</strong> D-alitol: poliol de cadena abierta</td>
+<td>¿rechaza algo sin anillo?</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><strong>HPA</strong> hipoxantina: base púrica, ni azúcar ni
+poliol</td>
+<td>¿rechaza algo químicamente distinto?</td>
+</tr>
+</tbody>
+</table>
+<p>Además se agregó <strong>3VB</strong> (D-treitol, C4H10O4), que viene
+del panel de respaldo de la práctica. En total son <strong>16
+ligandos</strong>.</p>
+<p>📝 <strong>ANOTA</strong> de qué entradas del PDB sale cada ligando
+(lo pide el entregable): AHR de 5OCP, BDR de 3KSM, ALL de 5DTE, WEB de
+8WLB, GZL de 2VK2, X9X de 4WT7 y 3VB de 4RSM; los demás, en la tabla de
+arriba.</p>
+<hr />
+<h1 id="etapa-6-conseguir-y-verificar-los-ligandos">ETAPA 6 · Conseguir
+y verificar los ligandos</h1>
+<h2 id="concepto-el-diccionario-químico-del-pdb-ccd">🧠 CONCEPTO: el
+diccionario químico del PDB (CCD)</h2>
+<p>Cada molécula pequeña del PDB tiene una <strong>ficha</strong> en el
+<em>Chemical Component Dictionary</em> (<strong>CCD</strong>),
+identificada por un <strong>código de 3 caracteres</strong> (BGC, RIP,
+XYP…). La ficha define átomos, enlaces y estereoquímica, e incluye unas
+<strong>coordenadas “ideales”</strong>: una forma 3D limpia, generada
+por computadora, <strong>con todos los hidrógenos</strong>. Es el punto
+de partida estándar para el docking.</p>
+<h2 id="concepto-formatos-de-archivo-qué-hay-adentro">🧠 CONCEPTO:
+formatos de archivo (qué hay adentro)</h2>
+<p><strong>SDF</strong>: átomos con coordenadas y, después, los enlaces.
+Este es el inicio real de <code>RIP_ideal.sdf</code>:</p>
+<pre><code>RIP                                           ← nombre
+  CCTOOLS-1004241127                          ← programa que lo generó
+                                              ← (línea de comentario)
+ 20 20  0  0  1  0  0  0  0  0999 V2000       ← 20 átomos, 20 enlaces
+    0.5380    0.2920   -1.2190 C   0  0 ...   ← átomo 1: x, y, z, elemento
+   -0.6510   -0.5750   -0.8030 C   0  0 ...   ← átomo 2
+    ...</code></pre>
+<p><strong>PDBQT</strong> (el formato de AutoDock Vina) es un PDB con
+dos agregados: el <strong>tipo de átomo</strong> en la última columna y
+un <strong>árbol de torsiones</strong>, que indica qué enlaces pueden
+girar. Este es un fragmento real de <code>RIP.pdbqt</code>:</p>
+<pre><code>ROOT                                            ← la parte RÍGIDA: el anillo
+ATOM      1  C   UNL     1   0.538   0.292  -1.219  ...  C     ← carbono
+ATOM      6  O   UNL     1   1.686  -0.061  -0.450  ...  OA    ← O &quot;aceptor&quot; de puente H
+ENDROOT
+BRANCH   1   7                                  ← un enlace que PUEDE GIRAR (C1–O1)
+ATOM      7  O   UNL     1   0.812   0.086  -2.606  ...  OA
+ATOM      8  H   UNL     1   1.563   0.653  -2.829  ...  HD    ← H &quot;donador&quot; (el del OH)
+ENDBRANCH   1   7
+...
+TORSDOF 4                                       ← 4 torsiones activas en total</code></pre>
+<pre><code>   Cada OH es una &quot;rama&quot; que gira:
+
+           H                     La ribopiranosa tiene 4 OH que giran → 4 torsiones.
+           │                     Una furanosa suele tener UNA MÁS, porque su CH2OH
+      ─────O  ↻  gira            queda fuera del anillo y agrega un enlace libre.
+           │                     Esto va a importar en la Etapa 9.
+      ─── C ───</code></pre>
+<h2 id="en-la-web-descargar-cada-ligando">🌐 EN LA WEB · Descargar cada
+ligando</h2>
+<p>Por cada código del panel (ejemplo con <code>BGC</code>):</p>
+<ol type="1">
+<li>Ve a <strong>https://www.rcsb.org/ligand/BGC</strong> (cambia el
+código).</li>
+<li>Revisa en la ficha el <strong>nombre</strong> y la
+<strong>fórmula</strong>. ¿Es la molécula que esperabas? ¿Es α o β?</li>
+<li>Busca <strong>“Download”</strong> / <strong>“Download
+Files”</strong> → <strong>“Ideal Coordinates (SDF)”</strong>.</li>
+<li>Guárdalo como <code>05_ligandos/BGC_ideal.sdf</code>.</li>
+</ol>
+<blockquote>
+<p><strong>Descarga directa</strong>, sin navegar por la página:
+<code>https://files.rcsb.org/ligands/download/BGC_ideal.sdf</code>
+(cambia el código).</p>
+</blockquote>
+<p>Los 16 códigos del panel:</p>
+<pre><code>BGC  RIP  GAL  XYP  PAV  INS  ARA  AHR  BDR  ALL  WEB  FRU  GZL  X9X  HPA  3VB</code></pre>
+<blockquote>
+<p><strong>Para SwissDock (la ruta web de la Etapa 7)</strong> puedes
+subir el SDF o el mol2 directamente, o pegar el <strong>SMILES</strong>,
+sin convertir nada. La conversión a PDBQT solo hace falta para Vina en
+la terminal.</p>
+</blockquote>
+<p>💻 <strong>EN LA TERMINAL · Descargar y convertir los 16 de una
+vez:</strong></p>
+<div class="sourceCode" id="cb39"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> 05_ligandos</span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> c <span class="kw">in</span> BGC RIP GAL XYP PAV INS ARA AHR BDR ALL WEB FRU GZL X9X HPA 3VB<span class="kw">;</span> <span class="cf">do</span></span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>  <span class="ex">curl</span> <span class="at">-s</span> <span class="at">-o</span> <span class="va">${c}</span>_ideal.sdf https://files.rcsb.org/ligands/download/<span class="va">${c}</span>_ideal.sdf</span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a>  <span class="ex">obabel</span> <span class="at">-isdf</span> <span class="va">${c}</span>_ideal.sdf <span class="at">-omol2</span>  <span class="at">-O</span> <span class="va">${c}</span>.mol2      <span class="co"># para SwissDock / visualizar</span></span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a>  <span class="ex">obabel</span> <span class="at">-isdf</span> <span class="va">${c}</span>_ideal.sdf <span class="at">-opdbqt</span> <span class="at">-O</span> <span class="va">${c}</span>.pdbqt     <span class="co"># para Vina: tipos de átomo + torsiones</span></span>
+<span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span>
+<span id="cb39-7"><a href="#cb39-7" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ..</span></code></pre></div>
+<p>Al convertir a PDBQT, Open Babel asigna los tipos de átomo,
+<strong>conserva solo los hidrógenos polares</strong> (los de los OH,
+que forman puentes de hidrógeno) y construye el árbol de torsiones.</p>
+<h2 id="verifica-los-tres-chequeos-del-guion">✅ VERIFICA: los tres
+chequeos del guion</h2>
+<p>Por cada ligando:</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Chequeo</th>
+<th>Por qué importa</th>
+<th>Cómo se ve</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1. La fórmula del archivo = la fórmula de la
+ficha</strong></td>
+<td>así sabes que bajaste la molécula correcta</td>
+<td>cuenta los C, H y O en el SDF; la línea 4 dice cuántos átomos
+hay</td>
+</tr>
+<tr class="even">
+<td><strong>2. Tiene hidrógenos</strong></td>
+<td>sin H, los puentes de hidrógeno se calculan mal</td>
+<td>en el SDF aparecen átomos <code>H</code></td>
+</tr>
+<tr class="odd">
+<td><strong>3. No es plano</strong></td>
+<td>un SDF “2D” (todas las z = 0) hace que el docking parta de una forma
+absurda</td>
+<td>la tercera coordenada <strong>no</strong> es 0.0000 en todos los
+átomos</td>
+</tr>
+</tbody>
+</table>
+<p>La excepción es la <strong>hipoxantina (HPA)</strong>, que
+<strong>debe</strong> ser plana porque es un anillo aromático.</p>
+<p>💻 <strong>Chequeo automático:</strong></p>
+<div class="sourceCode" id="cb40"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co"># p06_verificar_ligandos.py  -&gt;  python p06_verificar_ligandos.py</span></span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> collections, numpy <span class="im">as</span> np</span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> c <span class="kw">in</span> <span class="st">&#39;BGC RIP GAL XYP PAV INS ARA AHR BDR ALL WEB FRU GZL X9X HPA 3VB&#39;</span>.split():</span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a>    L <span class="op">=</span> <span class="bu">open</span>(<span class="ss">f&#39;05_ligandos/</span><span class="sc">{</span>c<span class="sc">}</span><span class="ss">_ideal.sdf&#39;</span>).read().splitlines()</span>
+<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a>    n <span class="op">=</span> <span class="bu">int</span>(L[<span class="dv">3</span>][:<span class="dv">3</span>])<span class="op">;</span> at <span class="op">=</span> L[<span class="dv">4</span>:<span class="dv">4</span> <span class="op">+</span> n]</span>
+<span id="cb40-6"><a href="#cb40-6" aria-hidden="true" tabindex="-1"></a>    el <span class="op">=</span> collections.Counter(l[<span class="dv">31</span>:<span class="dv">34</span>].strip() <span class="cf">for</span> l <span class="kw">in</span> at)</span>
+<span id="cb40-7"><a href="#cb40-7" aria-hidden="true" tabindex="-1"></a>    xyz <span class="op">=</span> np.array([[<span class="bu">float</span>(l[<span class="dv">0</span>:<span class="dv">10</span>]), <span class="bu">float</span>(l[<span class="dv">10</span>:<span class="dv">20</span>]), <span class="bu">float</span>(l[<span class="dv">20</span>:<span class="dv">30</span>])] <span class="cf">for</span> l <span class="kw">in</span> at])</span>
+<span id="cb40-8"><a href="#cb40-8" aria-hidden="true" tabindex="-1"></a>    X <span class="op">=</span> xyz <span class="op">-</span> xyz.mean(<span class="dv">0</span>)<span class="op">;</span> grosor <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> np.sqrt(np.linalg.eigvalsh(X.T <span class="op">@</span> X <span class="op">/</span> n)[<span class="dv">0</span>])</span>
+<span id="cb40-9"><a href="#cb40-9" aria-hidden="true" tabindex="-1"></a>    tors <span class="op">=</span> <span class="bu">open</span>(<span class="ss">f&#39;05_ligandos/</span><span class="sc">{</span>c<span class="sc">}</span><span class="ss">.pdbqt&#39;</span>).read().count(<span class="st">&#39;BRANCH&#39;</span>) <span class="op">//</span> <span class="dv">2</span></span>
+<span id="cb40-10"><a href="#cb40-10" aria-hidden="true" tabindex="-1"></a>    formula <span class="op">=</span> <span class="st">&#39;&#39;</span>.join(<span class="ss">f&quot;</span><span class="sc">{</span>e<span class="sc">}{</span>el[e]<span class="sc">}</span><span class="ss">&quot;</span> <span class="cf">for</span> e <span class="kw">in</span> <span class="st">&#39;CHNO&#39;</span> <span class="cf">if</span> el[e])</span>
+<span id="cb40-11"><a href="#cb40-11" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="sc">{</span>c<span class="sc">:&lt;4}</span><span class="ss"> </span><span class="sc">{</span>formula<span class="sc">:&lt;10}</span><span class="ss"> H=</span><span class="sc">{</span>el[<span class="st">&#39;H&#39;</span>]<span class="sc">:&lt;3}</span><span class="ss"> torsiones=</span><span class="sc">{</span>tors<span class="sc">:&lt;3}</span><span class="ss"> grosor=</span><span class="sc">{</span>grosor<span class="sc">:.2f}</span><span class="ss"> A&quot;</span>,</span>
+<span id="cb40-12"><a href="#cb40-12" aria-hidden="true" tabindex="-1"></a>          <span class="st">&quot;2D!&quot;</span> <span class="cf">if</span> np.allclose(xyz[:, <span class="dv">2</span>], <span class="dv">0</span>) <span class="cf">else</span> (<span class="st">&quot;plano (aromatico)&quot;</span> <span class="cf">if</span> grosor <span class="op">&lt;</span> <span class="fl">0.3</span> <span class="cf">else</span> <span class="st">&quot;3D ok&quot;</span>))</span></code></pre></div>
+<h2 id="lo-que-debes-obtener-3">🎯 LO QUE DEBES OBTENER</h2>
+<p>Los 16 pasan los tres chequeos. HPA sale plana, que es lo correcto.
+Fíjate en las <strong>torsiones</strong>:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Par (misma fórmula)</th>
+<th>Anillo de 6</th>
+<th>Anillo de 5</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>arabinosa</td>
+<td>ARA: <strong>4</strong></td>
+<td>AHR: <strong>5</strong></td>
+</tr>
+<tr class="even">
+<td>ribosa</td>
+<td>RIP: <strong>4</strong></td>
+<td>BDR: <strong>5</strong></td>
+</tr>
+<tr class="odd">
+<td>galactosa</td>
+<td>GAL: <strong>6</strong></td>
+<td>GZL: <strong>7</strong></td>
+</tr>
+</tbody>
+</table>
+<p>📝 <strong>ANOTA:</strong> “Cada furanosa tiene una torsión activa
+más que su piranosa.” Te va a servir para explicar un resultado de la
+Etapa 9.</p>
+<hr />
+<h1 id="etapa-7-acoplamiento-molecular-docking">ETAPA 7 · Acoplamiento
+molecular (docking)</h1>
+<h2 id="concepto-qué-hace-un-programa-de-docking">🧠 CONCEPTO: qué hace
+un programa de docking</h2>
+<p>El docking intenta responder: <em>“Si meto esta molécula en este
+bolsillo, ¿en qué posición queda mejor, y qué tan bien?”</em>. Tiene dos
+partes:</p>
+<pre><code>  1. BÚSQUEDA: probar miles de posiciones, giros y torsiones del ligando dentro de una CAJA
+
+        ┌──────────── caja de búsqueda (26 × 26 × 26 Å) ────────────┐
+        │     ●↻        ●         ↻●                                 │
+        │          ╭─────────────────╮     ← la proteína (RÍGIDA)    │
+        │   ●      │   hendidura     │                               │
+        │          │     ● ● ●       │  ← el ligando prueba posiciones│
+        │     ↻●   ╰─────────────────╯                               │
+        │                        ●↻        ●                         │
+        └────────────────────────────────────────────────────────────┘
+
+  2. PUNTAJE: a cada posición le calcula un número (función de puntaje de Vina)
+
+        puntaje = contactos estéricos + puentes de H + hidrofobicidad
+                  + penalización por cada torsión que el ligando &quot;congela&quot;
+                  → en kcal/mol; MÁS NEGATIVO = &quot;MEJOR&quot;</code></pre>
+<p><strong>Tres ideas clave:</strong></p>
+<ol type="1">
+<li><strong>La proteína es rígida.</strong> Vina no la mueve. Si la
+hendidura está cerrada, como en TeuB, el ligando tiene que caber en el
+hueco que ya existe.</li>
+<li><strong>La búsqueda es aleatoria.</strong> Depende de una
+<strong>semilla</strong> (<em>seed</em>), que es el número con el que
+arranca el generador aleatorio. Con otra semilla, el resultado puede
+cambiar un poco. <strong>Repetir con varias semillas mide el ruido de la
+búsqueda.</strong></li>
+<li><strong>El puntaje NO es la afinidad real.</strong> El error típico
+de Vina frente a mediciones de laboratorio es de <strong>~2
+kcal/mol</strong>.</li>
+</ol>
+<h2 id="concepto-precisión-no-es-exactitud">🧠 CONCEPTO: precisión no es
+exactitud</h2>
+<p>Esta distinción es central para el entregable:</p>
+<pre><code>   PRECISO pero NO EXACTO              EXACTO pero NO PRECISO           PRECISO y EXACTO
+   (así es Vina aquí)
+
+        ┌─────────┐                        ┌─────────┐                   ┌─────────┐
+        │  ◎      │                        │ ×    ×  │                   │         │
+        │    ×××  │   ← todos los tiros    │    ◎    │                   │   ◎×××  │
+        │    ××   │     juntos, pero       │  ×    × │                   │    ××   │
+        │         │     lejos del centro   │   ×     │                   │         │
+        └─────────┘                        └─────────┘                   └─────────┘
+   ◎ = el valor verdadero    × = cada repetición</code></pre>
+<p>Las 3 semillas de Vina dan casi el mismo número
+(<strong>precisión</strong>), pero eso no dice nada sobre si el número
+está cerca de la afinidad real (<strong>exactitud</strong>).</p>
+<h2 id="concepto-el-centro-de-la-caja-se-calcula-en-tus-coordenadas">🧠
+CONCEPTO: el centro de la caja se calcula en TUS coordenadas</h2>
+<p>Cada modelo de AlphaFold coloca la proteína en un lugar arbitrario
+del espacio. El centro del sitio de <strong>tu</strong> modelo tiene
+coordenadas distintas de las de cualquier otro modelo.</p>
+<p>⚠️ <strong>CUIDADO:</strong> el guion da un centro (3.4 / 4.0 / 1.3)
+que corresponde al <strong>modelo de respaldo</strong>. Si lo usas con
+tu modelo, la caja puede quedar en el vacío. El centro de TeuB en el
+modelo propio es <strong>x = 3.38, y = −3.17, z = 0.79</strong>, y se
+calculó como el promedio de los átomos de cadena lateral de los 8
+residuos del sitio.</p>
+<p>🌐 <strong>Cómo calcular el centro sin programar</strong> (con un
+editor de texto y una hoja de cálculo):</p>
+<ol type="1">
+<li><p>Abre <code>TeuB_maduro_1-335.pdb</code> con un editor de texto
+(Bloc de notas, gedit…).</p></li>
+<li><p>Busca las líneas <code>ATOM</code> de los residuos <strong>38,
+43, 45, 174, 197, 222, 248 y 269</strong>. El número de residuo va en
+las columnas 23-26, después de la letra de cadena <code>A</code>. Por
+ejemplo:</p>
+<pre><code>ATOM    489  OH  TYR A  38       2.695  -0.628   5.414  1.00 93.56           O
+             ^^  ^^^    ^^       ^^^^^^^^^^^^^^^^^^^^^^^^
+            átomo resid. núm.        coordenadas x, y, z</code></pre></li>
+<li><p>Copia a la hoja de cálculo las coordenadas x, y, z de
+<strong>todos los átomos de cadena lateral</strong> de esos 8 residuos,
+es decir, <strong>todos menos N, CA, C y O</strong>. Son 44
+átomos.</p></li>
+<li><p>Calcula el promedio de cada columna:
+<code>=PROMEDIO(B2:B45)</code>. <strong>Ese es el
+centro.</strong></p></li>
+<li><p>Para el tamaño: toma el máximo menos el mínimo de cada columna
+(unos 17 Å como máximo) y súmale ~8 Å de margen. Resulta una caja de
+<strong>26 Å</strong> por lado.</p></li>
+</ol>
+<p>💻 <strong>Con Python:</strong></p>
+<div class="sourceCode" id="cb44"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co"># p07_centro_caja.py  -&gt;  python p07_centro_caja.py</span></span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>SITIO <span class="op">=</span> [<span class="dv">38</span>, <span class="dv">43</span>, <span class="dv">45</span>, <span class="dv">174</span>, <span class="dv">197</span>, <span class="dv">222</span>, <span class="dv">248</span>, <span class="dv">269</span>]</span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a>P <span class="op">=</span> np.array([[<span class="bu">float</span>(l[<span class="dv">30</span>:<span class="dv">38</span>]), <span class="bu">float</span>(l[<span class="dv">38</span>:<span class="dv">46</span>]), <span class="bu">float</span>(l[<span class="dv">46</span>:<span class="dv">54</span>])]</span>
+<span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a>              <span class="cf">for</span> l <span class="kw">in</span> <span class="bu">open</span>(<span class="st">&#39;03_maduro/TeuB_maduro_1-335.pdb&#39;</span>)</span>
+<span id="cb44-6"><a href="#cb44-6" aria-hidden="true" tabindex="-1"></a>              <span class="cf">if</span> l.startswith(<span class="st">&#39;ATOM&#39;</span>) <span class="kw">and</span> <span class="bu">int</span>(l[<span class="dv">22</span>:<span class="dv">26</span>]) <span class="kw">in</span> SITIO</span>
+<span id="cb44-7"><a href="#cb44-7" aria-hidden="true" tabindex="-1"></a>              <span class="kw">and</span> l[<span class="dv">12</span>:<span class="dv">16</span>].strip() <span class="kw">not</span> <span class="kw">in</span> (<span class="st">&#39;N&#39;</span>, <span class="st">&#39;CA&#39;</span>, <span class="st">&#39;C&#39;</span>, <span class="st">&#39;O&#39;</span>)])</span>
+<span id="cb44-8"><a href="#cb44-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;</span><span class="sc">{</span><span class="bu">len</span>(P)<span class="sc">}</span><span class="ss"> atomos;  centro = </span><span class="sc">{</span>P<span class="sc">.</span>mean(<span class="dv">0</span>)<span class="sc">.</span><span class="bu">round</span>(<span class="dv">2</span>)<span class="sc">}</span><span class="ss">;  extension = </span><span class="sc">{</span>(P.<span class="bu">max</span>(<span class="dv">0</span>) <span class="op">-</span> P.<span class="bu">min</span>(<span class="dv">0</span>))<span class="sc">.</span><span class="bu">round</span>(<span class="dv">1</span>)<span class="sc">}</span><span class="ss"> A&quot;</span>)</span></code></pre></div>
+<h2 id="en-la-web-docking-con-swissdock">🌐 EN LA WEB · Docking con
+SwissDock</h2>
+<p>SwissDock usa por dentro <strong>el mismo motor que AutoDock
+Vina</strong>. Los nombres de los botones pueden variar un poco según la
+versión de la página.</p>
+<ol type="1">
+<li>Ve a <strong>https://www.swissdock.ch/</strong>.</li>
+<li><strong>Ligando:</strong> sube el archivo <code>.mol2</code> o
+<code>.sdf</code> del ligando, o pega su SMILES. Presiona el botón para
+<strong>preparar el ligando</strong> (<em>Prepare ligand</em>).</li>
+<li><strong>Blanco (target):</strong> sube
+<code>TeuB_maduro_1-335.pdb</code>, <strong>el recortado</strong>, y
+presiona <strong>preparar el blanco</strong> (<em>Prepare
+target</em>).</li>
+<li><strong>Parámetros:</strong>
+<ul>
+<li>motor: <strong>AutoDock Vina</strong>;</li>
+<li><strong>centro de la caja</strong> (<em>box center</em>): x = 3.38,
+y = −3.17, z = 0.79, o el que calculaste para <strong>tu</strong>
+modelo;</li>
+<li><strong>tamaño de la caja</strong> (<em>box size</em>): 26, 26,
+26;</li>
+<li><strong>exhaustividad</strong> (<em>sampling exhaustivity</em>): la
+más alta que permita la página. Anótala y <strong>usa la misma en todos
+los ligandos</strong>.</li>
+</ul></li>
+<li>Envía el trabajo y guarda el <strong>ID</strong> o el enlace de
+resultados.</li>
+<li>En los resultados, anota <strong>el mejor puntaje (Vina score,
+kcal/mol)</strong> y mira la pose en el visor: ¿quedó <strong>dentro de
+la hendidura</strong>?</li>
+<li><strong>Repite con otra semilla, o simplemente otra vez</strong>, al
+menos para algunos ligandos. Así mides el ruido. Si la página no deja
+elegir semilla, corre el mismo ligando 2 o 3 veces.</li>
+<li>Repite para todos los ligandos del panel con <strong>exactamente los
+mismos parámetros</strong>.</li>
+</ol>
+<h2 id="en-la-terminal-docking-con-autodock-vina-lo-que-se-hizo-aquí">💻
+EN LA TERMINAL · Docking con AutoDock Vina (lo que se hizo aquí)</h2>
+<p><strong>Paso 1, preparar el receptor.</strong></p>
+<div class="sourceCode" id="cb45"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> 06_docking</span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a><span class="ex">obabel</span> <span class="at">-ipdb</span> ../03_maduro/TeuB_maduro_1-335.pdb <span class="at">-opdbqt</span> <span class="at">-O</span> receptor.pdbqt <span class="at">-xr</span> <span class="at">-p</span> 7.4</span></code></pre></div>
+<ul>
+<li><code>-xr</code>: receptor <strong>rígido</strong>.</li>
+<li><code>-p 7.4</code>: agrega los <strong>hidrógenos que corresponden
+a pH 7.4</strong>, el pH fisiológico: His, Asp, Glu y Lys con la carga
+que tendrían en la célula.</li>
+</ul>
+<p><strong>Paso 2, correr Vina</strong> con un ligando y una
+semilla:</p>
+<div class="sourceCode" id="cb46"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="ex">vina</span> <span class="at">--receptor</span> receptor.pdbqt <span class="at">--ligand</span> ../05_ligandos/BGC.pdbqt <span class="dt">\</span></span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>     <span class="at">--center_x</span> 3.38 <span class="at">--center_y</span> <span class="at">-3.17</span> <span class="at">--center_z</span> 0.79 <span class="dt">\</span></span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>     <span class="at">--size_x</span> 26 <span class="at">--size_y</span> 26 <span class="at">--size_z</span> 26 <span class="dt">\</span></span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>     <span class="at">--exhaustiveness</span> 32 <span class="at">--num_modes</span> 9 <span class="at">--seed</span> 101 <span class="at">--cpu</span> 8 <span class="dt">\</span></span>
+<span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a>     <span class="at">--out</span> out_BGC_s101.pdbqt <span class="op">&gt;</span> log_BGC_s101.txt</span></code></pre></div>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Opción</th>
+<th>Qué hace</th>
+<th>Valor usado</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>--center_*</code>, <code>--size_*</code></td>
+<td>la caja</td>
+<td>centro del sitio; 26 Å</td>
+</tr>
+<tr class="even">
+<td><code>--exhaustiveness</code></td>
+<td>cuánto busca (el valor por omisión es 8)</td>
+<td><strong>32</strong>: 4 veces más búsqueda, resultados más
+estables</td>
+</tr>
+<tr class="odd">
+<td><code>--num_modes</code></td>
+<td>cuántas poses guarda</td>
+<td>9</td>
+</tr>
+<tr class="even">
+<td><code>--seed</code></td>
+<td>la semilla aleatoria</td>
+<td><strong>101, 202 y 303</strong> (3 réplicas)</td>
+</tr>
+<tr class="odd">
+<td><code>--cpu</code></td>
+<td>núcleos</td>
+<td>8</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Paso 3, todos los ligandos</strong>, con un script
+<strong>reanudable</strong> (si se interrumpe, al volver a correrlo
+salta las corridas que ya tienen resultado):</p>
+<div class="sourceCode" id="cb47"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> <span class="op">&gt;</span> run.sh <span class="op">&lt;&lt;&#39;SH&#39;</span></span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a><span class="st">#!/bin/bash</span></span>
+<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a><span class="st">for c in BGC RIP GAL XYP PAV INS ARA AHR BDR ALL WEB FRU GZL X9X HPA 3VB; do</span></span>
+<span id="cb47-4"><a href="#cb47-4" aria-hidden="true" tabindex="-1"></a><span class="st">  for seed in 101 202 303; do</span></span>
+<span id="cb47-5"><a href="#cb47-5" aria-hidden="true" tabindex="-1"></a><span class="st">    o=out_${c}_s${seed}.pdbqt</span></span>
+<span id="cb47-6"><a href="#cb47-6" aria-hidden="true" tabindex="-1"></a><span class="st">    [ -s &quot;$o&quot; ] &amp;&amp; continue</span></span>
+<span id="cb47-7"><a href="#cb47-7" aria-hidden="true" tabindex="-1"></a><span class="st">    vina --receptor receptor.pdbqt --ligand ../05_ligandos/${c}.pdbqt \</span></span>
+<span id="cb47-8"><a href="#cb47-8" aria-hidden="true" tabindex="-1"></a><span class="st">      --center_x 3.38 --center_y -3.17 --center_z 0.79 --size_x 26 --size_y 26 --size_z 26 \</span></span>
+<span id="cb47-9"><a href="#cb47-9" aria-hidden="true" tabindex="-1"></a><span class="st">      --exhaustiveness 32 --num_modes 9 --seed $seed --cpu 8 --out $o &gt; log_${c}_s${seed}.txt 2&gt;&amp;1</span></span>
+<span id="cb47-10"><a href="#cb47-10" aria-hidden="true" tabindex="-1"></a><span class="st">  done</span></span>
+<span id="cb47-11"><a href="#cb47-11" aria-hidden="true" tabindex="-1"></a><span class="st">done</span></span>
+<span id="cb47-12"><a href="#cb47-12" aria-hidden="true" tabindex="-1"></a><span class="op">SH</span></span>
+<span id="cb47-13"><a href="#cb47-13" aria-hidden="true" tabindex="-1"></a><span class="fu">chmod</span> +x run.sh</span>
+<span id="cb47-14"><a href="#cb47-14" aria-hidden="true" tabindex="-1"></a><span class="ex">tmux</span> new <span class="at">-s</span> docking      <span class="co"># abre una sesión que sobrevive si cierras la terminal</span></span>
+<span id="cb47-15"><a href="#cb47-15" aria-hidden="true" tabindex="-1"></a><span class="ex">./run.sh</span>                 <span class="co"># 48 corridas × ~3 min cada una</span></span>
+<span id="cb47-16"><a href="#cb47-16" aria-hidden="true" tabindex="-1"></a>                         <span class="co"># Ctrl+B y luego D = salir sin detenerlo;  tmux attach -t docking = volver</span></span></code></pre></div>
+<p>⚠️ <strong>CUIDADO: nos pasó.</strong> El script se lanzó <strong>dos
+veces</strong> sin detener la primera, y quedaron dos copias compitiendo
+por la CPU. <strong>Antes de relanzar, revisa con
+<code>pgrep -af run.sh</code>.</strong></p>
+<h2 id="cómo-leer-el-resultado">Cómo leer el resultado</h2>
+<p>Cada <code>log_*.txt</code> termina con una tabla. Esta es la real de
+XYP con la semilla 101:</p>
+<pre><code>mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1       -6.406          0          0     ← LA MEJOR POSE: este es el número del ranking
+   2       -5.907      1.269       3.58     ← otras poses, peores
+   3       -5.724     0.9626      3.045
+   4       -5.636     0.6794      3.207</code></pre>
+<ul>
+<li><strong>affinity:</strong> el puntaje de esa pose.</li>
+<li><strong>rmsd l.b. / u.b.:</strong> qué tan lejos está esa pose de la
+mejor, en Å.</li>
+</ul>
+<p>💻 Para extraer el mejor puntaje de todos los logs (el
+<code>-a</code> es necesario porque la barra de progreso hace que
+<code>grep</code> crea que el archivo es binario):</p>
+<div class="sourceCode" id="cb49"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> f <span class="kw">in</span> log_<span class="pp">*</span>_s<span class="pp">*</span>.txt<span class="kw">;</span> <span class="cf">do</span> <span class="bu">echo</span> <span class="st">&quot;</span><span class="va">$f</span><span class="st"> </span><span class="va">$(</span><span class="fu">grep</span> <span class="at">-a</span> <span class="at">-A3</span> <span class="st">&#39;^-----&#39;</span> <span class="va">$f</span> <span class="kw">|</span> <span class="fu">sed</span> <span class="at">-n</span> 2p <span class="kw">|</span> <span class="fu">awk</span> <span class="st">&#39;{print $2}&#39;</span><span class="va">)</span><span class="st">&quot;</span><span class="kw">;</span> <span class="cf">done</span></span></code></pre></div>
+<h2 id="verifica-la-pose-quedó-en-el-bolsillo">✅ VERIFICA: ¿la pose
+quedó en el bolsillo?</h2>
+<p><strong>Un buen puntaje en la superficie de la proteína no significa
+nada.</strong></p>
+<p>🌐 En Mol*: abre <code>TeuB_maduro_1-335.pdb</code>
+<strong>y</strong> <code>out_XYP_s101.pdbqt</code> en la misma ventana.
+El primer modelo del PDBQT es la mejor pose. ¿El ligando está
+<strong>dentro de la hendidura</strong>, rodeado por Y38, S43, H45,
+R174, W197, D222, E248 y C269? Para verlos: pestaña de selección →
+escribe <code>38 43 45 174 197 222 248 269</code>.</p>
+<p>💻 En Python: mide la distancia del centro del ligando al centro del
+sitio y cuántos de los 8 residuos quedan a menos de 4 Å:</p>
+<div class="sourceCode" id="cb50"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> re, numpy <span class="im">as</span> np</span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a>SITIO <span class="op">=</span> [<span class="dv">38</span>, <span class="dv">43</span>, <span class="dv">45</span>, <span class="dv">174</span>, <span class="dv">197</span>, <span class="dv">222</span>, <span class="dv">248</span>, <span class="dv">269</span>]</span>
+<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a>rec <span class="op">=</span> [(<span class="bu">int</span>(l[<span class="dv">22</span>:<span class="dv">26</span>]), np.array([<span class="bu">float</span>(l[<span class="dv">30</span>:<span class="dv">38</span>]), <span class="bu">float</span>(l[<span class="dv">38</span>:<span class="dv">46</span>]), <span class="bu">float</span>(l[<span class="dv">46</span>:<span class="dv">54</span>])]))</span>
+<span id="cb50-4"><a href="#cb50-4" aria-hidden="true" tabindex="-1"></a>       <span class="cf">for</span> l <span class="kw">in</span> <span class="bu">open</span>(<span class="st">&#39;03_maduro/TeuB_maduro_1-335.pdb&#39;</span>) <span class="cf">if</span> l.startswith(<span class="st">&#39;ATOM&#39;</span>)]</span>
+<span id="cb50-5"><a href="#cb50-5" aria-hidden="true" tabindex="-1"></a>centro <span class="op">=</span> np.array([<span class="fl">3.38</span>, <span class="op">-</span><span class="fl">3.17</span>, <span class="fl">0.79</span>])</span>
+<span id="cb50-6"><a href="#cb50-6" aria-hidden="true" tabindex="-1"></a>txt <span class="op">=</span> <span class="bu">open</span>(<span class="st">&#39;06_docking/out_XYP_s101.pdbqt&#39;</span>).read().split(<span class="st">&#39;ENDMDL&#39;</span>)[<span class="dv">0</span>]       <span class="co"># solo el modo 1</span></span>
+<span id="cb50-7"><a href="#cb50-7" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> np.array([[<span class="bu">float</span>(l[<span class="dv">30</span>:<span class="dv">38</span>]), <span class="bu">float</span>(l[<span class="dv">38</span>:<span class="dv">46</span>]), <span class="bu">float</span>(l[<span class="dv">46</span>:<span class="dv">54</span>])] <span class="cf">for</span> l <span class="kw">in</span> txt.splitlines() <span class="cf">if</span> l.startswith(<span class="st">&#39;ATOM&#39;</span>)])</span>
+<span id="cb50-8"><a href="#cb50-8" aria-hidden="true" tabindex="-1"></a>cerca <span class="op">=</span> {r <span class="cf">for</span> r, x <span class="kw">in</span> rec <span class="cf">if</span> r <span class="kw">in</span> SITIO <span class="kw">and</span> np.linalg.norm(L <span class="op">-</span> x, axis<span class="op">=</span><span class="dv">1</span>).<span class="bu">min</span>() <span class="op">&lt;</span> <span class="dv">4</span>}</span>
+<span id="cb50-9"><a href="#cb50-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;distancia al centro </span><span class="sc">{</span>np<span class="sc">.</span>linalg<span class="sc">.</span>norm(L.mean(<span class="dv">0</span>) <span class="op">-</span> centro)<span class="sc">:.1f}</span><span class="ss"> A; residuos del sitio en contacto: </span><span class="sc">{</span><span class="bu">len</span>(cerca)<span class="sc">}</span><span class="ss">/8&quot;</span>)</span></code></pre></div>
+<h2 id="lo-que-debes-obtener-4">🎯 LO QUE DEBES OBTENER</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Puesto</th>
+<th>Ligando</th>
+<th>Semilla 101</th>
+<th>202</th>
+<th>303</th>
+<th><strong>Media</strong></th>
+<th>DE</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>XYP xilopiranosa</td>
+<td>−6.406</td>
+<td>−6.416</td>
+<td>−6.401</td>
+<td><strong>−6.41</strong></td>
+<td>0.008</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>ARA arabinopiranosa</td>
+<td>−6.151</td>
+<td>−6.131</td>
+<td>−6.152</td>
+<td><strong>−6.14</strong></td>
+<td>0.012</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td><strong>HPA hipoxantina</strong> 🪤</td>
+<td>−6.104</td>
+<td>−6.097</td>
+<td>−6.104</td>
+<td><strong>−6.10</strong></td>
+<td>0.004</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td><strong>INS inositol</strong> 🪤</td>
+<td>−6.093</td>
+<td>−6.093</td>
+<td>−6.087</td>
+<td><strong>−6.09</strong></td>
+<td>0.004</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>GAL galactopiranosa</td>
+<td>−6.050</td>
+<td>−6.060</td>
+<td>−6.038</td>
+<td><strong>−6.05</strong></td>
+<td>0.011</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>RIP ribopiranosa</td>
+<td>−6.000</td>
+<td>−6.000</td>
+<td>−6.008</td>
+<td><strong>−6.00</strong></td>
+<td>0.005</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>ALL alopiranosa</td>
+<td>−5.945</td>
+<td>−5.952</td>
+<td>−5.950</td>
+<td><strong>−5.95</strong></td>
+<td>0.004</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>GZL galactofuranosa</td>
+<td>−5.775</td>
+<td>−5.790</td>
+<td>−5.783</td>
+<td><strong>−5.78</strong></td>
+<td>0.008</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td><strong>PAV apiosa</strong></td>
+<td>−5.747</td>
+<td>−5.743</td>
+<td>−5.764</td>
+<td><strong>−5.75</strong></td>
+<td>0.011</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>FRU fructofuranosa</td>
+<td>−5.725</td>
+<td>−5.723</td>
+<td>−5.727</td>
+<td><strong>−5.73</strong></td>
+<td>0.002</td>
+</tr>
+<tr class="odd">
+<td>11</td>
+<td>BDR ribofuranosa</td>
+<td>−5.707</td>
+<td>−5.706</td>
+<td>−5.711</td>
+<td><strong>−5.71</strong></td>
+<td>0.003</td>
+</tr>
+<tr class="even">
+<td>12</td>
+<td>BGC glucopiranosa</td>
+<td>−5.630</td>
+<td>−5.665</td>
+<td>−5.647</td>
+<td><strong>−5.65</strong></td>
+<td>0.018</td>
+</tr>
+<tr class="odd">
+<td>13</td>
+<td>AHR arabinofuranosa</td>
+<td>−5.506</td>
+<td>−5.500</td>
+<td>−5.508</td>
+<td><strong>−5.50</strong></td>
+<td>0.004</td>
+</tr>
+<tr class="even">
+<td>14</td>
+<td>WEB psicopiranosa</td>
+<td>−5.456</td>
+<td>−5.457</td>
+<td>−5.453</td>
+<td><strong>−5.46</strong></td>
+<td>0.002</td>
+</tr>
+<tr class="odd">
+<td>15</td>
+<td><strong>X9X alitol</strong> 🪤</td>
+<td>−5.227</td>
+<td>−5.221</td>
+<td>−5.237</td>
+<td><strong>−5.23</strong></td>
+<td>0.008</td>
+</tr>
+<tr class="even">
+<td>16</td>
+<td>3VB treitol</td>
+<td>−4.975</td>
+<td>−4.970</td>
+<td>−4.976</td>
+<td><strong>−4.97</strong></td>
+<td>0.003</td>
+</tr>
+</tbody>
+</table>
+<p>(🪤 = señuelo; DE = desviación estándar de las 3 semillas)</p>
+<p>📝 <strong>ANOTA:</strong></p>
+<ul>
+<li><strong>Todas</strong> las mejores poses están <strong>dentro del
+bolsillo</strong>: a ≤ 1.5 Å del centro y tocando 7 u 8 de los 8
+residuos.</li>
+<li>Las 3 semillas difieren <strong>como mucho en 0.035
+kcal/mol</strong>. La búsqueda es muy reproducible.</li>
+<li><strong>Dos señuelos (HPA e INS) quedan en el 3.º y 4.º
+lugar</strong>, por encima de casi todos los azúcares.</li>
+<li>Todo el panel cabe en <strong>1.43 kcal/mol</strong>, menos que el
+error típico de Vina (~2 kcal/mol).</li>
+</ul>
+<hr />
+<h1 id="etapa-8-co-plegamiento-con-boltz-2">ETAPA 8 · Co-plegamiento con
+Boltz-2</h1>
+<h2 id="concepto-un-enfoque-completamente-distinto">🧠 CONCEPTO: un
+enfoque completamente distinto</h2>
+<p>Boltz-2 es una red neuronal de la familia de <strong>AlphaFold
+3</strong>. No hay función física ni proteína rígida: le das la
+<strong>secuencia</strong> de la proteína y el <strong>código</strong>
+del ligando, y <strong>predice el complejo entero a la vez</strong>. La
+proteína “se pliega alrededor” del ligando.</p>
+<pre><code>      DOCKING (Vina)                            CO-PLEGAMIENTO (Boltz-2)
+
+   proteína FIJA  +  ligando            secuencia de la proteína ─┐
+   (el modelo de AlphaFold)                                       ├─► red neuronal ─► complejo
+          │                             código del ligando (BGC) ─┘   (aprendió del     predicho
+          ▼                                                             PDB entero)     completo
+   busca posiciones, las puntúa
+   con una fórmula física
+          │                                                          ▼
+          ▼                                                   CONFIANZA: ipTM (0-1)
+   PUNTAJE: kcal/mol</code></pre>
+<p><strong>Cómo genera cada modelo (difusión).</strong> Parte de átomos
+colocados al azar, como una nube, y los va “limpiando” paso a paso hasta
+obtener una estructura. Cada punto de partida al azar produce un modelo
+un poco distinto. Con <strong>3 semillas × 5 muestras = 15
+modelos</strong> por ligando, la dispersión entre esos 15 es el
+<strong>piso de ruido del método 2</strong>.</p>
+<h2 id="concepto-las-confianzas-de-boltz">🧠 CONCEPTO: las confianzas de
+Boltz</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Número</th>
+<th>Qué mide</th>
+<th>Rango</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>ipTM</strong></td>
+<td>confianza en la <strong>interfaz</strong> proteína-ligando: ¿está
+bien colocado el ligando respecto a la proteína?</td>
+<td>0-1; más alto es mejor</td>
+</tr>
+<tr class="even">
+<td><strong>pTM</strong></td>
+<td>confianza en la estructura global</td>
+<td>0-1</td>
+</tr>
+<tr class="odd">
+<td><strong>ranking_score</strong></td>
+<td>combinación que Boltz usa para ordenar sus propios modelos</td>
+<td>0-1</td>
+</tr>
+<tr class="even">
+<td><strong>has_clash</strong></td>
+<td>¿hay átomos que chocan?</td>
+<td>debe ser 0</td>
+</tr>
+</tbody>
+</table>
+<p>⚠️ <strong>Otra vez, sin plantillas.</strong> Si el servidor le da a
+Boltz un cristal como plantilla, puede <strong>copiar</strong> la pose
+del ligando del cristal, y entonces el ipTM mide memoria, no
+predicción.</p>
+<h2 id="en-colab-correr-boltz-2-una-corrida-por-ligando">☁️ EN COLAB ·
+Correr Boltz-2 (una corrida por ligando)</h2>
+<ol type="1">
+<li><p>Abre
+<strong>https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/ColabFold2_preview.ipynb</strong>.</p></li>
+<li><p><strong>Entorno de ejecución → Cambiar tipo de entorno → GPU T4 →
+Guardar.</strong></p></li>
+<li><p>En la <strong>celda de instalación</strong> elige
+<strong><code>model = boltz2</code></strong> y ejecútala con el botón ▶
+de la celda. La primera vez descarga los pesos del modelo y tarda unos
+minutos.</p></li>
+<li><p>En la <strong>celda de entrada</strong> llena:</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Campo</th>
+<th>Valor</th>
+<th>¡Ojo!</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>protein</code></td>
+<td><strong>la secuencia MADURA de 335 aa</strong> (Etapa 4)</td>
+<td><strong>no</strong> las 362</td>
+</tr>
+<tr class="even">
+<td><code>ligand_ccd</code></td>
+<td>el código, por ejemplo <code>BGC</code></td>
+<td>uno por corrida; el <strong>mismo</strong> código que usaste en el
+docking</td>
+</tr>
+<tr class="odd">
+<td><code>ligand_smiles</code></td>
+<td><strong>vacío</strong></td>
+<td>el código ya trae la molécula</td>
+</tr>
+<tr class="even">
+<td><code>jobname</code></td>
+<td><code>teub_bgc</code></td>
+<td>cambia según el ligando</td>
+</tr>
+<tr class="odd">
+<td><code>msa_mode</code></td>
+<td><code>mmseqs2_server</code></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>seeds</code></td>
+<td><code>1,2,3</code></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>plantillas</td>
+<td><strong>desactivadas</strong></td>
+<td>control de contaminación</td>
+</tr>
+<tr class="even">
+<td><code>num_recycles</code>, <code>num_diffusion_samples</code></td>
+<td>por omisión</td>
+<td>dan 5 muestras por semilla</td>
+</tr>
+</tbody>
+</table></li>
+<li><p>Ejecuta las celdas de predicción. Tarda de 5 a 10
+minutos.</p></li>
+<li><p>Descarga el ZIP que genera
+(<code>teub_bgc_xxxxx.result.zip</code>). Si no se descarga solo,
+búscalo en el panel de archivos 📁 → clic derecho → Descargar.</p></li>
+<li><p><strong>Repite los pasos 4 a 6 para cada ligando</strong>
+cambiando solo <code>ligand_ccd</code> y <code>jobname</code>. No hace
+falta reinstalar.</p></li>
+</ol>
+<p>✅ <strong>VERIFICA ANTES DE PEGAR la secuencia:</strong> que termine
+en <strong><code>…PNEKLLEYFKA</code></strong>. Si puedes, agrega una
+celda nueva con <code>print(len(protein))</code>: debe dar
+<strong>335</strong>.</p>
+<p>⚠️ <strong>CUIDADO: nos pasó dos veces.</strong></p>
+<ul>
+<li>En <strong>4 corridas</strong> la secuencia quedó <strong>cortada en
+132 aa</strong> al copiarla. Faltaba medio sitio de unión, el ipTM bajó
+a ~0.75 y hubo que repetirlas.</li>
+<li>En <strong>una corrida</strong> se escribió <code>XIP</code>
+(α-xilosa) en vez de <code>XYP</code> (β-xilosa, la del docking). Son
+moléculas distintas, así que no se pueden comparar.</li>
+</ul>
+<h2 id="qué-hay-en-cada-zip-y-cómo-revisarlo">Qué hay en cada ZIP y cómo
+revisarlo</h2>
+<pre><code>af3_output/teub_bgc_xxxxx/
+├── teub_bgc_xxxxx_data.json                ← LA ENTRADA REAL: qué secuencia, qué ligando,
+│                                               qué semillas, si hubo plantillas  ← ¡REVÍSALO!
+├── teub_bgc_xxxxx_summary_confidences.json ← iptm, ptm, has_clash del MEJOR modelo
+├── teub_bgc_xxxxx_ranking_scores.csv       ← ranking_score de los 15 modelos (seed, sample)
+├── teub_bgc_xxxxx_model.cif                ← el mejor modelo (cadena A = proteína, B = ligando)
+└── seed-1_sample-0/ … seed-3_sample-4/     ← los 15 modelos, cada uno con su cif y confianzas</code></pre>
+<p>🌐 <strong>Revisión sin programar</strong> (con el navegador y una
+hoja de cálculo):</p>
+<ol type="1">
+<li>Descomprime el ZIP.</li>
+<li>Abre <strong><code>…_data.json</code></strong> arrastrándolo a
+Firefox o Chrome, que muestran los JSON de forma legible. Comprueba:
+<ul>
+<li><code>sequences → protein → sequence</code>: ¿empieza en
+<code>DDTIA</code> y termina en <code>EYFKA</code>?</li>
+<li><code>sequences → ligand → ccdCodes</code>: ¿es el código
+correcto?</li>
+<li><code>modelSeeds</code>: ¿es <code>[1, 2, 3]</code>?</li>
+<li><code>templates</code>: ¿está vacío (<code>[]</code>)?</li>
+</ul></li>
+<li>Abre <strong><code>…_summary_confidences.json</code></strong> y
+anota <strong><code>iptm</code></strong> y
+<strong><code>has_clash</code></strong>.</li>
+<li>Abre <strong><code>…_ranking_scores.csv</code></strong> en tu hoja
+de cálculo. Son 15 filas: calcula la <strong>media</strong>
+(<code>=PROMEDIO</code>) y la <strong>desviación estándar</strong>
+(<code>=DESVEST</code>). Ese es el ruido del método para ese
+ligando.</li>
+<li>Abre <strong><code>…_model.cif</code></strong> en Mol*. ¿El ligando
+(cadena B) está <strong>en la hendidura</strong>, entre los dos
+lóbulos?</li>
+</ol>
+<p>💻 <strong>Revisión automática de todos los ZIP</strong> (valida los
+parámetros y calcula el ipTM medio de los 15 modelos):</p>
+<div class="sourceCode" id="cb53"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="co"># revisar_boltz.py  -&gt;  python revisar_boltz.py   (busca los ZIP en 07_coplegamiento/)</span></span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> zipfile, json, glob, numpy <span class="im">as</span> np</span>
+<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a>madura <span class="op">=</span> <span class="bu">open</span>(<span class="st">&#39;03_maduro/teuB_maduro_solo_letras.txt&#39;</span>).read().strip()</span>
+<span id="cb53-4"><a href="#cb53-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> z <span class="kw">in</span> <span class="bu">sorted</span>(glob.glob(<span class="st">&#39;07_coplegamiento/teub_*.result.zip&#39;</span>)):</span>
+<span id="cb53-5"><a href="#cb53-5" aria-hidden="true" tabindex="-1"></a>    zf <span class="op">=</span> zipfile.ZipFile(z)<span class="op">;</span> nombres <span class="op">=</span> zf.namelist()</span>
+<span id="cb53-6"><a href="#cb53-6" aria-hidden="true" tabindex="-1"></a>    d <span class="op">=</span> json.load(zf.<span class="bu">open</span>([n <span class="cf">for</span> n <span class="kw">in</span> nombres <span class="cf">if</span> n.endswith(<span class="st">&#39;_data.json&#39;</span>)][<span class="dv">0</span>]))</span>
+<span id="cb53-7"><a href="#cb53-7" aria-hidden="true" tabindex="-1"></a>    prot <span class="op">=</span> [s[<span class="st">&#39;protein&#39;</span>] <span class="cf">for</span> s <span class="kw">in</span> d[<span class="st">&#39;sequences&#39;</span>] <span class="cf">if</span> <span class="st">&#39;protein&#39;</span> <span class="kw">in</span> s][<span class="dv">0</span>]</span>
+<span id="cb53-8"><a href="#cb53-8" aria-hidden="true" tabindex="-1"></a>    lig <span class="op">=</span> [s[<span class="st">&#39;ligand&#39;</span>][<span class="st">&#39;ccdCodes&#39;</span>][<span class="dv">0</span>] <span class="cf">for</span> s <span class="kw">in</span> d[<span class="st">&#39;sequences&#39;</span>] <span class="cf">if</span> <span class="st">&#39;ligand&#39;</span> <span class="kw">in</span> s][<span class="dv">0</span>]</span>
+<span id="cb53-9"><a href="#cb53-9" aria-hidden="true" tabindex="-1"></a>    ok <span class="op">=</span> prot[<span class="st">&#39;sequence&#39;</span>] <span class="op">==</span> madura <span class="kw">and</span> <span class="kw">not</span> prot.get(<span class="st">&#39;templates&#39;</span>) <span class="kw">and</span> d[<span class="st">&#39;modelSeeds&#39;</span>] <span class="op">==</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]</span>
+<span id="cb53-10"><a href="#cb53-10" aria-hidden="true" tabindex="-1"></a>    ip <span class="op">=</span> [json.load(zf.<span class="bu">open</span>(n))[<span class="st">&#39;iptm&#39;</span>] <span class="cf">for</span> n <span class="kw">in</span> nombres <span class="cf">if</span> <span class="st">&#39;seed-&#39;</span> <span class="kw">in</span> n <span class="kw">and</span> n.endswith(<span class="st">&#39;summary_confidences.json&#39;</span>)]</span>
+<span id="cb53-11"><a href="#cb53-11" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&quot;</span><span class="sc">{</span><span class="st">&#39;OK &#39;</span> <span class="cf">if</span> ok <span class="cf">else</span> <span class="st">&#39;MAL&#39;</span><span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>lig<span class="sc">:4s}</span><span class="ss"> </span><span class="sc">{</span><span class="bu">len</span>(prot[<span class="st">&#39;sequence&#39;</span>])<span class="sc">}</span><span class="ss"> aa  ipTM = </span><span class="sc">{</span>np<span class="sc">.</span>mean(ip)<span class="sc">:.3f}</span><span class="ss"> ± </span><span class="sc">{</span>np<span class="sc">.</span>std(ip, ddof<span class="op">=</span><span class="dv">1</span>)<span class="sc">:.3f}</span><span class="ss">  (n=</span><span class="sc">{</span><span class="bu">len</span>(ip)<span class="sc">}</span><span class="ss">)&quot;</span>)</span></code></pre></div>
+<h2 id="hallazgo-boltz-2-borra-el-átomo-o1">⚠️ Hallazgo: Boltz-2 borra
+el átomo “O1”</h2>
+<p>Al comparar los átomos del modelo con los de la ficha del CCD, se
+descubrió que <strong>en los 10 ligandos que tienen un átomo llamado O1,
+ese átomo desaparece</strong>:</p>
+<pre><code>   Ficha CCD de BGC (glucosa): C1 C2 C3 C4 C5 C6  O1 O2 O3 O4 O5 O6   = 12 átomos pesados
+   Modelo de Boltz-2:          C1 C2 C3 C4 C5 C6     O2 O3 O4 O5 O6   = 11   ← ¡falta O1!
+                                                  ▲
+                                                  └── el OH del carbono anomérico</code></pre>
+<ul>
+<li><strong>Afectados:</strong> RIP, XYP, ARA, AHR, BDR, BGC, GAL, ALL y
+GZL (pierden el OH anomérico) y FRU (pierde el O del CH₂OH).</li>
+<li><strong>Completos:</strong> INS, X9X, HPA, 3VB, WEB y PAV, porque
+ninguno tiene un átomo llamado O1.</li>
+<li><strong>Consecuencia:</strong> para las aldosas, Boltz modela un
+<strong>residuo glicosilo</strong> (como si el azúcar formara parte de
+una cadena de azúcares), <strong>no el azúcar libre</strong>, y
+<strong>no puede distinguir α de β</strong>. Hay que <strong>declararlo
+en el entregable</strong>.</li>
+</ul>
+<p><strong>Lección: cuenta los átomos.</strong> En Mol*, selecciona la
+cadena B y mira cuántos átomos tiene.</p>
+<h2 id="lo-que-debes-obtener-5">🎯 LO QUE DEBES OBTENER</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Puesto</th>
+<th>Ligando</th>
+<th>ipTM medio (15 modelos)</th>
+<th>DE</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>AHR arabinofuranosa</td>
+<td>0.975</td>
+<td>0.008</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>BDR ribofuranosa</td>
+<td>0.973</td>
+<td>0.012</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>GZL galactofuranosa</td>
+<td>0.963</td>
+<td>0.007</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>XYP xilopiranosa</td>
+<td>0.961</td>
+<td>0.003</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>RIP ribopiranosa</td>
+<td>0.961</td>
+<td>0.003</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>ARA arabinopiranosa</td>
+<td>0.961</td>
+<td>0.003</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td><strong>HPA hipoxantina</strong> 🪤</td>
+<td>0.961</td>
+<td>0.007</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>ALL alopiranosa</td>
+<td>0.957</td>
+<td>0.010</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>BGC glucopiranosa</td>
+<td>0.957</td>
+<td>0.009</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td><strong>INS inositol</strong> 🪤</td>
+<td>0.957</td>
+<td>0.006</td>
+</tr>
+<tr class="odd">
+<td>11</td>
+<td>GAL galactopiranosa</td>
+<td>0.956</td>
+<td>0.011</td>
+</tr>
+<tr class="even">
+<td>12</td>
+<td><strong>PAV apiosa</strong></td>
+<td>0.954</td>
+<td>0.008</td>
+</tr>
+<tr class="odd">
+<td>13</td>
+<td>WEB psicopiranosa</td>
+<td>0.949</td>
+<td>0.007</td>
+</tr>
+<tr class="even">
+<td>14</td>
+<td>3VB treitol</td>
+<td>0.946</td>
+<td>0.005</td>
+</tr>
+<tr class="odd">
+<td>15</td>
+<td>FRU fructofuranosa</td>
+<td>0.942</td>
+<td>0.012</td>
+</tr>
+<tr class="even">
+<td>16</td>
+<td><strong>X9X alitol</strong> 🪤</td>
+<td>0.929</td>
+<td>0.011</td>
+</tr>
+</tbody>
+</table>
+<p>📝 <strong>ANOTA:</strong></p>
+<ul>
+<li><strong>Todos</strong> los ligandos, incluidos los señuelos, tienen
+ipTM entre 0.93 y 0.98.</li>
+<li>El ligando queda en el sitio en los 15 modelos de cada uno.</li>
+<li>La dispersión entre modelos (0.003-0.012) es <strong>del mismo
+tamaño</strong> que las diferencias entre ligandos.</li>
+</ul>
+<hr />
+<h1 id="etapa-9-el-ranking-ruido-empates-y-comparación">ETAPA 9 · El
+ranking: ruido, empates y comparación</h1>
+<h2 id="concepto-el-piso-de-ruido">🧠 CONCEPTO: el piso de ruido</h2>
+<p>Si mides dos veces lo mismo y obtienes números un poco distintos, esa
+variación es el <strong>ruido</strong>. <strong>Una diferencia entre dos
+ligandos solo es real si es claramente mayor que el ruido.</strong></p>
+<p><strong>Criterio de empate usado:</strong> dos ligandos A y B empatan
+si</p>
+<pre><code>       |media_A − media_B|   &lt;   2 × √( DE_A² + DE_B² )
+       └─── diferencia ───┘      └─── &quot;margen de error&quot; de esa diferencia ───┘</code></pre>
+<p>El 2 corresponde, aproximadamente, a un 95 % de confianza.</p>
+<h3 id="ejemplo-resuelto-1-boltz-ahr-contra-pav">Ejemplo resuelto 1:
+Boltz, AHR contra PAV</h3>
+<pre><code>   AHR: 0.975 ± 0.008        PAV: 0.954 ± 0.008
+
+   diferencia = 0.975 − 0.954 = 0.021
+   margen     = 2 × √(0.008² + 0.008²) = 2 × √(0.000128) = 2 × 0.0113 = 0.023
+
+   0.021 &lt; 0.023   →   EMPATE. No se puede decir que AHR sea mejor que PAV.</code></pre>
+<h3 id="ejemplo-resuelto-2-boltz-ahr-contra-x9x">Ejemplo resuelto 2:
+Boltz, AHR contra X9X</h3>
+<pre><code>   AHR: 0.975 ± 0.008        X9X: 0.929 ± 0.011
+
+   diferencia = 0.046
+   margen     = 2 × √(0.008² + 0.011²) = 2 × 0.0136 = 0.027
+
+   0.046 &gt; 0.027   →   DISTINTOS. AHR sí supera a X9X.</code></pre>
+<h3 id="ejemplo-resuelto-3-vina-hpa-contra-ins-el-par-más-cercano">Ejemplo
+resuelto 3: Vina, HPA contra INS (el par más cercano)</h3>
+<pre><code>   HPA: −6.102 ± 0.004       INS: −6.091 ± 0.004
+
+   diferencia = 0.011         margen = 2 × √(0.004² + 0.004²) = 0.011
+
+   → justo en el límite. Con el ruido de semillas, Vina &quot;separa&quot; a casi todos...
+     pero ese ruido NO incluye el error de la función de puntaje (~2 kcal/mol).</code></pre>
+<h2 id="concepto-los-dos-métodos-ordenan-igual-spearman">🧠 CONCEPTO:
+¿los dos métodos ordenan igual? (Spearman)</h2>
+<p>Vina da kcal/mol e ipTM da un número entre 0 y 1: <strong>no se
+pueden comparar directamente</strong>. Lo que sí se puede comparar son
+los <strong>puestos</strong>. La <strong>correlación de Spearman
+(ρ)</strong> mide si dos listas ordenan parecido:</p>
+<pre><code>   ρ = +1   mismo orden exacto
+   ρ =  0   ninguna relación
+   ρ = −1   orden invertido</code></pre>
+<p><strong>Ejemplo pequeño</strong>, con 4 ligandos:</p>
+<pre><code>             puesto Vina   puesto Boltz    d = diferencia    d²
+   XYP            1              2               −1           1
+   ARA            2              3               −1           1
+   AHR            3              1               +2           4
+   X9X            4              4                0           0
+                                                       Σd² =  6
+
+   ρ = 1 − (6 × Σd²) / (n × (n² − 1)) = 1 − (6 × 6)/(4 × 15) = 1 − 36/60 = 0.40</code></pre>
+<p>En la hoja de cálculo es más fácil:</p>
+<ul>
+<li><code>=JERARQUIA.EQV(B2; B$2:B$17; 1)</code> da el puesto de Vina (1
+= el más negativo).</li>
+<li><code>=JERARQUIA.EQV(C2; C$2:C$17; 0)</code> da el puesto de Boltz
+(1 = el más alto).</li>
+<li><code>=COEF.DE.CORREL(D2:D17; E2:E17)</code> sobre las dos columnas
+de puestos da ρ.</li>
+</ul>
+<p>En inglés las funciones se llaman <code>RANK.EQ</code> y
+<code>CORREL</code>.</p>
+<h2 id="concepto-colocan-el-ligando-en-el-mismo-lugar-rmsd">🧠 CONCEPTO:
+¿colocan el ligando en el mismo lugar? (RMSD)</h2>
+<p>Aunque los puntajes no coincidan, vale la pena ver si los dos métodos
+<strong>ponen el ligando en la misma posición</strong>. Se superpone la
+proteína de Boltz sobre la de Vina y se mide la distancia promedio entre
+los átomos del ligando en las dos poses, el <strong>RMSD</strong>:</p>
+<pre><code>   RMSD &lt; 2 Å   → la misma pose, prácticamente
+   RMSD &gt; 4 Å   → poses distintas</code></pre>
+<p>🌐 En Mol*: abre el <code>model.cif</code> de Boltz y el
+<code>out_*.pdbqt</code> de Vina junto con el receptor. Usa la
+herramienta de <strong>superposición</strong> (<em>Superpose</em>) sobre
+la cadena de proteína y compara visualmente dónde queda cada
+ligando.</p>
+<h2 id="el-análisis-completo-en-una-hoja-de-cálculo">🌐 El análisis
+completo en una hoja de cálculo</h2>
+<p>Arma una hoja con estas columnas:</p>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>A: Ligando</th>
+<th>B: Vina media</th>
+<th>C: Vina DE</th>
+<th>D: ipTM media</th>
+<th>E: ipTM DE</th>
+<th>F: puesto Vina</th>
+<th>G: puesto Boltz</th>
+<th>H: Δ = G − F</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>XYP</td>
+<td>−6.408</td>
+<td>0.008</td>
+<td>0.961</td>
+<td>0.003</td>
+<td><code>=JERARQUIA.EQV(B2;B$2:B$17;1)</code></td>
+<td><code>=JERARQUIA.EQV(D2;D$2:D$17;0)</code></td>
+<td><code>=G2-F2</code></td>
+</tr>
+</tbody>
+</table>
+<p>Luego:</p>
+<ul>
+<li><strong>Spearman:</strong>
+<code>=COEF.DE.CORREL(F2:F17; G2:G17)</code>.</li>
+<li><strong>Empate con el líder de Boltz</strong> (ordena primero por
+D):
+<code>=SI(ABS(D$2-D3) &lt; 2*RAIZ(E$2^2+E3^2); &quot;empate&quot;; &quot;distinto&quot;)</code>.</li>
+</ul>
+<p>💻 <strong>Con Python</strong>: <code>08_analisis/comparar.py</code>
+hace todo esto y además el RMSD entre poses.</p>
+<h2 id="lo-que-debes-obtener-la-tabla-comparativa">🎯 LO QUE DEBES
+OBTENER: la tabla comparativa</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Ligando</th>
+<th>Puesto Vina</th>
+<th>Vina</th>
+<th>Puesto Boltz</th>
+<th>ipTM</th>
+<th><strong>Δ</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>XYP</td>
+<td>1</td>
+<td>−6.41</td>
+<td>4</td>
+<td>0.961</td>
+<td>+3</td>
+</tr>
+<tr class="even">
+<td>ARA</td>
+<td>2</td>
+<td>−6.14</td>
+<td>4</td>
+<td>0.961</td>
+<td>+2</td>
+</tr>
+<tr class="odd">
+<td>HPA 🪤</td>
+<td>3</td>
+<td>−6.10</td>
+<td>7</td>
+<td>0.961</td>
+<td>+4</td>
+</tr>
+<tr class="even">
+<td>INS 🪤</td>
+<td>4</td>
+<td>−6.09</td>
+<td>10</td>
+<td>0.957</td>
+<td>+6</td>
+</tr>
+<tr class="odd">
+<td>GAL</td>
+<td>5</td>
+<td>−6.05</td>
+<td>11</td>
+<td>0.956</td>
+<td>+6</td>
+</tr>
+<tr class="even">
+<td>RIP</td>
+<td>6</td>
+<td>−6.00</td>
+<td>4</td>
+<td>0.961</td>
+<td>−2</td>
+</tr>
+<tr class="odd">
+<td>ALL</td>
+<td>7</td>
+<td>−5.95</td>
+<td>8</td>
+<td>0.957</td>
+<td>+1</td>
+</tr>
+<tr class="even">
+<td>GZL</td>
+<td>8</td>
+<td>−5.78</td>
+<td>3</td>
+<td>0.963</td>
+<td>−5</td>
+</tr>
+<tr class="odd">
+<td>PAV</td>
+<td>9</td>
+<td>−5.75</td>
+<td>12</td>
+<td>0.954</td>
+<td>+3</td>
+</tr>
+<tr class="even">
+<td>FRU</td>
+<td>10</td>
+<td>−5.73</td>
+<td>15</td>
+<td>0.942</td>
+<td>+5</td>
+</tr>
+<tr class="odd">
+<td>BDR</td>
+<td>11</td>
+<td>−5.71</td>
+<td>2</td>
+<td>0.973</td>
+<td><strong>−9</strong></td>
+</tr>
+<tr class="even">
+<td>BGC</td>
+<td>12</td>
+<td>−5.65</td>
+<td>9</td>
+<td>0.957</td>
+<td>−3</td>
+</tr>
+<tr class="odd">
+<td>AHR</td>
+<td>13</td>
+<td>−5.50</td>
+<td>1</td>
+<td>0.975</td>
+<td><strong>−12</strong></td>
+</tr>
+<tr class="even">
+<td>WEB</td>
+<td>14</td>
+<td>−5.46</td>
+<td>13</td>
+<td>0.949</td>
+<td>−1</td>
+</tr>
+<tr class="odd">
+<td>X9X 🪤</td>
+<td>15</td>
+<td>−5.23</td>
+<td>16</td>
+<td>0.929</td>
+<td>+1</td>
+</tr>
+<tr class="even">
+<td>3VB</td>
+<td>16</td>
+<td>−4.97</td>
+<td>14</td>
+<td>0.946</td>
+<td>−2</td>
+</tr>
+</tbody>
+</table>
+<h2 id="cómo-interpretarla-esto-es-lo-que-se-discute-en-el-entregable">Cómo
+interpretarla (esto es lo que se discute en el entregable)</h2>
+<ol type="1">
+<li><strong>Vina</strong>: con el ruido de semillas, los 16 ligandos
+quedan separados. <strong>Pero</strong> ese ruido no incluye el error de
+la función (~2 kcal/mol), que es mayor que todo el rango (1.43). Vina es
+<strong>preciso pero no necesariamente exacto</strong> (recuerda el
+dibujo de la diana).</li>
+<li><strong>Boltz</strong>: los <strong>12 primeros empatan</strong> con
+el líder. Solo WEB, 3VB, FRU y X9X se separan, y hacia abajo. Solo 15 de
+120 pares superan el piso de ruido.</li>
+<li><strong>Los métodos casi no coinciden</strong>: <strong>Spearman ρ =
+0.39 (p = 0.14)</strong>, una correlación débil y no significativa.</li>
+<li><strong>El mayor desacuerdo está en las furanosas.</strong> AHR pasa
+del 13.º al 1.º lugar y BDR del 11.º al 2.º. Una explicación posible:
+<strong>Vina penaliza cada torsión activa</strong>, y cada furanosa
+tiene una más que su piranosa (lo anotaste en la Etapa 6). Boltz no
+tiene esa penalización.</li>
+<li><strong>Pero colocan el ligando en el MISMO sitio</strong>: las
+poses de Vina y Boltz difieren en <strong>1-2 Å de RMSD</strong>.
+<strong>El desacuerdo está en el puntaje, no en la
+geometría.</strong></li>
+<li><strong>Señuelos</strong>: ninguno de los dos rechaza a HPA ni a
+INS. Solo coinciden en poner al poliol <strong>X9X al
+fondo</strong>.</li>
+</ol>
+<hr />
+<h1 id="etapa-10-la-predicción-y-el-entregable">ETAPA 10 · La predicción
+y el entregable</h1>
+<h2 id="cómo-formular-la-predicción-se-escribe-antes-de-ver-los-números">Cómo
+formular la predicción (se escribe ANTES de ver los números)</h2>
+<p>La práctica pide escribir qué ligando esperas que gane,
+<strong>basándote solo en las Etapas 2-5</strong>. Este es el
+método:</p>
+<p><strong>Paso 1, lista a los candidatos con evidencia:</strong></p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Candidato</th>
+<th>Evidencia a favor</th>
+<th>Debilidad</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ribosa (RIP)</td>
+<td>acierto #1 de BLAST; 2.º más frecuente en Foldseek</td>
+<td>28.5 %, zona crepuscular; el #2 une otra cosa</td>
+</tr>
+<tr class="even">
+<td>Glucosa (BGC)</td>
+<td>la más frecuente en Foldseek (13)</td>
+<td>la frecuencia refleja qué se cristaliza más, no qué une TeuB</td>
+</tr>
+<tr class="odd">
+<td><strong>Apiosa (PAV)</strong></td>
+<td>Swiss-Prot (#8-#11, <strong>2 de <em>Rhizobium</em></strong>)
+<strong>y</strong> Foldseek (4)</td>
+<td>identidad también baja (~26 %)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Paso 2, pesa cada evidencia con tres preguntas:</strong></p>
+<ul>
+<li>¿Es fuerte por sí sola? En zona crepuscular, no.</li>
+<li>¿Es independiente de las demás? Las anotaciones de nr, por ejemplo,
+no lo son.</li>
+<li>¿<strong>Varias fuentes independientes</strong> apuntan a lo mismo?
+Eso es lo que más pesa.</li>
+</ul>
+<p><strong>Paso 3, agrega el contexto biológico:</strong> ¿qué azúcares
+hay en el ambiente del organismo? <em>Rhizobium</em> vive en las raíces,
+y la <strong>apiosa es un azúcar de la pared celular de las
+plantas</strong>.</p>
+<p><strong>Predicción resultante:</strong> <strong><em>D-apiosa
+(PAV)</em></strong>, con la ribosa como segunda opción.</p>
+<blockquote>
+<p><strong>Honestidad:</strong> si ya viste los números del docking
+antes de escribir la predicción, <strong>dilo</strong>. Vale más
+declararlo que esconderlo.</p>
+</blockquote>
+<p><strong>Resultado:</strong> PAV quedó 9.º en Vina y 12.º en Boltz,
+dentro del empate. <strong>Ningún método la confirma ni la
+descarta.</strong></p>
+<h2 id="el-entregable-tres-páginas-como-máximo">El entregable: tres
+páginas como máximo</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Sección</th>
+<th>Qué va</th>
+<th>Peso</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1. El ranking</strong></td>
+<td>los 10 mejores de cada método, con su número (kcal/mol; ipTM)</td>
+<td><strong>30 %</strong></td>
+</tr>
+<tr class="even">
+<td><strong>2. Pisos de ruido</strong></td>
+<td>el ruido de cada método, cómo lo mediste y qué diferencias lo
+superan; <strong>empates marcados</strong></td>
+<td><strong>20 %</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>3. Comparación</strong></td>
+<td>la tabla con la columna Δ, Spearman y la discusión de los
+desacuerdos</td>
+<td><strong>20 %</strong></td>
+</tr>
+<tr class="even">
+<td><strong>4. Construcción del panel</strong></td>
+<td>de qué aciertos de Foldseek salió cada ligando y con qué criterio;
+tu predicción</td>
+<td><strong>15 %</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>5. Cadena de inferencias y péptido señal</strong></td>
+<td>tabla de 7 filas (etapa · herramienta · entrada · resultado · qué
+concluyes y qué <strong>no</strong>); dónde cortaste y con qué
+evidencia</td>
+<td><strong>10 %</strong></td>
+</tr>
+<tr class="even">
+<td><strong>6. Veredicto</strong></td>
+<td>una frase, proporcionada a la evidencia</td>
+<td><strong>5 %</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Plantilla de la tabla de la cadena de
+inferencias:</strong></p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Etapa</th>
+<th>Herramienta</th>
+<th>Entrada</th>
+<th>Qué salió</th>
+<th>Qué concluyo · qué NO</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>BLAST</td>
+<td>blastp / Swiss-Prot y nr</td>
+<td>362 aa</td>
+<td>17 aciertos RbsB, 22-31 % id</td>
+<td>familia sí · ligando <strong>no</strong></td>
+</tr>
+<tr class="even">
+<td>AlphaFold2</td>
+<td>ColabFold, sin plantillas</td>
+<td>362 aa</td>
+<td>pLDDT 92, dos lóbulos</td>
+<td>estructura confiable · <strong>no</strong> la función</td>
+</tr>
+<tr class="odd">
+<td>Péptido señal</td>
+<td>n/h/c, pLDDT, BLAST</td>
+<td>modelo + secuencia</td>
+<td>corte 27/28</td>
+<td>madura de 335 aa</td>
+</tr>
+<tr class="even">
+<td>Foldseek</td>
+<td>PDB</td>
+<td>madura 1-335</td>
+<td>TM 0.76-0.92 con 17-25 % id</td>
+<td>parientes por forma · <strong>no</strong> el ligando</td>
+</tr>
+<tr class="odd">
+<td>Ligandos</td>
+<td>CCD + Open Babel</td>
+<td>16 códigos</td>
+<td>SDF/PDBQT verificados</td>
+<td>panel listo</td>
+</tr>
+<tr class="even">
+<td>Docking</td>
+<td>Vina × 3 semillas</td>
+<td>receptor + ligandos</td>
+<td>−6.41 a −4.97 kcal/mol</td>
+<td>reproducible · <strong>no</strong> es afinidad</td>
+</tr>
+<tr class="odd">
+<td>Co-plegamiento</td>
+<td>Boltz-2 × 15</td>
+<td>secuencia + código</td>
+<td>ipTM 0.93-0.98</td>
+<td>todos caben · <strong>no</strong> discrimina</td>
+</tr>
+</tbody>
+</table>
+<p><strong>El veredicto al que se llegó:</strong></p>
+<blockquote>
+<p><strong>“No: con lo que medí, no puedo decir qué ligando prefiere
+TeuB.”</strong> Los dos métodos colocan todos los ligandos en el mismo
+bolsillo. Pero Boltz empata a 12 de 16, Vina ordena con una precisión
+que su función de puntaje no respalda, ninguno rechaza a los señuelos y
+sus rankings no correlacionan (ρ = 0.39). La hipótesis mejor
+fundamentada, la apiosa, se apoya en la homología y la biología, no en
+el cálculo.</p>
+</blockquote>
+<p><strong>Recuerda: acertar no se califica.</strong> Se califica que
+midas, que midas también el ruido y que no afirmes más de lo que tus
+números sostienen. <strong>Responder “no” con buen argumento vale más
+que responder “sí” sin él.</strong></p>
+<hr />
+<h1 id="apéndices">APÉNDICES</h1>
+<h2 id="a-los-errores-de-esta-práctica-cómo-se-detectaron-y-cómo-evitarlos">A
+· Los errores de esta práctica: cómo se detectaron y cómo evitarlos</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>#</th>
+<th>Error</th>
+<th>Cómo se detectó</th>
+<th>Regla</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>AlphaFold se corrió con la secuencia de ejemplo (59 aa)</td>
+<td><code>log.txt</code>: “length 59”</td>
+<td>revisa la longitud <strong>antes</strong> de “Run all”</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Al modelo de respaldo le falta una Arg en la posición 256</td>
+<td>comparación residuo por residuo</td>
+<td>compara siempre los datos ajenos con los tuyos</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>El centro de la caja del guion no sirve para tu modelo</td>
+<td>corresponde a otras coordenadas</td>
+<td>calcula el centro <strong>en tu modelo</strong></td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Dos copias del docking a la vez</td>
+<td><code>pgrep -af run.sh</code></td>
+<td>revisa antes de relanzar</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Boltz con la secuencia cortada a 132 aa</td>
+<td><code>data.json</code> e ipTM bajo</td>
+<td>verifica que termine en <code>…EYFKA</code></td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td><code>XIP</code> en vez de <code>XYP</code></td>
+<td><code>data.json</code></td>
+<td>el <strong>mismo</strong> código en los dos métodos</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>Tomar las anotaciones de nr como evidencia</td>
+<td>razonamiento</td>
+<td>distingue lo experimental de lo inferido</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>Boltz borra el O1</td>
+<td>el número de átomos no coincidía</td>
+<td>cuenta los átomos</td>
+</tr>
+</tbody>
+</table>
+<p><strong>El patrón común:</strong> casi todos se atrapan
+<strong>mirando lo que de verdad entró al programa</strong>
+(<code>log.txt</code>, <code>config.json</code>, <code>data.json</code>)
+en lugar de confiar en lo que creías haber puesto.</p>
+<h2 id="b-lista-de-verificación-final">B · Lista de verificación
+final</h2>
+<ul class="task-list">
+<li><label><input type="checkbox"></input>Secuencia: 362 aa, empieza en
+MKRRTFLQTG y termina en NEKLLEYFKA</label></li>
+<li><label><input type="checkbox"></input>BLAST Swiss-Prot: familia,
+identidades, q.start mínimo y ligandos del top 10 anotados</label></li>
+<li><label><input type="checkbox"></input>BLAST nr: cuántos superan el 40 % y
+cuántos son de Rhizobiaceae</label></li>
+<li><label><input type="checkbox"></input>AlphaFold: <code>log.txt</code> dice
+362, <code>use_templates: false</code>, pLDDT y PAE
+anotados</label></li>
+<li><label><input type="checkbox"></input>Péptido señal: tres evidencias;
+corte 27/28; madura de 335 aa</label></li>
+<li><label><input type="checkbox"></input>Numeración madura fija; sitio Y38
+S43 H45 R174 W197 D222 E248 C269 verificado</label></li>
+<li><label><input type="checkbox"></input>Foldseek con el modelo
+<strong>recortado</strong>; tabla de ligandos; fórmulas
+repetidas</label></li>
+<li><label><input type="checkbox"></input>Panel con criterios explícitos y
+entradas de origen</label></li>
+<li><label><input type="checkbox"></input><strong>Predicción escrita antes de
+ver resultados</strong></label></li>
+<li><label><input type="checkbox"></input>Ligandos: fórmula, hidrógenos, no
+planos</label></li>
+<li><label><input type="checkbox"></input>Docking: el mismo centro, caja y
+exhaustividad para todos; ≥ 3 réplicas; poses en el
+bolsillo</label></li>
+<li><label><input type="checkbox"></input>Boltz: secuencia madura de 335, sin
+plantillas, semillas 1-3; <code>data.json</code> revisado en cada
+ZIP</label></li>
+<li><label><input type="checkbox"></input>Tabla comparativa con Δ, pisos de
+ruido, empates marcados y Spearman</label></li>
+<li><label><input type="checkbox"></input>Veredicto proporcionado a la
+evidencia</label></li>
+</ul>
+<h2 id="c-glosario">C · Glosario</h2>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Término</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Anómero α/β</strong></td>
+<td>las dos orientaciones del OH del carbono anomérico al cerrarse el
+anillo</td>
+</tr>
+<tr class="even">
+<td><strong>Apo / holo</strong></td>
+<td>estructura sin ligando / con ligando</td>
+</tr>
+<tr class="odd">
+<td><strong>CCD</strong></td>
+<td>Chemical Component Dictionary: la ficha de cada ligando del PDB
+(código de 3 letras)</td>
+</tr>
+<tr class="even">
+<td><strong>Cobertura</strong></td>
+<td>qué porcentaje de tu secuencia alinea con el acierto</td>
+</tr>
+<tr class="odd">
+<td><strong>Coevolución</strong></td>
+<td>posiciones que mutan juntas porque están en contacto</td>
+</tr>
+<tr class="even">
+<td><strong>Docking</strong></td>
+<td>colocar un ligando en una proteína rígida y puntuarlo</td>
+</tr>
+<tr class="odd">
+<td><strong>E-value</strong></td>
+<td>cuántos aciertos así de buenos esperarías por azar</td>
+</tr>
+<tr class="even">
+<td><strong>Exhaustividad</strong></td>
+<td>cuánto busca el docking</td>
+</tr>
+<tr class="odd">
+<td><strong>Furanosa / piranosa</strong></td>
+<td>anillo de 5 / de 6 átomos</td>
+</tr>
+<tr class="even">
+<td><strong>ipTM</strong></td>
+<td>confianza en la interfaz proteína-ligando (0-1)</td>
+</tr>
+<tr class="odd">
+<td><strong>MSA</strong></td>
+<td>alineamiento múltiple de secuencias</td>
+</tr>
+<tr class="even">
+<td><strong>PAE</strong></td>
+<td>error esperado en la posición relativa de dos residuos (Å)</td>
+</tr>
+<tr class="odd">
+<td><strong>PDBQT</strong></td>
+<td>formato de Vina: PDB + tipos de átomo + torsiones</td>
+</tr>
+<tr class="even">
+<td><strong>Péptido señal</strong></td>
+<td>etiqueta de envío en el extremo N; se corta al llegar al
+destino</td>
+</tr>
+<tr class="odd">
+<td><strong>Piso de ruido</strong></td>
+<td>variación al repetir una medición; una diferencia menor no significa
+nada</td>
+</tr>
+<tr class="even">
+<td><strong>pLDDT</strong></td>
+<td>confianza local por residuo (0-100)</td>
+</tr>
+<tr class="odd">
+<td><strong>Plantilla</strong></td>
+<td>estructura conocida que el predictor puede copiar; se desactiva</td>
+</tr>
+<tr class="even">
+<td><strong>RMSD</strong></td>
+<td>distancia promedio entre dos conjuntos de átomos (Å)</td>
+</tr>
+<tr class="odd">
+<td><strong>Semilla</strong></td>
+<td>número que inicializa lo aleatorio; cambiarla da una réplica</td>
+</tr>
+<tr class="even">
+<td><strong>Señuelo</strong></td>
+<td>molécula que <strong>no</strong> debería unirse; sirve de control
+negativo</td>
+</tr>
+<tr class="odd">
+<td><strong>Spearman ρ</strong></td>
+<td>correlación entre dos ordenamientos</td>
+</tr>
+<tr class="even">
+<td><strong>TM-score</strong></td>
+<td>similitud de forma global (0-1; más de 0.5 indica el mismo
+pliegue)</td>
+</tr>
+<tr class="odd">
+<td><strong>Zona crepuscular</strong></td>
+<td>~20-35 % de identidad: se infiere el pliegue, no la función</td>
+</tr>
+</tbody>
+</table>
+<h2 id="d-enlaces-usados-en-esta-guía">D · Enlaces usados en esta
+guía</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Etapa</th>
+<th>Recurso</th>
+<th>Dirección</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Contar letras</td>
+<td>https://www.bioinformatics.org/sms2/protein_stats.html</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>BLAST</td>
+<td>https://blast.ncbi.nlm.nih.gov/Blast.cgi</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>ColabFold (AlphaFold2)</td>
+<td>https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>AlphaFold2-WebGPU</td>
+<td>https://martin-steinegger.github.io/alphafold2-webgpu</td>
+</tr>
+<tr class="odd">
+<td>3-9</td>
+<td>Visor Mol*</td>
+<td>https://molstar.org/viewer/</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>ProtScale (hidropatía)</td>
+<td>https://web.expasy.org/protscale/</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>SignalP 6.0</td>
+<td>https://services.healthtech.dtu.dk/services/SignalP-6.0/</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>PDB-Tools Web</td>
+<td>https://wenmr.science.uu.nl/pdbtools/</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Foldseek</td>
+<td>https://search.foldseek.com/search</td>
+</tr>
+<tr class="even">
+<td>5-6</td>
+<td>RCSB PDB</td>
+<td>https://www.rcsb.org/ (estructuras: <code>/structure/XXXX</code>;
+ligandos: <code>/ligand/XXX</code>)</td>
+</tr>
+<tr class="odd">
+<td>6</td>
+<td>SDF ideal directo</td>
+<td>https://files.rcsb.org/ligands/download/XXX_ideal.sdf</td>
+</tr>
+<tr class="even">
+<td>7</td>
+<td>SwissDock</td>
+<td>https://www.swissdock.ch/</td>
+</tr>
+<tr class="odd">
+<td>8</td>
+<td>ColabFold2 preview (Boltz-2)</td>
+<td>https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/ColabFold2_preview.ipynb</td>
+</tr>
+</tbody>
+</table>
+<h2 id="e-bibliografía">E · Bibliografía</h2>
+<ul>
+<li>Altschul et al. (1997) Gapped BLAST and PSI-BLAST. <em>Nucleic Acids
+Res.</em> doi:10.1093/nar/25.17.3389</li>
+<li>Jumper et al. (2021) AlphaFold2. <em>Nature.</em>
+doi:10.1038/s41586-021-03819-2</li>
+<li>Mirdita et al. (2022) ColabFold. <em>Nat Methods.</em>
+doi:10.1038/s41592-022-01488-1</li>
+<li>van Kempen et al. (2024) Foldseek. <em>Nat Biotechnol.</em>
+doi:10.1038/s41587-023-01773-0</li>
+<li>Trott &amp; Olson (2010) AutoDock Vina. <em>J Comput Chem.</em>
+doi:10.1002/jcc.21334</li>
+<li>Eberhardt et al. (2021) AutoDock Vina 1.2.0. <em>J Chem Inf
+Model.</em> doi:10.1021/acs.jcim.1c00203</li>
+<li>Abramson et al. (2024) AlphaFold 3. <em>Nature.</em>
+doi:10.1038/s41586-024-07487-w</li>
+<li>Passaro et al. (2025) Boltz-2. <em>bioRxiv.</em>
+doi:10.1101/2025.06.14.659707</li>
+</ul>
+</body>
+</html>
