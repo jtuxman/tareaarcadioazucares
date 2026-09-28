@@ -33,9 +33,9 @@ setsid tmux new-session -d -s tarea -c "$PWD" './run.sh; exec bash' < /dev/null
 | 3 · Péptido señal + recorte | ✅ HECHA | `03_maduro/TeuB_maduro_1-335.pdb` |
 | 4 · Foldseek + panel | ✅ HECHA | `04_foldseek/hits.tsv`, `tabla_ligandos.json` |
 | 5 · Ligandos | ✅ HECHA | `05_ligandos/*.sdf .mol2 .pdbqt` (15) |
-| 6 · Docking Vina | ✅ HECHA (45/45) — falta análisis de poses | `06_docking/`, `08_analisis/vina_scores.tsv` |
-| 7 · Co-plegamiento Boltz-2 | 🔄 11 válidas (BGC RIP GAL XYP PAV INS AHR ALL WEB GZL 3VB); faltan ARA BDR FRU X9X HPA | `07_coplegamiento/`, `08_analisis/revisar_boltz.py`, `boltz_resumen.tsv` |
-| 8-10 · Ranking y entregable | ⬜ PENDIENTE | `08_analisis/` |
+| 6 · Docking Vina | ✅ HECHA (16 lig × 3 semillas, 3VB incluido; poses todas en el bolsillo) | `06_docking/`, `08_analisis/vina_poses.tsv` |
+| 7 · Co-plegamiento Boltz-2 | ✅ HECHA (16 válidas; ojo: Boltz quita el átomo O1) | `07_coplegamiento/`, `08_analisis/boltz_resumen.tsv` |
+| 8-10 · Ranking y entregable | 🔄 comparación HECHA (`08_analisis/comparar.py`, `tabla_comparativa.tsv`, resumen en CUADERNO.md); falta redactar el entregable de 3 págs | `08_analisis/` |
 
 ---
 

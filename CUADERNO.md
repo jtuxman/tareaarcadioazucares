@@ -71,3 +71,43 @@ Formulada con la evidencia de las etapas 1–4:
 ## Etapa 1 · BLAST contra nr (remoto, E<1e-5, 500 aciertos máx.)
 - 500 aciertos; **420 con >40 % de identidad**; **259 de Rhizobiaceae** (*Martinezella/Rhizobium*, *Mesorhizobium*, *Sinorhizobium*, *Agrobacterium*...).
 - Mejores: 97–100 % id, todos de *Rhizobium*/*Martinezella*; anotaciones genéricas ("ABC transporter substrate-binding protein") o "ribose transport..." automáticas.
+
+## Etapa 6 · Docking — resultados (16 ligandos × 3 semillas; 3VB añadido después con los mismos parámetros)
+- Ruido entre semillas: rango máximo **0.035 kcal/mol** (BGC); DE típica 0.002–0.018. Rango del panel: **1.43 kcal/mol**.
+- Con ese piso, las 16 medias son distinguibles entre sí — pero el piso de semillas solo mide la búsqueda, no el error de la función de puntaje (~2 kcal/mol frente a experimento), que es mayor que todo el rango del panel.
+- **Todas las mejores poses caen en el bolsillo**: centroide a ≤1.5 Å del centro del sitio, 7–8/8 residuos del sitio a <4 Å. Ninguna superficial (la hendidura cerrada y la caja lo fuerzan).
+- Ranking Vina: XYP −6.41 > ARA −6.14 > **HPA −6.10** > **INS −6.09** > GAL > RIP > ALL > GZL > **PAV −5.75 (9.º)** > FRU > BDR > BGC > AHR > WEB > **X9X −5.23** > 3VB −4.97.
+- Señuelos: HPA 3.º e INS 4.º (¡por encima de casi todos los azúcares!); X9X 15.º. Vina no rechaza señuelos.
+
+## Etapa 7 · Boltz-2 — resultados (16 ligandos × 15 modelos, sin plantillas, secuencia madura)
+- ipTM 0.95–0.98 para TODOS. `ranking_score` medio: rango **0.034**; DE entre los 15 modelos 0.002–0.010 (media 0.0054) = **piso de ruido del método 2**.
+- Criterio de empate: |Δ| < 2·√(sd₁²+sd₂²). **Los 12 primeros empatan con el líder (AHR)**; solo WEB, 3VB, FRU, X9X se separan por abajo. Solo 17 de 120 pares son distinguibles.
+- Ligando en el sitio en los 15 modelos de todos: ≤2.2 Å del centro, ≥6/8 contactos.
+- Señuelos: HPA 7.º, INS 10.º (dentro del empate), X9X último (16.º). Boltz solo rechaza (débilmente) el poliol acíclico.
+- **HALLAZGO: Boltz-2 elimina el átomo llamado O1** en los 10 ligandos que lo tienen (RIP XYP ARA AHR BDR BGC GAL ALL GZL: el OH anomérico; FRU: el O del CH2OH). INS, X9X, HPA, 3VB, WEB, PAV salen completos. Para las aldosas el modelo no distingue α de β (el OH anomérico no está) y co-pliega un residuo glicosilo, no el azúcar libre. Esto hay que declararlo: la comparación Boltz entre azúcares no es entre las moléculas exactas.
+
+## Etapas 8–10 · Comparación (`08_analisis/tabla_comparativa.tsv`)
+| lig | puesto Vina | Vina | puesto Boltz | ranking_score | Δ |
+|---|---|---|---|---|---|
+| XYP | 1 | −6.41 | 5 | 0.963 | +4 |
+| ARA | 2 | −6.14 | 3 | 0.963 | +1 |
+| HPA* | 3 | −6.10 | 7 | 0.961 | +4 |
+| INS* | 4 | −6.09 | 10 | 0.958 | +6 |
+| GAL | 5 | −6.05 | 11 | 0.958 | +6 |
+| RIP | 6 | −6.00 | 4 | 0.963 | −2 |
+| ALL | 7 | −5.95 | 8 | 0.958 | +1 |
+| GZL | 8 | −5.78 | 6 | 0.962 | −2 |
+| PAV | 9 | −5.75 | 12 | 0.955 | +3 |
+| FRU | 10 | −5.73 | 15 | 0.946 | +5 |
+| BDR | 11 | −5.71 | 2 | 0.970 | −9 |
+| BGC | 12 | −5.65 | 9 | 0.958 | −3 |
+| AHR | 13 | −5.50 | 1 | 0.971 | −12 |
+| WEB | 14 | −5.46 | 13 | 0.951 | −1 |
+| X9X* | 15 | −5.23 | 16 | 0.937 | +1 |
+| 3VB | 16 | −4.97 | 14 | 0.949 | −2 |
+(* señuelo)
+- Correlación de rangos: **Spearman ρ = 0.43 (p = 0.10), Kendall τ = 0.33 (p = 0.08)** → acuerdo débil, no significativo.
+- Mayor desacuerdo: las **furanosas** (AHR 13.º→1.º, BDR 11.º→2.º): Vina las castiga, Boltz las prefiere.
+- Poses: el mejor modelo Boltz (superpuesto por Cα sobre el receptor de Vina) y la pose 1 de Vina coinciden: centroides a 0.5–1.4 Å, RMSD de átomos pesados 1.1–2.0 Å. **Los dos métodos ponen el ligando en el mismo lugar; discrepan en el puntaje.**
+- Predicción (PAV): 9.º en Vina, 12.º en Boltz (empatado con el líder). **Ningún método la confirma, y tampoco la descarta**: en Boltz está dentro del empate.
+- Pares de fórmula idéntica: C5H10O5 (XYP, ARA, RIP, PAV, AHR, BDR) ocupan en Vina los puestos 1, 2, 6, 9, 13, 11 y en Boltz 5, 3, 4, 12, 1, 2 — el orden dentro de la misma fórmula no es reproducible entre métodos.
