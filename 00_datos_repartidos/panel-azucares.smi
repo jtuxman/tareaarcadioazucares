@@ -1,0 +1,14 @@
+# Panel de 10 azucares del tutorial. SMILES isomericos del diccionario quimico del PDB (CCD),
+# consultados en la API de PDBe el 2026-09-17. El codigo de la primera columna es el que se
+# pega en ColabFold2 (ligand_ccd) y el que nombra a los archivos de datos/ligandos-mol2/.
+# codigo	nombre	formula	SMILES
+BGC	beta-D-glucopiranosa (glucosa)	C6H12O6	OC[C@H]1O[C@@H](O)[C@H](O)[C@@H](O)[C@@H]1O
+RIP	beta-D-ribopiranosa (ribosa)	C5H10O5	O[C@@H]1CO[C@@H](O)[C@H](O)[C@@H]1O
+XYP	beta-D-xilopiranosa (xilosa)	C5H10O5	O[C@@H]1CO[C@@H](O)[C@H](O)[C@H]1O
+GAL	beta-D-galactopiranosa (galactosa)	C6H12O6	OC[C@H]1O[C@@H](O)[C@H](O)[C@@H](O)[C@H]1O
+INS	mio-inositol	C6H12O6	O[C@@H]1[C@H](O)[C@H](O)[C@@H](O)[C@H](O)[C@H]1O
+AHR	alfa-L-arabinofuranosa	C5H10O5	OC[C@@H]1O[C@@H](O)[C@H](O)[C@H]1O
+ALL	beta-D-alopiranosa (alosa)	C6H12O6	OC[C@H]1O[C@@H](O)[C@H](O)[C@H](O)[C@@H]1O
+WEB	alfa-D-psicopiranosa (alulosa)	C6H12O6	OC[C@]1(O)OC[C@@H](O)[C@@H](O)[C@H]1O
+GZL	beta-D-galactofuranosa	C6H12O6	OC[C@@H](O)[C@@H]1O[C@@H](O)[C@H](O)[C@H]1O
+3VB	D-treitol	C4H10O4	OC[C@@H](O)[C@H](O)CO

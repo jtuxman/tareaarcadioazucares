@@ -1,0 +1,613 @@
+{
+ "cnt": {
+  "AHR": 1,
+  "FUB": 1,
+  "RIP": 9,
+  "GZL": 1,
+  "62W": 1,
+  "ALL": 1,
+  "LTH": 1,
+  "TLZ": 1,
+  "BCT": 1,
+  "T6T": 1,
+  "GAL": 7,
+  "INS": 4,
+  "64K": 1,
+  "BDR": 1,
+  "ARA": 2,
+  "XYP": 4,
+  "X9X": 1,
+  "WEB": 1,
+  "GYE": 1,
+  "X6X": 1,
+  "RAM": 1,
+  "FCB": 1,
+  "ASP": 1,
+  "BGC": 13,
+  "3VB": 1,
+  "FRU": 2,
+  "PAV": 4,
+  "HPA": 6,
+  "F1X": 1,
+  "NPF": 2,
+  "YDQ": 1,
+  "YDM": 1,
+  "GLC": 1,
+  "8GA": 1,
+  "8GG": 1,
+  "SR1": 1,
+  "6MP": 1,
+  "AI2": 2,
+  "ADE": 1,
+  "GLA": 2,
+  "ARB": 2,
+  "A1B": 1,
+  "BG6": 1,
+  "RIB": 1,
+  "TMO": 1,
+  "XLF": 1,
+  "145": 1,
+  "IPT": 1,
+  "EMC": 1
+ },
+ "info": {
+  "AHR": {
+   "id": "AHR",
+   "name": "alpha-L-arabinofuranose",
+   "formula": "C5 H10 O5",
+   "mw": 150.13
+  },
+  "FUB": {
+   "id": "FUB",
+   "name": "beta-L-arabinofuranose",
+   "formula": "C5 H10 O5",
+   "mw": 150.13
+  },
+  "RIP": {
+   "id": "RIP",
+   "name": "beta-D-ribopyranose",
+   "formula": "C5 H10 O5",
+   "mw": 150.13
+  },
+  "GZL": {
+   "id": "GZL",
+   "name": "beta-D-galactofuranose",
+   "formula": "C6 H12 O6",
+   "mw": 180.156
+  },
+  "62W": {
+   "id": "62W",
+   "name": "L-glucitol",
+   "formula": "C6 H14 O6",
+   "mw": 182.172
+  },
+  "ALL": {
+   "id": "ALL",
+   "name": "beta-D-allopyranose",
+   "formula": "C6 H12 O6",
+   "mw": 180.156
+  },
+  "LTH": {
+   "id": "LTH",
+   "name": "(2R,3S)-2,3,4-trihydroxybutanoic acid",
+   "formula": "C4 H8 O5",
+   "mw": 136.103
+  },
+  "TLZ": {
+   "id": "TLZ",
+   "name": "D-altritol",
+   "formula": "C6 H14 O6",
+   "mw": 182.172
+  },
+  "BCT": {
+   "id": "BCT",
+   "name": "BICARBONATE ION",
+   "formula": "C H O3",
+   "mw": 61.017
+  },
+  "T6T": {
+   "id": "T6T",
+   "name": "alpha-D-tagatopyranose",
+   "formula": "C6 H12 O6",
+   "mw": 180.156
+  },
+  "GAL": {
+   "id": "GAL",
+   "name": "beta-D-galactopyranose",
+   "formula": "C6 H12 O6",
+   "mw": 180.156
+  },
+  "INS": {
+   "id": "INS",
+   "name": "1,2,3,4,5,6-HEXAHYDROXY-CYCLOHEXANE",
+   "formula": "C6 H12 O6",
+   "mw": 180.156
+  },
+  "64K": {
+   "id": "64K",
+   "name": "alpha-D-arabinopyranose",
+   "formula": "C5 H10 O5",
+   "mw": 150.13
+  },
+  "BDR": {
+   "id": "BDR",
+   "name": "beta-D-ribofuranose",
+   "formula": "C5 H10 O5",
+   "mw": 150.13
+  },
+  "ARA": {
+   "id": "ARA",
+   "name": "alpha-L-arabinopyranose",
+   "formula": "C5 H10 O5",
+   "mw": 150.13
+  },
+  "XYP": {
+   "id": "XYP",
+   "name": "beta-D-xylopyranose",
+   "formula": "C5 H10 O5",
+   "mw": 150.13
+  },
+  "X9X": {
+   "id": "X9X",
+   "name": "D-allitol",
+   "formula": "C6 H14 O6",
+   "mw": 182.172
+  },
+  "WEB": {
+   "id": "WEB",
+   "name": "alpha-D-psicopyranose",
+   "formula": "C6 H12 O6",
+   "mw": 180.156
+  },
+  "GYE": {
+   "id": "GYE",
+   "name": "beta-D-fucofuranose",
+   "formula": "C6 H12 O5",
+   "mw": 164.156
+  },
+  "X6X": {
+   "id": "X6X",
+   "name": "2-amino-2-deoxy-alpha-D-galactopyranose",
+   "formula": "C6 H13 N O5",
+   "mw": 179.171
+  },
+  "RAM": {
+   "id": "RAM",
+   "name": "alpha-L-rhamnopyranose",
+   "formula": "C6 H12 O5",
+   "mw": 164.156
+  },
+  "FCB": {
+   "id": "FCB",
+   "name": "beta-D-fucopyranose",
+   "formula": "C6 H12 O5",
+   "mw": 164.156
+  },
+  "ASP": {
+   "id": "ASP",
+   "name": "ASPARTIC ACID",
+   "formula": "C4 H7 N O4",
+   "mw": 133.103
+  },
+  "BGC": {
+   "id": "BGC",
+   "name": "beta-D-glucopyranose",
+   "formula": "C6 H12 O6",
+   "mw": 180.156
+  },
+  "3VB": {
+   "id": "3VB",
+   "name": "D-Threitol",
+   "formula": "C4 H10 O4",
+   "mw": 122.12
+  },
+  "FRU": {
+   "id": "FRU",
+   "name": "beta-D-fructofuranose",
+   "formula": "C6 H12 O6",
+   "mw": 180.156
+  },
+  "PAV": {
+   "id": "PAV",
+   "name": "(2R,4S)-2-methyl-2,3,3,4-tetrahydroxytetrahydrofuran",
+   "formula": "C5 H10 O5",
+   "mw": 150.13
+  },
+  "HPA": {
+   "id": "HPA",
+   "name": "HYPOXANTHINE",
+   "formula": "C5 H4 N4 O",
+   "mw": 136.111
+  },
+  "F1X": {
+   "id": "F1X",
+   "name": "1-O-phosphono-beta-D-fructofuranose",
+   "formula": "C6 H13 O9 P",
+   "mw": 260.136
+  },
+  "NPF": {
+   "id": "NPF",
+   "name": "2-nitrophenyl beta-D-fucopyranoside",
+   "formula": "C12 H15 N O7",
+   "mw": 285.25
+  },
+  "YDQ": {
+   "id": "YDQ",
+   "name": "2-bromo-1-[6-(dimethylamino)naphthalen-2-yl]ethan-1-one",
+   "formula": "C14 H14 Br N O",
+   "mw": 292.171
+  },
+  "YDM": {
+   "id": "YDM",
+   "name": "1-[6-(dimethylamino)naphthalen-2-yl]propan-1-one",
+   "formula": "C15 H17 N O",
+   "mw": 227.302
+  },
+  "GLC": {
+   "id": "GLC",
+   "name": "alpha-D-glucopyranose",
+   "formula": "C6 H12 O6",
+   "mw": 180.156
+  },
+  "8GA": {
+   "id": "8GA",
+   "name": "5-Se-methyl-5-seleno-alpha-D-ribofuranose",
+   "formula": "C6 H12 O4 Se",
+   "mw": 227.117
+  },
+  "8GG": {
+   "id": "8GG",
+   "name": "5-Se-methyl-5-seleno-beta-D-ribofuranose",
+   "formula": "C6 H12 O4 Se",
+   "mw": 227.117
+  },
+  "SR1": {
+   "id": "SR1",
+   "name": "5-S-methyl-5-thio-alpha-D-ribofuranose",
+   "formula": "C6 H12 O4 S",
+   "mw": 180.222
+  },
+  "6MP": {
+   "id": "6MP",
+   "name": "6-METHYLPURINE",
+   "formula": "C6 H6 N4",
+   "mw": 134.139
+  },
+  "AI2": {
+   "id": "AI2",
+   "name": "3A-METHYL-5,6-DIHYDRO-FURO[2,3-D][1,3,2]DIOXABOROLE-2,2,6,6A-TETRAOL",
+   "formula": "C5 H10 B O7",
+   "mw": 192.94
+  },
+  "ADE": {
+   "id": "ADE",
+   "name": "ADENINE",
+   "formula": "C5 H5 N5",
+   "mw": 135.127
+  },
+  "GLA": {
+   "id": "GLA",
+   "name": "alpha-D-galactopyranose",
+   "formula": "C6 H12 O6",
+   "mw": 180.156
+  },
+  "ARB": {
+   "id": "ARB",
+   "name": "beta-L-arabinopyranose",
+   "formula": "C5 H10 O5",
+   "mw": 150.13
+  },
+  "A1B": {
+   "id": "A1B",
+   "name": "1-deoxy-alpha-L-xylulofuranose-1,2-borate",
+   "formula": "C5 H10 B O6",
+   "mw": 176.94
+  },
+  "BG6": {
+   "id": "BG6",
+   "name": "6-O-phosphono-beta-D-glucopyranose",
+   "formula": "C6 H13 O9 P",
+   "mw": 260.136
+  },
+  "RIB": {
+   "id": "RIB",
+   "name": "alpha-D-ribofuranose",
+   "formula": "C5 H10 O5",
+   "mw": 150.13
+  },
+  "TMO": {
+   "id": "TMO",
+   "name": "trimethylamine oxide",
+   "formula": "C3 H9 N O",
+   "mw": 75.11
+  },
+  "XLF": {
+   "id": "XLF",
+   "name": "beta-D-xylulofuranose",
+   "formula": "C5 H10 O5",
+   "mw": 150.13
+  },
+  "145": {
+   "id": "145",
+   "name": "2-nitrophenyl beta-D-galactopyranoside",
+   "formula": "C12 H15 N O8",
+   "mw": 301.249
+  },
+  "IPT": {
+   "id": "IPT",
+   "name": "1-methylethyl 1-thio-beta-D-galactopyranoside",
+   "formula": "C9 H18 O5 S",
+   "mw": 238.301
+  },
+  "EMC": {
+   "id": "EMC",
+   "name": "ETHYL MERCURY ION",
+   "formula": "C2 H5 Hg",
+   "mw": 229.651
+  }
+ },
+ "donde": {
+  "AHR": [
+   "5OCP"
+  ],
+  "FUB": [
+   "5OCP"
+  ],
+  "RIP": [
+   "7E7M",
+   "1DBP",
+   "1DRK",
+   "4ZJP",
+   "2FN8",
+   "4RY0",
+   "2IOY",
+   "2GX6",
+   "1DRJ"
+  ],
+  "GZL": [
+   "2VK2"
+  ],
+  "62W": [
+   "5HKO"
+  ],
+  "ALL": [
+   "5DTE"
+  ],
+  "LTH": [
+   "4PE6"
+  ],
+  "TLZ": [
+   "4RY9"
+  ],
+  "BCT": [
+   "4RY9"
+  ],
+  "T6T": [
+   "5DKV"
+  ],
+  "GAL": [
+   "2RJO",
+   "4WWH",
+   "3URM",
+   "4Z0N",
+   "5ABP",
+   "8ABP",
+   "4KZK"
+  ],
+  "INS": [
+   "4IRX",
+   "4YO7",
+   "4RXM",
+   "4RU1"
+  ],
+  "64K": [
+   "5HQJ"
+  ],
+  "BDR": [
+   "3KSM"
+  ],
+  "ARA": [
+   "4RXT",
+   "1BAP"
+  ],
+  "XYP": [
+   "4YWH",
+   "3C6Q",
+   "5XSS",
+   "5XSJ"
+  ],
+  "X9X": [
+   "4WT7"
+  ],
+  "WEB": [
+   "8WLB"
+  ],
+  "GYE": [
+   "6HYH"
+  ],
+  "X6X": [
+   "5BR1"
+  ],
+  "RAM": [
+   "4WZZ"
+  ],
+  "FCB": [
+   "4WUT"
+  ],
+  "ASP": [
+   "4RXM"
+  ],
+  "BGC": [
+   "4RXM",
+   "2IPL",
+   "3GBP",
+   "2GBP",
+   "4RXU",
+   "8FXU",
+   "8FXT",
+   "7X0H",
+   "5KWS",
+   "4YS6",
+   "2QVC",
+   "2IPN",
+   "2IPM"
+  ],
+  "3VB": [
+   "4RSM"
+  ],
+  "FRU": [
+   "2X7X",
+   "3BRQ"
+  ],
+  "PAV": [
+   "4PZ0",
+   "3EJW",
+   "3T95",
+   "6DSP"
+  ],
+  "HPA": [
+   "1JFT",
+   "1VPW",
+   "1JH9",
+   "1QPZ",
+   "1JFS",
+   "1BDH"
+  ],
+  "F1X": [
+   "3O75"
+  ],
+  "NPF": [
+   "2PAF",
+   "1EFA"
+  ],
+  "YDQ": [
+   "8FXU"
+  ],
+  "YDM": [
+   "8FXT"
+  ],
+  "GLC": [
+   "8FXT"
+  ],
+  "8GA": [
+   "5ULB"
+  ],
+  "8GG": [
+   "5ULB"
+  ],
+  "SR1": [
+   "4RY8"
+  ],
+  "6MP": [
+   "2PUA"
+  ],
+  "AI2": [
+   "1JX6",
+   "2HJ9"
+  ],
+  "ADE": [
+   "2PUE"
+  ],
+  "GLA": [
+   "5ABP",
+   "8ABP"
+  ],
+  "ARB": [
+   "1BAP",
+   "3TB6"
+  ],
+  "A1B": [
+   "4YP9"
+  ],
+  "BG6": [
+   "2NZU"
+  ],
+  "RIB": [
+   "4RK1"
+  ],
+  "TMO": [
+   "3O1H"
+  ],
+  "XLF": [
+   "3CTP"
+  ],
+  "145": [
+   "2PE5"
+  ],
+  "IPT": [
+   "1TLF"
+  ],
+  "EMC": [
+   "1TLF"
+  ]
+ },
+ "apo": [
+  "4YV7",
+  "2FN9",
+  "1BA2",
+  "7X0P",
+  "4RWE",
+  "6HB0",
+  "6GQ0",
+  "5HSG",
+  "4YLE",
+  "4YHS",
+  "4KQ9",
+  "4JOQ",
+  "3L6U",
+  "3L49",
+  "3BRS",
+  "1URP",
+  "1GUD",
+  "5IX8",
+  "3D02",
+  "5BQ3",
+  "3M9W",
+  "1TM2",
+  "5BRA",
+  "4KVF",
+  "2O20",
+  "5XSD",
+  "2FEP",
+  "6SW4",
+  "5YSZ",
+  "4KQC",
+  "3ROT",
+  "3O1I",
+  "3H75",
+  "3G1W",
+  "3BBL",
+  "3E3M",
+  "3OQO",
+  "1JYE",
+  "1LBI",
+  "1RZR",
+  "3K4H",
+  "1JYF",
+  "7X7H",
+  "4O5A",
+  "3EGC",
+  "1DBQ",
+  "3KKE",
+  "3C3K",
+  "3HCW",
+  "7FF4",
+  "3MIZ",
+  "4RZS",
+  "2IKS",
+  "3H5T",
+  "3CS3",
+  "7E5W",
+  "7DOB",
+  "4RZT",
+  "3KJX",
+  "3JVD",
+  "3HUU",
+  "3H5O",
+  "3GBV",
+  "3D8U",
+  "2QU7",
+  "2JCG",
+  "1ZVV"
+ ]
+}

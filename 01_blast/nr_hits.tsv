@@ -1,0 +1,500 @@
+gb|MBB5576301.1|	ribose transport system substrate-binding protein [Martinezella paranaensis]	100.000	362	1	362	0.0	743	100
+gb|MBB4243526.1|	ribose transport system substrate-binding protein [Martinezella tropici]	100.000	362	1	362	0.0	743	100
+ref|WP_004129668.1|	MULTISPECIES: ABC transporter substrate-binding protein [Rhizobiaceae]	100.000	362	1	362	0.0	743	100
+ref|WP_168318666.1|	MULTISPECIES: ABC transporter substrate-binding protein [Rhizobium]	99.724	362	1	362	0.0	741	100
+gb|AAC04780.1|	periplasmic sugar binding protein homolog [Rhizobium leucaenae USDA 9039]	99.448	362	1	362	0.0	739	100
+ref|WP_331383573.1|	ABC transporter substrate-binding protein [Rhizobium sp. BR 362]	98.895	362	1	362	0.0	735	100
+ref|WP_018328889.1|	ABC transporter substrate-binding protein [Rhizobium giardinii]	98.343	362	1	362	0.0	733	100
+ref|WP_054185540.1|	MULTISPECIES: substrate-binding domain-containing protein [Rhizobium]	98.066	362	1	362	0.0	732	100
+ref|WP_040114008.1|	MULTISPECIES: substrate-binding domain-containing protein [Rhizobium]	97.514	362	1	362	0.0	729	100
+gb|MBB5553292.1|	ribose transport system substrate-binding protein [Rhizobium lentis]	97.238	362	1	362	0.0	729	100
+gb|MBB4388360.1|	ribose transport system substrate-binding protein [Rhizobium leguminosarum]	97.238	362	1	362	0.0	729	100
+ref|WP_116408685.1|	substrate-binding domain-containing protein [Rhizobium leguminosarum]	96.961	362	1	362	0.0	727	100
+ref|WP_013984701.1|	MULTISPECIES: substrate-binding domain-containing protein [Rhizobiaceae]	97.238	362	1	362	0.0	727	100
+ref|WP_088692701.1|	MULTISPECIES: substrate-binding domain-containing protein [unclassified Rhizobium]	97.238	362	1	362	0.0	727	100
+ref|WP_007636591.1|	ABC transporter substrate-binding protein [Rhizobium sp. CCGE 510]	97.790	362	1	362	0.0	726	100
+ref|WP_088688505.1|	substrate-binding domain-containing protein [Rhizobium sp. R634]	97.238	362	1	362	0.0	725	100
+ref|WP_120671151.1|	substrate-binding domain-containing protein [Rhizobium sp. CCGE531]	97.238	362	1	362	0.0	723	100
+ref|WP_114836035.1|	ABC transporter substrate-binding protein [Agrobacterium tumefaciens]	95.580	362	1	362	0.0	719	100
+ref|WP_080858231.1|	ABC transporter substrate-binding protein [Agrobacterium deltae]	95.856	362	1	362	0.0	719	100
+ref|WP_135399144.1|	ABC transporter substrate-binding protein [Agrobacterium radiobacter]	95.580	362	1	362	0.0	718	100
+ref|WP_414126016.1|	substrate-binding domain-containing protein [Rhizobium sp. BR 317]	97.514	362	1	362	0.0	717	100
+ref|WP_488717758.1|	ABC transporter substrate-binding protein [Shinella sp. 20P9.1.1]	94.751	362	1	362	0.0	714	100
+ref|WP_137409343.1|	MULTISPECIES: ABC transporter substrate-binding protein [Agrobacterium]	93.370	362	1	362	0.0	704	100
+ref|WP_127758353.1|	ABC transporter substrate-binding protein [Agrobacterium sp. CNPSo 2736]	93.094	362	1	362	0.0	702	100
+ref|WP_097614736.1|	substrate-binding domain-containing protein [Rhizobium chutanense]	93.094	362	1	362	0.0	700	100
+ref|WP_075293027.1|	ABC transporter substrate-binding protein [Pararhizobium arenae]	92.541	362	1	362	0.0	699	100
+ref|WP_126910756.1|	substrate-binding domain-containing protein [Rhizobium chutanense]	92.818	362	1	362	0.0	698	100
+ref|WP_060521622.1|	MULTISPECIES: ABC transporter substrate-binding protein [unclassified Ensifer]	93.906	361	1	361	0.0	688	100
+ref|WP_221118348.1|	MULTISPECIES: substrate-binding domain-containing protein [Rhizobiaceae]	92.818	362	1	362	0.0	682	100
+ref|WP_004671515.1|	MULTISPECIES: substrate-binding domain-containing protein [Rhizobiaceae]	91.989	362	1	362	0.0	680	100
+ref|WP_016737437.1|	MULTISPECIES: substrate-binding domain-containing protein [Rhizobium]	91.713	362	1	362	0.0	679	100
+ref|WP_037145479.1|	substrate-binding domain-containing protein [Rhizobium phaseoli]	91.713	362	1	362	0.0	679	100
+ref|WP_064823777.1|	substrate-binding domain-containing protein [Rhizobium phaseoli]	91.989	362	1	362	0.0	678	100
+ref|WP_064811973.1|	MULTISPECIES: substrate-binding domain-containing protein [Rhizobium]	91.713	362	1	362	0.0	678	100
+ref|WP_097522127.1|	substrate-binding domain-containing protein [Sinorhizobium sp. BJ1]	92.265	362	1	362	0.0	677	100
+ref|WP_097667542.1|	substrate-binding domain-containing protein [Rhizobium sp. M1]	91.713	362	1	362	0.0	677	100
+ref|WP_037174931.1|	MULTISPECIES: substrate-binding domain-containing protein [Rhizobium]	91.713	362	1	362	0.0	676	100
+gb|THK36719.1|	sugar ABC transporter substrate-binding protein [Ensifer sp. MPMI2T]	91.713	362	1	362	0.0	676	100
+ref|WP_097600911.1|	MULTISPECIES: substrate-binding domain-containing protein [Rhizobium]	91.713	362	1	362	0.0	673	100
+ref|WP_429819303.1|	substrate-binding domain-containing protein [Ensifer sp. B1-9]	91.160	362	1	362	0.0	671	100
+ref|WP_345774892.1|	substrate-binding domain-containing protein [Sinorhizobium prairiense]	90.884	362	1	362	0.0	671	100
+ref|WP_104840834.1|	substrate-binding domain-containing protein [Sinorhizobium fredii]	90.608	362	1	362	0.0	669	100
+ref|WP_058326047.1|	MULTISPECIES: substrate-binding domain-containing protein [Sinorhizobium/Ensifer group]	93.352	361	1	361	0.0	663	100
+gb|KSV81827.1|	sugar ABC transporter substrate-binding protein [Sinorhizobium sp. Sb3]	93.410	349	13	361	0.0	662	96
+gb|EJZ17741.1|	sugar ABC transporter substrate-binding protein [Rhizobium sp. Pop5]	93.275	342	21	362	0.0	650	94
+gb|WEJ08385.1|	substrate-binding domain-containing protein [Sinorhizobium prairiense]	90.571	350	13	362	0.0	647	97
+ref|WP_097586336.1|	substrate-binding domain-containing protein [Sinorhizobium fredii]	91.160	362	1	362	0.0	647	100
+ref|WP_154965231.1|	substrate-binding domain-containing protein [Agrobacterium tumefaciens]	86.464	362	1	362	0.0	647	100
+ref|WP_082186414.1|	MULTISPECIES: substrate-binding domain-containing protein [Agrobacterium]	86.188	362	1	362	0.0	633	100
+ref|WP_414132701.1|	substrate-binding domain-containing protein, partial [Martinezella jaguaris]	100.000	210	1	210	2.36e-148	428	58
+ref|WP_208647904.1|	ABC transporter substrate-binding protein [Paraburkholderia fungorum]	60.000	335	27	360	7.41e-148	433	92
+ref|WP_196184127.1|	MULTISPECIES: ABC transporter substrate-binding protein [Pseudomonas]	58.074	353	9	360	3.30e-146	429	97
+ref|WP_133973000.1|	ABC transporter substrate-binding protein [Pseudomonas sp. JV551A1]	58.357	353	9	360	6.63e-146	428	97
+ref|WP_487872647.1|	ABC transporter substrate-binding protein [Variovorax sp. Soil_C_17]	57.265	351	11	360	7.99e-146	428	97
+ref|WP_064052521.1|	ABC transporter substrate-binding protein [Pseudomonas marginalis]	59.172	338	24	360	8.72e-146	427	93
+ref|WP_076384808.1|	MULTISPECIES: ABC transporter substrate-binding protein [Pseudomonas]	58.357	353	9	360	9.83e-146	427	97
+gb|OAJ50477.1|	sugar ABC transporter substrate-binding protein [Pseudomonas marginalis]	59.172	338	24	360	1.06e-145	427	93
+ref|WP_419795265.1|	ABC transporter substrate-binding protein [Pseudomonas palleroniana]	58.028	355	7	360	1.36e-145	427	98
+ref|WP_123413321.1|	ABC transporter substrate-binding protein [Pseudomonas brassicacearum]	57.429	350	12	360	2.69e-144	424	96
+ref|WP_490090762.1|	ABC transporter substrate-binding protein [Pseudomonas sp. A39]	58.580	338	24	360	4.26e-144	423	93
+ref|WP_102060542.1|	ABC transporter substrate-binding protein [Pseudomonas sp. QC2]	58.580	338	24	360	7.77e-144	423	93
+ref|WP_487872646.1|	substrate-binding domain-containing protein [Variovorax sp. Soil_C_17]	54.734	338	26	362	2.10e-124	389	93
+ref|WP_018183154.1|	ABC transporter substrate-binding protein [Kaistia granuli]	48.000	350	11	360	3.40e-106	327	97
+ref|WP_029074973.1|	ABC transporter substrate-binding protein [Kaistia adipata]	48.256	344	18	360	7.16e-105	323	95
+gb|MDQ0470944.1|	ribose transport system substrate-binding protein [Labrys wisconsinensis]	46.571	350	11	360	1.88e-100	312	97
+ref|WP_459082320.1|	ABC transporter substrate-binding protein [Mesorhizobium sp. A623]	45.482	332	29	360	7.27e-98	306	92
+gb|WFP77910.1|	ABC transporter substrate-binding protein [Mesorhizobium sp. WSM4906]	43.855	358	3	360	2.04e-95	299	99
+gb|MDG4880803.1|	ABC transporter substrate-binding protein [Mesorhizobium sp. WSM4884]	43.017	358	3	360	4.22e-95	298	99
+ref|WP_041000474.1|	ABC transporter substrate-binding protein [Mesorhizobium sp. B2-7-1]	43.855	358	3	360	4.41e-95	298	99
+emb|CDX33695.1|	ABC transporter, periplasmic solute-binding protein [Mesorhizobium sp. ORS 3359]	43.855	358	3	360	6.59e-95	298	99
+ref|WP_292444439.1|	ABC transporter substrate-binding protein [Mesorhizobium sp.]	43.296	358	3	360	7.59e-95	298	99
+ref|WP_040989373.1|	ABC transporter substrate-binding protein [Mesorhizobium sp. M2C.T.Ca.TU.002.02.1.1]	43.575	358	3	360	9.85e-95	298	99
+ref|WP_140835107.1|	MULTISPECIES: ABC transporter substrate-binding protein [unclassified Mesorhizobium]	43.017	358	3	360	1.02e-94	298	99
+ref|WP_140704801.1|	MULTISPECIES: ABC transporter substrate-binding protein [unclassified Mesorhizobium]	43.017	358	3	360	1.39e-94	297	99
+tpg|HEY6870540.1|	ABC transporter substrate-binding protein [Novosphingobium sp.]	43.575	358	3	360	1.85e-94	297	99
+gb|MDX8445638.1|	ABC transporter substrate-binding protein [Mesorhizobium captivum]	43.296	358	3	360	2.08e-94	297	99
+gb|MIJ2307748.1|	ABC transporter substrate-binding protein [Mesorhizobium sp.]	44.277	332	29	360	3.92e-94	296	92
+ref|WP_027166539.1|	ABC transporter substrate-binding protein [Mesorhizobium sp. WSM3224]	42.737	358	3	360	4.17e-94	296	99
+ref|WP_071097402.1|	ABC transporter substrate-binding protein [Mesorhizobium sp. ORS 3428]	44.880	332	29	360	4.40e-94	295	92
+ref|WP_347566950.1|	ABC transporter substrate-binding protein [Mesorhizobium sp. WSM4906]	44.880	332	29	360	6.17e-94	295	92
+gb|MDX8533702.1|	ABC transporter substrate-binding protein [Mesorhizobium vachelliae]	43.575	358	3	360	6.31e-94	296	99
+ref|WP_363792038.1|	ABC transporter substrate-binding protein [Mesorhizobium sp.]	44.880	332	29	360	6.73e-94	295	92
+ref|WP_073625874.1|	ABC transporter substrate-binding protein [Pseudoxanthobacter soli]	45.584	351	11	361	7.95e-94	295	97
+gb|MET3596005.1|	ribose transport system substrate-binding protein [Mesorhizobium shonense]	43.017	358	3	360	8.55e-94	295	99
+ref|WP_347405172.1|	ABC transporter substrate-binding protein [Mesorhizobium sp. WSM4884]	44.578	332	29	360	8.64e-94	295	92
+ref|WP_112129757.1|	ABC transporter substrate-binding protein [Mesorhizobium atlanticum]	44.880	332	29	360	9.95e-94	295	92
+ref|WP_052468086.1|	ABC transporter substrate-binding protein [Mesorhizobium sp. BH1-1-5]	44.880	332	29	360	1.11e-93	294	92
+ref|WP_126097621.1|	ABC transporter substrate-binding protein [Mesorhizobium sp. M1B.F.Ca.ET.045.04.1.1]	43.017	358	3	360	1.38e-93	295	99
+ref|WP_140683538.1|	MULTISPECIES: ABC transporter substrate-binding protein [unclassified Mesorhizobium]	44.578	332	29	360	1.39e-93	294	92
+gb|MDX8461131.1|	ABC transporter substrate-binding protein [Mesorhizobium humile]	43.575	358	3	360	1.44e-93	295	99
+ref|WP_059817867.1|	ABC transporter substrate-binding protein [Burkholderia cepacia]	43.575	358	3	360	1.45e-93	295	99
+ref|WP_181181728.1|	ABC transporter substrate-binding protein [Mesorhizobium sp. B3-1-6]	42.737	358	3	360	1.75e-93	295	99
+ref|WP_264495196.1|	substrate-binding domain-containing protein [Stagnihabitans lacustris]	40.934	364	1	360	1.81e-93	295	99
+ref|WP_354417086.1|	MULTISPECIES: ABC transporter substrate-binding protein [Mesorhizobium]	44.880	332	29	360	1.85e-93	294	92
+ref|WP_320303449.1|	ABC transporter substrate-binding protein [Mesorhizobium captivum]	44.578	332	29	360	1.95e-93	294	92
+ref|WP_052458187.1|	ABC transporter substrate-binding protein [Mesorhizobium sp. LCM 4577]	44.578	332	29	360	2.27e-93	293	92
+ref|WP_413467866.1|	ABC transporter substrate-binding protein [Mesorhizobium sp. B2-8-5]	44.578	332	29	360	2.30e-93	293	92
+gb|XXB67960.1|	ABC transporter substrate-binding protein [Mesorhizobium sp. RIZ17]	43.296	358	3	360	2.98e-93	294	99
+ref|WP_305985364.1|	MULTISPECIES: substrate-binding domain-containing protein [unclassified Roseibium]	44.144	333	31	360	3.07e-93	294	91
+gb|RTM09947.1|	MAG: ABC transporter substrate-binding protein [Hyphomicrobiales bacterium]	43.017	358	3	360	3.14e-93	294	99
+ref|WP_430691644.1|	ABC transporter substrate-binding protein [Mesorhizobium captivum]	44.277	332	29	360	4.17e-93	293	92
+gb|MDX8513281.1|	ABC transporter substrate-binding protein [Mesorhizobium captivum]	42.737	358	3	360	4.21e-93	293	99
+gb|MIB5853614.1|	substrate-binding domain-containing protein [Shinella sp. GW821-FHT14H08]	43.020	351	10	360	5.17e-93	293	97
+ref|WP_160785039.1|	ABC transporter substrate-binding protein [Shinella zoogloeoides]	42.571	350	11	360	5.52e-93	293	97
+ref|WP_473579210.1|	ABC transporter substrate-binding protein [Mesorhizobium sp. WSM4832]	44.277	332	29	360	5.90e-93	293	92
+gb|MFZ5674144.1|	ABC transporter substrate-binding protein [Pseudomonadota bacterium]	43.373	332	29	360	6.86e-93	293	92
+ref|WP_363450621.1|	ABC transporter substrate-binding protein [Mesorhizobium sp.]	44.880	332	29	360	6.95e-93	292	92
+ref|WP_140658004.1|	MULTISPECIES: ABC transporter substrate-binding protein [unclassified Mesorhizobium]	44.277	332	29	360	7.42e-93	292	92
+gb|MDX8518587.1|	ABC transporter substrate-binding protein [Mesorhizobium dulcispinae]	43.976	332	29	360	8.00e-93	292	92
+ref|WP_320317206.1|	ABC transporter substrate-binding protein [Mesorhizobium dulcispinae]	43.976	332	29	360	8.09e-93	292	92
+ref|WP_480399364.1|	ABC transporter substrate-binding protein [Pseudomonas sp. 2]	43.413	334	27	360	8.09e-93	293	92
+ref|WP_060126242.1|	ABC transporter substrate-binding protein [Burkholderia cepacia]	43.296	358	3	360	1.53e-92	292	99
+ref|WP_430691549.1|	ABC transporter substrate-binding protein [Mesorhizobium vachelliae]	44.578	332	29	360	1.75e-92	291	92
+ref|WP_488510970.1|	ABC transporter substrate-binding protein [Mesorhizobium sp. CNPSo 4661]	44.578	332	29	360	1.87e-92	291	92
+ref|WP_430709457.1|	ABC transporter substrate-binding protein [Mesorhizobium captivum]	44.277	332	29	360	2.27e-92	291	92
+ref|WP_257946296.1|	ABC transporter substrate-binding protein [Shinella sp. CPCC 101442]	44.795	317	44	360	2.44e-92	291	88
+gb|TPI28585.1|	ABC transporter substrate-binding protein [Mesorhizobium sp. B3-1-6]	44.277	332	29	360	3.86e-92	290	92
+ref|WP_244762898.1|	ABC transporter substrate-binding protein [Shinella curvata]	42.286	350	11	360	3.94e-92	291	97
+gb|MBL8581967.1|	ABC transporter substrate-binding protein [Rhizobiaceae bacterium]	43.675	332	29	360	4.30e-92	291	92
+ref|WP_439626832.1|	ABC transporter substrate-binding protein [Shinella sp.]	42.735	351	10	360	4.79e-92	291	97
+ref|WP_430699271.1|	ABC transporter substrate-binding protein [Mesorhizobium humile]	44.578	332	29	360	6.03e-92	290	92
+ref|WP_434725576.1|	ABC transporter substrate-binding protein [Mesorhizobium sp. RIZ17]	44.277	332	29	360	9.83e-92	290	92
+tpg|HWK68007.1|	ABC transporter substrate-binding protein [Rhizobiaceae bacterium]	43.195	338	19	356	9.93e-92	290	93
+ref|WP_069062179.1|	ABC transporter substrate-binding protein [Sinorhizobium sp. RAC02]	44.164	317	44	360	1.01e-91	290	88
+ref|WP_275598840.1|	MULTISPECIES: ABC transporter substrate-binding protein [Sinorhizobium]	43.827	324	37	360	1.05e-91	290	90
+ref|WP_338283294.1|	ABC transporter substrate-binding protein [Sinorhizobium sp. KGO-5]	43.827	324	37	360	1.51e-91	290	90
+gb|MDX8441051.1|	ABC transporter substrate-binding protein [Mesorhizobium australafricanum]	42.577	357	4	360	1.84e-91	289	99
+ref|WP_248446349.1|	ABC transporter substrate-binding protein [Sinorhizobium meliloti]	43.827	324	37	360	2.09e-91	289	90
+ref|WP_430681776.1|	ABC transporter substrate-binding protein [Mesorhizobium australafricanum]	43.939	330	31	360	2.37e-91	288	91
+ref|WP_433640861.1|	ABC transporter substrate-binding protein [Mesorhizobium sp. 1B3]	43.598	328	29	356	4.12e-91	288	91
+gb|MIB6170011.1|	substrate-binding domain-containing protein [Shinella sp. GW821-FHT11G07]	43.849	317	44	360	5.50e-91	288	88
+ref|WP_444801220.1|	ABC transporter substrate-binding protein [Shinella sp.]	43.849	317	44	360	6.40e-91	288	88
+ref|WP_244770214.1|	MULTISPECIES: ABC transporter substrate-binding protein [Shinella]	41.860	344	21	360	6.76e-91	288	94
+ref|WP_034520905.1|	MULTISPECIES: ABC transporter substrate-binding protein [Rhizobiaceae]	41.880	351	10	360	6.77e-91	288	97
+ref|WP_374189232.1|	MULTISPECIES: ABC transporter substrate-binding protein [Rhizobiaceae]	42.604	338	23	360	6.78e-91	287	93
+emb|SEM05064.1|	monosaccharide ABC transporter substrate-binding protein, CUT2 family [Variovorax sp. YR750]	42.120	349	12	360	6.80e-91	288	96
+ref|WP_060504559.1|	MULTISPECIES: ABC transporter substrate-binding protein [unclassified Rhizobium]	42.442	344	21	360	7.95e-91	288	94
+gb|NMV72483.1|	ABC transporter substrate-binding protein [Agrobacterium fabrum]	41.880	351	10	360	8.20e-91	288	97
+ref|WP_218153016.1|	ABC transporter substrate-binding protein [Variovorax sp. YR750]	42.120	349	12	360	1.06e-90	288	96
+ref|WP_010900264.1|	MULTISPECIES: ABC transporter substrate-binding protein [Rhizobiaceae]	42.604	338	23	360	1.39e-90	286	93
+gb|MEW9804692.1|	ABC transporter substrate-binding protein [Mesorhizobium marinum]	44.201	319	42	360	1.49e-90	287	88
+gb|ASK42955.1|	ABC transporter substrate-binding protein [Martinezella rhizogenes]	42.604	338	23	360	1.58e-90	287	93
+gb|AFX65664.1|	Hypothetical protein [Agrobacterium radiobacter]	41.880	351	10	360	1.59e-90	288	97
+gb|RUU13991.1|	ABC transporter substrate-binding protein [Mesorhizobium sp. USDA-HM6]	43.675	332	29	360	1.86e-90	286	92
+ref|WP_313527645.1|	ABC transporter substrate-binding protein [Shinella sp.]	44.164	317	44	360	1.91e-90	287	88
+gb|UXT52972.1|	ABC transporter substrate-binding protein [Agrobacterium tumefaciens]	41.595	351	10	360	1.96e-90	287	97
+ref|WP_410469488.1|	ABC transporter substrate-binding protein [Agrobacterium tumefaciens]	42.308	338	23	360	1.96e-90	286	93
+gb|MEW9835164.1|	ABC transporter substrate-binding protein [Mesorhizobium marinum]	44.201	319	42	360	1.98e-90	286	88
+gb|MAY61869.1|	ABC transporter substrate-binding protein [Hyphomicrobiales bacterium]	44.940	336	32	360	2.35e-90	286	91
+gb|QRM41816.1|	ABC transporter substrate-binding protein [Martinezella rhizogenes]	41.595	351	10	360	2.45e-90	287	97
+ref|WP_374193314.1|	ABC transporter substrate-binding protein [Martinezella rhizogenes]	42.308	338	23	360	2.78e-90	286	93
+gb|KZM45247.1|	ABC transporter substrate-binding protein [Labrenzia sp. OB1]	44.062	320	41	360	2.85e-90	286	88
+ref|WP_127623924.1|	ABC transporter substrate-binding protein [Sinorhizobium meliloti]	41.429	350	11	360	3.22e-90	286	97
+ref|WP_309816527.1|	ABC transporter substrate-binding protein [Caballeronia sp. LZ034LL]	41.436	362	1	360	3.48e-90	286	99
+ref|WP_088195758.1|	ABC transporter substrate-binding protein [Sinorhizobium meliloti]	41.429	350	11	360	3.55e-90	286	97
+ref|WP_198671149.1|	substrate-binding domain-containing protein [Oceanibium sediminis]	42.571	350	12	360	3.65e-90	286	96
+gb|NNU62834.1|	ABC transporter substrate-binding protein [Ochrobactrum soli]	45.171	321	41	361	3.86e-90	286	89
+gb|MEM1428309.1|	substrate-binding domain-containing protein [Pseudomonadota bacterium]	43.333	360	1	360	3.96e-90	286	99
+ref|WP_088202540.1|	ABC transporter substrate-binding protein [Sinorhizobium meliloti]	41.429	350	11	360	4.09e-90	286	97
+ref|WP_127668123.1|	ABC transporter substrate-binding protein [Sinorhizobium meliloti]	42.151	344	21	360	4.09e-90	286	94
+ref|WP_117333367.1|	ABC transporter substrate-binding protein [Paraburkholderia sp. DHOC27]	41.667	360	1	360	4.46e-90	286	99
+ref|WP_306258755.1|	substrate-binding domain-containing protein [Pararhizobium sp. IMCC21322]	45.758	330	32	360	4.51e-90	286	91
+ref|WP_027993458.1|	ABC transporter substrate-binding protein [Sinorhizobium meliloti]	42.151	344	21	360	4.97e-90	286	94
+ref|WP_127626800.1|	MULTISPECIES: ABC transporter substrate-binding protein [Sinorhizobium]	44.164	317	44	360	7.03e-90	285	88
+ref|WP_127662993.1|	ABC transporter substrate-binding protein [Sinorhizobium meliloti]	44.164	317	44	360	7.19e-90	285	88
+ref|WP_421592784.1|	ABC transporter substrate-binding protein [Shinella sp. M27]	43.849	317	44	360	8.01e-90	285	88
+ref|WP_199823871.1|	substrate-binding domain-containing protein [Labrenzia sp. OB1]	44.062	320	41	360	8.74e-90	286	88
+gb|MDW9535775.1|	substrate-binding domain-containing protein [Sinorhizobium meliloti]	44.164	317	44	360	8.74e-90	285	88
+gb|MFM2391199.1|	hypothetical protein [Pseudomonadota bacterium]	43.490	361	3	360	9.33e-90	285	99
+ref|WP_127633131.1|	ABC transporter substrate-binding protein [Sinorhizobium meliloti]	44.164	317	44	360	9.84e-90	285	88
+ref|WP_269710122.1|	ABC transporter substrate-binding protein [Martinezella rhizogenes]	41.457	357	6	360	1.02e-89	285	98
+ref|WP_127638886.1|	ABC transporter substrate-binding protein [Sinorhizobium meliloti]	41.860	344	21	360	1.05e-89	285	94
+ref|WP_028005312.1|	ABC transporter substrate-binding protein [Sinorhizobium meliloti]	44.164	317	44	360	1.16e-89	285	88
+ref|WP_127661361.1|	ABC transporter substrate-binding protein [Sinorhizobium meliloti]	42.151	344	21	360	1.17e-89	285	94
+ref|WP_010968050.1|	ABC transporter substrate-binding protein [Sinorhizobium meliloti]	44.164	317	44	360	1.24e-89	285	88
+gb|MIB4749435.1|	substrate-binding domain-containing protein [Ensifer sp. GW823-FHT05D09]	43.849	317	44	360	1.38e-89	285	88
+ref|WP_117369925.1|	ABC transporter substrate-binding protein [Shinella sp. WSJ-2]	43.849	317	44	360	1.50e-89	285	88
+ref|WP_457811514.1|	ABC transporter substrate-binding protein [Sinorhizobium meliloti]	44.164	317	44	360	1.52e-89	285	88
+ref|WP_372572592.1|	substrate-binding domain-containing protein [Ruegeria jejuensis]	45.783	332	29	360	1.74e-89	286	92
+ref|WP_028004532.1|	ABC transporter substrate-binding protein [Sinorhizobium meliloti]	43.849	317	44	360	2.34e-89	284	88
+ref|WP_023001499.1|	MULTISPECIES: ABC transporter substrate-binding protein [unclassified Labrenzia]	41.916	334	27	360	2.40e-89	284	92
+ref|WP_127743390.1|	ABC transporter substrate-binding protein [Sinorhizobium meliloti]	41.860	344	21	360	2.42e-89	284	94
+ref|WP_109460455.1|	ABC transporter substrate-binding protein [Rhizobium album]	43.533	317	44	360	2.53e-89	284	88
+ref|WP_040120682.1|	ABC transporter substrate-binding protein [Sinorhizobium meliloti]	43.849	317	44	360	2.88e-89	284	88
+ref|WP_463621890.1|	ABC transporter substrate-binding protein [Shinella sp. R2-11]	43.849	317	44	360	3.39e-89	283	88
+ref|WP_419456800.1|	ABC transporter substrate-binding protein [Agrobacterium tumefaciens]	42.012	338	23	360	3.41e-89	283	93
+ref|WP_498784788.1|	ABC transporter substrate-binding protein [Ensifer sp. D2-11]	41.860	344	21	360	3.54e-89	283	94
+ref|WP_374887313.1|	ABC transporter substrate-binding protein [Ensifer soli]	42.857	350	11	360	3.62e-89	283	97
+gb|MBA68269.1|	ABC transporter substrate-binding protein [Hyphomicrobiales bacterium]	44.643	336	32	360	4.12e-89	283	91
+ref|WP_489464623.1|	ABC transporter substrate-binding protein [Rhizobacter sp.]	43.202	331	31	360	6.22e-89	283	91
+tpg|HAD29803.1|	ABC transporter substrate-binding protein [Paracoccaceae bacterium]	43.714	350	11	360	6.23e-89	283	97
+ref|WP_200186746.1|	ABC transporter substrate-binding protein [Taklimakanibacter albus]	42.470	332	29	360	6.57e-89	283	92
+ref|WP_307061692.1|	ABC transporter substrate-binding protein [Ancylobacter vacuolatus]	44.713	331	31	361	8.37e-89	282	91
+ref|WP_477911445.1|	ABC transporter substrate-binding protein [Rhizobacter sp. P2_A9]	43.202	331	31	360	9.91e-89	283	91
+gb|TRB05211.1|	ABC transporter substrate-binding protein [Martinezella rhizogenes]	41.026	351	10	360	1.04e-88	282	97
+ref|WP_127645657.1|	ABC transporter substrate-binding protein [Sinorhizobium meliloti]	43.849	317	44	360	1.12e-88	282	88
+ref|WP_377515588.1|	ABC transporter substrate-binding protein [Ochrobactrum sp. RH2CCR150]	42.571	350	11	360	1.18e-88	282	97
+gb|RCX08752.1|	monosaccharide ABC transporter substrate-binding protein (CUT2 family) [Marinomonas foliarum]	43.030	330	31	360	1.27e-88	282	91
+gb|MBA8841453.1|	ribose transport system substrate-binding protein [Ochrobactrum sp. RH2CCR150]	42.571	350	11	360	1.32e-88	282	97
+ref|WP_374188768.1|	MULTISPECIES: ABC transporter substrate-binding protein [Rhizobiaceae]	41.716	338	23	360	1.34e-88	281	93
+ref|WP_014528007.1|	ABC transporter substrate-binding protein [Sinorhizobium meliloti]	41.860	344	21	360	1.40e-88	282	94
+gb|MQB04453.1|	ABC transporter substrate-binding protein [Agrobacterium tumefaciens]	42.547	322	39	360	1.46e-88	281	89
+ref|WP_120013779.1|	ABC transporter substrate-binding protein [Mesorhizobium waimense]	40.625	352	9	360	1.48e-88	282	97
+ref|WP_488715115.1|	ABC transporter substrate-binding protein [Shinella sp. 20P9.1.1]	43.533	317	44	360	1.53e-88	282	88
+tpg|HIR5476643.1|	substrate-binding domain-containing protein [Tabrizicola sp.]	44.277	332	29	360	1.73e-88	281	92
+ref|WP_205521387.1|	ABC transporter substrate-binding protein [Phaeobacter sp. LSS9]	43.490	361	1	360	2.00e-88	281	99
+ref|WP_127574108.1|	ABC transporter substrate-binding protein [Sinorhizobium meliloti]	43.849	317	44	360	2.12e-88	281	88
+ref|WP_312865388.1|	MULTISPECIES: ABC transporter substrate-binding protein [unclassified Rhizobium]	41.026	351	10	360	2.34e-88	281	97
+ref|WP_065785940.1|	MULTISPECIES: ABC transporter substrate-binding protein [unclassified Ensifer]	40.988	344	21	360	2.46e-88	281	94
+gb|MCR9239313.1|	substrate-binding domain-containing protein [Alphaproteobacteria bacterium]	45.426	317	44	360	2.55e-88	281	88
+ref|WP_068950656.1|	ABC transporter substrate-binding protein [Pararhizobium polonicum]	43.143	350	11	360	2.90e-88	281	97
+gb|TKB94919.1|	MAG: ABC transporter substrate-binding protein [Mesorhizobium sp.]	41.761	352	9	360	2.96e-88	281	97
+ref|WP_199272491.1|	ABC transporter substrate-binding protein [Paraburkholderia acidisoli]	42.988	328	33	360	3.22e-88	280	91
+ref|WP_306269058.1|	substrate-binding domain-containing protein [Pararhizobium sp. IMCC3301]	45.152	330	32	360	3.30e-88	281	91
+gb|AXT36252.1|	ABC transporter substrate-binding protein [Phaeobacter sp. LSS9]	43.490	361	1	360	3.53e-88	281	99
+gb|QGZ66195.1|	substrate-binding domain-containing protein [Paraburkholderia acidisoli]	42.988	328	33	360	3.68e-88	281	91
+ref|WP_140642547.1|	substrate-binding domain-containing protein [Mesorhizobium sp. B2-2-2]	40.909	352	9	360	3.72e-88	281	97
+gb|NTF91541.1|	ABC transporter substrate-binding protein [Martinezella rhizogenes]	40.741	351	10	360	4.61e-88	280	97
+gb|MBO9126375.1|	ABC transporter substrate-binding protein [Rhizobium sp. 16-488-2b]	42.236	322	39	360	5.31e-88	280	89
+tpg|HAY14711.1|	ABC transporter substrate-binding protein [Armatimonadota bacterium]	41.944	360	1	360	5.39e-88	280	99
+ref|WP_153419871.1|	ABC transporter substrate-binding protein [Sinorhizobium meliloti]	41.860	344	21	360	6.19e-88	280	94
+ref|WP_140729343.1|	MULTISPECIES: substrate-binding domain-containing protein [unclassified Mesorhizobium]	41.193	352	9	360	6.60e-88	280	97
+ref|WP_456827369.1|	ABC transporter substrate-binding protein [Bradyrhizobium sp. USDA 4518]	43.333	330	31	360	8.49e-88	280	91
+ref|WP_411908889.1|	MULTISPECIES: substrate-binding domain-containing protein [unclassified Mesorhizobium]	41.092	348	13	360	9.36e-88	280	96
+ref|WP_456778976.1|	ABC transporter substrate-binding protein [Bradyrhizobium sp. USDA 3315]	43.072	332	29	360	9.45e-88	280	92
+ref|WP_168856804.1|	MULTISPECIES: ABC transporter substrate-binding protein [Bradyrhizobium]	43.333	330	31	360	9.67e-88	280	91
+ref|WP_484176321.1|	ABC transporter substrate-binding protein [Marinomonas sp. ATLA20]	42.727	330	31	360	1.19e-87	280	91
+gb|MIC0794142.1|	ABC transporter substrate-binding protein [Pseudomonas sp. GW821-FHT03D04]	39.722	360	1	360	1.20e-87	280	99
+ref|WP_174006850.1|	MULTISPECIES: ABC transporter substrate-binding protein [Rhizobium/Agrobacterium group]	42.286	350	11	360	1.31e-87	280	97
+gb|RTL98988.1|	ABC transporter substrate-binding protein [Ancylobacter aquaticus]	44.411	331	31	361	1.59e-87	279	91
+gb|MBZ9919618.1|	substrate-binding domain-containing protein [Mesorhizobium sp. BR1-1-7]	40.909	352	9	360	2.20e-87	279	97
+ref|WP_140560417.1|	MULTISPECIES: substrate-binding domain-containing protein [unclassified Mesorhizobium]	40.909	352	9	360	2.25e-87	279	97
+ref|WP_161991478.1|	MULTISPECIES: ABC transporter substrate-binding protein [Rhizobiaceae]	41.265	332	29	360	2.37e-87	278	92
+gb|MER9344063.1|	substrate-binding domain-containing protein [Mesorhizobium sp. M0601]	40.909	352	9	360	2.48e-87	279	97
+ref|WP_425418946.1|	substrate-binding domain-containing protein [Oricola indica]	42.647	340	21	360	2.65e-87	279	94
+gb|MGJ8534544.1|	substrate-binding domain-containing protein [Alphaproteobacteria bacterium]	44.795	317	44	360	2.82e-87	279	88
+ref|WP_299792991.1|	ABC transporter substrate-binding protein [uncultured Marivita sp.]	42.297	357	4	360	2.88e-87	278	99
+gb|NTF72726.1|	ABC transporter substrate-binding protein [Martinezella rhizogenes]	41.925	322	39	360	2.89e-87	278	89
+gb|MCR9285099.1|	substrate-binding domain-containing protein [Paracoccaceae bacterium]	42.216	334	27	360	3.08e-87	278	92
+ref|WP_152512203.1|	MULTISPECIES: substrate-binding domain-containing protein [unclassified Labrenzia]	42.216	334	27	360	3.15e-87	278	92
+ref|WP_140818504.1|	substrate-binding domain-containing protein [Mesorhizobium sp. B2-5-3]	40.909	352	9	360	3.39e-87	278	97
+ref|WP_140498345.1|	MULTISPECIES: substrate-binding domain-containing protein [unclassified Mesorhizobium]	41.193	352	9	360	3.46e-87	278	97
+ref|WP_330562973.1|	substrate-binding domain-containing protein [Roseibium sp. FZY0029]	42.515	334	27	360	3.59e-87	278	92
+ref|WP_212322735.1|	ABC transporter substrate-binding protein [Bradyrhizobium manausense]	41.026	351	10	360	3.62e-87	278	97
+ref|WP_140515061.1|	substrate-binding domain-containing protein [Mesorhizobium sp. B261B1A]	41.193	352	9	360	3.70e-87	278	97
+ref|WP_140672388.1|	substrate-binding domain-containing protein [Mesorhizobium sp. B1-1-4]	41.193	352	9	360	3.74e-87	278	97
+gb|ASK42090.1|	ABC transporter substrate-binding protein [Martinezella rhizogenes]	41.265	332	29	360	4.00e-87	278	92
+gb|MER8465441.1|	substrate-binding domain-containing protein [Mesorhizobium sp. M1396]	41.193	352	9	360	4.40e-87	278	97
+ref|WP_411971233.1|	substrate-binding domain-containing protein [Mesorhizobium sp. BR1-1-7]	41.092	348	13	360	4.46e-87	278	96
+ref|WP_077294150.1|	substrate-binding domain-containing protein [Roseibium algicola]	42.216	334	27	360	4.71e-87	278	92
+ref|WP_460087549.1|	substrate-binding domain-containing protein [Roseibium sp. LAB1]	42.515	334	27	360	5.08e-87	278	92
+ref|WP_291305849.1|	MULTISPECIES: ABC transporter substrate-binding protein [unclassified Devosia]	42.388	335	27	360	5.17e-87	278	92
+ref|WP_411961462.1|	MULTISPECIES: substrate-binding domain-containing protein [unclassified Mesorhizobium]	41.092	348	13	360	5.66e-87	278	96
+gb|MGH6862633.1|	ABC transporter substrate-binding protein [Phyllobacterium sp.]	45.079	315	41	355	5.93e-87	278	87
+gb|ABW33601.1|	rcorf44 [Martinezella rhizogenes]	41.265	332	29	360	6.99e-87	278	92
+ref|WP_271092436.1|	substrate-binding domain-containing protein [Allohoeflea poritis]	44.253	348	13	360	7.33e-87	278	96
+gb|MBV9225573.1|	ABC transporter substrate-binding protein [Acidobacteriaceae bacterium]	41.520	342	20	360	7.48e-87	278	94
+gb|PWJ94542.1|	monosaccharide ABC transporter substrate-binding protein (CUT2 family) [Mesorhizobium loti]	40.625	352	9	360	7.64e-87	278	97
+ref|WP_140524780.1|	MULTISPECIES: substrate-binding domain-containing protein [unclassified Mesorhizobium]	41.092	348	13	360	9.09e-87	277	96
+ref|WP_318013802.1|	MULTISPECIES: substrate-binding domain-containing protein [unclassified Mesorhizobium]	41.379	348	13	360	9.22e-87	277	96
+ref|WP_459906190.1|	ABC transporter substrate-binding protein [Caballeronia sp. HLA56]	41.463	328	33	360	9.40e-87	277	91
+gb|MBZ9857164.1|	substrate-binding domain-containing protein [Mesorhizobium sp. CA13]	40.625	352	9	360	9.70e-87	277	97
+ref|WP_473971568.1|	substrate-binding domain-containing protein [Oricola indica]	42.647	340	21	360	1.06e-86	277	94
+ref|WP_309781002.1|	ABC transporter substrate-binding protein [Caballeronia sp. LZ028]	40.346	347	14	360	1.12e-86	277	96
+ref|WP_436015619.1|	substrate-binding domain-containing protein [Rhizobium sp. LjRoot254]	42.470	332	29	360	1.15e-86	277	92
+gb|TPM52308.1|	ABC transporter substrate-binding protein [Mesorhizobium sp. B2-2-4]	40.909	352	9	360	1.30e-86	277	97
+gb|MGO4834589.1|	ABC transporter substrate-binding protein [Rhizobiaceae sp. 2RAB30]	42.424	330	31	360	1.39e-86	277	91
+gb|MDP3527597.1|	substrate-binding domain-containing protein [Hoeflea sp.]	43.333	330	31	360	1.62e-86	276	91
+ref|WP_417711425.1|	substrate-binding domain-containing protein [Roseibium aggregatum]	42.216	334	27	360	1.64e-86	276	92
+gb|MER9796875.1|	substrate-binding domain-containing protein [Mesorhizobium sp. M0142]	41.011	356	6	360	1.72e-86	276	98
+ref|WP_223477050.1|	substrate-binding domain-containing protein [Oricola indica]	42.353	340	21	360	2.01e-86	276	94
+ref|WP_292670159.1|	substrate-binding domain-containing protein [Mesorhizobium sp.]	41.193	352	9	360	2.05e-86	276	97
+ref|WP_425453707.1|	substrate-binding domain-containing protein [Mesorhizobium loti]	40.805	348	13	360	2.17e-86	276	96
+ref|WP_411910515.1|	MULTISPECIES: substrate-binding domain-containing protein [unclassified Mesorhizobium]	40.805	348	13	360	2.82e-86	276	96
+ref|WP_447239519.1|	substrate-binding domain-containing protein [Roseibium sp. RP-7]	41.916	334	27	360	2.87e-86	276	92
+ref|WP_476091064.1|	substrate-binding domain-containing protein [Mesorhizobium sp. USDA 3734]	40.341	352	9	360	3.26e-86	276	97
+ref|WP_224012899.1|	MULTISPECIES: ABC transporter substrate-binding protein [Paraburkholderia]	42.073	328	33	360	3.34e-86	276	91
+ref|WP_183040453.1|	ABC transporter substrate-binding protein [Paraburkholderia tropica]	42.073	328	33	360	3.56e-86	276	91
+ref|WP_126069973.1|	MULTISPECIES: substrate-binding domain-containing protein [Mesorhizobium]	40.625	352	9	360	3.76e-86	276	97
+ref|WP_140656605.1|	MULTISPECIES: substrate-binding domain-containing protein [unclassified Mesorhizobium]	40.909	352	9	360	3.84e-86	276	97
+ref|WP_348640297.1|	MULTISPECIES: substrate-binding domain-containing protein [unclassified Mesorhizobium]	41.092	348	13	360	3.90e-86	275	96
+ref|WP_192340889.1|	MULTISPECIES: substrate-binding domain-containing protein [Ensifer]	44.479	317	44	360	3.93e-86	276	88
+gb|MER9474870.1|	substrate-binding domain-containing protein [Mesorhizobium sp. M0520]	40.730	356	6	360	4.19e-86	276	98
+ref|WP_027035374.1|	MULTISPECIES: substrate-binding domain-containing protein [Mesorhizobium]	40.625	352	9	360	5.26e-86	275	97
+ref|WP_436001860.1|	ABC transporter substrate-binding protein [Rhizobium sp. LjRoot30]	43.533	317	44	360	5.32e-86	275	88
+ref|WP_322186834.1|	substrate-binding domain-containing protein [Fulvimarina uroteuthidis]	41.329	346	11	356	5.34e-86	275	96
+gb|MER8380347.1|	substrate-binding domain-containing protein [Mesorhizobium sp. M1399]	40.730	356	6	360	5.43e-86	275	98
+ref|WP_228933091.1|	substrate-binding domain-containing protein [Roseibium aggregatum]	41.916	334	27	360	5.69e-86	275	92
+gb|MER9576647.1|	substrate-binding domain-containing protein [Mesorhizobium sp. M0400]	40.730	356	6	360	5.99e-86	275	98
+ref|WP_416883512.1|	substrate-binding domain-containing protein [Marivita sp.]	44.109	331	30	360	6.44e-86	275	91
+gb|MER8408967.1|	substrate-binding domain-containing protein [Mesorhizobium sp. M1307]	40.730	356	6	360	6.97e-86	275	98
+ref|WP_244797760.1|	MULTISPECIES: ABC transporter substrate-binding protein [Caballeronia]	40.058	347	14	360	7.13e-86	275	96
+ref|WP_056591153.1|	MULTISPECIES: substrate-binding domain-containing protein [unclassified Mesorhizobium]	40.341	352	9	360	7.28e-86	275	97
+gb|MER8715754.1|	substrate-binding domain-containing protein [Mesorhizobium sp. M1295]	40.730	356	6	360	7.52e-86	275	98
+ref|WP_292635413.1|	substrate-binding domain-containing protein [Mesorhizobium sp.]	40.341	352	9	360	7.60e-86	275	97
+ref|WP_212461832.1|	MULTISPECIES: ABC transporter substrate-binding protein [Bradyrhizobium]	40.741	351	10	360	7.86e-86	275	97
+ref|WP_140552431.1|	substrate-binding domain-containing protein [Mesorhizobium sp. B2-3-2]	40.625	352	9	360	8.02e-86	275	97
+ref|WP_379897331.1|	substrate-binding domain-containing protein [Marinibaculum pumilum]	41.243	354	7	360	8.65e-86	275	98
+ref|WP_206910292.1|	substrate-binding domain-containing protein [Roseibium aggregatum]	41.916	334	27	360	1.01e-85	275	92
+ref|WP_023809403.1|	MULTISPECIES: substrate-binding domain-containing protein [unclassified Mesorhizobium]	40.341	352	9	360	1.03e-85	275	97
+ref|WP_152507796.1|	MULTISPECIES: substrate-binding domain-containing protein [Stappiaceae]	41.916	334	27	360	1.08e-85	275	92
+gb|MER9427302.1|	substrate-binding domain-containing protein [Mesorhizobium sp. M0408]	40.449	356	6	360	1.13e-85	275	98
+gb|MER9665971.1|	substrate-binding domain-containing protein [Mesorhizobium sp. M0203]	40.730	356	6	360	1.20e-85	275	98
+ref|WP_168693608.1|	MULTISPECIES: substrate-binding domain-containing protein [Stappiaceae]	41.916	334	27	360	1.28e-85	274	92
+gb|MGL6208818.1|	substrate-binding domain-containing protein [Paracoccaceae bacterium]	42.179	358	3	360	1.41e-85	274	99
+ref|WP_245283729.1|	ABC transporter substrate-binding protein [Bradyrhizobium sp. URHD0069]	42.121	330	31	360	1.82e-85	274	91
+ref|WP_321854773.1|	ABC transporter substrate-binding protein [Paraburkholderia tropica]	41.768	328	33	360	1.83e-85	274	91
+ref|WP_065059094.1|	MULTISPECIES: ABC transporter substrate-binding protein [Paraburkholderia]	41.768	328	33	360	1.85e-85	274	91
+ref|WP_321904489.1|	ABC transporter substrate-binding protein [Paraburkholderia tropica]	41.768	328	33	360	1.85e-85	274	91
+ref|WP_296596290.1|	substrate-binding domain-containing protein [Roseibium sp.]	42.500	320	41	360	1.93e-85	274	88
+ref|WP_275952526.1|	MULTISPECIES: substrate-binding domain-containing protein [unclassified Mesorhizobium]	40.341	352	9	360	2.10e-85	274	97
+ref|WP_127294775.1|	MULTISPECIES: substrate-binding domain-containing protein [unclassified Mesorhizobium]	40.057	352	9	360	2.13e-85	274	97
+ref|WP_075281816.1|	MULTISPECIES: substrate-binding domain-containing protein [Stappiaceae]	41.916	334	27	360	2.16e-85	274	92
+ref|WP_023675552.1|	MULTISPECIES: substrate-binding domain-containing protein [unclassified Mesorhizobium]	40.730	356	6	360	2.20e-85	274	98
+ref|WP_013530473.1|	MULTISPECIES: substrate-binding domain-containing protein [unclassified Mesorhizobium]	40.341	352	9	360	2.22e-85	274	97
+ref|WP_412051719.1|	substrate-binding domain-containing protein [Hoeflea sp. Naph1]	43.636	330	31	360	2.34e-85	273	91
+gb|MDW6024332.1|	substrate-binding domain-containing protein [Mesorhizobium sp. BAC0120]	41.667	360	1	360	2.43e-85	274	99
+gb|MBN9016606.1|	ABC transporter substrate-binding protein [Hyphomicrobiales bacterium]	42.424	330	31	360	2.64e-85	273	91
+ref|WP_412033650.1|	MULTISPECIES: substrate-binding domain-containing protein [unclassified Mesorhizobium]	40.805	348	13	360	2.68e-85	273	96
+ref|WP_292335335.1|	substrate-binding domain-containing protein [Mesorhizobium sp.]	40.057	352	9	360	2.79e-85	273	97
+ref|WP_056699274.1|	MULTISPECIES: substrate-binding domain-containing protein [unclassified Aureimonas]	45.141	319	42	360	2.82e-85	273	88
+ref|WP_321890998.1|	ABC transporter substrate-binding protein [Paraburkholderia tropica]	41.768	328	33	360	2.92e-85	273	91
+gb|MDQ6436389.1|	substrate-binding domain-containing protein [Mesorhizobium sp. LHD-90]	43.598	328	34	360	3.07e-85	273	90
+ref|WP_247960494.1|	substrate-binding domain-containing protein [Ensifer sesbaniae]	41.429	350	11	360	3.15e-85	273	97
+emb|VDS02938.1|	D-ribose-binding periplasmic protein precursor [Devosia equisanguinis]	42.286	350	11	360	3.30e-85	273	97
+gb|TJV24887.1|	MAG: ABC transporter substrate-binding protein [Mesorhizobium sp.]	40.057	352	9	360	3.50e-85	273	97
+ref|WP_292134672.1|	substrate-binding domain-containing protein [Mesorhizobium sp.]	40.057	352	9	360	4.03e-85	273	97
+ref|WP_183399653.1|	ABC transporter substrate-binding protein [Kaistia hirudinis]	42.424	330	31	360	4.04e-85	273	91
+ref|WP_395316698.1|	MULTISPECIES: substrate-binding domain-containing protein [Mesorhizobium]	40.517	348	13	360	4.14e-85	273	96
+ref|WP_127256030.1|	substrate-binding domain-containing protein [Mesorhizobium sp. M7A.F.Ca.US.008.03.1.1]	40.057	352	9	360	4.44e-85	273	97
+gb|RWN19013.1|	MAG: ABC transporter substrate-binding protein [Mesorhizobium sp.]	40.057	352	9	360	4.79e-85	273	97
+ref|WP_378987987.1|	substrate-binding domain-containing protein [Mesorhizobium cantuariense]	40.517	348	13	360	4.87e-85	273	96
+ref|WP_487139926.1|	substrate-binding domain-containing protein [Labrys sp. Lb11]	40.503	358	3	360	5.11e-85	273	99
+gb|MGY4503219.1|	ribose transport system substrate-binding protein [Bradyrhizobium sp. GM24.11]	42.450	351	10	360	5.18e-85	273	97
+ref|WP_292450035.1|	substrate-binding domain-containing protein [Mesorhizobium sp.]	44.231	312	49	360	5.43e-85	271	86
+ref|WP_127271056.1|	MULTISPECIES: substrate-binding domain-containing protein [Mesorhizobium]	40.057	352	9	360	5.52e-85	273	97
+ref|WP_267991715.1|	substrate-binding domain-containing protein [Hoeflea prorocentri]	43.887	319	42	360	5.65e-85	273	88
+ref|WP_449085182.1|	substrate-binding domain-containing protein [Rhizobium sp. A37_96]	42.529	348	13	360	5.94e-85	272	96
+ref|WP_374121715.1|	substrate-binding domain-containing protein [Mesorhizobium sp. LHD-90]	43.598	328	34	360	6.40e-85	274	90
+ref|WP_254144506.1|	ABC transporter substrate-binding protein [Bradyrhizobium sp. CCGB12]	41.124	338	23	360	7.73e-85	272	93
+ref|WP_055660760.1|	substrate-binding domain-containing protein [Roseibium aggregatum]	41.617	334	27	360	7.91e-85	272	92
+ref|WP_412535273.1|	substrate-binding domain-containing protein [Mesorhizobium sp. BAC0120]	44.514	319	42	360	9.36e-85	272	88
+ref|WP_127411076.1|	substrate-binding domain-containing protein [Mesorhizobium sp. M7A.F.Ca.US.006.01.1.1]	40.057	352	9	360	9.48e-85	272	97
+gb|NEI72623.1|	substrate-binding domain-containing protein [Martinezella lusitana]	41.944	360	1	360	9.49e-85	272	99
+ref|WP_375788393.1|	ABC transporter substrate-binding protein [Bradyrhizobium sp. Pha-3]	43.030	330	31	360	1.22e-84	272	91
+gb|RYG97822.1|	MAG: ABC transporter substrate-binding protein [Alphaproteobacteria bacterium]	43.030	330	31	360	1.36e-84	272	91
+ref|WP_432444402.1|	substrate-binding domain-containing protein [Martinezella lusitana]	42.529	348	13	360	1.47e-84	271	96
+ref|WP_127396172.1|	substrate-binding domain-containing protein [Mesorhizobium sp. M7A.F.Ca.ET.027.03.2.1]	39.773	352	9	360	1.53e-84	271	97
+ref|WP_329601434.1|	substrate-binding domain-containing protein [Devosia equisanguinis]	42.816	348	13	360	1.63e-84	271	96
+ref|WP_292560416.1|	substrate-binding domain-containing protein [Mesorhizobium sp.]	39.773	352	9	360	1.88e-84	271	97
+ref|WP_013893929.1|	substrate-binding domain-containing protein [Mesorhizobium opportunistum]	40.057	352	9	360	1.98e-84	271	97
+ref|WP_128362718.1|	MULTISPECIES: substrate-binding domain-containing protein [unclassified Mesorhizobium]	39.773	352	9	360	2.25e-84	271	97
+ref|WP_128288769.1|	MULTISPECIES: substrate-binding domain-containing protein [unclassified Mesorhizobium]	39.773	352	9	360	2.43e-84	271	97
+gb|MBZ9890607.1|	substrate-binding domain-containing protein [Mesorhizobium sp. BR1-1-3]	40.057	352	9	360	2.77e-84	271	97
+gb|MER9935382.1|	substrate-binding domain-containing protein [Mesorhizobium sp. M0088]	40.057	352	9	360	2.80e-84	271	97
+ref|WP_436162886.1|	substrate-binding domain-containing protein [Mesorhizobium sp. LjRoot246]	40.625	352	9	360	2.99e-84	271	97
+gb|TIN29173.1|	MAG: ABC transporter substrate-binding protein [Mesorhizobium sp.]	39.773	352	9	360	3.71e-84	271	97
+ref|WP_342726347.1|	substrate-binding domain-containing protein [Bradyrhizobium sp. B097]	42.857	336	25	360	3.84e-84	271	93
+ref|WP_463237379.1|	substrate-binding domain-containing protein [Pseudotabrizicola sp.]	42.727	330	31	360	4.02e-84	270	91
+ref|WP_411970110.1|	substrate-binding domain-containing protein [Mesorhizobium sp. BR1-1-3]	40.230	348	13	360	5.22e-84	270	96
+ref|WP_140889226.1|	MULTISPECIES: substrate-binding domain-containing protein [unclassified Mesorhizobium]	41.566	332	29	360	6.51e-84	270	92
+gb|MIN3305163.1|	substrate-binding domain-containing protein [Devosia sp.]	40.278	360	1	360	7.46e-84	270	99
+gb|MCZ8548473.1|	substrate-binding domain-containing protein [Mesorhizobium qingshengii]	39.886	351	10	360	7.83e-84	270	97
+ref|WP_254110175.1|	MULTISPECIES: ABC transporter substrate-binding protein [unclassified Bradyrhizobium]	43.030	330	31	360	1.02e-83	270	91
+ref|WP_246393479.1|	substrate-binding domain-containing protein [Aureimonas pseudogalii]	43.030	330	31	360	1.06e-83	272	91
+gb|MDF2369998.1|	substrate-binding domain-containing protein [Rhizobiaceae bacterium]	40.805	348	13	360	1.20e-83	269	96
+ref|WP_420107572.1|	substrate-binding domain-containing protein [Mesorhizobium qingshengii]	39.943	348	13	360	1.37e-83	269	96
+ref|WP_027520703.1|	ABC transporter substrate-binding protein [Bradyrhizobium sp. Ec3.3]	43.030	330	31	360	2.44e-83	268	91
+ref|WP_426410807.1|	ABC transporter substrate-binding protein [Bradyrhizobium ganzhouense]	42.727	330	31	360	2.45e-83	269	91
+ref|WP_434910438.1|	ABC transporter substrate-binding protein [Bradyrhizobium oligotrophicum]	40.909	330	31	360	2.66e-83	270	91
+ref|WP_224699947.1|	substrate-binding domain-containing protein [Mesorhizobium sp. CO1-1-8]	41.566	332	29	360	2.69e-83	268	92
+gb|MES2432875.1|	substrate-binding domain-containing protein [Pseudomonadota bacterium]	42.424	330	31	360	3.54e-83	268	91
+gb|MBO6853807.1|	substrate-binding domain-containing protein [Marivivens sp.]	40.964	332	29	360	3.83e-83	268	92
+ref|WP_480699289.1|	substrate-binding domain-containing protein [Ruegeria sp. B4]	39.706	340	21	360	4.36e-83	268	94
+ref|WP_128300417.1|	substrate-binding domain-containing protein, partial [Mesorhizobium sp. M7A.F.Ca.CA.001.07.2.1]	39.943	348	9	356	4.57e-83	268	96
+ref|WP_480424850.1|	MULTISPECIES: substrate-binding domain-containing protein [unclassified Ruegeria]	39.412	340	21	360	5.19e-83	268	94
+gb|MDF1778787.1|	substrate-binding domain-containing protein [Rhizobiaceae bacterium]	43.260	319	42	360	5.69e-83	268	88
+gb|MCU0800848.1|	substrate-binding domain-containing protein [Paracoccaceae bacterium]	43.373	332	29	360	6.28e-83	268	92
+ref|WP_284265710.1|	ABC transporter substrate-binding protein [Bradyrhizobium iriomotense]	41.026	351	10	360	6.84e-83	267	97
+gb|MHJ7414851.1|	substrate-binding domain-containing protein [Rhizobiaceae bacterium D3-62]	43.260	319	42	360	6.99e-83	267	88
+ref|WP_348441161.1|	substrate-binding domain-containing protein [Hoeflea sp.]	42.424	330	31	360	7.30e-83	267	91
+ref|WP_411783630.1|	MULTISPECIES: substrate-binding domain-containing protein [unclassified Bradyrhizobium]	42.470	332	29	360	8.91e-83	267	92
+gb|MEO1797711.1|	substrate-binding domain-containing protein [Pseudomonadota bacterium]	41.076	353	8	360	1.05e-82	267	98
+ref|WP_279375862.1|	substrate-binding domain-containing protein [Bradyrhizobium sp. CB1650]	42.470	332	29	360	1.27e-82	267	92
+ref|WP_305985825.1|	MULTISPECIES: substrate-binding domain-containing protein [unclassified Roseibium]	42.061	359	3	360	1.32e-82	266	99
+gb|MEO0664329.1|	substrate-binding domain-containing protein [Pseudomonadota bacterium]	40.510	353	8	360	4.06e-82	265	98
+gb|MFK7856538.1|	substrate-binding domain-containing protein [Granulosicoccus sp.]	41.547	349	1	349	4.75e-82	265	96
+ref|WP_473118904.1|	ABC transporter substrate-binding protein [Bradyrhizobium ingae]	42.424	330	31	360	5.12e-82	265	91
+ref|WP_458144094.1|	MULTISPECIES: ABC transporter substrate-binding protein [unclassified Bradyrhizobium]	42.424	330	31	360	6.35e-82	265	91
+ref|WP_202313611.1|	MULTISPECIES: substrate-binding domain-containing protein [unclassified Mesorhizobium]	40.517	348	13	360	7.56e-82	265	96
+ref|WP_104220763.1|	substrate-binding domain-containing protein [Kaistia algarum]	42.727	330	31	360	9.46e-82	265	91
+gb|MCR9127358.1|	substrate-binding domain-containing protein [Paracoccaceae bacterium]	43.030	330	31	360	1.47e-81	264	91
+gb|MIB5845056.1|	substrate-binding domain-containing protein [Bradyrhizobium sp. GW821-FHT13H05]	42.857	322	39	360	1.67e-81	263	89
+gb|MGY3355321.1|	ribose transport system substrate-binding protein [Bradyrhizobium sp. GM0.4]	40.782	358	3	360	1.74e-81	264	99
+gb|MCK1312379.1|	substrate-binding domain-containing protein [Bradyrhizobium sp. 23]	42.121	330	31	360	2.83e-81	263	91
+ref|WP_247368632.1|	MULTISPECIES: substrate-binding domain-containing protein [unclassified Bradyrhizobium]	42.857	322	39	360	3.38e-81	262	89
+ref|WP_478003651.1|	substrate-binding domain-containing protein [Rhizobium sp. P1_D5]	43.210	324	37	360	4.00e-81	263	90
+ref|WP_348403607.1|	substrate-binding domain-containing protein [Shimia sp.]	42.587	317	44	360	7.75e-81	262	88
+gb|MEP2783647.1|	substrate-binding domain-containing protein [Pseudoruegeria sp.]	39.167	360	1	360	9.02e-81	262	99
+gb|NQZ72175.1|	substrate-binding domain-containing protein [Dinoroseobacter sp.]	42.727	330	31	360	1.59e-80	261	91
+ref|WP_340243501.1|	substrate-binding domain-containing protein [Roseobacter sp. HKCCA2468]	42.424	330	31	360	1.70e-80	261	91
+dbj|BGI03122.1|	MAG: substrate-binding domain-containing protein [Hyphomicrobiales bacterium]	37.778	360	1	360	1.81e-80	261	99
+ref|WP_130220757.1|	substrate-binding domain-containing protein [Bradyrhizobium genosp. SA-3]	39.886	351	10	360	1.90e-80	261	97
+gb|MEP3297368.1|	substrate-binding domain-containing protein [Pseudoruegeria sp.]	40.057	352	9	360	2.90e-80	261	97
+ref|WP_400668709.1|	MULTISPECIES: substrate-binding domain-containing protein [unclassified Rhizobium]	40.805	348	13	360	4.52e-80	260	96
+ref|WP_299690248.1|	substrate-binding domain-containing protein [Tateyamaria sp. 1078]	42.271	317	44	360	6.88e-80	259	88
+ref|WP_311031590.1|	ABC transporter substrate-binding protein [Mesorhizobium koreense]	40.439	319	42	360	9.31e-80	259	88
+gb|MBU0831219.1|	substrate-binding domain-containing protein [Alphaproteobacteria bacterium]	40.571	350	11	360	9.31e-80	259	97
+tpg|HIR2866423.1|	substrate-binding domain-containing protein [Burkholderiaceae bacterium]	40.443	361	1	360	1.06e-79	263	99
+gb|MEO0544409.1|	substrate-binding domain-containing protein [Pseudomonadota bacterium]	44.118	306	44	349	1.67e-79	259	85
+gb|MBN9078407.1|	ABC transporter substrate-binding protein [Hyphomicrobiales bacterium]	41.195	318	43	360	2.07e-79	259	88
+gb|MEO1659187.1|	substrate-binding domain-containing protein [Pseudomonadota bacterium]	41.692	331	30	360	2.77e-79	258	91
+gb|MEM6498767.1|	substrate-binding domain-containing protein [Pseudomonadota bacterium]	41.040	346	11	356	5.02e-79	257	96
+ref|WP_404925003.1|	substrate-binding domain-containing protein [Mesorhizobium maamorense]	43.289	298	63	360	5.03e-79	255	82
+ref|WP_236774468.1|	MULTISPECIES: substrate-binding domain-containing protein [Agrobacterium]	38.310	355	2	356	5.51e-76	250	98
+ref|WP_234886491.1|	substrate-binding domain-containing protein [Martinezella rhizogenes]	38.310	355	2	356	7.28e-76	249	98
+ref|WP_269710050.1|	substrate-binding domain-containing protein [Martinezella rhizogenes]	39.634	328	29	356	1.11e-75	249	91
+ref|WP_234825373.1|	substrate-binding domain-containing protein [Agrobacterium pusense]	37.883	359	4	360	1.76e-75	248	99
+ref|WP_309550365.1|	MULTISPECIES: substrate-binding domain-containing protein [Rhizobiaceae]	38.592	355	2	356	2.97e-75	248	98
+gb|ASK42124.1|	ABC transporter substrate-binding protein [Martinezella rhizogenes]	40.635	315	42	356	3.87e-75	246	87
+ref|WP_034517185.1|	substrate-binding domain-containing protein [Agrobacterium fabrum]	40.785	331	26	356	4.49e-75	247	91
+ref|WP_234888135.1|	substrate-binding domain-containing protein [Martinezella rhizogenes]	40.181	331	26	356	4.94e-75	247	91
+ref|WP_127417092.1|	substrate-binding domain-containing protein, partial [Mesorhizobium sp. M7A.F.Ca.CA.004.10.1.1]	40.379	317	9	325	4.97e-75	246	88
+gb|MIJ2392835.1|	substrate-binding domain-containing protein [Mesorhizobium sp.]	47.431	253	29	281	5.08e-75	244	70
+ref|WP_051696923.1|	substrate-binding domain-containing protein [Martinezella rhizogenes]	38.592	355	2	356	5.15e-75	247	98
+gb|KEA03066.1|	ABC transporter substrate-binding protein [Martinezella rhizogenes]	38.592	355	2	356	5.36e-75	247	98
+gb|NMV72444.1|	ABC transporter substrate-binding protein [Agrobacterium fabrum]	41.587	315	42	356	5.42e-75	246	87
+ref|WP_229202717.1|	substrate-binding domain-containing protein [Martinezella rhizogenes]	40.785	331	26	356	5.80e-75	247	91
+gb|AQS65461.2|	ABC transporter substrate-binding protein [Martinezella rhizogenes]	40.635	315	42	356	9.82e-75	245	87
+ref|WP_269830112.1|	MULTISPECIES: substrate-binding domain-containing protein [Agrobacterium]	40.181	331	26	356	1.05e-74	246	91
+gb|ABW33628.1|	rcorf71 [Martinezella rhizogenes]	40.181	331	26	356	1.16e-74	246	91
+gb|NTF91379.1|	ABC transporter substrate-binding protein [Martinezella rhizogenes]	41.270	315	42	356	1.98e-74	244	87
+gb|NTF72760.1|	ABC transporter substrate-binding protein [Martinezella rhizogenes]	41.270	315	42	356	2.00e-74	244	87
+ref|WP_168991446.1|	ABC transporter substrate-binding protein [Paraburkholderia sp. UYCP14C]	39.835	364	1	361	2.89e-74	245	100
+ref|WP_127272190.1|	substrate-binding domain-containing protein, partial [Mesorhizobium sp. M7A.F.Ca.CA.004.08.1.1]	40.446	314	9	322	3.42e-74	244	87
+gb|NTH68627.1|	ABC transporter substrate-binding protein [Martinezella rhizogenes]	40.317	315	42	356	4.80e-74	244	87
+ref|WP_315743410.1|	MULTISPECIES: ABC transporter substrate-binding protein [unclassified Bradyrhizobium]	39.701	335	27	361	5.50e-74	245	93
+gb|NTI39579.1|	ABC transporter substrate-binding protein [Martinezella rhizogenes]	40.317	315	42	356	6.86e-74	243	87
+gb|MGV2078520.1|	substrate-binding domain-containing protein [Rhizobium sp. 16-545-1B]	39.577	331	26	356	8.07e-74	244	91
+gb|NTI72172.1|	ABC transporter substrate-binding protein [Martinezella rhizogenes]	40.317	315	42	356	9.08e-74	243	87
+ref|WP_315703640.1|	MULTISPECIES: ABC transporter substrate-binding protein [unclassified Bradyrhizobium]	39.701	335	27	361	9.73e-74	245	93
+gb|ASK42992.1|	ABC transporter substrate-binding protein [Martinezella rhizogenes]	39.623	318	39	356	9.79e-74	243	88
+gb|MBO9126408.1|	substrate-binding domain-containing protein [Rhizobium sp. 16-488-2b]	40.317	315	42	356	1.76e-73	242	87
+dbj|GAJ95636.1|	putative ABC transporter substrate-binding protein [Rhizobium rhizogenes NBRC 13257]	38.028	355	2	356	2.59e-73	243	98
+gb|RZF29781.1|	ABC transporter substrate-binding protein [Paraburkholderia sp. UYCP14C]	39.835	364	1	361	2.64e-73	245	100
+tpg|HEX7649921.1|	ABC transporter substrate-binding protein [Noviherbaspirillum sp.]	35.854	357	4	360	4.41e-73	242	99
+ref|WP_140547396.1|	substrate-binding domain-containing protein, partial [Mesorhizobium sp. B1-1-5]	41.237	291	9	299	7.07e-73	239	80
+dbj|BAB16225.1|	riorf106 [Martinezella rhizogenes]	39.871	311	46	356	7.24e-73	240	86
+ref|WP_405116943.1|	substrate-binding domain-containing protein [Phaeobacter sp. BS23]	48.649	259	39	297	9.13e-73	241	72
+ref|WP_127667746.1|	substrate-binding domain-containing protein, partial [Sinorhizobium meliloti]	44.403	268	21	284	1.17e-72	239	73
+gb|MBX3572874.1|	ABC transporter substrate-binding protein [Mesorhizobium sp.]	39.820	334	27	360	1.46e-72	241	92
+gb|NTG71288.1|	ABC transporter substrate-binding protein [Martinezella rhizogenes]	39.683	315	42	356	3.61e-72	239	87
+gb|AFX65714.1|	Hypothetical protein [Agrobacterium radiobacter]	37.746	355	2	356	6.28e-72	239	98
+gb|NRR33556.1|	ABC transporter substrate-binding protein [Oxalobacteraceae bacterium]	37.764	331	31	361	7.01e-72	239	91
+ref|WP_233279067.1|	substrate-binding domain-containing protein [Agrobacterium radiobacter]	37.746	355	2	356	7.92e-72	239	98
+ref|WP_296693078.1|	ABC transporter substrate-binding protein [Rhodoferax sp.]	37.764	331	31	361	1.37e-71	238	91
+gb|MFT3803048.1|	ABC transporter substrate-binding protein [Burkholderiaceae bacterium]	38.788	330	31	360	2.76e-71	237	91
+gb|MEQ8346372.1|	ABC transporter substrate-binding protein [Sneathiellaceae bacterium]	36.716	335	27	361	3.42e-71	237	93
+ref|WP_427936557.1|	ABC transporter substrate-binding protein [Acidibrevibacterium sp.]	38.643	339	24	361	5.41e-71	237	93
+gb|MCB1517841.1|	ABC transporter substrate-binding protein [Hyphomicrobiaceae bacterium]	39.130	345	17	361	5.57e-71	237	95
+gb|PHR25451.1|	MAG: ABC transporter substrate-binding protein [Hoeflea sp.]	38.855	332	29	360	1.61e-70	236	92
+gb|MDP9045851.1|	ABC transporter substrate-binding protein [Pseudomonadota bacterium]	37.430	358	4	361	3.41e-70	235	99
+ref|WP_332749114.1|	ABC transporter substrate-binding protein [Hydrogenophaga sp.]	37.764	331	31	361	3.42e-70	235	91
+gb|MIR5334746.1|	ABC transporter substrate-binding protein [Acidovorax sp.]	38.658	313	50	362	3.59e-70	233	86
+gb|MCA7119062.1|	ABC transporter substrate-binding protein [Acidibrevibacterium fodinaquatile]	39.053	338	25	361	4.62e-70	234	93
+gb|MBC7955723.1|	ABC transporter substrate-binding protein [Rhizobacter sp.]	38.671	331	31	361	5.22e-70	234	91
+ref|WP_162800514.1|	ABC transporter substrate-binding protein [Acidibrevibacterium fodinaquatile]	38.643	339	24	361	6.05e-70	234	93
+ref|WP_490965644.1|	ABC transporter substrate-binding protein [Acidibrevibacterium sp.]	38.757	338	25	361	7.42e-70	234	93
+ref|WP_375700394.1|	ABC transporter substrate-binding protein [Pseudophaeobacter sp. TrK17]	38.988	336	26	361	1.93e-69	233	93
+gb|MDF2371393.1|	ABC transporter substrate-binding protein [Rhizobiaceae bacterium]	38.806	335	27	361	1.97e-69	233	93
+ref|WP_379900131.1|	ABC transporter substrate-binding protein [Marinibaculum pumilum]	37.202	336	27	361	3.73e-69	232	93
+tpg|HQY07584.1|	ABC transporter substrate-binding protein [Burkholderiaceae bacterium]	37.764	331	31	361	4.16e-69	232	91
+ref|WP_126702033.1|	ABC transporter substrate-binding protein [Aquibium carbonis]	36.418	335	27	361	4.34e-69	232	93
+gb|MBK6717978.1|	ABC transporter substrate-binding protein [Burkholderiales bacterium]	37.764	331	31	361	4.42e-69	232	91
+gb|MIN6736422.1|	substrate-binding domain-containing protein [Tabrizicola sp.]	38.988	336	26	361	4.47e-69	232	93
+gb|MBN9341963.1|	ABC transporter substrate-binding protein [Comamonadaceae bacterium]	37.048	332	31	362	4.49e-69	232	92
+gb|MBP6466170.1|	ABC transporter substrate-binding protein [Rubrivivax sp.]	37.764	331	31	361	5.99e-69	231	91
+tpg|HQC98428.1|	ABC transporter substrate-binding protein [Aquabacterium sp.]	37.764	331	31	361	7.18e-69	231	91
+gb|MBC7731150.1|	ABC transporter substrate-binding protein [Rhizobacter sp.]	37.322	351	11	361	7.51e-69	233	97
+tpg|HOB96450.1|	ABC transporter substrate-binding protein [Aquabacterium sp.]	37.764	331	31	361	7.68e-69	231	91
+ref|WP_276657217.1|	ABC transporter substrate-binding protein [Thauera aminoaromatica]	37.764	331	31	361	1.10e-68	231	91
+gb|MDP3227874.1|	ABC transporter substrate-binding protein [Acidovorax sp.]	38.339	313	50	362	2.35e-68	230	86
+ref|WP_192422244.1|	ABC transporter substrate-binding protein [Acidovorax sp. ACV02]	38.339	313	50	362	2.82e-68	230	86
+ref|WP_121942454.1|	ABC transporter substrate-binding protein [Acidovorax sp. 100]	38.339	313	50	362	3.04e-68	230	86
+gb|MID2005405.1|	substrate-binding domain-containing protein [Acidovorax sp. GW821-FHT10D01]	38.339	313	50	362	3.17e-68	230	86
+gb|MID2049663.1|	substrate-binding domain-containing protein [Acidovorax sp. GW821-FHT10E03]	38.339	313	50	362	3.24e-68	230	86
+ref|WP_094291729.1|	MULTISPECIES: ABC transporter substrate-binding protein [Acidovorax]	38.339	313	50	362	3.65e-68	229	86
+gb|MBU0789158.1|	ABC transporter substrate-binding protein [Gammaproteobacteria bacterium]	38.339	313	50	362	3.65e-68	229	86
+ref|WP_296448139.1|	ABC transporter substrate-binding protein [Rhodoferax sp. UBA5149]	37.879	330	31	360	4.20e-68	229	91
+ref|WP_488838373.1|	ABC transporter substrate-binding protein [Acidovorax sp. FG60]	38.339	313	50	362	4.24e-68	229	86
+emb|CAG0953860.1|	Ribose import binding protein RbsB [Rhizobiaceae bacterium]	38.138	333	28	360	4.43e-68	229	92
+ref|WP_444836355.1|	ABC transporter substrate-binding protein [Aquabacterium sp.]	37.500	336	26	361	4.60e-68	229	93
+ref|WP_187972580.1|	ABC transporter substrate-binding protein [Aquibium microcysteis]	36.905	336	26	361	5.06e-68	229	93
+gb|MBK8763861.1|	ABC transporter substrate-binding protein [Burkholderiaceae bacterium]	38.369	331	31	361	5.92e-68	229	91
+ref|WP_476018595.1|	ABC transporter substrate-binding protein [Acidovorax sp. DMC1]	38.019	313	50	362	6.81e-68	229	86
+gb|MCC0039199.1|	ABC transporter substrate-binding protein [Brucellaceae bacterium]	36.080	352	10	361	7.08e-68	229	97
+ref|WP_184856745.1|	ABC transporter substrate-binding protein [Acidovorax soli]	36.858	331	31	361	1.28e-67	228	91
+gb|KAB2950589.1|	MAG: ABC transporter substrate-binding protein [Rhizobiaceae bacterium]	38.138	333	28	360	1.70e-67	231	92
+ref|WP_025061158.1|	ABC transporter substrate-binding protein [Sulfitobacter guttiformis]	37.975	316	46	361	2.33e-67	228	87
+gb|MBC7726427.1|	ABC transporter substrate-binding protein [Burkholderiaceae bacterium]	38.268	358	4	361	2.42e-67	228	99

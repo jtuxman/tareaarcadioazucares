@@ -1,0 +1,13 @@
+# Bases de datos locales (se regeneran; ver ESTADO.md)
+01_blast/swissprot.*
+01_blast/taxdb.*
+01_blast/taxonomy4blast.sqlite3
+04_foldseek/pdb_db*
+04_foldseek/tmp_dl/
+# ZIP de Boltz duplicados en la raiz (las copias validas estan en 07_coplegamiento/)
+/*.result.zip
+/*.result (*).zip
+# Salidas de prueba de Vina
+06_docking/ALL_test*.pdbqt
+06_docking/rec_test.pdbqt
+__pycache__/

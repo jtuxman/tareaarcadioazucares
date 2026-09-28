@@ -1,0 +1,2910 @@
+{
+ "entries": {
+  "5OCP": {
+   "title": "The periplasmic binding protein component of the arabinose ABC transporter from Shewanella sp. ANA-3 bound to alpha and beta-L-arabinofuranose",
+   "ligs": [
+    {
+     "id": "GOL",
+     "name": "GLYCEROL",
+     "formula": "C3 H8 O3",
+     "mw": 92.094
+    },
+    {
+     "id": "AHR",
+     "name": "alpha-L-arabinofuranose",
+     "formula": "C5 H10 O5",
+     "mw": 150.13
+    },
+    {
+     "id": "FUB",
+     "name": "beta-L-arabinofuranose",
+     "formula": "C5 H10 O5",
+     "mw": 150.13
+    },
+    {
+     "id": "ACT",
+     "name": "ACETATE ION",
+     "formula": "C2 H3 O2",
+     "mw": 59.044
+    }
+   ]
+  },
+  "7E7M": {
+   "title": "Crystal Structure Analysis of the Streptococcus agalactiae Ribose Binding Protein RbsB",
+   "ligs": [
+    {
+     "id": "RIP",
+     "name": "beta-D-ribopyranose",
+     "formula": "C5 H10 O5",
+     "mw": 150.13
+    }
+   ]
+  },
+  "1DBP": {
+   "title": "IDENTICAL MUTATIONS AT CORRESPONDING POSITIONS IN TWO HOMOLOGOUS PROTEINS WITH NON-IDENTICAL EFFECTS",
+   "ligs": [
+    {
+     "id": "RIP",
+     "name": "beta-D-ribopyranose",
+     "formula": "C5 H10 O5",
+     "mw": 150.13
+    }
+   ]
+  },
+  "2VK2": {
+   "title": "Crystal structure of a galactofuranose binding protein",
+   "ligs": [
+    {
+     "id": "GZL",
+     "name": "beta-D-galactofuranose",
+     "formula": "C6 H12 O6",
+     "mw": 180.156
+    }
+   ]
+  },
+  "1DRK": {
+   "title": "PROBING PROTEIN-PROTEIN INTERACTIONS: THE RIBOSE-BINDING PROTEIN IN BACTERIAL TRANSPORT AND CHEMOTAXIS",
+   "ligs": [
+    {
+     "id": "RIP",
+     "name": "beta-D-ribopyranose",
+     "formula": "C5 H10 O5",
+     "mw": 150.13
+    }
+   ]
+  },
+  "5HKO": {
+   "title": "Crystal structure of ABC transporter Solute Binding Protein MSMEG_3598 from Mycobacterium smegmatis str. MC2 155, target EFI-510969, in complex with L-sorbitol",
+   "ligs": [
+    {
+     "id": "ZN",
+     "name": "ZINC ION",
+     "formula": "Zn",
+     "mw": 65.409
+    },
+    {
+     "id": "CL",
+     "name": "CHLORIDE ION",
+     "formula": "Cl",
+     "mw": 35.453
+    },
+    {
+     "id": "62W",
+     "name": "L-glucitol",
+     "formula": "C6 H14 O6",
+     "mw": 182.172
+    },
+    {
+     "id": "IMD",
+     "name": "IMIDAZOLE",
+     "formula": "C3 H5 N2",
+     "mw": 69.085
+    },
+    {
+     "id": "ACT",
+     "name": "ACETATE ION",
+     "formula": "C2 H3 O2",
+     "mw": 59.044
+    }
+   ]
+  },
+  "5DTE": {
+   "title": "Crystal Structure of an ABC transporter periplasmic solute binding protein (IPR025997) from Actinobacillus succinogenes 130z(Asuc_0081, TARGET EFI-511065) with bound D-allose",
+   "ligs": [
+    {
+     "id": "ALL",
+     "name": "beta-D-allopyranose",
+     "formula": "C6 H12 O6",
+     "mw": 180.156
+    }
+   ]
+  },
+  "4ZJP": {
+   "title": "Structure of an ABC-Transporter Solute Binding Protein (SBP_IPR025997) from Actinobacillus Succinogenes (Asuc_0197, TARGET EFI-511067) with bound beta-D-ribopyranose",
+   "ligs": [
+    {
+     "id": "RIP",
+     "name": "beta-D-ribopyranose",
+     "formula": "C5 H10 O5",
+     "mw": 150.13
+    },
+    {
+     "id": "EDO",
+     "name": "1,2-ETHANEDIOL",
+     "formula": "C2 H6 O2",
+     "mw": 62.068
+    }
+   ]
+  },
+  "4PE6": {
+   "title": "Crystal structure of ABC transporter solute binding protein from Thermobispora bispora DSM 43833",
+   "ligs": [
+    {
+     "id": "LTH",
+     "name": "(2R,3S)-2,3,4-trihydroxybutanoic acid",
+     "formula": "C4 H8 O5",
+     "mw": 136.103
+    }
+   ]
+  },
+  "2FN8": {
+   "title": "Thermotoga maritima Ribose Binding Protein Ribose Bound Form",
+   "ligs": [
+    {
+     "id": "RIP",
+     "name": "beta-D-ribopyranose",
+     "formula": "C5 H10 O5",
+     "mw": 150.13
+    }
+   ]
+  },
+  "4YV7": {
+   "title": "CRYSTAL STRUCTURE OF AN ABC TRANSPORTER SOLUTE BINDING PROTEIN (IPR025997) FROM MYCOBACTERIUM SMEGMATIS (MSMEI_3018, TARGET EFI-511327) WITH BOUND GLYCEROL",
+   "ligs": [
+    {
+     "id": "GOL",
+     "name": "GLYCEROL",
+     "formula": "C3 H8 O3",
+     "mw": 92.094
+    }
+   ]
+  },
+  "4RY9": {
+   "title": "Crystal structure of carbohydrate transporter solute binding protein VEIS_2079 from Verminephrobacter eiseniae EF01-2, TARGET EFI-511009, a complex with D-TALITOL",
+   "ligs": [
+    {
+     "id": "TLZ",
+     "name": "D-altritol",
+     "formula": "C6 H14 O6",
+     "mw": 182.172
+    },
+    {
+     "id": "GOL",
+     "name": "GLYCEROL",
+     "formula": "C3 H8 O3",
+     "mw": 92.094
+    },
+    {
+     "id": "BCT",
+     "name": "BICARBONATE ION",
+     "formula": "C H O3",
+     "mw": 61.017
+    }
+   ]
+  },
+  "5DKV": {
+   "title": "Crystal Structure of an ABC transporter Solute Binding Protein from Agrobacterium vitis(Avis_5339, TARGET EFI-511225) bound with alpha-D-Tagatopyranose",
+   "ligs": [
+    {
+     "id": "T6T",
+     "name": "alpha-D-tagatopyranose",
+     "formula": "C6 H12 O6",
+     "mw": 180.156
+    }
+   ]
+  },
+  "2FN9": {
+   "title": "Thermotoga maritima Ribose Binding Protein Unliganded Form",
+   "ligs": []
+  },
+  "1BA2": {
+   "title": "D67R MUTANT OF D-RIBOSE-BINDING PROTEIN FROM ESCHERICHIA COLI",
+   "ligs": []
+  },
+  "7X0P": {
+   "title": "Crystal structure of sugar binding protein CbpD from Clostridium thermocellum",
+   "ligs": []
+  },
+  "2RJO": {
+   "title": "Crystal structure of Twin-arginine translocation pathway signal protein from Burkholderia phytofirmans",
+   "ligs": [
+    {
+     "id": "GAL",
+     "name": "beta-D-galactopyranose",
+     "formula": "C6 H12 O6",
+     "mw": 180.156
+    },
+    {
+     "id": "SO4",
+     "name": "SULFATE ION",
+     "formula": "O4 S",
+     "mw": 96.063
+    }
+   ]
+  },
+  "4IRX": {
+   "title": "Crystal structure of Caulobacter myo-inositol binding protein bound to myo-inositol",
+   "ligs": [
+    {
+     "id": "INS",
+     "name": "1,2,3,4,5,6-HEXAHYDROXY-CYCLOHEXANE",
+     "formula": "C6 H12 O6",
+     "mw": 180.156
+    }
+   ]
+  },
+  "4RWE": {
+   "title": "The crystal structure of a sugar-binding transport protein from Yersinia pestis CO92",
+   "ligs": [
+    {
+     "id": "CL",
+     "name": "CHLORIDE ION",
+     "formula": "Cl",
+     "mw": 35.453
+    },
+    {
+     "id": "GOL",
+     "name": "GLYCEROL",
+     "formula": "C3 H8 O3",
+     "mw": 92.094
+    }
+   ]
+  },
+  "5HQJ": {
+   "title": "Crystal structure of ABC transporter Solute Binding Protein B1G1H7 from Burkholderia graminis C4D1M, target EFI-511179, in complex with D-arabinose",
+   "ligs": [
+    {
+     "id": "64K",
+     "name": "alpha-D-arabinopyranose",
+     "formula": "C5 H10 O5",
+     "mw": 150.13
+    },
+    {
+     "id": "CL",
+     "name": "CHLORIDE ION",
+     "formula": "Cl",
+     "mw": 35.453
+    }
+   ]
+  },
+  "3KSM": {
+   "title": "Crystal structure of ABC-type sugar transport system, periplasmic component from Hahella chejuensis",
+   "ligs": [
+    {
+     "id": "BDR",
+     "name": "beta-D-ribofuranose",
+     "formula": "C5 H10 O5",
+     "mw": 150.13
+    }
+   ]
+  },
+  "4RXT": {
+   "title": "Crystal structure of carbohydrate transporter solute binding protein Arad_9553 from Agrobacterium Radiobacter, Target EFI-511541, in complex with D-arabinose",
+   "ligs": [
+    {
+     "id": "ARA",
+     "name": "alpha-L-arabinopyranose",
+     "formula": "C5 H10 O5",
+     "mw": 150.13
+    }
+   ]
+  },
+  "4YWH": {
+   "title": "CRYSTAL STRUCTURE OF AN ABC TRANSPORTER SOLUTE BINDING PROTEIN (IPR025997) FROM ACTINOBACILLUS SUCCINOGENES 130Z (Asuc_0499, TARGET EFI-511068) WITH BOUND D-XYLOSE",
+   "ligs": [
+    {
+     "id": "XYP",
+     "name": "beta-D-xylopyranose",
+     "formula": "C5 H10 O5",
+     "mw": 150.13
+    }
+   ]
+  },
+  "4WT7": {
+   "title": "Crystal structure of an ABC transporter solute binding protein (IPR025997) from Agrobacterium vitis (Avi_5165, Target EFI-511223) with bound allitol",
+   "ligs": [
+    {
+     "id": "CL",
+     "name": "CHLORIDE ION",
+     "formula": "Cl",
+     "mw": 35.453
+    },
+    {
+     "id": "X9X",
+     "name": "D-allitol",
+     "formula": "C6 H14 O6",
+     "mw": 182.172
+    }
+   ]
+  },
+  "8WLB": {
+   "title": "X-ray structure of Enterobacter cloacae allose-binding protein in complex with D-psicose",
+   "ligs": [
+    {
+     "id": "WEB",
+     "name": "alpha-D-psicopyranose",
+     "formula": "C6 H12 O6",
+     "mw": 180.156
+    }
+   ]
+  },
+  "6HYH": {
+   "title": "Crystal structure of MSMEG_1712 from Mycobacterium smegmatis in complex with Beta-D-Fucofuranose",
+   "ligs": [
+    {
+     "id": "GYE",
+     "name": "beta-D-fucofuranose",
+     "formula": "C6 H12 O5",
+     "mw": 164.156
+    },
+    {
+     "id": "ZN",
+     "name": "ZINC ION",
+     "formula": "Zn",
+     "mw": 65.409
+    }
+   ]
+  },
+  "6HB0": {
+   "title": "Crystal structure of MSMEG_1712 from Mycobacterium smegmatis",
+   "ligs": [
+    {
+     "id": "ZN",
+     "name": "ZINC ION",
+     "formula": "Zn",
+     "mw": 65.409
+    }
+   ]
+  },
+  "6GQ0": {
+   "title": "Crystal structure of GanP, a glucose-galactose binding protein from Geobacillus stearothermophilus",
+   "ligs": []
+  },
+  "5HSG": {
+   "title": "Crystal structure of an ABC transporter Solute Binding Protein from Klebsiella pneumoniae (KPN_01730, target EFI-511059), APO open structure",
+   "ligs": [
+    {
+     "id": "MG",
+     "name": "MAGNESIUM ION",
+     "formula": "Mg",
+     "mw": 24.305
+    }
+   ]
+  },
+  "5BR1": {
+   "title": "CRYSTAL STRUCTURE OF AN ABC TRANSPORTER SOLUTE BINDING PROTEIN (IPR025997) FROM AGROBACTERIUM VITIS S4 (Avi_5305, TARGET EFI-511224) WITH BOUND ALPHA-D-GALACTOSAMINE",
+   "ligs": [
+    {
+     "id": "X6X",
+     "name": "2-amino-2-deoxy-alpha-D-galactopyranose",
+     "formula": "C6 H13 N O5",
+     "mw": 179.171
+    }
+   ]
+  },
+  "4YO7": {
+   "title": "Crystal Structure of an ABC transporter solute binding protein (IPR025997) from Bacillus halodurans C-125 (BH2323, TARGET EFI-511484) with bound myo-inositol",
+   "ligs": [
+    {
+     "id": "NA",
+     "name": "SODIUM ION",
+     "formula": "Na",
+     "mw": 22.99
+    },
+    {
+     "id": "INS",
+     "name": "1,2,3,4,5,6-HEXAHYDROXY-CYCLOHEXANE",
+     "formula": "C6 H12 O6",
+     "mw": 180.156
+    },
+    {
+     "id": "CL",
+     "name": "CHLORIDE ION",
+     "formula": "Cl",
+     "mw": 35.453
+    },
+    {
+     "id": "MG",
+     "name": "MAGNESIUM ION",
+     "formula": "Mg",
+     "mw": 24.305
+    }
+   ]
+  },
+  "4YLE": {
+   "title": "Crystal structure of an ABC transpoter solute binding protein (IPR025997) from Burkholderia multivorans (Bmul_1631, Target EFI-511115) with an unknown ligand modelled as alpha-D-erythrofuranose",
+   "ligs": [
+    {
+     "id": "UNL",
+     "name": "Unknown ligand",
+     "formula": null,
+     "mw": null
+    }
+   ]
+  },
+  "4YHS": {
+   "title": "CRYSTAL STRUCTURE OF AN ABC TRANSPORTER SOLUTE BINDING PROTEIN (IPR025997) FROM BRADYRHIZOBIUM sp. BTAi1 (BBta_2440, TARGET EFI-511490) WITH BOUND BIS-TRIS",
+   "ligs": [
+    {
+     "id": "BTB",
+     "name": "2-[BIS-(2-HYDROXY-ETHYL)-AMINO]-2-HYDROXYMETHYL-PROPANE-1,3-DIOL",
+     "formula": "C8 H19 N O5",
+     "mw": 209.24
+    },
+    {
+     "id": "CL",
+     "name": "CHLORIDE ION",
+     "formula": "Cl",
+     "mw": 35.453
+    }
+   ]
+  },
+  "4WZZ": {
+   "title": "CRYSTAL STRUCTURE OF AN ABC TRANSPORTER SOLUTE BINDING PROTEIN (IPR025997) FROM CLOSTRIDIUM PHYTOFERMENTAS (Cphy_0583, TARGET EFI-511148) WITH BOUND L-RHAMNOSE",
+   "ligs": [
+    {
+     "id": "RAM",
+     "name": "alpha-L-rhamnopyranose",
+     "formula": "C6 H12 O5",
+     "mw": 164.156
+    },
+    {
+     "id": "EDO",
+     "name": "1,2-ETHANEDIOL",
+     "formula": "C2 H6 O2",
+     "mw": 62.068
+    }
+   ]
+  },
+  "4WUT": {
+   "title": "CRYSTAL STRUCTURE OF AN ABC TRANSPORTER SOLUTE BINDING PROTEIN (IPR025997) FROM AGROBACTERIUM VITIS (Avi_5133, TARGET EFI-511220) WITH BOUND D-FUCOSE",
+   "ligs": [
+    {
+     "id": "CL",
+     "name": "CHLORIDE ION",
+     "formula": "Cl",
+     "mw": 35.453
+    },
+    {
+     "id": "FCB",
+     "name": "beta-D-fucopyranose",
+     "formula": "C6 H12 O5",
+     "mw": 164.156
+    },
+    {
+     "id": "CA",
+     "name": "CALCIUM ION",
+     "formula": "Ca",
+     "mw": 40.078
+    }
+   ]
+  },
+  "4RY0": {
+   "title": "Crystal structure of ribose transporter solute binding protein RHE_PF00037 from Rhizobium etli CFN 42, TARGET EFI-511357, in complex with D-ribose",
+   "ligs": [
+    {
+     "id": "CL",
+     "name": "CHLORIDE ION",
+     "formula": "Cl",
+     "mw": 35.453
+    },
+    {
+     "id": "CA",
+     "name": "CALCIUM ION",
+     "formula": "Ca",
+     "mw": 40.078
+    },
+    {
+     "id": "RIP",
+     "name": "beta-D-ribopyranose",
+     "formula": "C5 H10 O5",
+     "mw": 150.13
+    }
+   ]
+  },
+  "4RXM": {
+   "title": "Crystal structure of periplasmic ABC transporter solute binding protein A7JW62 from Mannheimia haemolytica PHL213, Target EFI-511105, in complex with Myo-inositol",
+   "ligs": [
+    {
+     "id": "ASP",
+     "name": "ASPARTIC ACID",
+     "formula": "C4 H7 N O4",
+     "mw": 133.103
+    },
+    {
+     "id": "CL",
+     "name": "CHLORIDE ION",
+     "formula": "Cl",
+     "mw": 35.453
+    },
+    {
+     "id": "BGC",
+     "name": "beta-D-glucopyranose",
+     "formula": "C6 H12 O6",
+     "mw": 180.156
+    },
+    {
+     "id": "INS",
+     "name": "1,2,3,4,5,6-HEXAHYDROXY-CYCLOHEXANE",
+     "formula": "C6 H12 O6",
+     "mw": 180.156
+    }
+   ]
+  },
+  "4RSM": {
+   "title": "Crystal structure of carbohydrate transporter msmeg_3599 from mycobacterium smegmatis str. mc2 155, target efi-510970, in complex with d-threitol",
+   "ligs": [
+    {
+     "id": "3VB",
+     "name": "D-Threitol",
+     "formula": "C4 H10 O4",
+     "mw": 122.12
+    }
+   ]
+  },
+  "4KQ9": {
+   "title": "Crystal structure of periplasmic ribose ABC transporter from Conexibacter woesei DSM 14684",
+   "ligs": [
+    {
+     "id": "GOL",
+     "name": "GLYCEROL",
+     "formula": "C3 H8 O3",
+     "mw": 92.094
+    }
+   ]
+  },
+  "4JOQ": {
+   "title": "Putative ribose ABC transporter, periplasmic solute-binding protein from Rhodobacter sphaeroides",
+   "ligs": [
+    {
+     "id": "ACT",
+     "name": "ACETATE ION",
+     "formula": "C2 H3 O2",
+     "mw": 59.044
+    },
+    {
+     "id": "EDO",
+     "name": "1,2-ETHANEDIOL",
+     "formula": "C2 H6 O2",
+     "mw": 62.068
+    }
+   ]
+  },
+  "3L6U": {
+   "title": "Crystal structure of abc-type sugar transport system, Periplasmic component from exiguobacterium sibiricum",
+   "ligs": [
+    {
+     "id": "SO4",
+     "name": "SULFATE ION",
+     "formula": "O4 S",
+     "mw": 96.063
+    }
+   ]
+  },
+  "3L49": {
+   "title": "CRYSTAL STRUCTURE OF ABC SUGAR TRANSPORTER SUBUNIT FROM Rhodobacter sphaeroides 2.4.1",
+   "ligs": [
+    {
+     "id": "UNL",
+     "name": "Unknown ligand",
+     "formula": null,
+     "mw": null
+    }
+   ]
+  },
+  "3C6Q": {
+   "title": "Apo and ligand-bound form of a thermophilic glucose/xylose binding protein",
+   "ligs": [
+    {
+     "id": "XYP",
+     "name": "beta-D-xylopyranose",
+     "formula": "C5 H10 O5",
+     "mw": 150.13
+    }
+   ]
+  },
+  "3BRS": {
+   "title": "Crystal structure of sugar transporter from Clostridium phytofermentans",
+   "ligs": []
+  },
+  "2X7X": {
+   "title": "Fructose binding periplasmic domain of hybrid two component system BT1754",
+   "ligs": [
+    {
+     "id": "FRU",
+     "name": "beta-D-fructofuranose",
+     "formula": "C6 H12 O6",
+     "mw": 180.156
+    },
+    {
+     "id": "K",
+     "name": "POTASSIUM ION",
+     "formula": "K",
+     "mw": 39.098
+    },
+    {
+     "id": "PO4",
+     "name": "PHOSPHATE ION",
+     "formula": "O4 P",
+     "mw": 94.971
+    }
+   ]
+  },
+  "2IOY": {
+   "title": "Crystal structure of Thermoanaerobacter tengcongensis ribose binding protein",
+   "ligs": [
+    {
+     "id": "RIP",
+     "name": "beta-D-ribopyranose",
+     "formula": "C5 H10 O5",
+     "mw": 150.13
+    }
+   ]
+  },
+  "2GX6": {
+   "title": "Rational stabilization of E. coli ribose binding protein",
+   "ligs": [
+    {
+     "id": "RIP",
+     "name": "beta-D-ribopyranose",
+     "formula": "C5 H10 O5",
+     "mw": 150.13
+    }
+   ]
+  },
+  "1URP": {
+   "title": "D-RIBOSE-BINDING PROTEIN FROM ESCHERICHIA COLI",
+   "ligs": []
+  },
+  "1GUD": {
+   "title": "Hinge-bending motion of D-allose binding protein from Escherichia coli: three open conformations",
+   "ligs": [
+    {
+     "id": "ZN",
+     "name": "ZINC ION",
+     "formula": "Zn",
+     "mw": 65.409
+    }
+   ]
+  },
+  "1DRJ": {
+   "title": "PROBING PROTEIN-PROTEIN INTERACTIONS: THE RIBOSE-BINDING PROTEIN IN BACTERIAL TRANSPORT AND CHEMOTAXIS",
+   "ligs": [
+    {
+     "id": "RIP",
+     "name": "beta-D-ribopyranose",
+     "formula": "C5 H10 O5",
+     "mw": 150.13
+    }
+   ]
+  },
+  "4PZ0": {
+   "title": "The crystal structure of a solute binding protein from Bacillus anthracis str. Ames in complex with quorum-sensing signal autoinducer-2 (AI-2)",
+   "ligs": [
+    {
+     "id": "CL",
+     "name": "CHLORIDE ION",
+     "formula": "Cl",
+     "mw": 35.453
+    },
+    {
+     "id": "EDO",
+     "name": "1,2-ETHANEDIOL",
+     "formula": "C2 H6 O2",
+     "mw": 62.068
+    },
+    {
+     "id": "PAV",
+     "name": "(2R,4S)-2-methyl-2,3,3,4-tetrahydroxytetrahydrofuran",
+     "formula": "C5 H10 O5",
+     "mw": 150.13
+    }
+   ]
+  },
+  "3EJW": {
+   "title": "Crystal Structure of the Sinorhizobium meliloti AI-2 receptor, SmLsrB",
+   "ligs": [
+    {
+     "id": "PAV",
+     "name": "(2R,4S)-2-methyl-2,3,3,4-tetrahydroxytetrahydrofuran",
+     "formula": "C5 H10 O5",
+     "mw": 150.13
+    }
+   ]
+  },
+  "5IX8": {
+   "title": "Crystal structure of sugar ABC transport system, substrate-binding protein from Bordetella parapertussis 12822",
+   "ligs": [
+    {
+     "id": "EDO",
+     "name": "1,2-ETHANEDIOL",
+     "formula": "C2 H6 O2",
+     "mw": 62.068
+    },
+    {
+     "id": "SO4",
+     "name": "SULFATE ION",
+     "formula": "O4 S",
+     "mw": 96.063
+    }
+   ]
+  },
+  "3T95": {
+   "title": "Crystal structure of LsrB from Yersinia pestis complexed with autoinducer-2",
+   "ligs": [
+    {
+     "id": "PAV",
+     "name": "(2R,4S)-2-methyl-2,3,3,4-tetrahydroxytetrahydrofuran",
+     "formula": "C5 H10 O5",
+     "mw": 150.13
+    }
+   ]
+  },
+  "2IPL": {
+   "title": "Crystal structure of a disulfide mutant glucose binding protein",
+   "ligs": [
+    {
+     "id": "BGC",
+     "name": "beta-D-glucopyranose",
+     "formula": "C6 H12 O6",
+     "mw": 180.156
+    },
+    {
+     "id": "CA",
+     "name": "CALCIUM ION",
+     "formula": "Ca",
+     "mw": 40.078
+    }
+   ]
+  },
+  "4WWH": {
+   "title": "CRYSTAL STRUCTURE OF AN ABC TRANSPORTER SOLUTE BINDING PROTEIN (IPR025997) FROM MYCOBACTERIUM SMEGMATIS (MSMEG_1704, TARGET EFI-510967) WITH BOUND D-GALACTOSE",
+   "ligs": [
+    {
+     "id": "TRS",
+     "name": "2-AMINO-2-HYDROXYMETHYL-PROPANE-1,3-DIOL",
+     "formula": "C4 H12 N O3",
+     "mw": 122.143
+    },
+    {
+     "id": "GAL",
+     "name": "beta-D-galactopyranose",
+     "formula": "C6 H12 O6",
+     "mw": 180.156
+    }
+   ]
+  },
+  "3D02": {
+   "title": "Crystal structure of periplasmic sugar-binding protein (YP_001338366.1) from Klebsiella pneumoniae subsp. pneumoniae MGH 78578 at 1.30 A resolution",
+   "ligs": [
+    {
+     "id": "GOL",
+     "name": "GLYCEROL",
+     "formula": "C3 H8 O3",
+     "mw": 92.094
+    },
+    {
+     "id": "CL",
+     "name": "CHLORIDE ION",
+     "formula": "Cl",
+     "mw": 35.453
+    }
+   ]
+  },
+  "5XSS": {
+   "title": "XylFII molecule",
+   "ligs": [
+    {
+     "id": "XYP",
+     "name": "beta-D-xylopyranose",
+     "formula": "C5 H10 O5",
+     "mw": 150.13
+    }
+   ]
+  },
+  "5BQ3": {
+   "title": "Crystal structure of a sugar ABC transporter (ACTODO_00688) from Actinomyces odontolyticus ATCC 17982 at 2.60 A resolution",
+   "ligs": []
+  },
+  "3M9W": {
+   "title": "Open ligand-free crystal structure of xylose binding protein from Escherichia coli",
+   "ligs": [
+    {
+     "id": "PO4",
+     "name": "PHOSPHATE ION",
+     "formula": "O4 P",
+     "mw": 94.971
+    }
+   ]
+  },
+  "3GBP": {
+   "title": "STRUCTURE OF THE PERIPLASMIC GLUCOSE/GALACTOSE RECEPTOR OF SALMONELLA TYPHIMURIUM",
+   "ligs": [
+    {
+     "id": "BGC",
+     "name": "beta-D-glucopyranose",
+     "formula": "C6 H12 O6",
+     "mw": 180.156
+    },
+    {
+     "id": "CA",
+     "name": "CALCIUM ION",
+     "formula": "Ca",
+     "mw": 40.078
+    }
+   ]
+  },
+  "3URM": {
+   "title": "Crystal structure of the periplasmic sugar binding protein ChvE",
+   "ligs": [
+    {
+     "id": "GAL",
+     "name": "beta-D-galactopyranose",
+     "formula": "C6 H12 O6",
+     "mw": 180.156
+    }
+   ]
+  },
+  "4Z0N": {
+   "title": "Crystal Structure of a Periplasmic Solute binding protein (IPR025997) from Streptobacillus moniliformis DSM-12112 (Smon_0317, TARGET EFI-511281) with bound D-Galactose",
+   "ligs": [
+    {
+     "id": "NA",
+     "name": "SODIUM ION",
+     "formula": "Na",
+     "mw": 22.99
+    },
+    {
+     "id": "EDO",
+     "name": "1,2-ETHANEDIOL",
+     "formula": "C2 H6 O2",
+     "mw": 62.068
+    },
+    {
+     "id": "CA",
+     "name": "CALCIUM ION",
+     "formula": "Ca",
+     "mw": 40.078
+    },
+    {
+     "id": "ACT",
+     "name": "ACETATE ION",
+     "formula": "C2 H3 O2",
+     "mw": 59.044
+    },
+    {
+     "id": "GAL",
+     "name": "beta-D-galactopyranose",
+     "formula": "C6 H12 O6",
+     "mw": 180.156
+    },
+    {
+     "id": "SO4",
+     "name": "SULFATE ION",
+     "formula": "O4 S",
+     "mw": 96.063
+    }
+   ]
+  },
+  "2GBP": {
+   "title": "SUGAR AND SIGNAL-TRANSDUCER BINDING SITES OF THE ESCHERICHIA COLI GALACTOSE CHEMORECEPTOR PROTEIN",
+   "ligs": [
+    {
+     "id": "CA",
+     "name": "CALCIUM ION",
+     "formula": "Ca",
+     "mw": 40.078
+    },
+    {
+     "id": "BGC",
+     "name": "beta-D-glucopyranose",
+     "formula": "C6 H12 O6",
+     "mw": 180.156
+    }
+   ]
+  },
+  "4RU1": {
+   "title": "Crystal structure of carbohydrate transporter ACEI_1806 from Acidothermus cellulolyticus 11B, TARGET EFI-510965, in complex with myo-inositol",
+   "ligs": [
+    {
+     "id": "CIT",
+     "name": "CITRIC ACID",
+     "formula": "C6 H8 O7",
+     "mw": 192.124
+    },
+    {
+     "id": "INS",
+     "name": "1,2,3,4,5,6-HEXAHYDROXY-CYCLOHEXANE",
+     "formula": "C6 H12 O6",
+     "mw": 180.156
+    }
+   ]
+  },
+  "1TM2": {
+   "title": "Crystal Structure of the apo form of the Salmonella typhimurium AI-2 receptor LsrB",
+   "ligs": []
+  },
+  "4RXU": {
+   "title": "Crystal structure of carbohydrate transporter solute binding protein CAUR_1924 from Chloroflexus aurantiacus, Target EFI-511158, in complex with D-glucose",
+   "ligs": [
+    {
+     "id": "CIT",
+     "name": "CITRIC ACID",
+     "formula": "C6 H8 O7",
+     "mw": 192.124
+    },
+    {
+     "id": "BGC",
+     "name": "beta-D-glucopyranose",
+     "formula": "C6 H12 O6",
+     "mw": 180.156
+    }
+   ]
+  },
+  "5BRA": {
+   "title": "Crystal Structure of a putative Periplasmic Solute binding protein (IPR025997) from Ochrobactrum Anthropi ATCC49188 (Oant_2843, TARGET EFI-511085)",
+   "ligs": []
+  },
+  "6DSP": {
+   "title": "LsrB from Clostridium saccharobutylicum in complex with AI-2",
+   "ligs": [
+    {
+     "id": "PAV",
+     "name": "(2R,4S)-2-methyl-2,3,3,4-tetrahydroxytetrahydrofuran",
+     "formula": "C5 H10 O5",
+     "mw": 150.13
+    }
+   ]
+  },
+  "4KVF": {
+   "title": "The crystal structure of a rhamnose ABC transporter, periplasmic rhamnose-binding protein from Kribbella flavida DSM 17836",
+   "ligs": [
+    {
+     "id": "GOL",
+     "name": "GLYCEROL",
+     "formula": "C3 H8 O3",
+     "mw": 92.094
+    }
+   ]
+  },
+  "1JFT": {
+   "title": "PURINE REPRESSOR MUTANT-HYPOXANTHINE-PURF OPERATOR COMPLEX",
+   "ligs": [
+    {
+     "id": "HPA",
+     "name": "HYPOXANTHINE",
+     "formula": "C5 H4 N4 O",
+     "mw": 136.111
+    },
+    {
+     "id": "PO4",
+     "name": "PHOSPHATE ION",
+     "formula": "O4 P",
+     "mw": 94.971
+    }
+   ]
+  },
+  "3O75": {
+   "title": "Crystal structure of Cra transcriptional dual regulator from Pseudomonas putida in complex with fructose 1-phosphate'",
+   "ligs": [
+    {
+     "id": "F1X",
+     "name": "1-O-phosphono-beta-D-fructofuranose",
+     "formula": "C6 H13 O9 P",
+     "mw": 260.136
+    }
+   ]
+  },
+  "1VPW": {
+   "title": "STRUCTURE OF THE PURR MUTANT, L54M, BOUND TO HYPOXANTHINE AND PURF OPERATOR DNA",
+   "ligs": [
+    {
+     "id": "HPA",
+     "name": "HYPOXANTHINE",
+     "formula": "C5 H4 N4 O",
+     "mw": 136.111
+    }
+   ]
+  },
+  "1JH9": {
+   "title": "PURINE REPRESSOR MUTANT-HYPOXANTHINE-PURF OPERATOR COMPLEX",
+   "ligs": [
+    {
+     "id": "HPA",
+     "name": "HYPOXANTHINE",
+     "formula": "C5 H4 N4 O",
+     "mw": 136.111
+    },
+    {
+     "id": "PO4",
+     "name": "PHOSPHATE ION",
+     "formula": "O4 P",
+     "mw": 94.971
+    }
+   ]
+  },
+  "1QPZ": {
+   "title": "PURINE REPRESSOR-HYPOXANTHINE-PALINDROMIC OPERATOR COMPLEX",
+   "ligs": [
+    {
+     "id": "HPA",
+     "name": "HYPOXANTHINE",
+     "formula": "C5 H4 N4 O",
+     "mw": 136.111
+    }
+   ]
+  },
+  "2O20": {
+   "title": "Crystal structure of transcription regulator CcpA of Lactococcus lactis",
+   "ligs": [
+    {
+     "id": "CL",
+     "name": "CHLORIDE ION",
+     "formula": "Cl",
+     "mw": 35.453
+    },
+    {
+     "id": "SO4",
+     "name": "SULFATE ION",
+     "formula": "O4 S",
+     "mw": 96.063
+    }
+   ]
+  },
+  "5XSD": {
+   "title": "XylFII-LytSN complex mutant - D103A",
+   "ligs": []
+  },
+  "2PAF": {
+   "title": "Crystal Structure of the Lactose Repressor bound to anti-inducer ONPF in induced state",
+   "ligs": [
+    {
+     "id": "NPF",
+     "name": "2-nitrophenyl beta-D-fucopyranoside",
+     "formula": "C12 H15 N O7",
+     "mw": 285.25
+    }
+   ]
+  },
+  "1JFS": {
+   "title": "PURINE REPRESSOR MUTANT-HYPOXANTHINE-PURF OPERATOR COMPLEX",
+   "ligs": [
+    {
+     "id": "HPA",
+     "name": "HYPOXANTHINE",
+     "formula": "C5 H4 N4 O",
+     "mw": 136.111
+    }
+   ]
+  },
+  "2FEP": {
+   "title": "Structure of truncated CcpA in complex with P-Ser-HPr and Sulfate ions",
+   "ligs": [
+    {
+     "id": "SO4",
+     "name": "SULFATE ION",
+     "formula": "O4 S",
+     "mw": 96.063
+    }
+   ]
+  },
+  "8FXU": {
+   "title": "Thermoanaerobacter thermosaccharolyticum periplasmic Glucose-Binding Protein glucose complex: Badan conjugate attached at F17C",
+   "ligs": [
+    {
+     "id": "BGC",
+     "name": "beta-D-glucopyranose",
+     "formula": "C6 H12 O6",
+     "mw": 180.156
+    },
+    {
+     "id": "K",
+     "name": "POTASSIUM ION",
+     "formula": "K",
+     "mw": 39.098
+    },
+    {
+     "id": "CL",
+     "name": "CHLORIDE ION",
+     "formula": "Cl",
+     "mw": 35.453
+    },
+    {
+     "id": "YDQ",
+     "name": "2-bromo-1-[6-(dimethylamino)naphthalen-2-yl]ethan-1-one",
+     "formula": "C14 H14 Br N O",
+     "mw": 292.171
+    },
+    {
+     "id": "CA",
+     "name": "CALCIUM ION",
+     "formula": "Ca",
+     "mw": 40.078
+    }
+   ]
+  },
+  "8FXT": {
+   "title": "Escherichia coli periplasmic Glucose-Binding Protein glucose complex: Acrylodan conjugate attached at W183C",
+   "ligs": [
+    {
+     "id": "YDM",
+     "name": "1-[6-(dimethylamino)naphthalen-2-yl]propan-1-one",
+     "formula": "C15 H17 N O",
+     "mw": 227.302
+    },
+    {
+     "id": "CA",
+     "name": "CALCIUM ION",
+     "formula": "Ca",
+     "mw": 40.078
+    },
+    {
+     "id": "BGC",
+     "name": "beta-D-glucopyranose",
+     "formula": "C6 H12 O6",
+     "mw": 180.156
+    },
+    {
+     "id": "GLC",
+     "name": "alpha-D-glucopyranose",
+     "formula": "C6 H12 O6",
+     "mw": 180.156
+    }
+   ]
+  },
+  "7X0H": {
+   "title": "Crystal structure of sugar binding protein CbpA complexed wtih glucose from Clostridium thermocellum",
+   "ligs": [
+    {
+     "id": "BGC",
+     "name": "beta-D-glucopyranose",
+     "formula": "C6 H12 O6",
+     "mw": 180.156
+    }
+   ]
+  },
+  "6SW4": {
+   "title": "The structure of AraP, an arabinose binding protein from Geobacillus stearothermophilus",
+   "ligs": []
+  },
+  "5YSZ": {
+   "title": "transcriptional regulator CelR-cellobiose complex",
+   "ligs": [
+    {
+     "id": "GOL",
+     "name": "GLYCEROL",
+     "formula": "C3 H8 O3",
+     "mw": 92.094
+    }
+   ]
+  },
+  "5XSJ": {
+   "title": "XylFII-LytSN complex",
+   "ligs": [
+    {
+     "id": "XYP",
+     "name": "beta-D-xylopyranose",
+     "formula": "C5 H10 O5",
+     "mw": 150.13
+    }
+   ]
+  },
+  "5ULB": {
+   "title": "Crystal structure of sugar ABC transporter from Yersinia enterocolitica subsp. enterocolitica 8081",
+   "ligs": [
+    {
+     "id": "8GA",
+     "name": "5-Se-methyl-5-seleno-alpha-D-ribofuranose",
+     "formula": "C6 H12 O4 Se",
+     "mw": 227.117
+    },
+    {
+     "id": "8GG",
+     "name": "5-Se-methyl-5-seleno-beta-D-ribofuranose",
+     "formula": "C6 H12 O4 Se",
+     "mw": 227.117
+    }
+   ]
+  },
+  "5KWS": {
+   "title": "Crystal Structure of Galactose Binding Protein from Yersinia pestis in the Complex with beta D Glucose",
+   "ligs": [
+    {
+     "id": "NA",
+     "name": "SODIUM ION",
+     "formula": "Na",
+     "mw": 22.99
+    },
+    {
+     "id": "EDO",
+     "name": "1,2-ETHANEDIOL",
+     "formula": "C2 H6 O2",
+     "mw": 62.068
+    },
+    {
+     "id": "ACY",
+     "name": "ACETIC ACID",
+     "formula": "C2 H4 O2",
+     "mw": 60.052
+    },
+    {
+     "id": "GOL",
+     "name": "GLYCEROL",
+     "formula": "C3 H8 O3",
+     "mw": 92.094
+    },
+    {
+     "id": "CA",
+     "name": "CALCIUM ION",
+     "formula": "Ca",
+     "mw": 40.078
+    },
+    {
+     "id": "BGC",
+     "name": "beta-D-glucopyranose",
+     "formula": "C6 H12 O6",
+     "mw": 180.156
+    }
+   ]
+  },
+  "4YS6": {
+   "title": "CRYSTAL STRUCTURE OF AN ABC TRANSPORTER SOLUTE BINDING PROTEIN (IPR025997) FROM CLOSTRIDIUM PHYTOFERMENTANS (Cphy_1585, TARGET EFI-511156) WITH BOUND BETA-D-GLUCOSE",
+   "ligs": [
+    {
+     "id": "NA",
+     "name": "SODIUM ION",
+     "formula": "Na",
+     "mw": 22.99
+    },
+    {
+     "id": "BGC",
+     "name": "beta-D-glucopyranose",
+     "formula": "C6 H12 O6",
+     "mw": 180.156
+    },
+    {
+     "id": "CL",
+     "name": "CHLORIDE ION",
+     "formula": "Cl",
+     "mw": 35.453
+    }
+   ]
+  },
+  "4RY8": {
+   "title": "Crystal structure of 5-methylthioribose transporter solute binding protein TLET_1677 from Thermotoga lettingae TMO TARGET EFI-511109 in complex with 5-methylthioribose",
+   "ligs": [
+    {
+     "id": "SR1",
+     "name": "5-S-methyl-5-thio-alpha-D-ribofuranose",
+     "formula": "C6 H12 O4 S",
+     "mw": 180.222
+    }
+   ]
+  },
+  "4KQC": {
+   "title": "ABC transporter, LacI family transcriptional regulator from Brachyspira murdochii",
+   "ligs": [
+    {
+     "id": "NO3",
+     "name": "NITRATE ION",
+     "formula": "N O3",
+     "mw": 62.005
+    }
+   ]
+  },
+  "3ROT": {
+   "title": "Crystal structure of ABC sugar transporter (periplasmic sugar binding protein) from Legionella pneumophila",
+   "ligs": [
+    {
+     "id": "GOL",
+     "name": "GLYCEROL",
+     "formula": "C3 H8 O3",
+     "mw": 92.094
+    }
+   ]
+  },
+  "3O1I": {
+   "title": "Crystal Structure of the TorS sensor domain - TorT complex in the absence of ligand",
+   "ligs": [
+    {
+     "id": "PE4",
+     "name": "2-{2-[2-(2-{2-[2-(2-ETHOXY-ETHOXY)-ETHOXY]-ETHOXY}-ETHOXY)-ETHOXY]-ETHOXY}-ETHANOL",
+     "formula": "C16 H34 O8",
+     "mw": 354.436
+    }
+   ]
+  },
+  "3H75": {
+   "title": "Crystal Structure of a Periplasmic Sugar-binding protein from the Pseudomonas fluorescens",
+   "ligs": [
+    {
+     "id": "SO4",
+     "name": "SULFATE ION",
+     "formula": "O4 S",
+     "mw": 96.063
+    },
+    {
+     "id": "GOL",
+     "name": "GLYCEROL",
+     "formula": "C3 H8 O3",
+     "mw": 92.094
+    }
+   ]
+  },
+  "3G1W": {
+   "title": "Crystal structure of sugar ABC transporter (sugar-binding protein) from Bacillus halodurans",
+   "ligs": []
+  },
+  "2QVC": {
+   "title": "Crystal structure of a periplasmic sugar ABC transporter from Thermotoga maritima",
+   "ligs": [
+    {
+     "id": "BGC",
+     "name": "beta-D-glucopyranose",
+     "formula": "C6 H12 O6",
+     "mw": 180.156
+    }
+   ]
+  },
+  "2PUA": {
+   "title": "CRYSTAL STRUCTURE OF THE LACI FAMILY MEMBER, PURR, BOUND TO DNA: MINOR GROOVE BINDING BY ALPHA HELICES",
+   "ligs": [
+    {
+     "id": "6MP",
+     "name": "6-METHYLPURINE",
+     "formula": "C6 H6 N4",
+     "mw": 134.139
+    }
+   ]
+  },
+  "2IPN": {
+   "title": "Crystal structure of a disulfide mutant glucose binding protein",
+   "ligs": [
+    {
+     "id": "CA",
+     "name": "CALCIUM ION",
+     "formula": "Ca",
+     "mw": 40.078
+    },
+    {
+     "id": "BGC",
+     "name": "beta-D-glucopyranose",
+     "formula": "C6 H12 O6",
+     "mw": 180.156
+    }
+   ]
+  },
+  "2IPM": {
+   "title": "Crystal structure of a disulfide mutant glucose binding protein",
+   "ligs": [
+    {
+     "id": "CA",
+     "name": "CALCIUM ION",
+     "formula": "Ca",
+     "mw": 40.078
+    },
+    {
+     "id": "BGC",
+     "name": "beta-D-glucopyranose",
+     "formula": "C6 H12 O6",
+     "mw": 180.156
+    }
+   ]
+  },
+  "1JX6": {
+   "title": "CRYSTAL STRUCTURE OF LUXP FROM VIBRIO HARVEYI COMPLEXED WITH AUTOINDUCER-2",
+   "ligs": [
+    {
+     "id": "CA",
+     "name": "CALCIUM ION",
+     "formula": "Ca",
+     "mw": 40.078
+    },
+    {
+     "id": "AI2",
+     "name": "3A-METHYL-5,6-DIHYDRO-FURO[2,3-D][1,3,2]DIOXABOROLE-2,2,6,6A-TETRAOL",
+     "formula": "C5 H10 B O7",
+     "mw": 192.94
+    }
+   ]
+  },
+  "3BBL": {
+   "title": "Crystal structure of a regulatory protein of LacI family from Chloroflexus aggregans",
+   "ligs": [
+    {
+     "id": "EDO",
+     "name": "1,2-ETHANEDIOL",
+     "formula": "C2 H6 O2",
+     "mw": 62.068
+    }
+   ]
+  },
+  "3E3M": {
+   "title": "Crystal structure of a LacI family transcriptional regulator from Silicibacter pomeroyi",
+   "ligs": []
+  },
+  "2PUE": {
+   "title": "CRYSTAL STRUCTURE OF THE LACI FAMILY MEMBER, PURR, BOUND TO DNA: MINOR GROOVE BINDING BY ALPHA HELICES",
+   "ligs": [
+    {
+     "id": "ADE",
+     "name": "ADENINE",
+     "formula": "C5 H5 N5",
+     "mw": 135.127
+    }
+   ]
+  },
+  "1BDH": {
+   "title": "PURINE REPRESSOR MUTANT-HYPOXANTHINE-PALINDROMIC OPERATOR COMPLEX",
+   "ligs": [
+    {
+     "id": "HPA",
+     "name": "HYPOXANTHINE",
+     "formula": "C5 H4 N4 O",
+     "mw": 136.111
+    }
+   ]
+  },
+  "3OQO": {
+   "title": "Ccpa-hpr-ser46p-syn cre",
+   "ligs": [
+    {
+     "id": "SO4",
+     "name": "SULFATE ION",
+     "formula": "O4 S",
+     "mw": 96.063
+    }
+   ]
+  },
+  "1JYE": {
+   "title": "Structure of a Dimeric Lac Repressor with C-terminal Deletion and K84L Substitution",
+   "ligs": [
+    {
+     "id": "GOL",
+     "name": "GLYCEROL",
+     "formula": "C3 H8 O3",
+     "mw": 92.094
+    }
+   ]
+  },
+  "5ABP": {
+   "title": "SUBSTRATE SPECIFICITY AND AFFINITY OF A PROTEIN MODULATED BY BOUND WATER MOLECULES",
+   "ligs": [
+    {
+     "id": "GLA",
+     "name": "alpha-D-galactopyranose",
+     "formula": "C6 H12 O6",
+     "mw": 180.156
+    },
+    {
+     "id": "GAL",
+     "name": "beta-D-galactopyranose",
+     "formula": "C6 H12 O6",
+     "mw": 180.156
+    }
+   ]
+  },
+  "1LBI": {
+   "title": "LAC REPRESSOR",
+   "ligs": []
+  },
+  "1BAP": {
+   "title": "A PRO TO GLY MUTATION IN THE HINGE OF THE ARABINOSE-BINDING PROTEIN ENHANCES BINDING AND ALTERS SPECIFICITY: SUGAR-BINDING AND CRYSTALLOGRAPHIC STUDIES",
+   "ligs": [
+    {
+     "id": "ARB",
+     "name": "beta-L-arabinopyranose",
+     "formula": "C5 H10 O5",
+     "mw": 150.13
+    },
+    {
+     "id": "ARA",
+     "name": "alpha-L-arabinopyranose",
+     "formula": "C5 H10 O5",
+     "mw": 150.13
+    }
+   ]
+  },
+  "1RZR": {
+   "title": "crystal structure of transcriptional regulator-phosphoprotein-DNA complex",
+   "ligs": [
+    {
+     "id": "SO4",
+     "name": "SULFATE ION",
+     "formula": "O4 S",
+     "mw": 96.063
+    },
+    {
+     "id": "MG",
+     "name": "MAGNESIUM ION",
+     "formula": "Mg",
+     "mw": 24.305
+    }
+   ]
+  },
+  "4YP9": {
+   "title": "Crystal Structure of LuxP In Complex With a Formose Derived AI-2 Analogue",
+   "ligs": [
+    {
+     "id": "MG",
+     "name": "MAGNESIUM ION",
+     "formula": "Mg",
+     "mw": 24.305
+    },
+    {
+     "id": "A1B",
+     "name": "1-deoxy-alpha-L-xylulofuranose-1,2-borate",
+     "formula": "C5 H10 B O6",
+     "mw": 176.94
+    },
+    {
+     "id": "CA",
+     "name": "CALCIUM ION",
+     "formula": "Ca",
+     "mw": 40.078
+    }
+   ]
+  },
+  "8ABP": {
+   "title": "SUGAR-BINDING AND CRYSTALLOGRAPHIC STUDIES OF AN ARABINOSE-BINDING PROTEIN MUTANT (MET108LEU) WHICH EXHIBITS ENHANCED AFFINITY AND ALTERED SPECIFICITY",
+   "ligs": [
+    {
+     "id": "GAL",
+     "name": "beta-D-galactopyranose",
+     "formula": "C6 H12 O6",
+     "mw": 180.156
+    },
+    {
+     "id": "GLA",
+     "name": "alpha-D-galactopyranose",
+     "formula": "C6 H12 O6",
+     "mw": 180.156
+    }
+   ]
+  },
+  "2HJ9": {
+   "title": "Crystal structure of the Autoinducer-2-bound form of Vibrio harveyi LuxP complexed with the periplasmic domain of LuxQ",
+   "ligs": [
+    {
+     "id": "AI2",
+     "name": "3A-METHYL-5,6-DIHYDRO-FURO[2,3-D][1,3,2]DIOXABOROLE-2,2,6,6A-TETRAOL",
+     "formula": "C5 H10 B O7",
+     "mw": 192.94
+    }
+   ]
+  },
+  "3K4H": {
+   "title": "CRYSTAL STRUCTURE OF putative transcriptional regulator LacI from Bacillus cereus subsp. cytotoxis NVH 391-98",
+   "ligs": []
+  },
+  "1JYF": {
+   "title": "Structure of the Dimeric Lac Repressor with an 11-residue C-terminal Deletion.",
+   "ligs": [
+    {
+     "id": "GOL",
+     "name": "GLYCEROL",
+     "formula": "C3 H8 O3",
+     "mw": 92.094
+    }
+   ]
+  },
+  "2NZU": {
+   "title": "Structural mechanism for the fine-tuning of CcpA function by the small molecule effectors G6P and FBP",
+   "ligs": [
+    {
+     "id": "BG6",
+     "name": "6-O-phosphono-beta-D-glucopyranose",
+     "formula": "C6 H13 O9 P",
+     "mw": 260.136
+    },
+    {
+     "id": "SO4",
+     "name": "SULFATE ION",
+     "formula": "O4 S",
+     "mw": 96.063
+    }
+   ]
+  },
+  "3TB6": {
+   "title": "Structure of the effector-binding domain of arabinose repressor AraR from Bacillus subtilis",
+   "ligs": [
+    {
+     "id": "ARB",
+     "name": "beta-L-arabinopyranose",
+     "formula": "C5 H10 O5",
+     "mw": 150.13
+    },
+    {
+     "id": "GOL",
+     "name": "GLYCEROL",
+     "formula": "C3 H8 O3",
+     "mw": 92.094
+    }
+   ]
+  },
+  "7X7H": {
+   "title": "Crystal structure of Fructose regulator/Histidine phosphocarrier protein complex from Vibrio cholerae",
+   "ligs": [
+    {
+     "id": "CA",
+     "name": "CALCIUM ION",
+     "formula": "Ca",
+     "mw": 40.078
+    }
+   ]
+  },
+  "4O5A": {
+   "title": "The crystal structure of a LacI family transcriptional regulator from Bifidobacterium animalis subsp. lactis DSM 10140",
+   "ligs": [
+    {
+     "id": "SO4",
+     "name": "SULFATE ION",
+     "formula": "O4 S",
+     "mw": 96.063
+    },
+    {
+     "id": "GOL",
+     "name": "GLYCEROL",
+     "formula": "C3 H8 O3",
+     "mw": 92.094
+    }
+   ]
+  },
+  "3BRQ": {
+   "title": "Crystal structure of the Escherichia coli transcriptional repressor ascG",
+   "ligs": [
+    {
+     "id": "FRU",
+     "name": "beta-D-fructofuranose",
+     "formula": "C6 H12 O6",
+     "mw": 180.156
+    },
+    {
+     "id": "SO4",
+     "name": "SULFATE ION",
+     "formula": "O4 S",
+     "mw": 96.063
+    },
+    {
+     "id": "NA",
+     "name": "SODIUM ION",
+     "formula": "Na",
+     "mw": 22.99
+    }
+   ]
+  },
+  "3EGC": {
+   "title": "Crystal structure of a putative ribose operon repressor from Burkholderia thailandensis",
+   "ligs": []
+  },
+  "1DBQ": {
+   "title": "DNA-BINDING REGULATORY PROTEIN",
+   "ligs": [
+    {
+     "id": "MG",
+     "name": "MAGNESIUM ION",
+     "formula": "Mg",
+     "mw": 24.305
+    }
+   ]
+  },
+  "3KKE": {
+   "title": "Crystal structure of a LacI family transcriptional regulator from Mycobacterium smegmatis",
+   "ligs": [
+    {
+     "id": "ACT",
+     "name": "ACETATE ION",
+     "formula": "C2 H3 O2",
+     "mw": 59.044
+    }
+   ]
+  },
+  "3C3K": {
+   "title": "Crystal structure of an uncharacterized protein from Actinobacillus succinogenes",
+   "ligs": [
+    {
+     "id": "CL",
+     "name": "CHLORIDE ION",
+     "formula": "Cl",
+     "mw": 35.453
+    },
+    {
+     "id": "GOL",
+     "name": "GLYCEROL",
+     "formula": "C3 H8 O3",
+     "mw": 92.094
+    }
+   ]
+  },
+  "3HCW": {
+   "title": "CRYSTAL STRUCTURE OF PROBABLE maltose operon transcriptional repressor malR FROM STAPHYLOCOCCUS AREUS",
+   "ligs": [
+    {
+     "id": "GOL",
+     "name": "GLYCEROL",
+     "formula": "C3 H8 O3",
+     "mw": 92.094
+    }
+   ]
+  },
+  "7FF4": {
+   "title": "The crystal structure of Clostridium cellulolyticum LacI family transcriptional regulator Ccel_1438",
+   "ligs": []
+  },
+  "3MIZ": {
+   "title": "Crystal structure of a putative transcriptional regulator protein, Lacl family from Rhizobium etli",
+   "ligs": []
+  },
+  "4RZS": {
+   "title": "Lac repressor engineered to bind sucralose, unliganded tetramer",
+   "ligs": [
+    {
+     "id": "GOL",
+     "name": "GLYCEROL",
+     "formula": "C3 H8 O3",
+     "mw": 92.094
+    }
+   ]
+  },
+  "2IKS": {
+   "title": "Crystal structure of N-terminal truncated DNA-binding transcriptional dual regulator from Escherichia coli K12",
+   "ligs": []
+  },
+  "3H5T": {
+   "title": "Crystal structure of a transcriptional regulator, Lacl family protein from Corynebacterium glutamicum",
+   "ligs": []
+  },
+  "3CS3": {
+   "title": "Crystal structure of sugar-binding transcriptional regulator (LacI family) from Enterococcus faecalis",
+   "ligs": [
+    {
+     "id": "GOL",
+     "name": "GLYCEROL",
+     "formula": "C3 H8 O3",
+     "mw": 92.094
+    },
+    {
+     "id": "SO4",
+     "name": "SULFATE ION",
+     "formula": "O4 S",
+     "mw": 96.063
+    }
+   ]
+  },
+  "7E5W": {
+   "title": "The structure of CcpA from Staphylococcus aureus",
+   "ligs": [
+    {
+     "id": "SO4",
+     "name": "SULFATE ION",
+     "formula": "O4 S",
+     "mw": 96.063
+    }
+   ]
+  },
+  "7DOB": {
+   "title": "Crystal structure of Catabolite repressor activator (Apo)",
+   "ligs": [
+    {
+     "id": "MG",
+     "name": "MAGNESIUM ION",
+     "formula": "Mg",
+     "mw": 24.305
+    },
+    {
+     "id": "PO4",
+     "name": "PHOSPHATE ION",
+     "formula": "O4 P",
+     "mw": 94.971
+    },
+    {
+     "id": "EDO",
+     "name": "1,2-ETHANEDIOL",
+     "formula": "C2 H6 O2",
+     "mw": 62.068
+    }
+   ]
+  },
+  "4RZT": {
+   "title": "Lac repressor engineered to bind sucralose, sucralose-bound tetramer",
+   "ligs": []
+  },
+  "4RK1": {
+   "title": "Crystal structure of LacI family transcriptional regulator from Enterococcus faecium, Target EFI-512930, with bound ribose",
+   "ligs": [
+    {
+     "id": "RIB",
+     "name": "alpha-D-ribofuranose",
+     "formula": "C5 H10 O5",
+     "mw": 150.13
+    },
+    {
+     "id": "CL",
+     "name": "CHLORIDE ION",
+     "formula": "Cl",
+     "mw": 35.453
+    }
+   ]
+  },
+  "4KZK": {
+   "title": "The structure of the periplasmic L-arabinose binding protein from Burkholderia thailandensis",
+   "ligs": [
+    {
+     "id": "GAL",
+     "name": "beta-D-galactopyranose",
+     "formula": "C6 H12 O6",
+     "mw": 180.156
+    }
+   ]
+  },
+  "3O1H": {
+   "title": "Crystal Structure of the TorS sensor domain - TorT complex in the presence of TMAO",
+   "ligs": [
+    {
+     "id": "TMO",
+     "name": "trimethylamine oxide",
+     "formula": "C3 H9 N O",
+     "mw": 75.11
+    }
+   ]
+  },
+  "3KJX": {
+   "title": "Crystal structure of a transcriptional regulator, Lacl family protein from Silicibacter pomeroyi",
+   "ligs": []
+  },
+  "3JVD": {
+   "title": "Crystal structure of putative transcription regulation repressor (LACI family) FROM Corynebacterium glutamicum",
+   "ligs": [
+    {
+     "id": "SO4",
+     "name": "SULFATE ION",
+     "formula": "O4 S",
+     "mw": 96.063
+    },
+    {
+     "id": "GOL",
+     "name": "GLYCEROL",
+     "formula": "C3 H8 O3",
+     "mw": 92.094
+    }
+   ]
+  },
+  "3HUU": {
+   "title": "Crystal structure of transcription regulator like protein from Staphylococcus haemolyticus",
+   "ligs": []
+  },
+  "3H5O": {
+   "title": "The crystal structure of transcription regulator GntR from Chromobacterium violaceum",
+   "ligs": [
+    {
+     "id": "SO4",
+     "name": "SULFATE ION",
+     "formula": "O4 S",
+     "mw": 96.063
+    }
+   ]
+  },
+  "3GBV": {
+   "title": "Crystal structure of a putative LacI transcriptional regulator from Bacteroides fragilis",
+   "ligs": [
+    {
+     "id": "EDO",
+     "name": "1,2-ETHANEDIOL",
+     "formula": "C2 H6 O2",
+     "mw": 62.068
+    },
+    {
+     "id": "NA",
+     "name": "SODIUM ION",
+     "formula": "Na",
+     "mw": 22.99
+    }
+   ]
+  },
+  "3D8U": {
+   "title": "The crystal structure of a PurR family transcriptional regulator from Vibrio parahaemolyticus RIMD 2210633",
+   "ligs": []
+  },
+  "3CTP": {
+   "title": "Crystal structure of periplasmic binding protein/LacI transcriptional regulator from Alkaliphilus metalliredigens QYMF complexed with D-xylulofuranose",
+   "ligs": [
+    {
+     "id": "NA",
+     "name": "SODIUM ION",
+     "formula": "Na",
+     "mw": 22.99
+    },
+    {
+     "id": "XLF",
+     "name": "beta-D-xylulofuranose",
+     "formula": "C5 H10 O5",
+     "mw": 150.13
+    }
+   ]
+  },
+  "2QU7": {
+   "title": "Crystal structure of a putative transcription regulator from Staphylococcus saprophyticus subsp. saprophyticus",
+   "ligs": [
+    {
+     "id": "CL",
+     "name": "CHLORIDE ION",
+     "formula": "Cl",
+     "mw": 35.453
+    }
+   ]
+  },
+  "2PE5": {
+   "title": "Crystal Structure of the Lac Repressor bound to ONPG in repressed state",
+   "ligs": [
+    {
+     "id": "145",
+     "name": "2-nitrophenyl beta-D-galactopyranoside",
+     "formula": "C12 H15 N O8",
+     "mw": 301.249
+    }
+   ]
+  },
+  "2JCG": {
+   "title": "Apo form of the catabolite control protein A (ccpA) from bacillus megaterium, with the DNA binding domain",
+   "ligs": [
+    {
+     "id": "CA",
+     "name": "CALCIUM ION",
+     "formula": "Ca",
+     "mw": 40.078
+    }
+   ]
+  },
+  "1ZVV": {
+   "title": "Crystal structure of a ccpa-crh-dna complex",
+   "ligs": [
+    {
+     "id": "IOD",
+     "name": "IODIDE ION",
+     "formula": "I",
+     "mw": 126.904
+    }
+   ]
+  },
+  "1TLF": {
+   "title": "UNPRECEDENTED QUATERNARY STRUCTURE OF E. COLI LAC REPRESSOR CORE TETRAMER: IMPLICATIONS FOR DNA LOOPING",
+   "ligs": [
+    {
+     "id": "IPT",
+     "name": "1-methylethyl 1-thio-beta-D-galactopyranoside",
+     "formula": "C9 H18 O5 S",
+     "mw": 238.301
+    },
+    {
+     "id": "EMC",
+     "name": "ETHYL MERCURY ION",
+     "formula": "C2 H5 Hg",
+     "mw": 229.651
+    }
+   ]
+  },
+  "1EFA": {
+   "title": "CRYSTAL STRUCTURE OF THE LAC REPRESSOR DIMER BOUND TO OPERATOR AND THE ANTI-INDUCER ONPF",
+   "ligs": [
+    {
+     "id": "NPF",
+     "name": "2-nitrophenyl beta-D-fucopyranoside",
+     "formula": "C12 H15 N O7",
+     "mw": 285.25
+    }
+   ]
+  }
+ },
+ "meta": {
+  "2IOY": {
+   "tm": 0.8956,
+   "fid": 0.223,
+   "ev": 4.193e-23,
+   "title": "2ioy-assembly2_B Crystal structure of Thermoanaerobacter tengcongensis ribose binding protein"
+  },
+  "5OCP": {
+   "tm": 0.9197,
+   "fid": 0.236,
+   "ev": 1.077e-21,
+   "title": "5ocp-assembly2_B The periplasmic binding protein component of the arabinose ABC transporter from Shewanella sp. ANA-3 bound to alpha and beta-L-arabinofuranose"
+  },
+  "2GX6": {
+   "tm": 0.9156,
+   "fid": 0.208,
+   "ev": 5.296e-21,
+   "title": "2gx6-assembly1_A Rational stabilization of E. coli ribose binding protein"
+  },
+  "1DRJ": {
+   "tm": 0.9147,
+   "fid": 0.201,
+   "ev": 6.706e-21,
+   "title": "1drj-assembly1_A PROBING PROTEIN-PROTEIN INTERACTIONS: THE RIBOSE-BINDING PROTEIN IN BACTERIAL TRANSPORT AND CHEMOTAXIS"
+  },
+  "7E7M": {
+   "tm": 0.9132,
+   "fid": 0.223,
+   "ev": 2.06e-21,
+   "title": "7e7m-assembly4_D Crystal Structure Analysis of the Streptococcus agalactiae Ribose Binding Protein RbsB"
+  },
+  "4RSM": {
+   "tm": 0.8812,
+   "fid": 0.25,
+   "ev": 1.627e-21,
+   "title": "4rsm-assembly3_C Crystal structure of carbohydrate transporter msmeg_3599 from mycobacterium smegmatis str. mc2 155, target efi-510970, in complex with d-threitol"
+  },
+  "1DBP": {
+   "tm": 0.9058,
+   "fid": 0.203,
+   "ev": 4.183e-21,
+   "title": "1dbp-assembly1_A IDENTICAL MUTATIONS AT CORRESPONDING POSITIONS IN TWO HOMOLOGOUS PROTEINS WITH NON-IDENTICAL EFFECTS"
+  },
+  "4RY0": {
+   "tm": 0.8598,
+   "fid": 0.199,
+   "ev": 1.446e-21,
+   "title": "4ry0-assembly1_A Crystal structure of ribose transporter solute binding protein RHE_PF00037 from Rhizobium etli CFN 42, TARGET EFI-511357, in complex with D-ribose"
+  },
+  "2VK2": {
+   "tm": 0.9037,
+   "fid": 0.191,
+   "ev": 6.706e-21,
+   "title": "2vk2-assembly1_A Crystal structure of a galactofuranose binding protein"
+  },
+  "1DRK": {
+   "tm": 0.9124,
+   "fid": 0.201,
+   "ev": 4.432e-20,
+   "title": "1drk-assembly1_A PROBING PROTEIN-PROTEIN INTERACTIONS: THE RIBOSE-BINDING PROTEIN IN BACTERIAL TRANSPORT AND CHEMOTAXIS"
+  },
+  "5HKO": {
+   "tm": 0.8891,
+   "fid": 0.243,
+   "ev": 2.606e-20,
+   "title": "5hko-assembly1_A Crystal structure of ABC transporter Solute Binding Protein MSMEG_3598 from Mycobacterium smegmatis str. MC2 155, target EFI-510969, in complex with L-sorbitol"
+  },
+  "5DTE": {
+   "tm": 0.9038,
+   "fid": 0.214,
+   "ev": 2.932e-20,
+   "title": "5dte-assembly3_C Crystal Structure of an ABC transporter periplasmic solute binding protein (IPR025997) from Actinobacillus succinogenes 130z(Asuc_0081, TARGET EFI-511065) with bound D-allose"
+  },
+  "4ZJP": {
+   "tm": 0.8964,
+   "fid": 0.169,
+   "ev": 8.998e-20,
+   "title": "4zjp-assembly1_A Structure of an ABC-Transporter Solute Binding Protein (SBP_IPR025997) from Actinobacillus Succinogenes (Asuc_0197, TARGET EFI-511067) with bound beta-D-ribopyranose"
+  },
+  "4YO7": {
+   "tm": 0.8875,
+   "fid": 0.197,
+   "ev": 3.3e-20,
+   "title": "4yo7-assembly1_A Crystal Structure of an ABC transporter solute binding protein (IPR025997) from Bacillus halodurans C-125 (BH2323, TARGET EFI-511484) with bound myo-inositol"
+  },
+  "6HYH": {
+   "tm": 0.9083,
+   "fid": 0.221,
+   "ev": 1.282e-19,
+   "title": "6hyh-assembly1_A Crystal structure of MSMEG_1712 from Mycobacterium smegmatis in complex with Beta-D-Fucofuranose"
+  },
+  "4PE6": {
+   "tm": 0.8654,
+   "fid": 0.237,
+   "ev": 7.996e-20,
+   "title": "4pe6-assembly1_A Crystal structure of ABC transporter solute binding protein from Thermobispora bispora DSM 43833"
+  },
+  "2FN8": {
+   "tm": 0.8387,
+   "fid": 0.188,
+   "ev": 2.058e-20,
+   "title": "2fn8-assembly1_A Thermotoga maritima Ribose Binding Protein Ribose Bound Form"
+  },
+  "1URP": {
+   "tm": 0.7561,
+   "fid": 0.205,
+   "ev": 7.547e-21,
+   "title": "1urp-assembly1_A D-RIBOSE-BINDING PROTEIN FROM ESCHERICHIA COLI"
+  },
+  "2X7X": {
+   "tm": 0.9088,
+   "fid": 0.2,
+   "ev": 2.31e-18,
+   "title": "2x7x-assembly1_B Fructose binding periplasmic domain of hybrid two component system BT1754"
+  },
+  "4YV7": {
+   "tm": 0.8956,
+   "fid": 0.207,
+   "ev": 7.098e-19,
+   "title": "4yv7-assembly1_A CRYSTAL STRUCTURE OF AN ABC TRANSPORTER SOLUTE BINDING PROTEIN (IPR025997) FROM MYCOBACTERIUM SMEGMATIS (MSMEI_3018, TARGET EFI-511327) WITH BOUND GLYCEROL"
+  },
+  "4RY9": {
+   "tm": 0.8859,
+   "fid": 0.232,
+   "ev": 2.761e-19,
+   "title": "4ry9-assembly2_B Crystal structure of carbohydrate transporter solute binding protein VEIS_2079 from Verminephrobacter eiseniae EF01-2, TARGET EFI-511009, a complex with D-TALITOL"
+  },
+  "4JOQ": {
+   "tm": 0.7925,
+   "fid": 0.252,
+   "ev": 1.625e-20,
+   "title": "4joq-assembly1_B Putative ribose ABC transporter, periplasmic solute-binding protein from Rhodobacter sphaeroides"
+  },
+  "5DKV": {
+   "tm": 0.8407,
+   "fid": 0.22,
+   "ev": 1.282e-19,
+   "title": "5dkv-assembly4_D Crystal Structure of an ABC transporter Solute Binding Protein from Agrobacterium vitis(Avis_5339, TARGET EFI-511225) bound with alpha-D-Tagatopyranose"
+  },
+  "4WUT": {
+   "tm": 0.8854,
+   "fid": 0.195,
+   "ev": 5.278e-18,
+   "title": "4wut-assembly1_A CRYSTAL STRUCTURE OF AN ABC TRANSPORTER SOLUTE BINDING PROTEIN (IPR025997) FROM AGROBACTERIUM VITIS (Avi_5133, TARGET EFI-511220) WITH BOUND D-FUCOSE"
+  },
+  "2FN9": {
+   "tm": 0.8137,
+   "fid": 0.184,
+   "ev": 2.929e-19,
+   "title": "2fn9-assembly2_B Thermotoga maritima Ribose Binding Protein Unliganded Form"
+  },
+  "1BA2": {
+   "tm": 0.6941,
+   "fid": 0.203,
+   "ev": 6.699e-20,
+   "title": "1ba2-assembly2_B D67R MUTANT OF D-RIBOSE-BINDING PROTEIN FROM ESCHERICHIA COLI"
+  },
+  "7X0P": {
+   "tm": 0.8896,
+   "fid": 0.197,
+   "ev": 2.051e-17,
+   "title": "7x0p-assembly1_A Crystal structure of sugar binding protein CbpD from Clostridium thermocellum"
+  },
+  "3L6U": {
+   "tm": 0.8736,
+   "fid": 0.163,
+   "ev": 2.922e-17,
+   "title": "3l6u-assembly1_B Crystal structure of abc-type sugar transport system, Periplasmic component from exiguobacterium sibiricum"
+  },
+  "2RJO": {
+   "tm": 0.8107,
+   "fid": 0.175,
+   "ev": 1.935e-18,
+   "title": "2rjo-assembly1_A Crystal structure of Twin-arginine translocation pathway signal protein from Burkholderia phytofirmans"
+  },
+  "4IRX": {
+   "tm": 0.8754,
+   "fid": 0.183,
+   "ev": 2.755e-17,
+   "title": "4irx-assembly2_B Crystal structure of Caulobacter myo-inositol binding protein bound to myo-inositol"
+  },
+  "4RWE": {
+   "tm": 0.7879,
+   "fid": 0.209,
+   "ev": 3.929e-18,
+   "title": "4rwe-assembly1_A The crystal structure of a sugar-binding transport protein from Yersinia pestis CO92"
+  },
+  "5HQJ": {
+   "tm": 0.8689,
+   "fid": 0.188,
+   "ev": 1.822e-17,
+   "title": "5hqj-assembly1_A Crystal structure of ABC transporter Solute Binding Protein B1G1H7 from Burkholderia graminis C4D1M, target EFI-511179, in complex with D-arabinose"
+  },
+  "3KSM": {
+   "tm": 0.8789,
+   "fid": 0.185,
+   "ev": 6.675e-17,
+   "title": "3ksm-assembly2_A Crystal structure of ABC-type sugar transport system, periplasmic component from Hahella chejuensis"
+  },
+  "4RXT": {
+   "tm": 0.8482,
+   "fid": 0.16,
+   "ev": 1.357e-17,
+   "title": "4rxt-assembly1_A Crystal structure of carbohydrate transporter solute binding protein Arad_9553 from Agrobacterium Radiobacter, Target EFI-511541, in complex with D-arabinose"
+  },
+  "4YLE": {
+   "tm": 0.8394,
+   "fid": 0.213,
+   "ev": 2.597e-17,
+   "title": "4yle-assembly1_A Crystal structure of an ABC transpoter solute binding protein (IPR025997) from Burkholderia multivorans (Bmul_1631, Target EFI-511115) with an unknown ligand modelled as alpha-D-erythrofuranose"
+  },
+  "4RXM": {
+   "tm": 0.8965,
+   "fid": 0.192,
+   "ev": 3.096e-16,
+   "title": "4rxm-assembly2_B Crystal structure of periplasmic ABC transporter solute binding protein A7JW62 from Mannheimia haemolytica PHL213, Target EFI-511105, in complex with Myo-inositol"
+  },
+  "8WLB": {
+   "tm": 0.8606,
+   "fid": 0.2,
+   "ev": 1.618e-16,
+   "title": "8wlb-assembly1_A X-ray structure of Enterobacter cloacae allose-binding protein in complex with D-psicose"
+  },
+  "3L49": {
+   "tm": 0.8712,
+   "fid": 0.213,
+   "ev": 1.07e-16,
+   "title": "3l49-assembly1_A CRYSTAL STRUCTURE OF ABC SUGAR TRANSPORTER SUBUNIT FROM Rhodobacter sphaeroides 2.4.1"
+  },
+  "3C6Q": {
+   "tm": 0.8626,
+   "fid": 0.174,
+   "ev": 1.618e-16,
+   "title": "3c6q-assembly3_C Apo and ligand-bound form of a thermophilic glucose/xylose binding protein"
+  },
+  "4WZZ": {
+   "tm": 0.7995,
+   "fid": 0.168,
+   "ev": 3.704e-18,
+   "title": "4wzz-assembly1_A CRYSTAL STRUCTURE OF AN ABC TRANSPORTER SOLUTE BINDING PROTEIN (IPR025997) FROM CLOSTRIDIUM PHYTOFERMENTAS (Cphy_0583, TARGET EFI-511148) WITH BOUND L-RHAMNOSE"
+  },
+  "4YWH": {
+   "tm": 0.8629,
+   "fid": 0.177,
+   "ev": 2.751e-16,
+   "title": "4ywh-assembly2_B CRYSTAL STRUCTURE OF AN ABC TRANSPORTER SOLUTE BINDING PROTEIN (IPR025997) FROM ACTINOBACILLUS SUCCINOGENES 130Z (Asuc_0499, TARGET EFI-511068) WITH BOUND D-XYLOSE"
+  },
+  "4KQ9": {
+   "tm": 0.8221,
+   "fid": 0.179,
+   "ev": 3.288e-17,
+   "title": "4kq9-assembly1_A Crystal structure of periplasmic ribose ABC transporter from Conexibacter woesei DSM 14684"
+  },
+  "6GQ0": {
+   "tm": 0.8719,
+   "fid": 0.17,
+   "ev": 7.959e-16,
+   "title": "6gq0-assembly1_A Crystal structure of GanP, a glucose-galactose binding protein from Geobacillus stearothermophilus"
+  },
+  "6HB0": {
+   "tm": 0.7282,
+   "fid": 0.228,
+   "ev": 3.929e-18,
+   "title": "6hb0-assembly2_B Crystal structure of MSMEG_1712 from Mycobacterium smegmatis"
+  },
+  "4YHS": {
+   "tm": 0.7994,
+   "fid": 0.171,
+   "ev": 3.488e-17,
+   "title": "4yhs-assembly1_A CRYSTAL STRUCTURE OF AN ABC TRANSPORTER SOLUTE BINDING PROTEIN (IPR025997) FROM BRADYRHIZOBIUM sp. BTAi1 (BBta_2440, TARGET EFI-511490) WITH BOUND BIS-TRIS"
+  },
+  "5BR1": {
+   "tm": 0.8568,
+   "fid": 0.17,
+   "ev": 2.919e-16,
+   "title": "5br1-assembly1_A CRYSTAL STRUCTURE OF AN ABC TRANSPORTER SOLUTE BINDING PROTEIN (IPR025997) FROM AGROBACTERIUM VITIS S4 (Avi_5305, TARGET EFI-511224) WITH BOUND ALPHA-D-GALACTOSAMINE"
+  },
+  "5HSG": {
+   "tm": 0.7619,
+   "fid": 0.186,
+   "ev": 1.62e-17,
+   "title": "5hsg-assembly1_A Crystal structure of an ABC transporter Solute Binding Protein from Klebsiella pneumoniae (KPN_01730, target EFI-511059), APO open structure"
+  },
+  "1GUD": {
+   "tm": 0.7249,
+   "fid": 0.184,
+   "ev": 2.755e-17,
+   "title": "1gud-assembly2_B Hinge-bending motion of D-allose binding protein from Escherichia coli: three open conformations"
+  },
+  "3BRS": {
+   "tm": 0.8586,
+   "fid": 0.146,
+   "ev": 5.266e-16,
+   "title": "3brs-assembly2_B Crystal structure of sugar transporter from Clostridium phytofermentans"
+  },
+  "4WT7": {
+   "tm": 0.8554,
+   "fid": 0.209,
+   "ev": 6.667e-16,
+   "title": "4wt7-assembly2_B Crystal structure of an ABC transporter solute binding protein (IPR025997) from Agrobacterium vitis (Avi_5165, Target EFI-511223) with bound allitol"
+  },
+  "6SW4": {
+   "tm": 0.7709,
+   "fid": 0.166,
+   "ev": 1.278e-16,
+   "title": "6sw4-assembly1_A The structure of AraP, an arabinose binding protein from Geobacillus stearothermophilus"
+  },
+  "4RY8": {
+   "tm": 0.8472,
+   "fid": 0.177,
+   "ev": 4.158e-16,
+   "title": "4ry8-assembly1_C Crystal structure of 5-methylthioribose transporter solute binding protein TLET_1677 from Thermotoga lettingae TMO TARGET EFI-511109 in complex with 5-methylthioribose"
+  },
+  "3H75": {
+   "tm": 0.8159,
+   "fid": 0.163,
+   "ev": 3.284e-16,
+   "title": "3h75-assembly1_A Crystal Structure of a Periplasmic Sugar-binding protein from the Pseudomonas fluorescens"
+  },
+  "2QVC": {
+   "tm": 0.8244,
+   "fid": 0.171,
+   "ev": 1.069e-15,
+   "title": "2qvc-assembly2_D Crystal structure of a periplasmic sugar ABC transporter from Thermotoga maritima"
+  },
+  "3G1W": {
+   "tm": 0.8187,
+   "fid": 0.172,
+   "ev": 1.008e-15,
+   "title": "3g1w-assembly1_A Crystal structure of sugar ABC transporter (sugar-binding protein) from Bacillus halodurans"
+  },
+  "4PZ0": {
+   "tm": 0.8127,
+   "fid": 0.149,
+   "ev": 3.92e-16,
+   "title": "4pz0-assembly1_A The crystal structure of a solute binding protein from Bacillus anthracis str. Ames in complex with quorum-sensing signal autoinducer-2 (AI-2)"
+  },
+  "8FXT": {
+   "tm": 0.8166,
+   "fid": 0.163,
+   "ev": 8.443e-16,
+   "title": "8fxt-assembly1_A Escherichia coli periplasmic Glucose-Binding Protein glucose complex: Acrylodan conjugate attached at W183C"
+  },
+  "3EJW": {
+   "tm": 0.8213,
+   "fid": 0.136,
+   "ev": 6.667e-16,
+   "title": "3ejw-assembly2_B Crystal Structure of the Sinorhizobium meliloti AI-2 receptor, SmLsrB"
+  },
+  "5IX8": {
+   "tm": 0.8019,
+   "fid": 0.184,
+   "ev": 2.751e-16,
+   "title": "5ix8-assembly1_A Crystal structure of sugar ABC transport system, substrate-binding protein from Bordetella parapertussis 12822"
+  },
+  "3T95": {
+   "tm": 0.8276,
+   "fid": 0.127,
+   "ev": 2.302e-15,
+   "title": "3t95-assembly1_A Crystal structure of LsrB from Yersinia pestis complexed with autoinducer-2"
+  },
+  "8FXU": {
+   "tm": 0.8223,
+   "fid": 0.171,
+   "ev": 3.28e-15,
+   "title": "8fxu-assembly1_A Thermoanaerobacter thermosaccharolyticum periplasmic Glucose-Binding Protein glucose complex: Badan conjugate attached at F17C"
+  },
+  "5ULB": {
+   "tm": 0.8604,
+   "fid": 0.175,
+   "ev": 1.007e-14,
+   "title": "5ulb-assembly1_A Crystal structure of sugar ABC transporter from Yersinia enterocolitica subsp. enterocolitica 8081"
+  },
+  "2IPL": {
+   "tm": 0.8028,
+   "fid": 0.175,
+   "ev": 1.354e-15,
+   "title": "2ipl-assembly1_A Crystal structure of a disulfide mutant glucose binding protein"
+  },
+  "4WWH": {
+   "tm": 0.8381,
+   "fid": 0.195,
+   "ev": 7.949e-15,
+   "title": "4wwh-assembly2_B CRYSTAL STRUCTURE OF AN ABC TRANSPORTER SOLUTE BINDING PROTEIN (IPR025997) FROM MYCOBACTERIUM SMEGMATIS (MSMEG_1704, TARGET EFI-510967) WITH BOUND D-GALACTOSE"
+  },
+  "3D02": {
+   "tm": 0.8324,
+   "fid": 0.185,
+   "ev": 4.406e-15,
+   "title": "3d02-assembly1_A Crystal structure of periplasmic sugar-binding protein (YP_001338366.1) from Klebsiella pneumoniae subsp. pneumoniae MGH 78578 at 1.30 A resolution"
+  },
+  "5KWS": {
+   "tm": 0.7801,
+   "fid": 0.174,
+   "ev": 8.956e-16,
+   "title": "5kws-assembly1_A Crystal Structure of Galactose Binding Protein from Yersinia pestis in the Complex with beta D Glucose"
+  },
+  "7X0H": {
+   "tm": 0.799,
+   "fid": 0.142,
+   "ev": 4.674e-15,
+   "title": "7x0h-assembly1_A Crystal structure of sugar binding protein CbpA complexed wtih glucose from Clostridium thermocellum"
+  },
+  "5XSJ": {
+   "tm": 0.8563,
+   "fid": 0.171,
+   "ev": 2.745e-14,
+   "title": "5xsj-assembly1_X-2 XylFII-LytSN complex"
+  },
+  "5XSS": {
+   "tm": 0.8788,
+   "fid": 0.166,
+   "ev": 1.005e-13,
+   "title": "5xss-assembly3_B XylFII molecule"
+  },
+  "5BQ3": {
+   "tm": 0.7849,
+   "fid": 0.149,
+   "ev": 6.66e-15,
+   "title": "5bq3-assembly4_D Crystal structure of a sugar ABC transporter (ACTODO_00688) from Actinomyces odontolyticus ATCC 17982 at 2.60 A resolution"
+  },
+  "2IPN": {
+   "tm": 0.7612,
+   "fid": 0.178,
+   "ev": 7.503e-16,
+   "title": "2ipn-assembly1_A Crystal structure of a disulfide mutant glucose binding protein"
+  },
+  "3M9W": {
+   "tm": 0.7395,
+   "fid": 0.195,
+   "ev": 7.494e-15,
+   "title": "3m9w-assembly1_A Open ligand-free crystal structure of xylose binding protein from Escherichia coli"
+  },
+  "2IPM": {
+   "tm": 0.7814,
+   "fid": 0.17,
+   "ev": 4.958e-15,
+   "title": "2ipm-assembly1_A Crystal structure of a disulfide mutant glucose binding protein"
+  },
+  "4YS6": {
+   "tm": 0.8271,
+   "fid": 0.181,
+   "ev": 3.089e-14,
+   "title": "4ys6-assembly1_A CRYSTAL STRUCTURE OF AN ABC TRANSPORTER SOLUTE BINDING PROTEIN (IPR025997) FROM CLOSTRIDIUM PHYTOFERMENTANS (Cphy_1585, TARGET EFI-511156) WITH BOUND BETA-D-GLUCOSE"
+  },
+  "3GBP": {
+   "tm": 0.7859,
+   "fid": 0.162,
+   "ev": 1.202e-14,
+   "title": "3gbp-assembly1_A STRUCTURE OF THE PERIPLASMIC GLUCOSE/GALACTOSE RECEPTOR OF SALMONELLA TYPHIMURIUM"
+  },
+  "3URM": {
+   "tm": 0.811,
+   "fid": 0.182,
+   "ev": 3.089e-14,
+   "title": "3urm-assembly1_A Crystal structure of the periplasmic sugar binding protein ChvE"
+  },
+  "4Z0N": {
+   "tm": 0.8188,
+   "fid": 0.154,
+   "ev": 4.952e-14,
+   "title": "4z0n-assembly1_A Crystal Structure of a Periplasmic Solute binding protein (IPR025997) from Streptobacillus moniliformis DSM-12112 (Smon_0317, TARGET EFI-511281) with bound D-Galactose"
+  },
+  "2GBP": {
+   "tm": 0.7453,
+   "fid": 0.175,
+   "ev": 3.092e-15,
+   "title": "2gbp-assembly1_A SUGAR AND SIGNAL-TRANSDUCER BINDING SITES OF THE ESCHERICHIA COLI GALACTOSE CHEMORECEPTOR PROTEIN"
+  },
+  "4RU1": {
+   "tm": 0.8304,
+   "fid": 0.173,
+   "ev": 1.433e-13,
+   "title": "4ru1-assembly3_C Crystal structure of carbohydrate transporter ACEI_1806 from Acidothermus cellulolyticus 11B, TARGET EFI-510965, in complex with myo-inositol"
+  },
+  "1TM2": {
+   "tm": 0.798,
+   "fid": 0.154,
+   "ev": 5.253e-14,
+   "title": "1tm2-assembly1_A Crystal Structure of the apo form of the Salmonella typhimurium AI-2 receptor LsrB"
+  },
+  "4RXU": {
+   "tm": 0.8574,
+   "fid": 0.173,
+   "ev": 8.924e-13,
+   "title": "4rxu-assembly1_A Crystal structure of carbohydrate transporter solute binding protein CAUR_1924 from Chloroflexus aurantiacus, Target EFI-511158, in complex with D-glucose"
+  },
+  "5BRA": {
+   "tm": 0.7677,
+   "fid": 0.175,
+   "ev": 1.924e-13,
+   "title": "5bra-assembly1_A Crystal Structure of a putative Periplasmic Solute binding protein (IPR025997) from Ochrobactrum Anthropi ATCC49188 (Oant_2843, TARGET EFI-511085)"
+  },
+  "6DSP": {
+   "tm": 0.7754,
+   "fid": 0.128,
+   "ev": 1.71e-13,
+   "title": "6dsp-assembly2_B LsrB from Clostridium saccharobutylicum in complex with AI-2"
+  },
+  "4KVF": {
+   "tm": 0.7343,
+   "fid": 0.169,
+   "ev": 1.612e-13,
+   "title": "4kvf-assembly1_A The crystal structure of a rhamnose ABC transporter, periplasmic rhamnose-binding protein from Kribbella flavida DSM 17836"
+  },
+  "1JX6": {
+   "tm": 0.8034,
+   "fid": 0.153,
+   "ev": 2.436e-13,
+   "title": "1jx6-assembly1_A CRYSTAL STRUCTURE OF LUXP FROM VIBRIO HARVEYI COMPLEXED WITH AUTOINDUCER-2"
+  },
+  "1JFT": {
+   "tm": 0.8279,
+   "fid": 0.173,
+   "ev": 2.294e-12,
+   "title": "1jft-assembly1_A-2 PURINE REPRESSOR MUTANT-HYPOXANTHINE-PURF OPERATOR COMPLEX"
+  },
+  "3ROT": {
+   "tm": 0.8209,
+   "fid": 0.138,
+   "ev": 3.269e-12,
+   "title": "3rot-assembly1_A Crystal structure of ABC sugar transporter (periplasmic sugar binding protein) from Legionella pneumophila"
+  },
+  "3O75": {
+   "tm": 0.8148,
+   "fid": 0.158,
+   "ev": 2.039e-12,
+   "title": "3o75-assembly1_B Crystal structure of Cra transcriptional dual regulator from Pseudomonas putida in complex with fructose 1-phosphate'"
+  },
+  "3O1I": {
+   "tm": 0.7899,
+   "fid": 0.131,
+   "ev": 1.708e-12,
+   "title": "3o1i-assembly1_C Crystal Structure of the TorS sensor domain - TorT complex in the absence of ligand"
+  },
+  "1VPW": {
+   "tm": 0.823,
+   "fid": 0.166,
+   "ev": 4.658e-12,
+   "title": "1vpw-assembly1_A-2 STRUCTURE OF THE PURR MUTANT, L54M, BOUND TO HYPOXANTHINE AND PURF OPERATOR DNA"
+  },
+  "2PUA": {
+   "tm": 0.8095,
+   "fid": 0.178,
+   "ev": 2.739e-12,
+   "title": "2pua-assembly1_A CRYSTAL STRUCTURE OF THE LACI FAMILY MEMBER, PURR, BOUND TO DNA: MINOR GROOVE BINDING BY ALPHA HELICES"
+  },
+  "5YSZ": {
+   "tm": 0.7677,
+   "fid": 0.161,
+   "ev": 2.294e-12,
+   "title": "5ysz-assembly1_A-2 transcriptional regulator CelR-cellobiose complex"
+  },
+  "1JH9": {
+   "tm": 0.8124,
+   "fid": 0.176,
+   "ev": 5.56e-12,
+   "title": "1jh9-assembly1_A-2 PURINE REPRESSOR MUTANT-HYPOXANTHINE-PURF OPERATOR COMPLEX"
+  },
+  "1QPZ": {
+   "tm": 0.8069,
+   "fid": 0.182,
+   "ev": 5.56e-12,
+   "title": "1qpz-assembly1_A PURINE REPRESSOR-HYPOXANTHINE-PALINDROMIC OPERATOR COMPLEX"
+  },
+  "2O20": {
+   "tm": 0.7893,
+   "fid": 0.182,
+   "ev": 3.468e-12,
+   "title": "2o20-assembly3_E Crystal structure of transcription regulator CcpA of Lactococcus lactis"
+  },
+  "5XSD": {
+   "tm": 0.6474,
+   "fid": 0.164,
+   "ev": 5.247e-13,
+   "title": "5xsd-assembly1_B XylFII-LytSN complex mutant - D103A"
+  },
+  "2PAF": {
+   "tm": 0.8273,
+   "fid": 0.16,
+   "ev": 1.429e-11,
+   "title": "2paf-assembly1_B Crystal Structure of the Lactose Repressor bound to anti-inducer ONPF in induced state"
+  },
+  "1JFS": {
+   "tm": 0.8247,
+   "fid": 0.179,
+   "ev": 1.706e-11,
+   "title": "1jfs-assembly1_A-2 PURINE REPRESSOR MUTANT-HYPOXANTHINE-PURF OPERATOR COMPLEX"
+  },
+  "4KQC": {
+   "tm": 0.7648,
+   "fid": 0.149,
+   "ev": 5.241e-12,
+   "title": "4kqc-assembly1_A ABC transporter, LacI family transcriptional regulator from Brachyspira murdochii"
+  },
+  "2FEP": {
+   "tm": 0.8532,
+   "fid": 0.185,
+   "ev": 7.912e-11,
+   "title": "2fep-assembly1_A-2 Structure of truncated CcpA in complex with P-Ser-HPr and Sulfate ions"
+  },
+  "3BBL": {
+   "tm": 0.8074,
+   "fid": 0.178,
+   "ev": 1.92e-11,
+   "title": "3bbl-assembly1_A Crystal structure of a regulatory protein of LacI family from Chloroflexus aggregans"
+  },
+  "3E3M": {
+   "tm": 0.7759,
+   "fid": 0.17,
+   "ev": 3.468e-12,
+   "title": "3e3m-assembly2_D Crystal structure of a LacI family transcriptional regulator from Silicibacter pomeroyi"
+  },
+  "2PUE": {
+   "tm": 0.8186,
+   "fid": 0.18,
+   "ev": 3.078e-11,
+   "title": "2pue-assembly1_A CRYSTAL STRUCTURE OF THE LACI FAMILY MEMBER, PURR, BOUND TO DNA: MINOR GROOVE BINDING BY ALPHA HELICES"
+  },
+  "1BDH": {
+   "tm": 0.7848,
+   "fid": 0.172,
+   "ev": 1.003e-11,
+   "title": "1bdh-assembly1_A PURINE REPRESSOR MUTANT-HYPOXANTHINE-PALINDROMIC OPERATOR COMPLEX"
+  },
+  "3OQO": {
+   "tm": 0.8517,
+   "fid": 0.173,
+   "ev": 8.904e-11,
+   "title": "3oqo-assembly1_C Ccpa-hpr-ser46p-syn cre"
+  },
+  "2PE5": {
+   "tm": 0.842,
+   "fid": 0.16,
+   "ev": 7.912e-11,
+   "title": "2pe5-assembly2_C-2 Crystal Structure of the Lac Repressor bound to ONPG in repressed state"
+  },
+  "1JYE": {
+   "tm": 0.8381,
+   "fid": 0.157,
+   "ev": 8.904e-11,
+   "title": "1jye-assembly1_A-2 Structure of a Dimeric Lac Repressor with C-terminal Deletion and K84L Substitution"
+  },
+  "3GBV": {
+   "tm": 0.8304,
+   "fid": 0.145,
+   "ev": 6.629e-11,
+   "title": "3gbv-assembly1_A Crystal structure of a putative LacI transcriptional regulator from Bacteroides fragilis"
+  },
+  "5ABP": {
+   "tm": 0.7352,
+   "fid": 0.142,
+   "ev": 7.468e-12,
+   "title": "5abp-assembly1_A SUBSTRATE SPECIFICITY AND AFFINITY OF A PROTEIN MODULATED BY BOUND WATER MOLECULES"
+  },
+  "1LBI": {
+   "tm": 0.8136,
+   "fid": 0.157,
+   "ev": 1.063e-10,
+   "title": "1lbi-assembly1_D LAC REPRESSOR"
+  },
+  "1BAP": {
+   "tm": 0.7473,
+   "fid": 0.13,
+   "ev": 1.706e-11,
+   "title": "1bap-assembly1_A A PRO TO GLY MUTATION IN THE HINGE OF THE ARABINOSE-BINDING PROTEIN ENHANCES BINDING AND ALTERS SPECIFICITY: SUGAR-BINDING AND CRYSTALLOGRAPHIC STUDIES"
+  },
+  "1RZR": {
+   "tm": 0.8098,
+   "fid": 0.177,
+   "ev": 8.393e-11,
+   "title": "1rzr-assembly1_G crystal structure of transcriptional regulator-phosphoprotein-DNA complex"
+  },
+  "4YP9": {
+   "tm": 0.765,
+   "fid": 0.157,
+   "ev": 1.81e-11,
+   "title": "4yp9-assembly1_A Crystal Structure of LuxP In Complex With a Formose Derived AI-2 Analogue"
+  },
+  "8ABP": {
+   "tm": 0.7413,
+   "fid": 0.127,
+   "ev": 1.706e-11,
+   "title": "8abp-assembly1_A SUGAR-BINDING AND CRYSTALLOGRAPHIC STUDIES OF AN ARABINOSE-BINDING PROTEIN MUTANT (MET108LEU) WHICH EXHIBITS ENHANCED AFFINITY AND ALTERED SPECIFICITY"
+  },
+  "2HJ9": {
+   "tm": 0.7514,
+   "fid": 0.16,
+   "ev": 1.27e-11,
+   "title": "2hj9-assembly1_B Crystal structure of the Autoinducer-2-bound form of Vibrio harveyi LuxP complexed with the periplasmic domain of LuxQ"
+  },
+  "3K4H": {
+   "tm": 0.7264,
+   "fid": 0.143,
+   "ev": 4.941e-12,
+   "title": "3k4h-assembly1_A CRYSTAL STRUCTURE OF putative transcriptional regulator LacI from Bacillus cereus subsp. cytotoxis NVH 391-98"
+  },
+  "1JYF": {
+   "tm": 0.8195,
+   "fid": 0.158,
+   "ev": 2.158e-10,
+   "title": "1jyf-assembly1_A Structure of the Dimeric Lac Repressor with an 11-residue C-terminal Deletion."
+  },
+  "2NZU": {
+   "tm": 0.7775,
+   "fid": 0.184,
+   "ev": 5.891e-11,
+   "title": "2nzu-assembly1_G-2 Structural mechanism for the fine-tuning of CcpA function by the small molecule effectors G6P and FBP"
+  },
+  "3JVD": {
+   "tm": 0.8005,
+   "fid": 0.175,
+   "ev": 8.904e-11,
+   "title": "3jvd-assembly1_B Crystal structure of putative transcription regulation repressor (LACI family) FROM Corynebacterium glutamicum"
+  },
+  "1EFA": {
+   "tm": 0.8067,
+   "fid": 0.157,
+   "ev": 2.428e-10,
+   "title": "1efa-assembly2_C CRYSTAL STRUCTURE OF THE LAC REPRESSOR DIMER BOUND TO OPERATOR AND THE ANTI-INDUCER ONPF"
+  },
+  "1ZVV": {
+   "tm": 0.8111,
+   "fid": 0.179,
+   "ev": 1.704e-10,
+   "title": "1zvv-assembly2_B Crystal structure of a ccpa-crh-dna complex"
+  },
+  "2JCG": {
+   "tm": 0.7679,
+   "fid": 0.192,
+   "ev": 1.917e-10,
+   "title": "2jcg-assembly1_A-2 Apo form of the catabolite control protein A (ccpA) from bacillus megaterium, with the DNA binding domain"
+  },
+  "4RK1": {
+   "tm": 0.7866,
+   "fid": 0.185,
+   "ev": 5.891e-11,
+   "title": "4rk1-assembly3_F Crystal structure of LacI family transcriptional regulator from Enterococcus faecium, Target EFI-512930, with bound ribose"
+  },
+  "3O1H": {
+   "tm": 0.762,
+   "fid": 0.152,
+   "ev": 1.063e-10,
+   "title": "3o1h-assembly1_B Crystal Structure of the TorS sensor domain - TorT complex in the presence of TMAO"
+  },
+  "3CTP": {
+   "tm": 0.7637,
+   "fid": 0.166,
+   "ev": 5.235e-11,
+   "title": "3ctp-assembly1_B Crystal structure of periplasmic binding protein/LacI transcriptional regulator from Alkaliphilus metalliredigens QYMF complexed with D-xylulofuranose"
+  },
+  "3HUU": {
+   "tm": 0.7594,
+   "fid": 0.129,
+   "ev": 2.036e-11,
+   "title": "3huu-assembly2_C Crystal structure of transcription regulator like protein from Staphylococcus haemolyticus"
+  },
+  "3TB6": {
+   "tm": 0.7827,
+   "fid": 0.18,
+   "ev": 2.898e-10,
+   "title": "3tb6-assembly1_B Structure of the effector-binding domain of arabinose repressor AraR from Bacillus subtilis"
+  },
+  "7E5W": {
+   "tm": 0.7886,
+   "fid": 0.166,
+   "ev": 1.127e-10,
+   "title": "7e5w-assembly1_A-2 The structure of CcpA from Staphylococcus aureus"
+  },
+  "7X7H": {
+   "tm": 0.7695,
+   "fid": 0.161,
+   "ev": 3.074e-10,
+   "title": "7x7h-assembly1_C Crystal structure of Fructose regulator/Histidine phosphocarrier protein complex from Vibrio cholerae"
+  },
+  "2QU7": {
+   "tm": 0.732,
+   "fid": 0.142,
+   "ev": 6.249e-11,
+   "title": "2qu7-assembly1_B Crystal structure of a putative transcription regulator from Staphylococcus saprophyticus subsp. saprophyticus"
+  },
+  "4RZT": {
+   "tm": 0.7488,
+   "fid": 0.158,
+   "ev": 1.428e-10,
+   "title": "4rzt-assembly1_A Lac repressor engineered to bind sucralose, sucralose-bound tetramer"
+  },
+  "4O5A": {
+   "tm": 0.8226,
+   "fid": 0.158,
+   "ev": 3.67e-10,
+   "title": "4o5a-assembly1_A-2 The crystal structure of a LacI family transcriptional regulator from Bifidobacterium animalis subsp. lactis DSM 10140"
+  },
+  "3BRQ": {
+   "tm": 0.7874,
+   "fid": 0.173,
+   "ev": 2.898e-10,
+   "title": "3brq-assembly1_A Crystal structure of the Escherichia coli transcriptional repressor ascG"
+  },
+  "7DOB": {
+   "tm": 0.7583,
+   "fid": 0.162,
+   "ev": 1.127e-10,
+   "title": "7dob-assembly1_A Crystal structure of Catabolite repressor activator (Apo)"
+  },
+  "1TLF": {
+   "tm": 0.7567,
+   "fid": 0.157,
+   "ev": 2.576e-10,
+   "title": "1tlf-assembly1_A UNPRECEDENTED QUATERNARY STRUCTURE OF E. COLI LAC REPRESSOR CORE TETRAMER: IMPLICATIONS FOR DNA LOOPING"
+  },
+  "4KZK": {
+   "tm": 0.748,
+   "fid": 0.14,
+   "ev": 2.158e-10,
+   "title": "4kzk-assembly1_A The structure of the periplasmic L-arabinose binding protein from Burkholderia thailandensis"
+  },
+  "3EGC": {
+   "tm": 0.7759,
+   "fid": 0.165,
+   "ev": 3.261e-10,
+   "title": "3egc-assembly3_F Crystal structure of a putative ribose operon repressor from Burkholderia thailandensis"
+  },
+  "1DBQ": {
+   "tm": 0.7653,
+   "fid": 0.185,
+   "ev": 3.074e-10,
+   "title": "1dbq-assembly1_B DNA-BINDING REGULATORY PROTEIN"
+  },
+  "3KKE": {
+   "tm": 0.7319,
+   "fid": 0.165,
+   "ev": 1.917e-10,
+   "title": "3kke-assembly1_A Crystal structure of a LacI family transcriptional regulator from Mycobacterium smegmatis"
+  },
+  "3D8U": {
+   "tm": 0.7925,
+   "fid": 0.111,
+   "ev": 4.13e-10,
+   "title": "3d8u-assembly1_A The crystal structure of a PurR family transcriptional regulator from Vibrio parahaemolyticus RIMD 2210633"
+  },
+  "3C3K": {
+   "tm": 0.8092,
+   "fid": 0.145,
+   "ev": 1.605e-09,
+   "title": "3c3k-assembly1_B Crystal structure of an uncharacterized protein from Actinobacillus succinogenes"
+  },
+  "3HCW": {
+   "tm": 0.7602,
+   "fid": 0.138,
+   "ev": 5.547e-10,
+   "title": "3hcw-assembly1_B CRYSTAL STRUCTURE OF PROBABLE maltose operon transcriptional repressor malR FROM STAPHYLOCOCCUS AREUS"
+  },
+  "7FF4": {
+   "tm": 0.7128,
+   "fid": 0.157,
+   "ev": 3.46e-10,
+   "title": "7ff4-assembly1_B The crystal structure of Clostridium cellulolyticum LacI family transcriptional regulator Ccel_1438"
+  },
+  "3MIZ": {
+   "tm": 0.7448,
+   "fid": 0.122,
+   "ev": 6.242e-10,
+   "title": "3miz-assembly1_A Crystal structure of a putative transcriptional regulator protein, Lacl family from Rhizobium etli"
+  },
+  "4RZS": {
+   "tm": 0.7453,
+   "fid": 0.158,
+   "ev": 5.547e-10,
+   "title": "4rzs-assembly1_A Lac repressor engineered to bind sucralose, unliganded tetramer"
+  },
+  "2IKS": {
+   "tm": 0.7328,
+   "fid": 0.179,
+   "ev": 2.428e-10,
+   "title": "2iks-assembly1_B Crystal structure of N-terminal truncated DNA-binding transcriptional dual regulator from Escherichia coli K12"
+  },
+  "3H5O": {
+   "tm": 0.7353,
+   "fid": 0.146,
+   "ev": 3.261e-10,
+   "title": "3h5o-assembly1_A The crystal structure of transcription regulator GntR from Chromobacterium violaceum"
+  },
+  "3H5T": {
+   "tm": 0.6452,
+   "fid": 0.171,
+   "ev": 1.92e-11,
+   "title": "3h5t-assembly1_A Crystal structure of a transcriptional regulator, Lacl family protein from Corynebacterium glutamicum"
+  },
+  "3KJX": {
+   "tm": 0.8034,
+   "fid": 0.173,
+   "ev": 2.895e-09,
+   "title": "3kjx-assembly2_C Crystal structure of a transcriptional regulator, Lacl family protein from Silicibacter pomeroyi"
+  },
+  "3CS3": {
+   "tm": 0.7943,
+   "fid": 0.164,
+   "ev": 2.155e-09,
+   "title": "3cs3-assembly1_A-2 Crystal structure of sugar-binding transcriptional regulator (LacI family) from Enterococcus faecalis"
+  }
+ }
+}

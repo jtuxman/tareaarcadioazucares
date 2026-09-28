@@ -1,0 +1,261 @@
+Create directory tmp_dl
+databases PDB pdb_db tmp_dl 
+
+MMseqs Version:              	10.941cd33
+Tsv                          	false
+Force restart with latest tmp	false
+Remove temporary files       	false
+Compressed                   	0
+Threads                      	8
+Verbosity                    	3
+
+
+09/27 08:42:58 [[1;32mNOTICE[0m] Downloading 1 item(s)
+[#ecf314 192KiB/2.1GiB(0%) CN:5 DL:1.1MiB ETA:30m59s]
+[#ecf314 13MiB/2.1GiB(0%) CN:5 DL:12MiB ETA:3m2s]
+[#ecf314 29MiB/2.1GiB(1%) CN:5 DL:13MiB ETA:2m37s]
+[#ecf314 45MiB/2.1GiB(2%) CN:5 DL:14MiB ETA:2m29s]
+[#ecf314 61MiB/2.1GiB(2%) CN:5 DL:14MiB ETA:2m25s]
+[#ecf314 77MiB/2.1GiB(3%) CN:5 DL:15MiB ETA:2m22s]
+[#ecf314 92MiB/2.1GiB(4%) CN:5 DL:15MiB ETA:2m19s]
+[#ecf314 108MiB/2.1GiB(4%) CN:5 DL:15MiB ETA:2m18s]
+[#ecf314 123MiB/2.1GiB(5%) CN:5 DL:15MiB ETA:2m16s]
+[#ecf314 139MiB/2.1GiB(6%) CN:5 DL:15MiB ETA:2m15s]
+[#ecf314 155MiB/2.1GiB(7%) CN:5 DL:15MiB ETA:2m9s]
+[#ecf314 170MiB/2.1GiB(7%) CN:5 DL:15MiB ETA:2m9s]
+[#ecf314 185MiB/2.1GiB(8%) CN:5 DL:15MiB ETA:2m8s]
+[#ecf314 201MiB/2.1GiB(9%) CN:5 DL:15MiB ETA:2m7s]
+[#ecf314 217MiB/2.1GiB(9%) CN:5 DL:15MiB ETA:2m7s]
+[#ecf314 231MiB/2.1GiB(10%) CN:5 DL:15MiB ETA:2m7s]
+[#ecf314 247MiB/2.1GiB(11%) CN:5 DL:15MiB ETA:2m6s]
+[#ecf314 262MiB/2.1GiB(11%) CN:5 DL:15MiB ETA:2m5s]
+[#ecf314 277MiB/2.1GiB(12%) CN:5 DL:15MiB ETA:2m4s]
+[#ecf314 293MiB/2.1GiB(13%) CN:5 DL:15MiB ETA:2m4s]
+[#ecf314 308MiB/2.1GiB(13%) CN:5 DL:15MiB ETA:2m3s]
+[#ecf314 319MiB/2.1GiB(14%) CN:5 DL:15MiB ETA:2m6s]
+[#ecf314 333MiB/2.1GiB(15%) CN:5 DL:14MiB ETA:2m6s]
+[#ecf314 349MiB/2.1GiB(15%) CN:5 DL:14MiB ETA:2m5s]
+[#ecf314 365MiB/2.1GiB(16%) CN:5 DL:14MiB ETA:2m4s]
+[#ecf314 378MiB/2.1GiB(17%) CN:5 DL:14MiB ETA:2m4s]
+[#ecf314 394MiB/2.1GiB(17%) CN:5 DL:14MiB ETA:2m2s]
+[#ecf314 409MiB/2.1GiB(18%) CN:5 DL:14MiB ETA:2m1s]
+[#ecf314 425MiB/2.1GiB(19%) CN:5 DL:14MiB ETA:2m]
+[#ecf314 441MiB/2.1GiB(19%) CN:5 DL:14MiB ETA:1m59s]
+[#ecf314 456MiB/2.1GiB(20%) CN:5 DL:14MiB ETA:1m57s]
+[#ecf314 472MiB/2.1GiB(21%) CN:5 DL:15MiB ETA:1m52s]
+[#ecf314 487MiB/2.1GiB(21%) CN:5 DL:15MiB ETA:1m51s]
+[#ecf314 503MiB/2.1GiB(22%) CN:5 DL:15MiB ETA:1m50s]
+[#ecf314 519MiB/2.1GiB(23%) CN:5 DL:15MiB ETA:1m49s]
+[#ecf314 534MiB/2.1GiB(24%) CN:5 DL:15MiB ETA:1m46s]
+[#ecf314 549MiB/2.1GiB(24%) CN:5 DL:15MiB ETA:1m46s]
+[#ecf314 565MiB/2.1GiB(25%) CN:5 DL:15MiB ETA:1m45s]
+[#ecf314 580MiB/2.1GiB(26%) CN:5 DL:15MiB ETA:1m44s]
+[#ecf314 596MiB/2.1GiB(26%) CN:5 DL:15MiB ETA:1m43s]
+[#ecf314 612MiB/2.1GiB(27%) CN:5 DL:15MiB ETA:1m42s]
+[#ecf314 627MiB/2.1GiB(28%) CN:5 DL:15MiB ETA:1m41s]
+[#ecf314 643MiB/2.1GiB(29%) CN:5 DL:15MiB ETA:1m40s]
+[#ecf314 659MiB/2.1GiB(29%) CN:5 DL:15MiB ETA:1m39s]
+[#ecf314 674MiB/2.1GiB(30%) CN:5 DL:15MiB ETA:1m38s]
+[#ecf314 690MiB/2.1GiB(31%) CN:5 DL:15MiB ETA:1m37s]
+[#ecf314 703MiB/2.1GiB(31%) CN:5 DL:15MiB ETA:1m37s]
+[#ecf314 718MiB/2.1GiB(32%) CN:5 DL:15MiB ETA:1m36s]
+[#ecf314 734MiB/2.1GiB(33%) CN:5 DL:15MiB ETA:1m35s]
+[#ecf314 750MiB/2.1GiB(33%) CN:5 DL:15MiB ETA:1m34s]
+[#ecf314 765MiB/2.1GiB(34%) CN:5 DL:15MiB ETA:1m33s]
+[#ecf314 781MiB/2.1GiB(35%) CN:5 DL:15MiB ETA:1m32s]
+[#ecf314 796MiB/2.1GiB(35%) CN:5 DL:15MiB ETA:1m31s]
+[#ecf314 812MiB/2.1GiB(36%) CN:5 DL:15MiB ETA:1m30s]
+[#ecf314 828MiB/2.1GiB(37%) CN:5 DL:15MiB ETA:1m29s]
+[#ecf314 843MiB/2.1GiB(38%) CN:5 DL:15MiB ETA:1m28s]
+[#ecf314 859MiB/2.1GiB(38%) CN:5 DL:15MiB ETA:1m26s]
+[#ecf314 871MiB/2.1GiB(39%) CN:5 DL:15MiB ETA:1m27s]
+[#ecf314 887MiB/2.1GiB(39%) CN:5 DL:15MiB ETA:1m26s]
+[#ecf314 902MiB/2.1GiB(40%) CN:5 DL:15MiB ETA:1m25s]
+ *** Download Progress Summary as of Sun Sep 27 08:43:59 2026 *** 
+===============================================================================
+[#ecf314 917MiB/2.1GiB(41%) CN:5 DL:15MiB ETA:1m24s]
+FILE: tmp_dl/3978052046504183032/pdb.tar.gz
+-------------------------------------------------------------------------------
+
+[#ecf314 917MiB/2.1GiB(41%) CN:5 DL:15MiB ETA:1m24s]
+[#ecf314 0.9GiB/2.1GiB(42%) CN:5 DL:15MiB ETA:1m23s]
+[#ecf314 0.9GiB/2.1GiB(42%) CN:5 DL:15MiB ETA:1m22s]
+[#ecf314 0.9GiB/2.1GiB(43%) CN:5 DL:15MiB ETA:1m21s]
+[#ecf314 0.9GiB/2.1GiB(44%) CN:5 DL:15MiB ETA:1m20s]
+[#ecf314 0.9GiB/2.1GiB(44%) CN:5 DL:15MiB ETA:1m19s]
+[#ecf314 0.9GiB/2.1GiB(45%) CN:5 DL:15MiB ETA:1m16s]
+[#ecf314 1.0GiB/2.1GiB(46%) CN:5 DL:15MiB ETA:1m16s]
+[#ecf314 1.0GiB/2.1GiB(46%) CN:5 DL:15MiB ETA:1m15s]
+[#ecf314 1.0GiB/2.1GiB(47%) CN:5 DL:15MiB ETA:1m13s]
+[#ecf314 1.0GiB/2.1GiB(48%) CN:5 DL:15MiB ETA:1m12s]
+[#ecf314 1.0GiB/2.1GiB(49%) CN:5 DL:15MiB ETA:1m11s]
+[#ecf314 1.0GiB/2.1GiB(49%) CN:5 DL:15MiB ETA:1m10s]
+[#ecf314 1.0GiB/2.1GiB(50%) CN:5 DL:15MiB ETA:1m9s]
+[#ecf314 1.1GiB/2.1GiB(51%) CN:5 DL:15MiB ETA:1m8s]
+[#ecf314 1.1GiB/2.1GiB(51%) CN:5 DL:15MiB ETA:1m7s]
+[#ecf314 1.1GiB/2.1GiB(52%) CN:5 DL:15MiB ETA:1m6s]
+[#ecf314 1.1GiB/2.1GiB(53%) CN:5 DL:15MiB ETA:1m5s]
+[#ecf314 1.1GiB/2.1GiB(53%) CN:5 DL:15MiB ETA:1m6s]
+[#ecf314 1.1GiB/2.1GiB(54%) CN:5 DL:15MiB ETA:1m5s]
+[#ecf314 1.1GiB/2.1GiB(55%) CN:5 DL:15MiB ETA:1m4s]
+[#ecf314 1.2GiB/2.1GiB(55%) CN:5 DL:15MiB ETA:1m3s]
+[#ecf314 1.2GiB/2.1GiB(56%) CN:5 DL:15MiB ETA:1m2s]
+[#ecf314 1.2GiB/2.1GiB(57%) CN:5 DL:15MiB ETA:1m1s]
+[#ecf314 1.2GiB/2.1GiB(58%) CN:5 DL:15MiB ETA:1m]
+[#ecf314 1.2GiB/2.1GiB(58%) CN:5 DL:15MiB ETA:59s]
+[#ecf314 1.2GiB/2.1GiB(59%) CN:5 DL:15MiB ETA:58s]
+[#ecf314 1.3GiB/2.1GiB(60%) CN:5 DL:15MiB ETA:55s]
+[#ecf314 1.3GiB/2.1GiB(60%) CN:5 DL:15MiB ETA:55s]
+[#ecf314 1.3GiB/2.1GiB(61%) CN:5 DL:15MiB ETA:55s]
+[#ecf314 1.3GiB/2.1GiB(62%) CN:5 DL:15MiB ETA:54s]
+[#ecf314 1.3GiB/2.1GiB(62%) CN:5 DL:15MiB ETA:53s]
+[#ecf314 1.3GiB/2.1GiB(63%) CN:5 DL:15MiB ETA:52s]
+[#ecf314 1.3GiB/2.1GiB(64%) CN:5 DL:14MiB ETA:54s]
+[#ecf314 1.4GiB/2.1GiB(65%) CN:5 DL:15MiB ETA:49s]
+[#ecf314 1.4GiB/2.1GiB(65%) CN:5 DL:15MiB ETA:48s]
+[#ecf314 1.4GiB/2.1GiB(66%) CN:5 DL:15MiB ETA:47s]
+[#ecf314 1.4GiB/2.1GiB(67%) CN:5 DL:15MiB ETA:46s]
+[#ecf314 1.4GiB/2.1GiB(68%) CN:5 DL:15MiB ETA:44s]
+[#ecf314 1.4GiB/2.1GiB(68%) CN:5 DL:15MiB ETA:43s]
+[#ecf314 1.5GiB/2.1GiB(69%) CN:5 DL:15MiB ETA:42s]
+[#ecf314 1.5GiB/2.1GiB(70%) CN:5 DL:15MiB ETA:41s]
+[#ecf314 1.5GiB/2.1GiB(70%) CN:5 DL:15MiB ETA:40s]
+[#ecf314 1.5GiB/2.1GiB(71%) CN:5 DL:15MiB ETA:39s]
+[#ecf314 1.5GiB/2.1GiB(72%) CN:5 DL:15MiB ETA:38s]
+[#ecf314 1.5GiB/2.1GiB(73%) CN:5 DL:15MiB ETA:37s]
+[#ecf314 1.5GiB/2.1GiB(73%) CN:5 DL:15MiB ETA:36s]
+[#ecf314 1.6GiB/2.1GiB(74%) CN:5 DL:15MiB ETA:35s]
+[#ecf314 1.6GiB/2.1GiB(75%) CN:5 DL:15MiB ETA:34s]
+[#ecf314 1.6GiB/2.1GiB(75%) CN:5 DL:15MiB ETA:34s]
+[#ecf314 1.6GiB/2.1GiB(76%) CN:5 DL:15MiB ETA:33s]
+[#ecf314 1.6GiB/2.1GiB(77%) CN:5 DL:15MiB ETA:32s]
+[#ecf314 1.6GiB/2.1GiB(77%) CN:5 DL:15MiB ETA:31s]
+[#ecf314 1.7GiB/2.1GiB(78%) CN:5 DL:15MiB ETA:31s]
+[#ecf314 1.7GiB/2.1GiB(79%) CN:5 DL:15MiB ETA:30s]
+[#ecf314 1.7GiB/2.1GiB(79%) CN:5 DL:14MiB ETA:31s]
+[#ecf314 1.7GiB/2.1GiB(80%) CN:5 DL:15MiB ETA:27s]
+[#ecf314 1.7GiB/2.1GiB(81%) CN:5 DL:15MiB ETA:26s]
+[#ecf314 1.7GiB/2.1GiB(82%) CN:5 DL:15MiB ETA:25s]
+[#ecf314 1.7GiB/2.1GiB(82%) CN:5 DL:16MiB ETA:23s]
+ *** Download Progress Summary as of Sun Sep 27 08:44:59 2026 *** 
+===============================================================================
+[#ecf314 1.8GiB/2.1GiB(83%) CN:5 DL:15MiB ETA:23s]
+FILE: tmp_dl/3978052046504183032/pdb.tar.gz
+-------------------------------------------------------------------------------
+
+[#ecf314 1.8GiB/2.1GiB(83%) CN:5 DL:15MiB ETA:23s]
+[#ecf314 1.8GiB/2.1GiB(84%) CN:5 DL:15MiB ETA:22s]
+[#ecf314 1.8GiB/2.1GiB(85%) CN:5 DL:15MiB ETA:21s]
+[#ecf314 1.8GiB/2.1GiB(85%) CN:5 DL:15MiB ETA:19s]
+[#ecf314 1.8GiB/2.1GiB(86%) CN:5 DL:15MiB ETA:19s]
+[#ecf314 1.8GiB/2.1GiB(87%) CN:5 DL:15MiB ETA:18s]
+[#ecf314 1.9GiB/2.1GiB(87%) CN:5 DL:15MiB ETA:17s]
+[#ecf314 1.9GiB/2.1GiB(88%) CN:5 DL:15MiB ETA:16s]
+[#ecf314 1.9GiB/2.1GiB(89%) CN:5 DL:15MiB ETA:15s]
+[#ecf314 1.9GiB/2.1GiB(89%) CN:5 DL:15MiB ETA:14s]
+[#ecf314 1.9GiB/2.1GiB(90%) CN:5 DL:15MiB ETA:13s]
+[#ecf314 1.9GiB/2.1GiB(91%) CN:5 DL:15MiB ETA:12s]
+[#ecf314 1.9GiB/2.1GiB(92%) CN:5 DL:15MiB ETA:11s]
+[#ecf314 2.0GiB/2.1GiB(92%) CN:5 DL:15MiB ETA:10s]
+[#ecf314 2.0GiB/2.1GiB(93%) CN:5 DL:15MiB ETA:9s]
+[#ecf314 2.0GiB/2.1GiB(94%) CN:5 DL:15MiB ETA:8s]
+[#ecf314 2.0GiB/2.1GiB(94%) CN:5 DL:15MiB ETA:7s]
+[#ecf314 2.0GiB/2.1GiB(95%) CN:5 DL:15MiB ETA:6s]
+[#ecf314 2.0GiB/2.1GiB(96%) CN:5 DL:15MiB ETA:5s]
+[#ecf314 2.0GiB/2.1GiB(96%) CN:5 DL:16MiB ETA:4s]
+[#ecf314 2.1GiB/2.1GiB(97%) CN:4 DL:15MiB ETA:3s]
+[#ecf314 2.1GiB/2.1GiB(98%) CN:3 DL:14MiB ETA:2s]
+[#ecf314 2.1GiB/2.1GiB(98%) CN:3 DL:14MiB ETA:2s]
+[#ecf314 2.1GiB/2.1GiB(99%) CN:2 DL:14MiB ETA:1s]
+[#ecf314 2.1GiB/2.1GiB(99%) CN:1 DL:13MiB]
+[#ecf314 2.1GiB/2.1GiB(99%) CN:1 DL:12MiB]
+
+09/27 08:45:24 [[1;32mNOTICE[0m] Download complete: tmp_dl/3978052046504183032/pdb.tar.gz
+
+Download Results:
+gid   |stat|avg speed  |path/URI
+======+====+===========+=======================================================
+ecf314|OK  |    15MiB/s|tmp_dl/3978052046504183032/pdb.tar.gz
+
+Status Legend:
+(OK):download completed.
+
+09/27 08:45:24 [[1;32mNOTICE[0m] Downloading 1 item(s)
+
+09/27 08:45:25 [[1;32mNOTICE[0m] Download complete: tmp_dl/3978052046504183032/version
+
+Download Results:
+gid   |stat|avg speed  |path/URI
+======+====+===========+=======================================================
+80d6c9|OK  |    39KiB/s|tmp_dl/3978052046504183032/version
+
+Status Legend:
+(OK):download completed.
+pdb
+pdb_ca
+pdb_ca.dbtype
+pdb_ca.index
+pdb_clu
+pdb_clu.dbtype
+pdb_clu.index
+pdb.dbtype
+pdb_h
+pdb_h.dbtype
+pdb_h.index
+pdb.index
+pdb.lookup
+pdb.lookup.tsv
+pdb_mapping
+pdb.md5sum
+pdb_seq.0
+pdb_seq.1
+pdb_seq_ca.0
+pdb_seq_ca.1
+pdb_seq_ca.dbtype
+pdb_seq_ca.index
+pdb_seq.dbtype
+pdb_seq_h.0
+pdb_seq_h.1
+pdb_seq_h.dbtype
+pdb_seq_h.index
+pdb_seq.index
+pdb_seq.lookup
+pdb_seq_mapping
+pdb_seq.source
+pdb_seq_ss.0
+pdb_seq_ss.1
+pdb_seq_ss.dbtype
+pdb_seq_ss.index
+pdb_seq_taxonomy
+pdb.source
+pdb_ss
+pdb_ss.dbtype
+pdb_ss.index
+pdb_taxonomy
+mvdb tmp_dl/3978052046504183032/pdb_seq pdb_db_seq -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+mvdb tmp_dl/3978052046504183032/pdb pdb_db -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+mvdb tmp_dl/3978052046504183032/pdb_seq_ss pdb_db_seq_ss -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+mvdb tmp_dl/3978052046504183032/pdb_ss pdb_db_ss -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+mvdb tmp_dl/3978052046504183032/pdb_seq_h pdb_db_seq_h -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+mvdb tmp_dl/3978052046504183032/pdb_h pdb_db_h -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+mvdb tmp_dl/3978052046504183032/pdb_seq_ca pdb_db_seq_ca -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+mvdb tmp_dl/3978052046504183032/pdb_ca pdb_db_ca -v 3 
+
+Time for processing: 0h 0m 0s 0ms
+mvdb tmp_dl/3978052046504183032/pdb_clu pdb_db_clu -v 3 
+
+Time for processing: 0h 0m 0s 0ms
