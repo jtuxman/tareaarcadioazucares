@@ -1,0 +1,387 @@
+<title>pipepeline</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Public+Sans:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: una columna vertical que baja como un flujo de laboratorio; se bifurca en Vina | Boltz-2 y vuelve a unirse en la comparación. */
+:root {
+  --ink: #14232b;          /* texto principal, tinta azul-pizarra */
+  --muted: #5a6b73;        /* texto secundario */
+  --paper: #f3f6f5;        /* fondo, gris verdoso muy claro */
+  --panel: #ffffff;        /* superficies */
+  --line: #d3dcdb;         /* filetes y conectores */
+  --accent: #0f6e78;       /* verde azulado: el flujo */
+  --accent-soft: #dcecec;
+  --decoy: #b23a48;        /* señuelos */
+  --pred: #a87400;         /* predicción previa (D-apiosa) */
+  --furan: #5b4bb0;        /* furanosas, el mayor desacuerdo */
+  --f-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --f-body: "Public Sans", "Helvetica Neue", Arial, sans-serif;
+  --f-mono: "JetBrains Mono", "DejaVu Sans Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --ink: #e3ecec; --muted: #9aaeb2; --paper: #0e171b; --panel: #15232a; --line: #2b3d44;
+    --accent: #4fc1c9; --accent-soft: #173a3f; --decoy: #ec7b88; --pred: #e3b04b; --furan: #a99cf2;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --ink: #e3ecec; --muted: #9aaeb2; --paper: #0e171b; --panel: #15232a; --line: #2b3d44;
+  --accent: #4fc1c9; --accent-soft: #173a3f; --decoy: #ec7b88; --pred: #e3b04b; --furan: #a99cf2;
+}
+
+* { box-sizing: border-box; }
+body {
+  background: var(--paper); color: var(--ink);
+  font-family: var(--f-body); font-size: 15px; line-height: 1.5;
+  padding-inline: 20px; padding-block: 36px 56px;
+}
+.wrap { max-width: 980px; margin: 0 auto; display: flex; flex-direction: column; gap: 0; }
+h1, h2, h3 { font-family: var(--f-display); text-wrap: balance; margin: 0; }
+.mono, code { font-family: var(--f-mono); font-size: 0.86em; }
+.num { font-variant-numeric: tabular-nums; }
+.dec { color: var(--decoy); font-weight: 700; }
+.prd { color: var(--pred); font-weight: 700; }
+.fur { color: var(--furan); font-weight: 700; }
+
+/* Cabecera */
+header { display: grid; gap: 14px; padding-bottom: 28px; }
+.eyebrow { font-family: var(--f-mono); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); }
+h1 { font-size: clamp(34px, 6vw, 58px); font-weight: 800; letter-spacing: -0.02em; line-height: 1.02; }
+.thesis { font-size: 18px; max-width: 64ch; color: var(--ink); }
+.thesis b { color: var(--accent); }
+.funnel { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; font-family: var(--f-mono); font-size: 13px; }
+.funnel span.chip { border: 1px solid var(--line); background: var(--panel); padding: 4px 10px; border-radius: 999px; }
+.funnel span.arr { color: var(--muted); }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 13px; color: var(--muted); }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; vertical-align: -1px; }
+
+/* Etapas */
+.stage { display: grid; grid-template-columns: 56px 1fr; gap: 0 18px; }
+.rail { display: flex; flex-direction: column; align-items: center; }
+.dot {
+  width: 40px; height: 40px; border-radius: 50%; flex: none;
+  display: grid; place-items: center;
+  background: var(--accent); color: var(--paper);
+  font-family: var(--f-display); font-weight: 800; font-size: 17px;
+}
+.rail::after { content: ""; flex: 1; width: 2px; background: var(--line); margin-top: 6px; }
+.stage.last .rail::after { display: none; }
+.body { padding-bottom: 30px; display: grid; gap: 10px; min-width: 0; }
+.head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; padding-top: 6px; }
+.head h2 { font-size: 23px; font-weight: 700; }
+.tool { font-family: var(--f-mono); font-size: 12.5px; color: var(--muted); }
+.io { font-size: 14px; color: var(--muted); }
+.io b { color: var(--ink); font-weight: 600; }
+
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+.fact { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 10px 12px; display: grid; gap: 2px; align-content: start; }
+.fact .v { font-family: var(--f-display); font-weight: 700; font-size: 24px; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.fact .k { font-size: 12.5px; color: var(--muted); line-height: 1.35; }
+
+.verdict-line { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 14px; }
+.verdict-line div { padding: 8px 12px; border-radius: 6px; }
+.yes { background: var(--accent-soft); }
+.no { border: 1px dashed var(--line); color: var(--muted); }
+.verdict-line b { display: block; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 2px; }
+.yes b { color: var(--accent); }
+
+.note { font-size: 13.5px; border-left: 3px solid var(--decoy); padding: 4px 0 4px 12px; color: var(--ink); max-width: 72ch; }
+.note b { color: var(--decoy); }
+
+/* Tira de secuencia a escala */
+.seq { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 14px 14px 10px; overflow-x: auto; }
+.seq svg { display: block; width: 100%; min-width: 560px; height: auto; }
+
+/* Panel de ligandos */
+.panel-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 6px; }
+.lig { border: 1px solid var(--line); background: var(--panel); border-radius: 5px; padding: 6px 8px; display: grid; gap: 0; }
+.lig .c { font-family: var(--f-mono); font-weight: 600; font-size: 13px; }
+.lig .n { font-size: 11.5px; color: var(--muted); line-height: 1.3; }
+.lig.d { border-color: var(--decoy); } .lig.d .c { color: var(--decoy); }
+.lig.p { border-color: var(--pred); } .lig.p .c { color: var(--pred); }
+
+/* Bifurcación */
+.fork { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.branch { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; display: grid; gap: 10px; align-content: start; }
+.branch h3 { font-size: 19px; }
+.branch .tool { display: block; }
+.branch ol { margin: 0; padding-left: 22px; font-size: 13.5px; font-variant-numeric: tabular-nums; }
+.branch li { padding: 1px 0; }
+.branch .noise { font-size: 13px; background: var(--accent-soft); border-radius: 5px; padding: 8px 10px; }
+.branch .noise b { color: var(--accent); }
+
+/* Gráfica de pendientes */
+.chart { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 14px; overflow-x: auto; }
+.chart svg { display: block; width: 100%; max-width: 620px; min-width: 420px; margin: 0 auto; height: auto; }
+.chart .cap { font-size: 12.5px; color: var(--muted); max-width: 70ch; margin: 8px auto 0; }
+
+.final { background: var(--ink); color: var(--paper); border-radius: 10px; padding: 20px 22px; display: grid; gap: 10px; }
+.final h3 { font-size: 26px; font-weight: 800; }
+.final p { margin: 0; max-width: 70ch; }
+.final .prd { color: var(--pred); }
+footer { margin-top: 26px; font-size: 12.5px; color: var(--muted); display: grid; gap: 4px; }
+
+@media (max-width: 680px) {
+  body { padding-inline: 16px; }
+  .stage { grid-template-columns: 34px 1fr; gap: 0 12px; }
+  .dot { width: 30px; height: 30px; font-size: 14px; }
+  .fork, .verdict-line { grid-template-columns: 1fr; }
+  .head h2 { font-size: 20px; }
+}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">Evolución y Diseño de Proteínas 2027-1 · TeuB · <i>Rhizobium</i></div>
+  <h1>pipepeline</h1>
+  <p class="thesis">De una secuencia sin etiqueta a un ranking de ligandos: ocho etapas, dos métodos independientes y un piso de ruido medido en cada uno. <b>Resultado: los dos métodos ponen todo en el mismo bolsillo, pero no coinciden en el orden.</b></p>
+  <div class="funnel">
+    <span class="chip">362 aa</span><span class="arr">→</span>
+    <span class="chip">17 homólogos</span><span class="arr">→</span>
+    <span class="chip">pLDDT 92.2</span><span class="arr">→</span>
+    <span class="chip">madura 1-335</span><span class="arr">→</span>
+    <span class="chip">2811 estructuras</span><span class="arr">→</span>
+    <span class="chip">16 ligandos</span><span class="arr">→</span>
+    <span class="chip">48 + 240 corridas</span><span class="arr">→</span>
+    <span class="chip">ρ = 0.39</span>
+  </div>
+  <div class="legend">
+    <span><i style="background:var(--decoy)"></i>señuelo</span>
+    <span><i style="background:var(--pred)"></i>predicción previa (D-apiosa)</span>
+    <span><i style="background:var(--furan)"></i>furanosa</span>
+  </div>
+</header>
+
+<!-- 1 -->
+<section class="stage">
+  <div class="rail"><div class="dot">1</div></div>
+  <div class="body">
+    <div class="head"><h2>Identificar la familia</h2><span class="tool">blastp · Swiss-Prot local + nr remoto</span></div>
+    <div class="io">Entrada <b>TeuB, 362 aa</b> → salida <b>familia RbsB, proteína periplásmica de unión a azúcar</b></div>
+    <div class="facts">
+      <div class="fact"><span class="v">17</span><span class="k">aciertos en Swiss-Prot (E &lt; 10⁻³)</span></div>
+      <div class="fact"><span class="v">22.6–31.5 %</span><span class="k">identidad: zona crepuscular</span></div>
+      <div class="fact"><span class="v">6</span><span class="k">ligandos distintos entre los 10 mejores</span></div>
+      <div class="fact"><span class="v">259 / 500</span><span class="k">aciertos de nr en Rhizobiaceae</span></div>
+    </div>
+    <div class="verdict-line">
+      <div class="yes"><b>Se concluye</b>Familia y pliegue tipo I.</div>
+      <div class="no"><b>No se concluye</b>El ligando: el #1 (ribosa, 28.5 %) y el #2 (treitol, 31.5 %) unen cosas distintas.</div>
+    </div>
+  </div>
+</section>
+
+<!-- 2 -->
+<section class="stage">
+  <div class="rail"><div class="dot">2</div></div>
+  <div class="body">
+    <div class="head"><h2>Predecir la estructura</h2><span class="tool">AlphaFold2 · ColabFold 1.6 · sin plantillas · 5 modelos</span></div>
+    <div class="io">Entrada <b>362 aa</b> → salida <b>modelo de dos lóbulos con la hendidura cerrada</b></div>
+    <div class="facts">
+      <div class="fact"><span class="v">1841</span><span class="k">secuencias en el alineamiento múltiple</span></div>
+      <div class="fact"><span class="v">92.2</span><span class="k">pLDDT del mejor modelo (pTM 0.877)</span></div>
+      <div class="fact"><span class="v">3.0 Å</span><span class="k">PAE dentro de la cadena madura</span></div>
+      <div class="fact"><span class="v">29.6 Å</span><span class="k">PAE entre péptido señal y madura</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3 -->
+<section class="stage">
+  <div class="rail"><div class="dot">3</div></div>
+  <div class="body">
+    <div class="head"><h2>Cortar el péptido señal</h2><span class="tool">regiones n/h/c · pLDDT · inicio de los alineamientos BLAST</span></div>
+    <div class="io">Tres evidencias independientes coinciden en el corte <b>27/28</b> → cadena madura de <b>335 aa</b>, empieza en <code>DDTIA</code></div>
+    <div class="seq">
+      <svg id="seqbar" viewBox="0 0 760 118" role="img" aria-label="Precursor de 362 residuos a escala: péptido señal 1-27, cadena madura 28-362, alineamientos BLAST desde el residuo 49"></svg>
+    </div>
+    <p class="note"><b>Hallazgo:</b> al modelo de respaldo de la práctica le falta una Arg en la posición 256 (<code>WMRRW → WMRW</code>). Su “Cys268” es en realidad C269, así que el centro del sitio se recalculó en el modelo propio: (3.38, −3.17, 0.79).</p>
+  </div>
+</section>
+
+<!-- 4 -->
+<section class="stage">
+  <div class="rail"><div class="dot">4</div></div>
+  <div class="body">
+    <div class="head"><h2>Buscar parientes estructurales</h2><span class="tool">Foldseek · PDB completo, local</span></div>
+    <div class="io">Entrada <b>madura 1-335</b> → salida <b>150 entradas únicas, 83 con ligando</b></div>
+    <div class="facts">
+      <div class="fact"><span class="v">2811</span><span class="k">aciertos en 7.6 s</span></div>
+      <div class="fact"><span class="v">0.76–0.92</span><span class="k">TM-score con solo 17–25 % de identidad</span></div>
+      <div class="fact"><span class="v">11</span><span class="k">códigos distintos con fórmula C₅H₁₀O₅</span></div>
+      <div class="fact"><span class="v">10</span><span class="k">códigos distintos con fórmula C₆H₁₂O₆</span></div>
+    </div>
+    <div class="verdict-line">
+      <div class="yes"><b>Se concluye</b>Foldseek ve parientes que BLAST ya no resuelve.</div>
+      <div class="no"><b>No se concluye</b>El ligando: muchas moléculas comparten la misma fórmula.</div>
+    </div>
+  </div>
+</section>
+
+<!-- 5 -->
+<section class="stage">
+  <div class="rail"><div class="dot">5</div></div>
+  <div class="body">
+    <div class="head"><h2>Armar el panel y fijar la predicción</h2><span class="tool">CCD _ideal.sdf · Open Babel → .mol2 / .pdbqt</span></div>
+    <div class="io">Criterios: frecuencia, convergencia BLAST + Foldseek, misma fórmula con otra geometría, y señuelos. Cada ligando pasa tres controles: fórmula igual a la ficha, con hidrógenos, no plano.</div>
+    <div class="panel-grid">
+      <div class="lig"><span class="c">BGC</span><span class="n">β-D-glucopiranosa</span></div>
+      <div class="lig"><span class="c">RIP</span><span class="n">β-D-ribopiranosa</span></div>
+      <div class="lig"><span class="c">GAL</span><span class="n">β-D-galactopiranosa</span></div>
+      <div class="lig"><span class="c">XYP</span><span class="n">β-D-xilopiranosa</span></div>
+      <div class="lig p"><span class="c">PAV</span><span class="n">D-apiosa · predicción</span></div>
+      <div class="lig"><span class="c">ARA</span><span class="n">α-L-arabinopiranosa</span></div>
+      <div class="lig"><span class="c fur">AHR</span><span class="n">α-L-arabinofuranosa</span></div>
+      <div class="lig"><span class="c fur">BDR</span><span class="n">β-D-ribofuranosa</span></div>
+      <div class="lig"><span class="c">ALL</span><span class="n">β-D-alopiranosa</span></div>
+      <div class="lig"><span class="c">WEB</span><span class="n">α-D-psicopiranosa</span></div>
+      <div class="lig"><span class="c fur">FRU</span><span class="n">β-D-fructofuranosa</span></div>
+      <div class="lig"><span class="c fur">GZL</span><span class="n">β-D-galactofuranosa</span></div>
+      <div class="lig"><span class="c">3VB</span><span class="n">D-treitol</span></div>
+      <div class="lig d"><span class="c">INS</span><span class="n">mio-inositol · ciclitol</span></div>
+      <div class="lig d"><span class="c">X9X</span><span class="n">D-alitol · poliol acíclico</span></div>
+      <div class="lig d"><span class="c">HPA</span><span class="n">hipoxantina · base púrica</span></div>
+    </div>
+    <p class="io"><span class="prd">Predicción, fijada antes del cálculo: D-apiosa.</span> Es el único ligando con evidencia en Swiss-Prot (aciertos #8–#11, dos de <i>Rhizobium</i>) y en Foldseek (4 estructuras), y la apiosa es un azúcar de la pared celular vegetal.</p>
+  </div>
+</section>
+
+<!-- 6 -->
+<section class="stage">
+  <div class="rail"><div class="dot">6</div></div>
+  <div class="body">
+    <div class="head"><h2>Ordenar por dos métodos independientes</h2><span class="tool">mismo receptor, mismo panel, mismo sitio</span></div>
+    <div class="fork">
+      <div class="branch">
+        <div><h3>6a · Docking</h3><span class="tool">AutoDock Vina 1.2 · caja 26 Å · exh. 32 · semillas 101/202/303</span></div>
+        <ol>
+          <li><b>XYP</b> −6.41 kcal/mol</li>
+          <li><b>ARA</b> −6.14</li>
+          <li><b class="dec">HPA</b> −6.10</li>
+          <li><b class="dec">INS</b> −6.09</li>
+          <li><b>GAL</b> −6.05</li>
+        </ol>
+        <div class="noise"><b>Piso de ruido:</b> DE entre semillas de 0.002 a 0.018 kcal/mol. Los 120 pares son distinguibles, pero el error de la función frente a experimento (~2 kcal/mol) supera todo el rango del panel (1.43).</div>
+      </div>
+      <div class="branch">
+        <div><h3>6b · Co-plegamiento</h3><span class="tool">Boltz-2 · sin plantillas · 3 semillas × 5 muestras = 15 modelos</span></div>
+        <ol>
+          <li><b class="fur">AHR</b> ipTM 0.975</li>
+          <li><b class="fur">BDR</b> 0.973</li>
+          <li><b class="fur">GZL</b> 0.963</li>
+          <li value="4"><b>XYP · RIP · ARA</b> 0.961</li>
+          <li value="7"><b class="dec">HPA</b> 0.961</li>
+        </ol>
+        <div class="noise"><b>Piso de ruido:</b> DE del ipTM de 0.003 a 0.012. Los 12 primeros empatan con el líder; solo 15 de 120 pares superan el piso.</div>
+      </div>
+    </div>
+    <p class="note"><b>Artefacto declarado:</b> Boltz-2 elimina el átomo O1 en 10 ligandos (el OH anomérico de las aldosas). Para ellas modela un residuo glicosilo, no el azúcar libre.</p>
+  </div>
+</section>
+
+<!-- 7 -->
+<section class="stage">
+  <div class="rail"><div class="dot">7</div></div>
+  <div class="body">
+    <div class="head"><h2>Comparar los rankings</h2><span class="tool">Spearman · Kendall · RMSD entre poses</span></div>
+    <div class="facts">
+      <div class="fact"><span class="v">ρ = 0.39</span><span class="k">Spearman con ipTM, p = 0.13: acuerdo débil, no significativo</span></div>
+      <div class="fact"><span class="v">1.1–2.0 Å</span><span class="k">RMSD entre la pose de Vina y el mejor modelo de Boltz-2</span></div>
+      <div class="fact"><span class="v">−12</span><span class="k">el mayor salto: AHR pasa del 13.º al 1.º</span></div>
+    </div>
+    <div class="chart">
+      <svg id="slope" viewBox="0 0 620 470" role="img" aria-label="Puesto en Vina contra puesto en Boltz-2 para los 16 ligandos"></svg>
+      <p class="cap">Cada línea une el puesto de un ligando en Vina (izquierda) con su puesto en Boltz-2 (derecha). La banda sombreada marca los 12 ligandos empatados con el primero en Boltz-2. Las furanosas suben; los señuelos HPA e INS quedan arriba en los dos métodos.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 8 -->
+<section class="stage last">
+  <div class="rail"><div class="dot">8</div></div>
+  <div class="body">
+    <div class="final">
+      <h3>Veredicto: no se puede decir qué azúcar une TeuB</h3>
+      <p>Los dos métodos coinciden en la geometría y discrepan en el puntaje. Ninguno distingue un azúcar de la hipoxantina; lo único que ambos sostienen es que el poliol acíclico X9X es mal ligando.</p>
+      <p><span class="prd">D-apiosa:</span> 9.º en Vina y 12.º en Boltz-2, dentro del empate. No se confirma ni se descarta; sigue apoyándose en la homología y la biología, no en el cálculo.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>BLAST, Foldseek y Vina se corrieron en local; AlphaFold2 y Boltz-2 en Google Colab (GPU T4).</span>
+  <span>Datos y scripts: github.com/jtuxman/tareaarcadioazucares</span>
+</footer>
+</div>
+
+<script>
+(function () {
+  const NS = "http://www.w3.org/2000/svg";
+  function el(tag, attrs, text) {
+    const e = document.createElementNS(NS, tag);
+    for (const k in attrs) e.setAttribute(k, attrs[k]);
+    if (text != null) e.textContent = text;
+    return e;
+  }
+
+  /* Tira del precursor, a escala: 362 residuos */
+  const s = document.getElementById("seqbar");
+  const x0 = 20, x1 = 740, L = 362;
+  const X = r => x0 + (r - 1) / (L - 1) * (x1 - x0);
+  s.append(
+    el("rect", { x: X(1), y: 34, width: X(27.5) - X(1), height: 22, rx: 3, style: "fill:var(--decoy);opacity:.85" }),
+    el("rect", { x: X(28), y: 34, width: X(362) - X(28), height: 22, rx: 3, style: "fill:var(--accent)" }),
+    el("text", { x: X(1), y: 74, style: "fill:var(--decoy);font:600 12px var(--f-body)" }, "señal 1-27 · pLDDT 36.3"),
+    el("text", { x: (X(28) + X(362)) / 2, y: 50, "text-anchor": "middle", style: "fill:var(--paper);font:600 13px var(--f-body)" }, "cadena madura 28-362 → renumerada 1-335 · pLDDT 96.8"),
+    el("line", { x1: X(49), x2: X(362), y1: 92, y2: 92, style: "stroke:var(--muted);stroke-width:3;stroke-linecap:round" }),
+    el("line", { x1: X(88), x2: X(88), y1: 86, y2: 98, style: "stroke:var(--muted);stroke-width:2" }),
+    el("text", { x: X(49), y: 112, style: "fill:var(--muted);font:12px var(--f-body)" }, "alineamientos BLAST: inicio mínimo 49, mediana 88")
+  );
+  [1, 28, 362].forEach(r => s.append(
+    el("text", { x: X(r), y: 24, "text-anchor": r === 1 ? "start" : r === 362 ? "end" : "start", dx: r === 28 ? 4 : 0, style: "fill:var(--muted);font:11px var(--f-mono)" }, r === 1 ? "" : String(r))
+  ));
+
+  /* Gráfica de pendientes: puesto Vina → puesto Boltz-2 (ipTM) */
+  const D = [
+    ["XYP",1,4],["ARA",2,4],["HPA",3,7,"d"],["INS",4,10,"d"],["GAL",5,11],["RIP",6,4],["ALL",7,8],["GZL",8,3,"f"],
+    ["PAV",9,12,"p"],["FRU",10,15,"f"],["BDR",11,2,"f"],["BGC",12,9],["AHR",13,1,"f"],["WEB",14,13],["X9X",15,16,"d"],["3VB",16,14]
+  ];
+  const g = document.getElementById("slope");
+  const L1 = 150, L2 = 470, top = 46, step = 25;
+  const Y = r => top + (r - 1) * step;
+  const col = t => t === "d" ? "var(--decoy)" : t === "p" ? "var(--pred)" : t === "f" ? "var(--furan)" : "var(--muted)";
+
+  g.append(
+    el("rect", { x: L2 - 8, y: Y(1) - 11, width: 150, height: Y(12) - Y(1) + 22, rx: 4, style: "fill:var(--accent-soft)" }),
+    el("text", { x: L1, y: 20, "text-anchor": "middle", style: "fill:var(--ink);font:700 14px var(--f-display)" }, "Vina"),
+    el("text", { x: L2, y: 20, "text-anchor": "middle", style: "fill:var(--ink);font:700 14px var(--f-display)" }, "Boltz-2"),
+    el("text", { x: L2 + 136, y: Y(12) + 4, "text-anchor": "end", style: "fill:var(--accent);font:11px var(--f-body)" }, "empate")
+  );
+  for (let r = 1; r <= 16; r++) {
+    g.append(el("text", { x: L1 + 22, y: Y(r) + 4, style: "fill:var(--muted);font:11px var(--f-mono)" }, r));
+  }
+  const order = D.slice().sort((a, b) => (a[3] ? 1 : 0) - (b[3] ? 1 : 0));
+  order.forEach(([c, v, b, t]) => {
+    const strong = !!t;
+    g.append(el("line", { x1: L1 + 40, y1: Y(v), x2: L2 - 14, y2: Y(b),
+      style: `stroke:${col(t)};stroke-width:${strong ? 2.4 : 1.3};opacity:${strong ? 1 : .55}` }));
+    g.append(el("circle", { cx: L1 + 40, cy: Y(v), r: 3.5, style: `fill:${col(t)}` }));
+    g.append(el("circle", { cx: L2 - 14, cy: Y(b), r: 3.5, style: `fill:${col(t)}` }));
+    g.append(el("text", { x: L1 + 10, y: Y(v) + 4, "text-anchor": "end",
+      style: `fill:${strong ? col(t) : "var(--ink)"};font:${strong ? 700 : 400} 12.5px var(--f-mono)` }, c));
+  });
+  const byB = {};
+  D.forEach(d => (byB[d[2]] = byB[d[2]] || []).push(d));
+  Object.keys(byB).forEach(b => {
+    const t = el("text", { x: L2, y: Y(+b) + 4, style: "font:12.5px var(--f-mono)" });
+    t.append(el("tspan", { style: "fill:var(--muted);font-size:11px" }, b + "  "));
+    byB[b].forEach((d, i) => {
+      t.append(el("tspan", { style: `fill:${d[3] ? col(d[3]) : "var(--ink)"};font-weight:${d[3] ? 700 : 400}` }, (i ? "·" : "") + d[0]));
+    });
+    g.append(t);
+  });
+})();
+</script>
